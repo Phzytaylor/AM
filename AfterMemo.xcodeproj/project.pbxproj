@@ -7,21 +7,101 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33E7F08FAE4056B532E3ABF2 /* Pods_AfterMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54DB5FD0D14D224344C1065 /* Pods_AfterMemo.framework */; };
+		821ED29520C075C6000CECAF /* Recipient+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821ED29320C075C6000CECAF /* Recipient+CoreDataClass.swift */; };
+		821ED29620C075C6000CECAF /* Recipient+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821ED29420C075C6000CECAF /* Recipient+CoreDataProperties.swift */; };
+		821ED29920C075F1000CECAF /* Videos+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821ED29720C075F1000CECAF /* Videos+CoreDataClass.swift */; };
+		821ED29A20C075F1000CECAF /* Videos+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821ED29820C075F1000CECAF /* Videos+CoreDataProperties.swift */; };
+		821ED29D20C07609000CECAF /* VoiceMemos+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821ED29B20C07609000CECAF /* VoiceMemos+CoreDataClass.swift */; };
+		821ED29E20C07609000CECAF /* VoiceMemos+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821ED29C20C07609000CECAF /* VoiceMemos+CoreDataProperties.swift */; };
+		821ED2A120C0761C000CECAF /* Written+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821ED29F20C0761C000CECAF /* Written+CoreDataClass.swift */; };
+		821ED2A220C0761C000CECAF /* Written+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821ED2A020C0761C000CECAF /* Written+CoreDataProperties.swift */; };
+		8229F14020BC5E6B0033C71F /* WrittenMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229F13F20BC5E6B0033C71F /* WrittenMemoViewController.swift */; };
+		8231DB8E20AE799900CE9668 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231DB8D20AE799900CE9668 /* MainCollectionViewController.swift */; };
 		8234322920AA7B9100912A6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234322820AA7B9100912A6F /* AppDelegate.swift */; };
 		8234322B20AA7B9100912A6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234322A20AA7B9100912A6F /* ViewController.swift */; };
 		8234322E20AA7B9100912A6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8234322C20AA7B9100912A6F /* Main.storyboard */; };
-		8234323020AA7B9700912A6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8234322F20AA7B9700912A6F /* Assets.xcassets */; };
 		8234323320AA7B9700912A6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8234323120AA7B9700912A6F /* LaunchScreen.storyboard */; };
+		8234323B20AB422E00912A6F /* PasswordContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8234323A20AB422E00912A6F /* PasswordContainerView.xib */; };
+		8234324120AB47E500912A6F /* icons8-clear_symbol_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 8234324020AB47E500912A6F /* icons8-clear_symbol_filled.png */; };
+		8234324520AB58DF00912A6F /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234324420AB58DF00912A6F /* Keyboard.swift */; };
+		8234324720ABDD3200912A6F /* PasswordDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234324620ABDD3200912A6F /* PasswordDotView.swift */; };
+		8234324920ACEAE900912A6F /* PasswordInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234324820ACEAE900912A6F /* PasswordInputView.swift */; };
+		8234324B20ACEB5100912A6F /* PasswordUIValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234324A20ACEB5100912A6F /* PasswordUIValidation.swift */; };
+		8234324D20ACEB7800912A6F /* PasswordContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234324C20ACEB7800912A6F /* PasswordContainerView.swift */; };
+		8244D48F20AE419A008C6B02 /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8244D48E20AE419A008C6B02 /* KeychainPasswordItem.swift */; };
+		8244D49120AE41EB008C6B02 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8244D49020AE41EB008C6B02 /* User.swift */; };
+		827458EA20AD174000F13DAD /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827458E920AD174000F13DAD /* AuthController.swift */; };
+		827458ED20AD17C200F13DAD /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827458EC20AD17C200F13DAD /* Settings.swift */; };
+		828703B420AFA733002C530A /* UserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828703B320AFA733002C530A /* UserCollectionViewCell.swift */; };
+		828703B620AFB2EF002C530A /* VideoRecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828703B520AFB2EF002C530A /* VideoRecorderViewController.swift */; };
+		828703B820B0D723002C530A /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828703B720B0D723002C530A /* VideoHelper.swift */; };
+		828703BA20B11314002C530A /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828703B920B11314002C530A /* TestViewController.swift */; };
+		828703BE20B11FD2002C530A /* AfterMemoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 828703BC20B11FD2002C530A /* AfterMemoModel.xcdatamodeld */; };
+		82DFF22020BCB6E00010B749 /* LovedOneCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DFF21F20BCB6E00010B749 /* LovedOneCreationViewController.swift */; };
+		82DFF22220BCB77C0010B749 /* LovedOneSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DFF22120BCB77C0010B749 /* LovedOneSelectionTableViewController.swift */; };
+		82DFF22420BCBC4B0010B749 /* LovedOnesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DFF22320BCBC4B0010B749 /* LovedOnesTableViewCell.swift */; };
+		82EE245E20B23B3B003EF9D2 /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE245D20B23B3B003EF9D2 /* RecordingViewController.swift */; };
+		82EE246020B28B81003EF9D2 /* VideoAtrributesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE245F20B28B81003EF9D2 /* VideoAtrributesViewController.swift */; };
+		82EE246620B39E31003EF9D2 /* VoiceMemoAtrributeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE246520B39E31003EF9D2 /* VoiceMemoAtrributeController.swift */; };
+		82EE248020B64F01003EF9D2 /* SelectionCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE247F20B64F01003EF9D2 /* SelectionCollectionViewController.swift */; };
+		82EE248220B65247003EF9D2 /* RecordingChoiceCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE248120B65247003EF9D2 /* RecordingChoiceCollectionViewController.swift */; };
+		82EE248420B693EE003EF9D2 /* RecordingChoiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE248320B693EE003EF9D2 /* RecordingChoiceCollectionViewCell.swift */; };
+		82EE248820B7A3DB003EF9D2 /* icons8-camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 82EE248720B7A3DB003EF9D2 /* icons8-camera.png */; };
+		82EE248C20B7B741003EF9D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82EE248B20B7B741003EF9D2 /* Images.xcassets */; };
+		82EE248E20B7D805003EF9D2 /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE248D20B7D805003EF9D2 /* colors.swift */; };
+		82EE249020BAFCCE003EF9D2 /* SelectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE248F20BAFCCE003EF9D2 /* SelectionCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		821ED29320C075C6000CECAF /* Recipient+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipient+CoreDataClass.swift"; sourceTree = "<group>"; };
+		821ED29420C075C6000CECAF /* Recipient+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipient+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		821ED29720C075F1000CECAF /* Videos+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Videos+CoreDataClass.swift"; sourceTree = "<group>"; };
+		821ED29820C075F1000CECAF /* Videos+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Videos+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		821ED29B20C07609000CECAF /* VoiceMemos+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VoiceMemos+CoreDataClass.swift"; sourceTree = "<group>"; };
+		821ED29C20C07609000CECAF /* VoiceMemos+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VoiceMemos+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		821ED29F20C0761C000CECAF /* Written+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Written+CoreDataClass.swift"; sourceTree = "<group>"; };
+		821ED2A020C0761C000CECAF /* Written+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Written+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8229F13F20BC5E6B0033C71F /* WrittenMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrittenMemoViewController.swift; sourceTree = "<group>"; };
+		8231DB8D20AE799900CE9668 /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
 		8234322520AA7B9100912A6F /* AfterMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AfterMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8234322820AA7B9100912A6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8234322A20AA7B9100912A6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8234322D20AA7B9100912A6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8234322F20AA7B9700912A6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8234323220AA7B9700912A6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8234323420AA7B9700912A6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8234323A20AB422E00912A6F /* PasswordContainerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordContainerView.xib; sourceTree = "<group>"; };
+		8234324020AB47E500912A6F /* icons8-clear_symbol_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-clear_symbol_filled.png"; path = "../../../../Library/Containers/com.visualpharm.Icons8AppWithContent/Data/Documents/com.visualpharm.Icons8AppWithContent/ios/User Interface/32/ffffff/icons8-clear_symbol_filled.png"; sourceTree = "<group>"; };
+		8234324420AB58DF00912A6F /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		8234324620ABDD3200912A6F /* PasswordDotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordDotView.swift; sourceTree = "<group>"; };
+		8234324820ACEAE900912A6F /* PasswordInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordInputView.swift; sourceTree = "<group>"; };
+		8234324A20ACEB5100912A6F /* PasswordUIValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordUIValidation.swift; sourceTree = "<group>"; };
+		8234324C20ACEB7800912A6F /* PasswordContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordContainerView.swift; sourceTree = "<group>"; };
+		8244D48E20AE419A008C6B02 /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
+		8244D49020AE41EB008C6B02 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		827458E920AD174000F13DAD /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
+		827458EC20AD17C200F13DAD /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		828703B320AFA733002C530A /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCell.swift; sourceTree = "<group>"; };
+		828703B520AFB2EF002C530A /* VideoRecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecorderViewController.swift; sourceTree = "<group>"; };
+		828703B720B0D723002C530A /* VideoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHelper.swift; sourceTree = "<group>"; };
+		828703B920B11314002C530A /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		828703BD20B11FD2002C530A /* AfterMemoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AfterMemoModel.xcdatamodel; sourceTree = "<group>"; };
+		82DFF21F20BCB6E00010B749 /* LovedOneCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LovedOneCreationViewController.swift; sourceTree = "<group>"; };
+		82DFF22120BCB77C0010B749 /* LovedOneSelectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LovedOneSelectionTableViewController.swift; sourceTree = "<group>"; };
+		82DFF22320BCBC4B0010B749 /* LovedOnesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LovedOnesTableViewCell.swift; sourceTree = "<group>"; };
+		82EE245D20B23B3B003EF9D2 /* RecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
+		82EE245F20B28B81003EF9D2 /* VideoAtrributesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoAtrributesViewController.swift; sourceTree = "<group>"; };
+		82EE246520B39E31003EF9D2 /* VoiceMemoAtrributeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceMemoAtrributeController.swift; sourceTree = "<group>"; };
+		82EE247F20B64F01003EF9D2 /* SelectionCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionCollectionViewController.swift; sourceTree = "<group>"; };
+		82EE248120B65247003EF9D2 /* RecordingChoiceCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingChoiceCollectionViewController.swift; sourceTree = "<group>"; };
+		82EE248320B693EE003EF9D2 /* RecordingChoiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingChoiceCollectionViewCell.swift; sourceTree = "<group>"; };
+		82EE248720B7A3DB003EF9D2 /* icons8-camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-camera.png"; sourceTree = "<group>"; };
+		82EE248B20B7B741003EF9D2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		82EE248D20B7D805003EF9D2 /* colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = "<group>"; };
+		82EE248F20BAFCCE003EF9D2 /* SelectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		A54DB5FD0D14D224344C1065 /* Pods_AfterMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AfterMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A947D7AED7E0260D6B012185 /* Pods-AfterMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AfterMemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AfterMemo/Pods-AfterMemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B8BB60C7F8B7CF0A69F43491 /* Pods-AfterMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AfterMemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AfterMemo/Pods-AfterMemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33E7F08FAE4056B532E3ABF2 /* Pods_AfterMemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +121,8 @@
 			children = (
 				8234322720AA7B9100912A6F /* AfterMemo */,
 				8234322620AA7B9100912A6F /* Products */,
+				F499F7F244ADEBD44EA0CEEA /* Pods */,
+				B1EA6CA4CBE966678989A80C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +137,133 @@
 		8234322720AA7B9100912A6F /* AfterMemo */ = {
 			isa = PBXGroup;
 			children = (
-				8234322820AA7B9100912A6F /* AppDelegate.swift */,
-				8234322A20AA7B9100912A6F /* ViewController.swift */,
-				8234322C20AA7B9100912A6F /* Main.storyboard */,
-				8234322F20AA7B9700912A6F /* Assets.xcassets */,
-				8234323120AA7B9700912A6F /* LaunchScreen.storyboard */,
-				8234323420AA7B9700912A6F /* Info.plist */,
+				828703BB20B11FA6002C530A /* CoreDataFiles */,
+				827458EB20AD17A700F13DAD /* Helpers */,
+				827458E520AD115300F13DAD /* Controllers */,
+				827458E720AD116E00F13DAD /* Extentions */,
+				8234324020AB47E500912A6F /* icons8-clear_symbol_filled.png */,
+				8234324420AB58DF00912A6F /* Keyboard.swift */,
+				827458E320AD113E00F13DAD /* Models */,
+				827458E820AD11C600F13DAD /* Resources */,
+				827458E620AD116000F13DAD /* Services */,
+				827458E420AD114500F13DAD /* Views */,
+				82EE248B20B7B741003EF9D2 /* Images.xcassets */,
 			);
 			path = AfterMemo;
+			sourceTree = "<group>";
+		};
+		827458E320AD113E00F13DAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8244D49020AE41EB008C6B02 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		827458E420AD114500F13DAD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8234324820ACEAE900912A6F /* PasswordInputView.swift */,
+				8234324620ABDD3200912A6F /* PasswordDotView.swift */,
+				8234323120AA7B9700912A6F /* LaunchScreen.storyboard */,
+				8234322C20AA7B9100912A6F /* Main.storyboard */,
+				8234323A20AB422E00912A6F /* PasswordContainerView.xib */,
+				8234324C20ACEB7800912A6F /* PasswordContainerView.swift */,
+				828703B320AFA733002C530A /* UserCollectionViewCell.swift */,
+				82EE248320B693EE003EF9D2 /* RecordingChoiceCollectionViewCell.swift */,
+				82EE248F20BAFCCE003EF9D2 /* SelectionCollectionViewCell.swift */,
+				82DFF22320BCBC4B0010B749 /* LovedOnesTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		827458E520AD115300F13DAD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				82EE247F20B64F01003EF9D2 /* SelectionCollectionViewController.swift */,
+				82EE248120B65247003EF9D2 /* RecordingChoiceCollectionViewController.swift */,
+				8234322820AA7B9100912A6F /* AppDelegate.swift */,
+				8234322A20AA7B9100912A6F /* ViewController.swift */,
+				827458E920AD174000F13DAD /* AuthController.swift */,
+				8231DB8D20AE799900CE9668 /* MainCollectionViewController.swift */,
+				828703B520AFB2EF002C530A /* VideoRecorderViewController.swift */,
+				828703B920B11314002C530A /* TestViewController.swift */,
+				82EE245D20B23B3B003EF9D2 /* RecordingViewController.swift */,
+				82EE245F20B28B81003EF9D2 /* VideoAtrributesViewController.swift */,
+				82EE246520B39E31003EF9D2 /* VoiceMemoAtrributeController.swift */,
+				8229F13F20BC5E6B0033C71F /* WrittenMemoViewController.swift */,
+				82DFF21F20BCB6E00010B749 /* LovedOneCreationViewController.swift */,
+				82DFF22120BCB77C0010B749 /* LovedOneSelectionTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		827458E620AD116000F13DAD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8244D48E20AE419A008C6B02 /* KeychainPasswordItem.swift */,
+				8234324A20ACEB5100912A6F /* PasswordUIValidation.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		827458E720AD116E00F13DAD /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				82EE248720B7A3DB003EF9D2 /* icons8-camera.png */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		827458E820AD11C600F13DAD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8234323420AA7B9700912A6F /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		827458EB20AD17A700F13DAD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				82EE248D20B7D805003EF9D2 /* colors.swift */,
+				827458EC20AD17C200F13DAD /* Settings.swift */,
+				828703B720B0D723002C530A /* VideoHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		828703BB20B11FA6002C530A /* CoreDataFiles */ = {
+			isa = PBXGroup;
+			children = (
+				821ED29F20C0761C000CECAF /* Written+CoreDataClass.swift */,
+				821ED2A020C0761C000CECAF /* Written+CoreDataProperties.swift */,
+				821ED29B20C07609000CECAF /* VoiceMemos+CoreDataClass.swift */,
+				821ED29C20C07609000CECAF /* VoiceMemos+CoreDataProperties.swift */,
+				821ED29720C075F1000CECAF /* Videos+CoreDataClass.swift */,
+				821ED29820C075F1000CECAF /* Videos+CoreDataProperties.swift */,
+				821ED29320C075C6000CECAF /* Recipient+CoreDataClass.swift */,
+				821ED29420C075C6000CECAF /* Recipient+CoreDataProperties.swift */,
+				828703BC20B11FD2002C530A /* AfterMemoModel.xcdatamodeld */,
+			);
+			path = CoreDataFiles;
+			sourceTree = "<group>";
+		};
+		B1EA6CA4CBE966678989A80C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A54DB5FD0D14D224344C1065 /* Pods_AfterMemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F499F7F244ADEBD44EA0CEEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A947D7AED7E0260D6B012185 /* Pods-AfterMemo.debug.xcconfig */,
+				B8BB60C7F8B7CF0A69F43491 /* Pods-AfterMemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +273,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8234323720AA7B9700912A6F /* Build configuration list for PBXNativeTarget "AfterMemo" */;
 			buildPhases = (
+				279CAA6F406A5F08A2598D70 /* [CP] Check Pods Manifest.lock */,
 				8234322120AA7B9100912A6F /* Sources */,
 				8234322220AA7B9100912A6F /* Frameworks */,
 				8234322320AA7B9100912A6F /* Resources */,
+				A1813F34BDCD0E90CF5B1D47 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +327,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				8234323320AA7B9700912A6F /* LaunchScreen.storyboard in Resources */,
-				8234323020AA7B9700912A6F /* Assets.xcassets in Resources */,
+				82EE248820B7A3DB003EF9D2 /* icons8-camera.png in Resources */,
+				8234324120AB47E500912A6F /* icons8-clear_symbol_filled.png in Resources */,
+				82EE248C20B7B741003EF9D2 /* Images.xcassets in Resources */,
+				8234323B20AB422E00912A6F /* PasswordContainerView.xib in Resources */,
 				8234322E20AA7B9100912A6F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		279CAA6F406A5F08A2598D70 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AfterMemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1813F34BDCD0E90CF5B1D47 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AfterMemo/Pods-AfterMemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/ImageRow/ImageRow.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageRow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AfterMemo/Pods-AfterMemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8234322120AA7B9100912A6F /* Sources */ = {
@@ -136,7 +400,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				8234322B20AA7B9100912A6F /* ViewController.swift in Sources */,
+				8231DB8E20AE799900CE9668 /* MainCollectionViewController.swift in Sources */,
+				82EE246020B28B81003EF9D2 /* VideoAtrributesViewController.swift in Sources */,
+				821ED29920C075F1000CECAF /* Videos+CoreDataClass.swift in Sources */,
+				828703BA20B11314002C530A /* TestViewController.swift in Sources */,
+				828703B620AFB2EF002C530A /* VideoRecorderViewController.swift in Sources */,
+				821ED29520C075C6000CECAF /* Recipient+CoreDataClass.swift in Sources */,
+				828703B820B0D723002C530A /* VideoHelper.swift in Sources */,
+				821ED29D20C07609000CECAF /* VoiceMemos+CoreDataClass.swift in Sources */,
+				8234324920ACEAE900912A6F /* PasswordInputView.swift in Sources */,
+				82DFF22220BCB77C0010B749 /* LovedOneSelectionTableViewController.swift in Sources */,
+				821ED29E20C07609000CECAF /* VoiceMemos+CoreDataProperties.swift in Sources */,
+				82DFF22420BCBC4B0010B749 /* LovedOnesTableViewCell.swift in Sources */,
+				8234324720ABDD3200912A6F /* PasswordDotView.swift in Sources */,
+				8229F14020BC5E6B0033C71F /* WrittenMemoViewController.swift in Sources */,
+				8234324B20ACEB5100912A6F /* PasswordUIValidation.swift in Sources */,
+				82EE248E20B7D805003EF9D2 /* colors.swift in Sources */,
+				821ED29A20C075F1000CECAF /* Videos+CoreDataProperties.swift in Sources */,
+				82EE248020B64F01003EF9D2 /* SelectionCollectionViewController.swift in Sources */,
+				821ED29620C075C6000CECAF /* Recipient+CoreDataProperties.swift in Sources */,
+				8234324D20ACEB7800912A6F /* PasswordContainerView.swift in Sources */,
+				8244D48F20AE419A008C6B02 /* KeychainPasswordItem.swift in Sources */,
+				828703BE20B11FD2002C530A /* AfterMemoModel.xcdatamodeld in Sources */,
+				82EE249020BAFCCE003EF9D2 /* SelectionCollectionViewCell.swift in Sources */,
+				827458EA20AD174000F13DAD /* AuthController.swift in Sources */,
+				82DFF22020BCB6E00010B749 /* LovedOneCreationViewController.swift in Sources */,
+				827458ED20AD17C200F13DAD /* Settings.swift in Sources */,
+				821ED2A220C0761C000CECAF /* Written+CoreDataProperties.swift in Sources */,
+				821ED2A120C0761C000CECAF /* Written+CoreDataClass.swift in Sources */,
+				8234324520AB58DF00912A6F /* Keyboard.swift in Sources */,
 				8234322920AA7B9100912A6F /* AppDelegate.swift in Sources */,
+				82EE246620B39E31003EF9D2 /* VoiceMemoAtrributeController.swift in Sources */,
+				82EE245E20B23B3B003EF9D2 /* RecordingViewController.swift in Sources */,
+				8244D49120AE41EB008C6B02 /* User.swift in Sources */,
+				828703B420AFA733002C530A /* UserCollectionViewCell.swift in Sources */,
+				82EE248220B65247003EF9D2 /* RecordingChoiceCollectionViewController.swift in Sources */,
+				82EE248420B693EE003EF9D2 /* RecordingChoiceCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,16 +577,18 @@
 		};
 		8234323820AA7B9700912A6F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A947D7AED7E0260D6B012185 /* Pods-AfterMemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TR2MLK3WQ4;
-				INFOPLIST_FILE = AfterMemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AfterMemo/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sench.AfterMemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Wes.AfterMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -296,16 +597,18 @@
 		};
 		8234323920AA7B9700912A6F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8BB60C7F8B7CF0A69F43491 /* Pods-AfterMemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TR2MLK3WQ4;
-				INFOPLIST_FILE = AfterMemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AfterMemo/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sench.AfterMemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Wes.AfterMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -334,6 +637,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		828703BC20B11FD2002C530A /* AfterMemoModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				828703BD20B11FD2002C530A /* AfterMemoModel.xcdatamodel */,
+			);
+			currentVersion = 828703BD20B11FD2002C530A /* AfterMemoModel.xcdatamodel */;
+			path = AfterMemoModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8234321D20AA7B9100912A6F /* Project object */;
 }

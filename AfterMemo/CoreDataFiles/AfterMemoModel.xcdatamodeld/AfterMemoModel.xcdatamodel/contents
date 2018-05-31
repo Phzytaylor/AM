@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17E202" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Recipient" representedClassName="Recipient" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="avatar" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="videos" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Videos" inverseName="recipient" inverseEntity="Videos" syncable="YES"/>
+        <relationship name="voice" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="VoiceMemos" inverseName="recipient" inverseEntity="VoiceMemos" syncable="YES"/>
+        <relationship name="written" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Written" inverseName="recipient" inverseEntity="Written" syncable="YES"/>
+    </entity>
+    <entity name="Videos" representedClassName="Videos" syncable="YES">
+        <attribute name="dateToBeReleased" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isVideo" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isVoiceMemo" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isWrittenMemo" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="releaseTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="thumbNail" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="urlPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoTag" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="recipient" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipient" inverseName="videos" inverseEntity="Recipient" syncable="YES"/>
+    </entity>
+    <entity name="VoiceMemos" representedClassName="VoiceMemos" syncable="YES">
+        <attribute name="audioTag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateToBeReleased" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isVideo" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isVoiceMemo" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isWrittenMemo" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="releaseTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="urlPath" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="recipient" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipient" inverseName="voice" inverseEntity="Recipient" syncable="YES"/>
+    </entity>
+    <entity name="Written" representedClassName="Written" syncable="YES">
+        <attribute name="dateToBeReleased" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isVideo" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isVoiceMemo" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isWrittenMemo" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="memoText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="releaseTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="writtenTag" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="recipient" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipient" inverseName="written" inverseEntity="Recipient" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Recipient" positionX="-54" positionY="36" width="128" height="135"/>
+        <element name="Videos" positionX="-63" positionY="-18" width="128" height="30"/>
+        <element name="VoiceMemos" positionX="-54" positionY="0" width="128" height="30"/>
+        <element name="Written" positionX="-54" positionY="54" width="128" height="165"/>
+    </elements>
+</model>
