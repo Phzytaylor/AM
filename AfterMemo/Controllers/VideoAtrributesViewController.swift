@@ -13,11 +13,15 @@ import UIKit
 import Eureka
 import CoreData
 import ImageRow
+import FirebaseDatabase
+import FirebaseAuth
+import FirebaseStorage
 
 class VideoAtrributesViewController: FormViewController {
 
     var passedVideoURL: String = ""
     var selectedPerson: Recipient?
+    var passedVideo: Videos?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,15 +72,25 @@ class VideoAtrributesViewController: FormViewController {
                 }
                 .onCellSelection { [weak self] (cell, row) in
                     
-                    guard let videoTagRow: TextRow = self?.form.rowBy(tag: "videoTag") else {return}
-                    guard let videoTagRowValue = videoTagRow.value else {return}
+                    guard let videoTagRow: TextRow = self?.form.rowBy(tag: "videoTag") else {
+                        print("fail 1")
+                        return}
+                    guard let videoTagRowValue = videoTagRow.value else {
+                        print("fail 2")
+                        return}
+                    
                     guard let dateRow: DateRow = self?.form.rowBy(tag: "dateTag") else {
+                        print("fail 3")
                         return
                     }
-                    guard let dateRowValue = dateRow.value else {return}
+                    guard let dateRowValue = dateRow.value else {
+                        print("fail 4")
+                        return}
                     
                     guard let timeRow: TimeRow = self?.form.rowBy(tag: "timeTag") else {return}
-                    guard let timeRowValue = timeRow.value else {return}
+                    guard let timeRowValue = timeRow.value else {
+                        print("fail 5")
+                        return}
                     
                    
                     
@@ -104,39 +118,79 @@ class VideoAtrributesViewController: FormViewController {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{ return }
         
         let managedContext = appDelegate.persistentContainer.viewContext
-        
-        let VideoFetch: NSFetchRequest<Videos> = Videos.fetchRequest()
-        VideoFetch.predicate = NSPredicate(format: "%K == %@", #keyPath(Videos.urlPath),
-                                         passedURL)
-        
-        do {
-            let results = try managedContext.fetch(VideoFetch)
-            if results.count > 0 {
-                
-                guard  let currentVideo = results.first else {return}
-                
-                
-                currentVideo.setValue(videoTag, forKey: "videoTag")
-                currentVideo.setValue(releaseDate, forKey: "dateToBeReleased")
-                currentVideo.setValue(releaseTime, forKey: "releaseTime")
+  
+        guard let currentVideo = passedVideo else {
+            
+            print("Didn't pass")
+            return}
+                currentVideo.videoTag = videoTag
+                currentVideo.dateToBeReleased = releaseDate as NSDate
+                currentVideo.releaseTime = releaseTime as NSDate
                 
                 
                 do {
                     try managedContext.save()
                     print(" I saved")
+                    guard let userID = Auth.auth().currentUser?.uid else {return}
+                    
+                    let uploadLink = Storage.storage().reference().child(userID).child("videos").child(currentVideo.urlPath! + videoTag)
+
+                    guard let videoURL = currentVideo.urlPath else {return}
+                    let paths = NSSearchPathForDirectoriesInDomains(
+                        FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
+                    let documentsDirectory: URL = URL(fileURLWithPath: paths[0])
+                    let dataPath = documentsDirectory.appendingPathComponent(videoURL)
+                    
+                    guard let videoURLForUpload = URL(string: dataPath.absoluteString) else {return}
+                    
+                    
+                    
+                    uploadLink.putFile(from: videoURLForUpload, metadata: nil) { (metadatas, error) in
+                        if error != nil {
+                            print("This video could not load!")
+                            return
+                        } else {
+                            
+                            uploadLink.downloadURL(completion: { (url, error) in
+                                
+                                if error != nil {
+                                    
+                                    print("Failure to grab url")
+                                    return
+                                } else {
+                                let dataBasePath = Database.database().reference().child("videos").child(userID).childByAutoId()
+                                    
+                                    guard let videoURLString = url?.absoluteString else {return}
+                                    
+                                    let dateFormat = DateFormatter()
+                                    dateFormat.dateFormat = "EEEE, MM-dd-yyyy"
+                                    let dateString = dateFormat.string(from: releaseDate)
+                                    
+                                    let timeFormat = DateFormatter()
+                                    
+                                    timeFormat.dateFormat = "h:mm a"
+                                    
+                                    let timeString = timeFormat.string(from: releaseTime)
+                                
+                                    dataBasePath.updateChildValues(["videoStorageURL": videoURLString,"videoTag": videoTag, "releaseDate": dateString, "releaseTime": timeString], withCompletionBlock: { (error, ref) in
+                                        if error != nil {
+                                            print("failed to update Database")
+                                            return
+                                        }
+                                    })
+                                    
+                                }
+                            })
+                            
+                        }
+                    }
                     
                 }
                 catch let error as NSError {
                     print("Could not save. \(error), \(error.userInfo)")
                 }
-            }
-            else{
-                //oh well
-            }
-        } catch let error as NSError {
-            print("Fetch error: \(error) description: \(error.userInfo)")
-            
-        }
+        
+       
         
        
     }

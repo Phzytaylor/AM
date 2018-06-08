@@ -16,6 +16,7 @@ import MaterialComponents
 class RecordingChoiceCollectionViewController: UICollectionViewController {
 
      var fileName = ""
+    var videoToPass: Videos?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -199,52 +200,7 @@ class RecordingChoiceCollectionViewController: UICollectionViewController {
     */
     
     
-    func save(url:String, _ tempFilePath: URL){
-        
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{ return }
-        
-        let managedContext = appDelegate.persistentContainer.viewContext
-        
-        let entity = NSEntityDescription.entity(forEntityName: "Videos", in: managedContext)!
-        
-        let videos = NSManagedObject(entity: entity, insertInto: managedContext)
-        
-        guard let savedImage = previewImageForLocalVideo(url: tempFilePath) else {
-            return
-        }
-        let savedImageData = UIImagePNGRepresentation(savedImage) as NSData?
-        videos.setValue(savedImageData, forKey: "thumbNail")
-        videos.setValue(url, forKey: "urlPath")
-        videos.setValue(true, forKey: "isVideo")
-        videos.setValue(false, forKey: "isVoiceMemo")
-        
-        let addAtributesAlert = UIAlertController(title: "Add Now?", message: "Would you like to add detials to the video?", preferredStyle: .alert)
-        
-        addAtributesAlert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (UIAlertAction) in
-            self.performSegue(withIdentifier: "videoAtributes", sender: self)
-        }))
-        
-        addAtributesAlert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
-        
-        do {
-            try managedContext.save()
-            //videosArray.append(videos)
-           // combinedArray.append(videos)
-//            let index = IndexPath(row: combinedArray.count - 1, section: 0)
-//            collectionView?.insertItems(at: [index])
-            DispatchQueue.main.async {
-                
-                
-                
-                
-                self.present(addAtributesAlert, animated: true, completion: nil)
-            }
-            
-        }
-        catch let error as NSError {
-            print("Could not save. \(error), \(error.userInfo)")
-        }
-    }
+    
     
 
 }
@@ -259,93 +215,8 @@ extension RecordingChoiceCollectionViewController: UICollectionViewDelegateFlowL
 }
 
 
-
-
-extension RecordingChoiceCollectionViewController: UIImagePickerControllerDelegate {
-    func imagePickerController(_ picker: UIImagePickerController,
-                               didFinishPickingMediaWithInfo info: [String : Any]) {
-        dismiss(animated: true, completion: nil)
-        
-        let nameFileAlert = UIAlertController(title: "File Name", message: "Create a name for your video.", preferredStyle: .alert)
-        
-        nameFileAlert.addTextField { (textField) -> Void in
-            textField.placeholder = "enter a file name"
-            textField.textAlignment = .center
-        }
-        
-        let saveAction = UIAlertAction(title: "Save", style: .default) { (UIAlertAction) in
-            let fileToBeNamed = nameFileAlert.textFields![0] as UITextField
-            
-            self.fileName = fileToBeNamed.text! + ".mp4"
-            
-            
-            guard
-                let mediaType = info[UIImagePickerControllerMediaType] as? String,
-                mediaType == (kUTTypeMovie as String),
-                let url = info[UIImagePickerControllerMediaURL] as? URL
-                else {
-                    return
-            }
-            
-            let videoData = try? Data(contentsOf: url )
-            let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
-            
-            let documentsDirectory: URL = URL(fileURLWithPath: paths[0])
-            let dataPath =
-                documentsDirectory.appendingPathComponent(self.fileName)
-            do {
-                let videoSaved = try videoData?.write(to: dataPath, options: [])
-                //                DispatchQueue.main.async {
-                //                    self.performSegue(withIdentifier: "playVIdeo", sender: self)
-                //                }
-                
-                self.save(url: self.fileName, dataPath)
-                
-            }
-            catch {
-                print("The video did not save")
-                return
-            }
-            print("saved!")
-            
-            
-            
-        }
-        
-        nameFileAlert.addAction(saveAction)
-        
-        
-        self.present(nameFileAlert, animated: true, completion: nil)
-    }
-    
-}
-
 extension RecordingChoiceCollectionViewController: UINavigationControllerDelegate{}
-extension RecordingChoiceCollectionViewController: AVAudioPlayerDelegate {
-    
-    func getDocumentsDirectory() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return paths[0]
-    }
-}
 
-extension RecordingChoiceCollectionViewController {
-    func previewImageForLocalVideo(url:URL) -> UIImage? {
-        let asset = AVAsset(url: url)
-        let imageGenerator = AVAssetImageGenerator(asset: asset)
-        imageGenerator.appliesPreferredTrackTransform = true
-        let tVal = NSValue(time: CMTimeMake(12, 1)) as! CMTime
-        do {
-            let imageRef = try imageGenerator.copyCGImage(at: tVal, actualTime: nil)
-            return UIImage(cgImage: imageRef)
-        }
-        catch let error as NSError
-        {
-            print("Image generation failed with error \(error)")
-            return nil
-        }
-    }
-}
 
 
 

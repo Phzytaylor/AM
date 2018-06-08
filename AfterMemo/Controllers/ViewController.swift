@@ -23,17 +23,26 @@ class ViewController: UIViewController {
     let kPasswordDigit = 4
     let createPinTag = 0
     let enterPinTag = 1
+    let verifyPinTag = 2
     let deviceName = UIDevice.current.name
+    
+    var firstPin: String?
+    
+    var firstName: String? {
+        didSet{
+            print(firstName)
+        }
+    }
+    
+    var lastName: String? {
+        didSet{
+            print(lastName)
+        }
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         
-     passwordContainerView = PasswordContainerView.create(in: passwordStackView, digit: kPasswordDigit)
-        passwordContainerView.delegate = self
-        passwordContainerView.deleteButtonLocalizedTitle = "DELETE"
-        
-        
-        passwordContainerView.tintColor = .red
-        passwordContainerView.highlightedColor = .black
+    
         
         
     }
@@ -43,16 +52,29 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        passwordContainerView = PasswordContainerView.create(in: passwordStackView, digit: kPasswordDigit)
+        passwordContainerView.delegate = self
+        passwordContainerView.deleteButtonLocalizedTitle = "DELETE"
+        
+        
+        passwordContainerView.tintColor = .red
+        passwordContainerView.highlightedColor = .black
        
         let hasLogin = UserDefaults.standard.bool(forKey: "hasLoginKey")
+        let hasVerified = UserDefaults.standard.bool(forKey: "hasVerified")
         
         print(hasLogin)
         
         if hasLogin {
             createAndEnterLabel.text = "Enter Pin"
             createAndEnterLabel.tag = enterPinTag
-        } else{
-            
+       }
+//        else if !hasVerified {
+//            createAndEnterLabel.text = "Verify Pin"
+//            createAndEnterLabel.tag = verifyPinTag
+//
+               else {
             createAndEnterLabel.text = "Create Your Pin"
             createAndEnterLabel.tag = createPinTag
         }
@@ -86,7 +108,16 @@ class ViewController: UIViewController {
             
             UserDefaults.standard.set(true, forKey: "hasLoginKey")
             
-            self.performSegue(withIdentifier: "toMain", sender: self)
+            let hasFinishedSetup = UserDefaults.standard.bool(forKey: "hasSetup")
+            
+            if !hasFinishedSetup {
+                performSegue(withIdentifier: "userInfo", sender: self)
+                
+            }else {
+            
+                self.performSegue(withIdentifier: "toMain", sender: self)
+                
+            }
             
         } else if createAndEnterLabel.tag == enterPinTag {
             
@@ -140,13 +171,34 @@ class ViewController: UIViewController {
 extension ViewController: PasswordInputCompleteProtocol {
     func passwordInputComplete(_ passwordContainerView: PasswordContainerView, input: String) {
         
-        loginAction(pinInput: input)
+    let pinVerified = UserDefaults.standard.bool(forKey: "hasVerified")
+        
+        if !pinVerified && firstPin == nil {
+           firstPin = input
+            
+            createAndEnterLabel.text = "Verify Pin"
+            passwordContainerView.clearInput()
+            
+            
+        } else if !pinVerified && firstPin != nil {
+            if input == firstPin {
+                
+                UserDefaults.standard.set(true, forKey: "hasVerified")
+                
+                loginAction(pinInput: input)
+            }
+        } else {
+            loginAction(pinInput: input)
+            
+        }
 //        if validation(input) {
 //            validationSuccess()
 //        } else {
 //            validationFail()
 //        }
     }
+    
+ 
     
     func touchAuthenticationComplete(_ passwordContainerView: PasswordContainerView, success: Bool, error: Error?) {
         if success {

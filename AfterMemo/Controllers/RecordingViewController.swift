@@ -12,6 +12,7 @@ import AVFoundation
 import CoreData
 import AudioKit
 import AudioKitUI
+import MaterialComponents
 
 class RecordingViewController: UIViewController {
 
@@ -23,6 +24,8 @@ class RecordingViewController: UIViewController {
     var tracker: AKFrequencyTracker!
     var silence: AKBooster!
     var selectedPerson: Recipient?
+    var appBar = MDCAppBar()
+    var voiceMemoToBeSent: VoiceMemos?
     
     let noteFrequencies = [16.35, 17.32, 18.35, 19.45, 20.6, 21.83, 23.12, 24.5, 25.96, 27.5, 29.14, 30.87]
     let noteNamesWithSharps = ["C", "C♯", "D", "D♯", "E", "F", "F♯", "G", "G♯", "A", "A♯", "B"]
@@ -35,6 +38,7 @@ class RecordingViewController: UIViewController {
     @IBAction func recordAudio(_ sender: Any){
         
         recordTapped()
+        
     }
     
     @IBOutlet weak var recordButton: UIButton!
@@ -59,23 +63,36 @@ class RecordingViewController: UIViewController {
         plot.backgroundColor = .black
         audioInputPlot.addSubview(plot)
     }
+    
+    func removePlot(){
+        let plot = AKNodeOutputPlot(mic, frame: audioInputPlot.bounds)
+       
+        plot.clear()
+        
+    }
+    
+    
    
   @objc func saveFunction () {
     guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{ return }
     
     let managedContext = appDelegate.persistentContainer.viewContext
     
-    let entity = NSEntityDescription.entity(forEntityName: "VoiceMemos", in: managedContext)!
-    
-    let audios = NSManagedObject(entity: entity, insertInto: managedContext)
+   let audio = VoiceMemos(context: managedContext)
     guard let theSelectedPerson = selectedPerson else {return}
+ 
     
-    audios.setValue(self.fileName, forKey: "urlPath")
-    audios.setValue(false, forKey: "isVideo")
-    audios.setValue(true, forKey: "isVoiceMemo")
-    audios.setValue(false, forKey: "isWrittenMemo")
-    audios.setValue(theSelectedPerson, forKey: "recipient")
-    theSelectedPerson.setValue(audios, forKey: "voice")
+    audio.urlPath = self.fileName
+    audio.isVoiceMemo = true
+    audio.isWrittenMemo = false
+    audio.isVideo = false
+    
+    voiceMemoToBeSent = audio
+    
+    if let audios = theSelectedPerson.voice?.mutableCopy() as?NSMutableOrderedSet {
+        audios.add(audio)
+        theSelectedPerson.voice = audios
+    }
     
     
     
@@ -104,8 +121,22 @@ class RecordingViewController: UIViewController {
     }
     }
     
+    
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.addChildViewController(appBar.headerViewController)
+       // self.appBar.headerViewController.headerView.trackingScrollView = self.view
+        appBar.addSubviewsToParent()
+        
+        MDCAppBarColorThemer.applySemanticColorScheme(ApplicationScheme.shared.colorScheme, to: self.appBar)
         
         AKSettings.audioInputEnabled = true
         mic = AKMicrophone()
@@ -154,12 +185,16 @@ class RecordingViewController: UIViewController {
             guard let theSelectedPerson = selectedPerson else {return}
             nextVC.audioURL = self.fileName
             nextVC.selectedPerson = theSelectedPerson
+            nextVC.sentVoiceMemo = voiceMemoToBeSent
         }
         
         
     }
  
     @objc func updateUI() {
+        
+        
+        
         if tracker.amplitude > 0.1 {
             
             
@@ -217,6 +252,9 @@ extension RecordingViewController: AVAudioRecorderDelegate {
             ]
             
             do {
+                
+               
+                
                 self.audioRecorder = try AVAudioRecorder(url: audioFilename, settings: settings)
                 self.audioRecorder.delegate = self
                 self.audioRecorder.record()
@@ -248,7 +286,8 @@ extension RecordingViewController: AVAudioRecorderDelegate {
         audioRecorder = nil
         
         if success {
-            recordButton.setTitle("Tap to Re-record", for: .normal)
+           // recordButton.isEnabled = false
+            recordButton.setTitle("Done", for: .disabled)
             do {
                 try AudioKit.stop()
                 
@@ -268,13 +307,20 @@ extension RecordingViewController: AVAudioRecorderDelegate {
             startRecording()
         } else {
             finishRecording(success: true)
+            
         }
     }
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
         if !flag {
             finishRecording(success: false)
+            print("SHOOT")
         }
-    }
+        
+        print("I RAN!")
+        // MARK: - Reset
+        //Very important to reset the mic, or the app will crash.
+        mic.outputNode.removeTap(onBus: 0)
+            }
     
 }
 

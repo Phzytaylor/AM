@@ -10,13 +10,26 @@ import UIKit
 import Eureka
 import ImageRow
 import CoreData
+import MaterialComponents
 
 class LovedOneCreationViewController: FormViewController  {
-
+var appBar = MDCAppBar()
+    
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        self.addChildViewController(appBar.headerViewController)
+        self.appBar.headerViewController.headerView.trackingScrollView = self.tableView
+        appBar.addSubviewsToParent()
         
+        MDCAppBarColorThemer.applySemanticColorScheme(ApplicationScheme.shared.colorScheme, to: self.appBar)
         
         
         
@@ -138,3 +151,37 @@ class LovedOneCreationViewController: FormViewController  {
     */
 
 }
+
+extension LovedOneCreationViewController {
+     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if (scrollView == self.appBar.headerViewController.headerView.trackingScrollView) {
+            self.appBar.headerViewController.headerView.trackingScrollDidScroll()
+        }
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        if (scrollView == self.appBar.headerViewController.headerView.trackingScrollView) {
+            self.appBar.headerViewController.headerView.trackingScrollDidEndDecelerating()
+        }
+    }
+    
+     func scrollViewDidEndDragging(_ scrollView: UIScrollView,
+                                           willDecelerate decelerate: Bool) {
+        let headerView = self.appBar.headerViewController.headerView
+        if (scrollView == headerView.trackingScrollView) {
+            headerView.trackingScrollDidEndDraggingWillDecelerate(decelerate)
+        }
+    }
+    
+     func scrollViewWillEndDragging(_ scrollView: UIScrollView,
+                                            withVelocity velocity: CGPoint,
+                                            targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        let headerView = self.appBar.headerViewController.headerView
+        if (scrollView == headerView.trackingScrollView) {
+            headerView.trackingScrollWillEndDragging(withVelocity: velocity,
+                                                     targetContentOffset: targetContentOffset)
+        }
+    }
+
+}
+

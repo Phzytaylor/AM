@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8hg-Ap-O64">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -11,16 +11,31 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--User Info View Controller-->
+        <scene sceneID="Yxr-MS-szN">
+            <objects>
+                <viewController id="Y88-LM-pm2" customClass="UserInfoViewController" customModule="AfterMemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8SZ-Rf-VGq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="lXo-AJ-J6a"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0fE-Kg-0bJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="159" y="-1210"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AfterMemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="pinScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="AfterMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="uDG-af-er8">
-                                <rect key="frame" x="163" y="308.5" width="50" height="50"/>
+                                <rect key="frame" x="162.66666666666666" y="381" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4L-Us-bl9">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -31,7 +46,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.26274509800000001" green="0.58823529409999997" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uDG-af-er8" secondAttribute="trailing" constant="50" id="0Sp-SZ-2Ee"/>
                             <constraint firstItem="uDG-af-er8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="gv9-GD-k2I"/>
@@ -44,18 +59,160 @@
                         <outlet property="createAndEnterLabel" destination="k4L-Us-bl9" id="sxZ-qH-1eK"/>
                         <outlet property="passwordStackView" destination="uDG-af-er8" id="ZxG-cm-lAu"/>
                         <segue destination="aYR-D4-VCI" kind="show" identifier="toMain" id="B5a-dZ-0KW"/>
+                        <segue destination="Y88-LM-pm2" kind="show" identifier="userInfo" id="aY0-5c-PmZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-105" y="56"/>
+            <point key="canvasLocation" x="-602" y="-512"/>
+        </scene>
+        <!--Intro Page View Controller-->
+        <scene sceneID="0yx-lj-C1M">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="8hg-Ap-O64" customClass="IntroPageViewController" customModule="AfterMemo" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fzz-dC-twl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1463" y="-511"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="q2k-Ul-NGY">
+            <objects>
+                <viewController storyboardIdentifier="welcomeView" id="Xm6-I2-Sh8" customClass="WelcomeViewController" customModule="AfterMemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3WE-w6-ON5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uf3-aV-kJb">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <string key="text">Hey there, thanks so much for downloading AfterMemo.  AfterMemo is a memo time vault that allows you to record messages to be sent in the future for those you love.
+
+You're on track to make a priceless impact on the lives of those you love.</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P7a-na-JlL" customClass="AnimatedMaskLabel" customModule="AfterMemo" customModuleProvider="target">
+                                <rect key="frame" x="67" y="675" width="240" height="43"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="5VI-fZ-T7Q"/>
+                                    <constraint firstAttribute="height" constant="43" id="o1q-yY-89T"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Slide to next view"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uf3-aV-kJb" firstAttribute="leading" secondItem="b7l-tR-ao8" secondAttribute="leading" id="5pb-XH-UZ7"/>
+                            <constraint firstItem="b7l-tR-ao8" firstAttribute="bottom" secondItem="uf3-aV-kJb" secondAttribute="bottom" id="FCc-YA-zdh"/>
+                            <constraint firstItem="b7l-tR-ao8" firstAttribute="bottom" secondItem="P7a-na-JlL" secondAttribute="bottom" constant="60" id="Gqx-eU-Eku"/>
+                            <constraint firstItem="uf3-aV-kJb" firstAttribute="trailing" secondItem="b7l-tR-ao8" secondAttribute="trailing" id="Yd8-e9-GLg"/>
+                            <constraint firstItem="b7l-tR-ao8" firstAttribute="trailing" secondItem="P7a-na-JlL" secondAttribute="trailing" constant="68" id="nJG-Ov-g1Y"/>
+                            <constraint firstItem="uf3-aV-kJb" firstAttribute="top" secondItem="b7l-tR-ao8" secondAttribute="top" id="qTc-Xb-GtS"/>
+                            <constraint firstItem="P7a-na-JlL" firstAttribute="leading" secondItem="b7l-tR-ao8" secondAttribute="leading" constant="67" id="tVe-x6-TuE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b7l-tR-ao8"/>
+                    </view>
+                    <connections>
+                        <outlet property="animatedDirectionLabel" destination="P7a-na-JlL" id="Q9I-Ag-QJ6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NeR-yD-rC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1463" y="208"/>
+        </scene>
+        <!--Name Info View Controller-->
+        <scene sceneID="xVq-Jx-lic">
+            <objects>
+                <viewController storyboardIdentifier="nameView" id="Lol-rf-elj" customClass="NameInfoViewController" customModule="AfterMemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jwf-5v-W34">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vm7-vV-s5l">
+                                <rect key="frame" x="0.0" y="74.000000000000014" width="375" height="143.33333333333337"/>
+                                <string key="text">Setting up AfterMemo just takes a few steps.  Once complete you'll be set to start using the app.
+
+So, first we need to know a bit about you. </string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rzj-3S-hBg">
+                                <rect key="frame" x="10" y="341" width="355" height="130"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yrM-j9-7hT">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="40"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DJd-U7-7kh">
+                                        <rect key="frame" x="0.0" y="45" width="355" height="40"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5np-YK-593">
+                                        <rect key="frame" x="0.0" y="90" width="355" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveAction:" destination="Lol-rf-elj" eventType="touchUpInside" id="eAX-bt-A5F"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="faV-Zq-VSh"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NQB-DP-7Od" customClass="AnimatedMaskLabel" customModule="AfterMemo" customModuleProvider="target">
+                                <rect key="frame" x="67" y="675" width="240" height="43"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="FMv-2d-7oN"/>
+                                    <constraint firstAttribute="width" constant="240" id="Pwa-GM-4Un"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Next"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="B5p-Tx-ecH" firstAttribute="trailing" secondItem="Vm7-vV-s5l" secondAttribute="trailing" id="1KO-jY-qFh"/>
+                            <constraint firstItem="Vm7-vV-s5l" firstAttribute="top" secondItem="B5p-Tx-ecH" secondAttribute="top" constant="30" id="6kn-HF-GX7"/>
+                            <constraint firstItem="rzj-3S-hBg" firstAttribute="centerX" secondItem="jwf-5v-W34" secondAttribute="centerX" id="DkS-90-aOg"/>
+                            <constraint firstItem="rzj-3S-hBg" firstAttribute="centerY" secondItem="jwf-5v-W34" secondAttribute="centerY" id="Ghj-TZ-nKh"/>
+                            <constraint firstItem="B5p-Tx-ecH" firstAttribute="trailing" secondItem="rzj-3S-hBg" secondAttribute="trailing" constant="10" id="JkK-l0-HcY"/>
+                            <constraint firstItem="NQB-DP-7Od" firstAttribute="leading" secondItem="B5p-Tx-ecH" secondAttribute="leading" constant="67" id="LQ0-wO-ADi"/>
+                            <constraint firstItem="B5p-Tx-ecH" firstAttribute="trailing" secondItem="NQB-DP-7Od" secondAttribute="trailing" constant="68" id="bju-QR-gEw"/>
+                            <constraint firstItem="B5p-Tx-ecH" firstAttribute="bottom" secondItem="NQB-DP-7Od" secondAttribute="bottom" constant="60" id="jRT-Wz-drt"/>
+                            <constraint firstItem="rzj-3S-hBg" firstAttribute="leading" secondItem="B5p-Tx-ecH" secondAttribute="leading" constant="10" id="jtq-Qv-5bI"/>
+                            <constraint firstItem="Vm7-vV-s5l" firstAttribute="leading" secondItem="B5p-Tx-ecH" secondAttribute="leading" id="sQ9-FT-Y2q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="B5p-Tx-ecH"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstNameTextField" destination="yrM-j9-7hT" id="4G3-57-HJ8"/>
+                        <outlet property="lastNameTextField" destination="DJd-U7-7kh" id="Iv1-Ju-Zdg"/>
+                        <outlet property="nextLabel" destination="NQB-DP-7Od" id="34t-03-Q3m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xfT-3A-MjJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-602" y="208"/>
         </scene>
         <!--Selection Collection View Controller-->
         <scene sceneID="lnT-XE-1uN">
             <objects>
                 <collectionViewController id="2jx-XO-b1e" customClass="SelectionCollectionViewController" customModule="AfterMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="dp4-iQ-xbO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" id="8K3-VG-HFL">
@@ -128,7 +285,7 @@
             <objects>
                 <collectionViewController storyboardIdentifier="recordingChoice" id="xQv-XY-lLm" customClass="RecordingChoiceCollectionViewController" customModule="AfterMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="xIv-le-IqP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="5" id="DN6-6b-rPv">
@@ -155,7 +312,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dDL-Ca-CBI">
-                                            <rect key="frame" x="64.5" y="44" width="50" height="50"/>
+                                            <rect key="frame" x="64.666666666666671" y="44" width="50" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="YOC-07-ffG"/>
                                                 <constraint firstAttribute="width" constant="50" id="fhM-kO-egg"/>
@@ -193,7 +350,7 @@
             <objects>
                 <viewController id="dEQ-4r-5cn" customClass="WrittenMemoViewController" customModule="AfterMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ebr-ye-Kri">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="HRX-nP-U1u"/>
@@ -203,12 +360,45 @@
             </objects>
             <point key="canvasLocation" x="3782" y="-511"/>
         </scene>
+        <!--Text Memo Preview View Controller-->
+        <scene sceneID="dgb-ki-FJI">
+            <objects>
+                <viewController id="w7D-OF-hq1" customClass="TextMemoPreviewViewController" customModule="AfterMemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RXs-Ku-Q31" customClass="TextMemoPreviewView" customModule="AfterMemo" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ME9-PT-nL5">
+                                <rect key="frame" x="0.0" y="94" width="375" height="718"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ME9-PT-nL5" firstAttribute="leading" secondItem="4jK-0p-LVL" secondAttribute="leading" id="G4f-J0-11k"/>
+                            <constraint firstItem="ME9-PT-nL5" firstAttribute="top" secondItem="4jK-0p-LVL" secondAttribute="top" constant="50" id="XXZ-Pd-SxE"/>
+                            <constraint firstItem="ME9-PT-nL5" firstAttribute="trailing" secondItem="4jK-0p-LVL" secondAttribute="trailing" id="bGr-GS-iOX"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ME9-PT-nL5" secondAttribute="bottom" constant="-34" id="cK2-gz-WdP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4jK-0p-LVL"/>
+                        <connections>
+                            <outlet property="textMemoTextView" destination="ME9-PT-nL5" id="gn2-lN-tuc"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="321-xi-QRD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1244" y="1032"/>
+        </scene>
         <!--Loved One Creation View Controller-->
         <scene sceneID="9Fi-QB-mBU">
             <objects>
                 <viewController id="elg-hV-VPo" customClass="LovedOneCreationViewController" customModule="AfterMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B5O-ye-Y2P">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="C79-tW-0AN"/>
@@ -223,7 +413,7 @@
             <objects>
                 <tableViewController id="9bM-r7-Jq6" customClass="LovedOneSelectionTableViewController" customModule="AfterMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dp9-V7-GUS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -231,7 +421,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xdZ-ek-bVL" id="7Wv-oh-BJo">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4DZ-k4-fzg">
@@ -242,7 +432,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMb-83-LFA">
-                                            <rect key="frame" x="76" y="0.0" width="299" height="99.5"/>
+                                            <rect key="frame" x="76" y="0.0" width="299" height="99.666666666666671"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -287,18 +477,18 @@
             <objects>
                 <collectionViewController id="uKG-er-oIa" customClass="MainCollectionViewController" customModule="AfterMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="pPc-ze-Uch">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.81960784310000001" green="0.85098039219999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3q8-pk-3bl">
                             <size key="itemSize" width="150" height="150"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="memo" id="BO2-t2-XGx" customClass="UserCollectionViewCell" customModule="AfterMemo" customModuleProvider="target">
-                                <rect key="frame" x="5" y="5" width="150" height="150"/>
+                                <rect key="frame" x="5" y="55" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                     <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
@@ -306,13 +496,14 @@
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SWU-LL-5BJ">
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="119"/>
-                                            <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="150" id="aZY-AH-gOx"/>
                                                 <constraint firstAttribute="height" constant="119" id="rZj-WS-yD6"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSL-pC-nce">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Yet Tagged" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSL-pC-nce">
                                             <rect key="frame" x="0.0" y="117" width="150" height="33"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -336,16 +527,35 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="mediaHeader" id="jgs-kI-8aW" customClass="MediaHeader" customModule="AfterMemo" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXi-7d-Ne9">
+                                    <rect key="frame" x="8" y="8" width="359" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="TXi-7d-Ne9" firstAttribute="leading" secondItem="jgs-kI-8aW" secondAttribute="leadingMargin" id="Eqp-4u-kvg"/>
+                                <constraint firstAttribute="trailingMargin" secondItem="TXi-7d-Ne9" secondAttribute="trailing" id="fJc-IC-z01"/>
+                                <constraint firstAttribute="bottomMargin" secondItem="TXi-7d-Ne9" secondAttribute="bottom" id="fSd-a8-qyh"/>
+                                <constraint firstItem="TXi-7d-Ne9" firstAttribute="top" secondItem="jgs-kI-8aW" secondAttribute="topMargin" id="svK-40-mkI"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="mediaLabel" destination="TXi-7d-Ne9" id="pMr-gj-bJt"/>
+                            </connections>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="uKG-er-oIa" id="etW-WF-LEJ"/>
                             <outlet property="delegate" destination="uKG-er-oIa" id="cBd-i4-WDC"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="s8x-KA-keP">
-                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="z3v-nI-WWQ"/>
-                    </navigationItem>
                     <connections>
                         <segue destination="6Xv-3Z-Fge" kind="show" identifier="playVideo" id="yo4-gj-cUB"/>
+                        <segue destination="w7D-OF-hq1" kind="show" identifier="textMemoPreview" id="OMd-Xf-jNO"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="80j-Rh-Hcz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -366,7 +576,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aYR-D4-VCI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bZ-CX-uKb">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -383,11 +593,11 @@
             <objects>
                 <viewController id="sHI-3U-pY5" customClass="RecordingViewController" customModule="AfterMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5rb-oa-Mcy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIC-ok-ljC">
-                                <rect key="frame" x="122" y="303" width="130" height="60"/>
+                                <rect key="frame" x="122.66666666666669" y="376" width="130" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="2Dr-qm-Amh"/>
                                     <constraint firstAttribute="height" constant="60" id="kWI-hg-GJC"/>
@@ -400,7 +610,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DDE-GH-gZb" customClass="EZAudioPlot">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="251"/>
+                                <rect key="frame" x="0.0" y="2" width="375" height="251"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="YX8-Hd-VzB"/>
@@ -417,7 +627,7 @@
                         <constraints>
                             <constraint firstItem="nIC-ok-ljC" firstAttribute="centerX" secondItem="5rb-oa-Mcy" secondAttribute="centerX" id="HQb-eE-PlW"/>
                             <constraint firstItem="nIC-ok-ljC" firstAttribute="centerY" secondItem="5rb-oa-Mcy" secondAttribute="centerY" id="SRX-h8-X57"/>
-                            <constraint firstItem="DDE-GH-gZb" firstAttribute="top" secondItem="DzZ-Y9-02j" secondAttribute="top" constant="-20" id="bfY-bP-VmR"/>
+                            <constraint firstItem="DDE-GH-gZb" firstAttribute="top" secondItem="5rb-oa-Mcy" secondAttribute="top" constant="2" id="bfY-bP-VmR"/>
                             <constraint firstItem="DDE-GH-gZb" firstAttribute="leading" secondItem="DzZ-Y9-02j" secondAttribute="leading" id="cG2-Eh-jTI"/>
                             <constraint firstItem="DDE-GH-gZb" firstAttribute="trailing" secondItem="DzZ-Y9-02j" secondAttribute="trailing" id="msp-pm-Xio"/>
                         </constraints>
@@ -438,7 +648,7 @@
             <objects>
                 <viewController id="e54-lo-h7f" customClass="VoiceMemoAtrributeViewController" customModule="AfterMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mfM-8p-uQX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="aRU-3n-v3p"/>
@@ -453,7 +663,7 @@
             <objects>
                 <viewController id="ezE-tA-az1" customClass="VideoAtrributesViewController" customModule="AfterMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9en-7N-2E7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ydJ-0P-qZI"/>

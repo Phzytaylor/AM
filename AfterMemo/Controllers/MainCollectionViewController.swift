@@ -11,27 +11,14 @@ import CoreData
 import AVFoundation
 import AVKit
 import MobileCoreServices
+import MaterialComponents
 
 
 private let reuseIdentifier = "memo"
 
 class MainCollectionViewController: UICollectionViewController {
     
-    @IBAction func updateInfoAction(_ sender: UIButton) {
-
-        guard let cell = sender.superview?.superview as? UserCollectionViewCell else {
-            
-            print("I failed big time")
-            return
-        }
-        guard  let indexPath = collectionView?.indexPath(for: cell) else {
-            return
-        }
-        
-
-        print(" I am: \(indexPath.row)")
-        
-    }
+   
    
     
     
@@ -45,14 +32,14 @@ class MainCollectionViewController: UICollectionViewController {
     
     var combinedArray: [NSManagedObject] = []
     
- 
-    // MARK: - TODO
-    //Make sure to pass the selected person then do a coredata fetch request and load their memos.
+    var appBar = MDCAppBar()
     
     
     
-
-//    var tempArray = ["1 Video", "2 Videos","More stuff", "testing things","1 Video", "2 Videos","More stuff", "testing things"]
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
     
     
     override func viewDidLoad() {
@@ -61,38 +48,27 @@ class MainCollectionViewController: UICollectionViewController {
         let layout = collectionView?.collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = CGSize(width:width, height:width)
         
+        
+        self.addChildViewController(appBar.headerViewController)
+        self.appBar.headerViewController.headerView.trackingScrollView = self.collectionView
+        appBar.addSubviewsToParent()
+        
+        MDCAppBarColorThemer.applySemanticColorScheme(ApplicationScheme.shared.colorScheme, to: self.appBar)
+        
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         
         let managedContext = appDelegate.persistentContainer.viewContext
         
-      
+        
+        guard let videos = passedRecipient?.videos else {
+            print(" NOT WORKING")
+            return }
+        
+        print(videos.count)
         
         
-//        let videosFetch: NSFetchRequest<Videos> = Videos.fetchRequest()
-//        let audioMemosFetch: NSFetchRequest<VoiceMemos> = VoiceMemos.fetchRequest()
-//
-//        do {
-//            videosArray = try managedContext.fetch(videosFetch)
-//            voiceMemosArray = try managedContext.fetch(audioMemosFetch)
-//
-//            if videosArray.count > 0 {
-//                for element in videosArray {
-//                    combinedArray.append(element)
-//                }
-//            }
-//            if voiceMemosArray.count > 0 {
-//                for element in voiceMemosArray {
-//                    combinedArray.append(element)
-//                }
-//
-//            }
-//
-//        } catch let error as NSError {
-//            print("Could not find videos: \(error), \(error.userInfo)")
-//        }
         
-       
-    
+  
     }
 
     override func didReceiveMemoryWarning() {
@@ -119,10 +95,11 @@ class MainCollectionViewController: UICollectionViewController {
                 return
             }
             
-            let filePathItem = combinedArray[indexPath.row]
+            guard let filePathItem = passedRecipient?.videos?[indexPath.row] as? Videos else{
+                return
+            }
             
-            let filePath = filePathItem.value(forKey: "urlPath") as? String
-            
+            let filePath = filePathItem.urlPath
             print(" This is a file Path: \(filePath)")
             
             let nextViewCon = segue.destination as! TestViewController
@@ -136,6 +113,23 @@ class MainCollectionViewController: UICollectionViewController {
             let destinationVC = segue.destination as! VideoAtrributesViewController
             
             destinationVC.passedVideoURL = fileName
+        } else if segue.identifier == "textMemoPreview" {
+            
+            
+            guard let userCell: UserCollectionViewCell = sender as? UserCollectionViewCell else {
+                print("I failed")
+                return
+            }
+            
+            guard let indexPath: IndexPath = collectionView?.indexPath(for: userCell) else {
+                return
+            }
+            
+            let destinationVC = segue.destination as! TextMemoPreviewViewController
+            
+            guard let textToPass = passedRecipient?.written?[indexPath.row] as? Written else {return}
+            
+            destinationVC.textForMemo = textToPass.memoText
         }
         
         
@@ -156,7 +150,11 @@ class MainCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
         if section == 0 {
-            guard let videos = passedRecipient?.videos else {return 0}
+            guard let videos = passedRecipient?.videos else {
+                print(" NOT WORKING")
+                return 0}
+            
+            print(videos.count)
             return videos.count
         } else if section == 1 {
             guard let audios = passedRecipient?.voice else {return 0}
@@ -180,76 +178,180 @@ class MainCollectionViewController: UICollectionViewController {
       
         if indexPath.section == 0 {
         
-            guard let video = passedRecipient?.videos?[indexPath.row] as? Videos else {return cell}
+            guard let video = passedRecipient?.videos?[indexPath.row] as? Videos else {
+                
+                print("I am not working")
+                return cell}
             
             
-            var texts = combinedArray[indexPath.row]
         
-        if texts.value(forKey: "isVideo") as? Bool == true {
-
-    cell.cellTextLabel.text = texts.value(forKey: "videoTag") as? String
+        if video.value(forKey: "isVideo") as? Bool == true {
             
-            if let picture = texts.value(forKey: "thumbNail") as? Data {
-                cell.videoImage.image = UIImage(data: picture)
+            var textForCell = video.value(forKey: "videoTag") as? String
+            
+            if textForCell == nil {
+                
+                if let picture = video.value(forKey: "thumbNail") as? Data {
+                    cell.videoImage.image = UIImage(data: picture)
+                    
+                }
+                
+                return cell
+            } else {
+                 cell.cellTextLabel.text = video.value(forKey: "videoTag") as? String
+                if let picture = video.value(forKey: "thumbNail") as? Data {
+                    cell.videoImage.image = UIImage(data: picture)
+                    
+                }
+                
+                return cell
+                
+            }
+
+   
+            
+            
+            
+        }
+            
+            
+        } else if indexPath.section == 1 {
+            guard let voices = passedRecipient?.voice?[indexPath.row] as? VoiceMemos else {return cell}
+            
+            
+            
+            if voices.value(forKey: "isVoiceMemo") as? Bool == true {
+                var textForCell = voices.value(forKey: "audioTag") as? String
+                
+                if textForCell == nil {
+                  
+                    cell.videoImage.contentMode = .scaleAspectFit
+                    cell.videoImage.image = #imageLiteral(resourceName: "sharp_mic_none_white_48pt")
+                    return cell
+                    
+                } else {
+                    cell.cellTextLabel.text = voices.value(forKey: "audioTag") as? String
+                    cell.videoImage.contentMode = .scaleAspectFit
+                    cell.videoImage.image = #imageLiteral(resourceName: "sharp_mic_none_white_48pt")
+                    return cell
+                }
+                
                 
             }
             
             
-        } else if texts.value(forKey: "isVoiceMemo") as? Bool == true {
-            cell.cellTextLabel.text = texts.value(forKey: "audioTag") as? String
+        } else if indexPath.section == 2 {
+            
+            guard let writtens = passedRecipient?.written?[indexPath.row] as? Written else {return cell}
+            if writtens.value(forKey: "isWrittenMemo") as? Bool == true {
+            
+                cell.cellTextLabel.text = writtens.value(forKey: "writtenTag") as? String
+                cell.videoImage.contentMode = .scaleAspectFit
+                cell.videoImage.image = #imageLiteral(resourceName: "outline_chat_white_48pt")
+                
+                return cell
+                
+                
+            }
+            
         }
-        
         return cell
         }
-        return cell
-    }
+    
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let tappedItem = combinedArray[indexPath.row]
-        guard let tappedItemType = tappedItem.value(forKey: "isVideo") as? Bool else{
-            return
-        }
         
-        guard let tappedItemURL = tappedItem.value(forKey: "urlPath") as? String else {
-            return
-        }
+        let section = indexPath.section
         
-        if tappedItemType{
-//            performSegue(withIdentifier: "playVideo", sender: collectionView.cellForItem(at: indexPath))
+        if section == 0 {
             
+            guard let video = passedRecipient?.videos?[indexPath.row] as? Videos else {
+                
+               
+                return}
             
+            guard let videoURL = video.urlPath else {return}
             let paths = NSSearchPathForDirectoriesInDomains(
                 FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
             let documentsDirectory: URL = URL(fileURLWithPath: paths[0])
-            let dataPath = documentsDirectory.appendingPathComponent(tappedItemURL)
+            let dataPath = documentsDirectory.appendingPathComponent(videoURL)
             
-            let videoURL = URL(string: dataPath.absoluteString)
-            let player = AVPlayer(url: videoURL!)
+            guard let videoURLForPlayBack = URL(string: dataPath.absoluteString) else {return}
+            let player = AVPlayer(url: videoURLForPlayBack)
             let playerViewController = AVPlayerViewController()
             playerViewController.player = player
             self.present(playerViewController, animated: true) {
                 playerViewController.player!.play()
             }
+        } else if section == 1 {
             
-        } else if !tappedItemType {
-           let audioFile = self.getDocumentsDirectory().appendingPathComponent(tappedItemURL)
+            guard let audio = passedRecipient?.voice?[indexPath.row] as? VoiceMemos else {return}
+            
+            guard let audioURL = audio.urlPath else {return}
+            
+            let audioFile = self.getDocumentsDirectory().appendingPathComponent(audioURL)
             
             
             do{
                 audioPlayer =  try AVAudioPlayer(contentsOf: audioFile)
                 
                 audioPlayer?.delegate = self
+                audioPlayer?.stop()
                 audioPlayer?.play()
             } catch {
                 
                 print("Could not play.")
             }
             
+        } else if section == 2 {
+            //TODO: -Implement a screen to view the written
+            
+            performSegue(withIdentifier: "textMemoPreview", sender: collectionView.cellForItem(at: indexPath))
         }
-        
+  
         
     }
+    
+    
+    override func collectionView(_ collectionView: UICollectionView,
+                                 viewForSupplementaryElementOfKind kind: String,
+                                 at indexPath: IndexPath) -> UICollectionReusableView {
+        //1
+        switch kind {
+        //2
+        case UICollectionElementKindSectionHeader:
+            //3
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+                                                                             withReuseIdentifier: "mediaHeader",
+                                                                             for: indexPath) as! MediaHeader
+            let section = indexPath.section
+            if section == 0 {
+                
+                
+                headerView.mediaLabel.text = "Video Memos"
+                
+                
+            } else if section == 1 {
+
+                headerView.mediaLabel.text = "Voice Memos"
+                
+                
+            } else if section == 2 {
+                
+               headerView.mediaLabel.text = "Text Memos"
+                
+                
+                
+            }
+            
+            return headerView
+        default:
+            //4
+            assert(false, "Unexpected element kind")
+        }
+    }
+    
     
    
     
@@ -313,6 +415,37 @@ extension MainCollectionViewController {
         {
             print("Image generation failed with error \(error)")
             return nil
+        }
+    }
+    
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if (scrollView == self.appBar.headerViewController.headerView.trackingScrollView) {
+            self.appBar.headerViewController.headerView.trackingScrollDidScroll()
+        }
+    }
+    
+    override func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        if (scrollView == self.appBar.headerViewController.headerView.trackingScrollView) {
+            self.appBar.headerViewController.headerView.trackingScrollDidEndDecelerating()
+        }
+    }
+    
+    override func scrollViewDidEndDragging(_ scrollView: UIScrollView,
+                                           willDecelerate decelerate: Bool) {
+        let headerView = self.appBar.headerViewController.headerView
+        if (scrollView == headerView.trackingScrollView) {
+            headerView.trackingScrollDidEndDraggingWillDecelerate(decelerate)
+        }
+    }
+    
+    override func scrollViewWillEndDragging(_ scrollView: UIScrollView,
+                                            withVelocity velocity: CGPoint,
+                                            targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        let headerView = self.appBar.headerViewController.headerView
+        if (scrollView == headerView.trackingScrollView) {
+            headerView.trackingScrollWillEndDragging(withVelocity: velocity,
+                                                     targetContentOffset: targetContentOffset)
         }
     }
 }

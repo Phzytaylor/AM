@@ -12,21 +12,41 @@ import AVKit
 import AVFoundation
 import MobileCoreServices
 import DZNEmptyDataSet
+import MaterialComponents
 
 class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataSetDelegate, DZNEmptyDataSetSource {
     var mediaSelected = ""
     var fileName = ""
     var personsArray: [NSManagedObject] = []
+    var selectedCellBeforeAlert: Int?
+    var appBar = MDCAppBar()
+    var videoToPass: Videos?
    
     @objc func createNewLovedOne() {
         performSegue(withIdentifier: "createLovedOne", sender: self)
     }
+    
+    
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.emptyDataSetDelegate = self
         self.tableView.emptyDataSetSource = self
         tableView.tableFooterView = UIView()
+        
+        self.addChildViewController(appBar.headerViewController)
+        self.appBar.headerViewController.headerView.trackingScrollView = self.tableView
+        appBar.addSubviewsToParent()
+        
+        MDCAppBarColorThemer.applySemanticColorScheme(ApplicationScheme.shared.colorScheme, to: self.appBar)
         
         let rightButton = UIBarButtonItem(title: "Add Loved One", style: .plain, target: self, action: #selector(self.createNewLovedOne))
         self.navigationItem.rightBarButtonItem = rightButton
@@ -124,17 +144,19 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if mediaSelected == "audio"{
-            
+             selectedCellBeforeAlert = indexPath.row
             self.performSegue(withIdentifier: "newAudioMemo", sender: self)
             
         } else if mediaSelected == "video" {
-             VideoHelper.startMediaBrowser(delegate: self, sourceType: .camera)
+            selectedCellBeforeAlert = indexPath.row
+            VideoHelper.startMediaBrowser(delegate: self, sourceType: .camera)
             
         } else if mediaSelected == "written" {
-            
+             selectedCellBeforeAlert = indexPath.row
              self.performSegue(withIdentifier: "toWrittenMemo", sender: self)
             
         } else if mediaSelected == "none" {
+              selectedCellBeforeAlert = indexPath.row
             self.performSegue(withIdentifier: "showMemos", sender: self)
         }
     }
@@ -182,8 +204,10 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        guard  let indexPath = self.tableView.indexPathForSelectedRow else {return}
-        let person = indexPath.row
+//        guard  let indexPath = self.tableView.indexPathForSelectedRow else {
+//            print("I am not working")
+//            return}
+        guard let person = selectedCellBeforeAlert else {return}
         
         if segue.identifier == "newAudioMemo" {
             
@@ -193,9 +217,18 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
             
         } else if segue.identifier == "videoAtributes" {
             
+            if segue.identifier == "videoAtributes" {
+                print("True")
+            }
+            
             guard let desitnationVC = segue.destination as? VideoAtrributesViewController else {return}
             
             desitnationVC.selectedPerson = personsArray[person] as? Recipient
+            print(personsArray[person])
+            
+            desitnationVC.passedVideo = videoToPass
+            
+            print("THE PASSED \(videoToPass)")
             
             
         } else if segue.identifier == "toWrittenMemo"{
@@ -207,6 +240,8 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
         } else if segue.identifier == "showMemos" {
             guard let destinationVC = segue.destination as? MainCollectionViewController else {return}
             
+            print(personsArray[person] as? Recipient)
+            
             destinationVC.passedRecipient = personsArray[person] as? Recipient
         }
         
@@ -215,52 +250,56 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
     
     
     func save(url:String, _ tempFilePath: URL){
+
+        guard let cellSelected = selectedCellBeforeAlert else {
+            print("There was no selection")
+            return
+        }
+        print("THe SELECTED CELL: \(cellSelected)")
         
-        
-        guard let indexPath = self.tableView.indexPathForSelectedRow else {return}
-        
-        let cellSelected = indexPath.row
-        
-        
-        
-        var selectedPerson = personsArray[cellSelected]
-        
-        
+        var selectedPerson = personsArray[cellSelected] as? Recipient
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{ return }
         
-        let managedContext = appDelegate.persistentContainer.viewContext
+      let managedContext = appDelegate.persistentContainer.viewContext
+   
         
-        let entity = NSEntityDescription.entity(forEntityName: "Videos", in: managedContext)!
+        let video = Videos(context: managedContext)
         
-        let videos = NSManagedObject(entity: entity, insertInto: managedContext)
+        videoToPass = video
         
         guard let savedImage = previewImageForLocalVideo(url: tempFilePath) else {
             return
         }
         let savedImageData = UIImagePNGRepresentation(savedImage) as NSData?
-        videos.setValue(savedImageData, forKey: "thumbNail")
-        videos.setValue(url, forKey: "urlPath")
-        videos.setValue(true, forKey: "isVideo")
-        videos.setValue(false, forKey: "isVoiceMemo")
-        videos.setValue(false, forKey: "isWrittenMemo")
-        videos.setValue(selectedPerson, forKey: "recipient")
-        selectedPerson.setValue(videos, forKey: "videos")
+        
+        
+        video.thumbNail = savedImageData
+        video.urlPath = url
+        video.isVideo = true
+        video.isVoiceMemo = false
+        video.isWrittenMemo = false
+        
+        
+        if let videos = selectedPerson?.videos?.mutableCopy() as? NSMutableOrderedSet {
+            videos.add(video)
+            selectedPerson?.videos = videos
+        }
         
         let addAtributesAlert = UIAlertController(title: "Add Now?", message: "Would you like to add detials to the video?", preferredStyle: .alert)
         
         addAtributesAlert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (UIAlertAction) in
-            self.performSegue(withIdentifier: "videoAtributes", sender: self)
+            self.performSegue(withIdentifier: "videoAtributes", sender: LovedOneSelectionTableViewController())
         }))
         
         addAtributesAlert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
         
         do {
             try managedContext.save()
-            //videosArray.append(videos)
-            // combinedArray.append(videos)
-            //            let index = IndexPath(row: combinedArray.count - 1, section: 0)
-            //            collectionView?.insertItems(at: [index])
+            print("THIS IS THE SELECTED PERSON: \(selectedPerson)")
+            print("I saved")
+            
+            self.tableView.reloadData()
             DispatchQueue.main.async {
                 
                 
@@ -319,12 +358,13 @@ extension LovedOneSelectionTableViewController: UIImagePickerControllerDelegate 
                 
                 self.save(url: self.fileName, dataPath)
                 
+                
             }
             catch {
                 print("The video did not save")
                 return
             }
-            print("saved!")
+            
             
             
             
@@ -363,6 +403,40 @@ extension LovedOneSelectionTableViewController {
             return nil
         }
     }
+    
+    
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if (scrollView == self.appBar.headerViewController.headerView.trackingScrollView) {
+            self.appBar.headerViewController.headerView.trackingScrollDidScroll()
+        }
+    }
+    
+    override func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        if (scrollView == self.appBar.headerViewController.headerView.trackingScrollView) {
+            self.appBar.headerViewController.headerView.trackingScrollDidEndDecelerating()
+        }
+    }
+    
+    override func scrollViewDidEndDragging(_ scrollView: UIScrollView,
+                                           willDecelerate decelerate: Bool) {
+        let headerView = self.appBar.headerViewController.headerView
+        if (scrollView == headerView.trackingScrollView) {
+            headerView.trackingScrollDidEndDraggingWillDecelerate(decelerate)
+        }
+    }
+    
+    override func scrollViewWillEndDragging(_ scrollView: UIScrollView,
+                                            withVelocity velocity: CGPoint,
+                                            targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        let headerView = self.appBar.headerViewController.headerView
+        if (scrollView == headerView.trackingScrollView) {
+            headerView.trackingScrollWillEndDragging(withVelocity: velocity,
+                                                     targetContentOffset: targetContentOffset)
+        }
+    }
+    
+
     
     
    

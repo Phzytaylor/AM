@@ -25,7 +25,7 @@ var appBar = MDCAppBar()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "New Voice Memo"
+        self.title = "New Written Memo"
 
         self.addChildViewController(appBar.headerViewController)
         self.appBar.headerViewController.headerView.trackingScrollView = self.tableView
@@ -37,6 +37,7 @@ var appBar = MDCAppBar()
             <<< TextAreaRow(){row in
                 row.title = "Write A Memo"
                 row.placeholder = "Think of a future event such as a graduation, tell them how much you love them and how proud you are."
+                row.tag = "memoText"
         }
         
        +++ Section("Add some details")
@@ -96,6 +97,10 @@ var appBar = MDCAppBar()
                     guard let timeRow: TimeRow = self?.form.rowBy(tag: "timeTag") else {return}
                     guard let timeRowValue = timeRow.value else {return}
                     
+                    guard let memoTextRow: TextAreaRow = self?.form.rowBy(tag: "memoText") else {return}
+                    
+                    guard let memoTexRowValue = memoTextRow.value else {return}
+                    
                     
                     
                     print("validating errors: \(row.section?.form?.validate().count)")
@@ -103,7 +108,7 @@ var appBar = MDCAppBar()
                         
                         //save function
                         
-                       self?.save(memoTag: memoTagRowValue, releaseDate: dateRowValue, releaseTime: timeRowValue)
+                        self?.save(memoTag: memoTagRowValue, releaseDate: dateRowValue, releaseTime: timeRowValue, memoText: memoTexRowValue)
                         
                     }
                         
@@ -121,26 +126,38 @@ var appBar = MDCAppBar()
     
     
     
-    func save(memoTag: String, releaseDate: Date, releaseTime: Date){
+    func save(memoTag: String, releaseDate: Date, releaseTime: Date, memoText: String){
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{ return }
         
         let managedContext = appDelegate.persistentContainer.viewContext
         
-        let entity = NSEntityDescription.entity(forEntityName: "Written", in: managedContext)!
-        
-        let writtens = NSManagedObject(entity: entity, insertInto: managedContext)
+       let written = Written(context: managedContext)
         
     guard let theSelectedPerson = selectedPerson else {return}
                 
-            writtens.setValue(memoTag, forKey: "writtenTag")
-            writtens.setValue(releaseDate, forKey: "dateToBeReleased")
-            writtens.setValue(releaseTime, forKey: "releaseTime")
-        writtens.setValue(theSelectedPerson, forKey: "recipient")
-        writtens.setValue(false, forKey: "isVideo")
-        writtens.setValue(false, forKey: "isVoiceMemo")
-        writtens.setValue(true, forKey: "isWrittenMemo")
-            theSelectedPerson.setValue(writtens, forKey: "written")
+//            writtens.setValue(memoTag, forKey: "writtenTag")
+//            writtens.setValue(releaseDate, forKey: "dateToBeReleased")
+//            writtens.setValue(releaseTime, forKey: "releaseTime")
+//        writtens.setValue(theSelectedPerson, forKey: "recipient")
+//        writtens.setValue(false, forKey: "isVideo")
+//        writtens.setValue(false, forKey: "isVoiceMemo")
+//        writtens.setValue(true, forKey: "isWrittenMemo")
+//            theSelectedPerson.setValue(writtens, forKey: "written")
+        
+        written.writtenTag = memoTag
+        written.dateToBeReleased = releaseDate as NSDate
+        written.releaseTime = releaseTime as NSDate
+        written.isVideo = false
+        written.isVoiceMemo = false
+        written.isWrittenMemo = true
+        written.memoText = memoText
+        
+        if let writtens = theSelectedPerson.written?.mutableCopy() as? NSMutableOrderedSet {
+            writtens.add(written)
+            theSelectedPerson.written = writtens
+        }
+        
         
                 do {
                     try managedContext.save()

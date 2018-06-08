@@ -11,10 +11,14 @@ import UIKit
 import Eureka
 import ImageRow
 import CoreData
+import FirebaseAuth
+import FirebaseStorage
+import FirebaseDatabase
 
 class VoiceMemoAtrributeViewController: FormViewController {
     var selectedPerson: Recipient?
     var audioURL: String = ""
+    var sentVoiceMemo: VoiceMemos?
     override func viewDidLoad() {
         super.viewDidLoad()
         form +++ Section()
@@ -63,8 +67,8 @@ class VoiceMemoAtrributeViewController: FormViewController {
                 }
                 .onCellSelection { [weak self] (cell, row) in
                     
-                    guard let videoTagRow: TextRow = self?.form.rowBy(tag: "audioTag") else {return}
-                    guard let videoTagRowValue = videoTagRow.value else {return}
+                    guard let auidoTagRow: TextRow = self?.form.rowBy(tag: "audioTag") else {return}
+                    guard let audioTagRowValue = auidoTagRow.value else {return}
                     guard let dateRow: DateRow = self?.form.rowBy(tag: "dateTag") else {
                         return
                     }
@@ -84,11 +88,11 @@ class VoiceMemoAtrributeViewController: FormViewController {
                         
                         if self?.audioURL == nil || self?.audioURL == "" {
                             
-                            self?.save(audioTag: videoTagRowValue, releaseDate: dateRowValue, releaseTime: timeRowValue, passedURL: (self?.audioURL)!)
+                            self?.save(audioTag: audioTagRowValue, releaseDate: dateRowValue, releaseTime: timeRowValue, passedURL: (self?.audioURL)!)
                             
                         } else {
                         
-                            self?.save(audioTag: videoTagRowValue, releaseDate: dateRowValue, releaseTime: timeRowValue, passedURL: (self?.audioURL)!)
+                            self?.save(audioTag: audioTagRowValue, releaseDate: dateRowValue, releaseTime: timeRowValue, passedURL: (self?.audioURL)!)
                             
                         }
                         
@@ -112,39 +116,85 @@ class VoiceMemoAtrributeViewController: FormViewController {
         
         let managedContext = appDelegate.persistentContainer.viewContext
         
-        let audioFetch: NSFetchRequest<VoiceMemos> = VoiceMemos.fetchRequest()
-        audioFetch.predicate = NSPredicate(format: "%K == %@", #keyPath(VoiceMemos.urlPath),
-                                           passedURL)
         
-        do {
-            let results = try managedContext.fetch(audioFetch)
-            if results.count > 0 {
-                
-                guard  let currentaudio = results.first else {return}
+        guard let currentaudio = sentVoiceMemo else {
+            print("The voice memo did not pass")
+            return}
+        
               
-                currentaudio.setValue(audioTag, forKey: "audioTag")
-                currentaudio.setValue(releaseDate, forKey: "dateToBeReleased")
-                currentaudio.setValue(releaseTime, forKey: "releaseTime")
+                currentaudio.audioTag = audioTag
+                currentaudio.dateToBeReleased = releaseDate as NSDate
+                currentaudio.releaseTime = releaseTime as NSDate
+                
+                
+//                currentaudio.setValue(audioTag, forKey: "audioTag")
+//                currentaudio.setValue(releaseDate, forKey: "dateToBeReleased")
+//                currentaudio.setValue(releaseTime, forKey: "releaseTime")
                 
                 do {
                     try managedContext.save()
                     print(" I saved")
                     
+                    guard let audioURL = currentaudio.urlPath else {return}
+                    
+                    let audioFile = self.getDocumentsDirectory().appendingPathComponent(audioURL)
+                    
+                    guard let userID = Auth.auth().currentUser?.uid else {return}
+                    
+                    let uploadLink = Storage.storage().reference().child(userID).child("voiceMemos").child(audioURL + audioTag)
+                    
+                    uploadLink.putFile(from: audioFile, metadata: nil) { (metadata, error) in
+                        if error != nil {
+                            print("Could not upload voice memo")
+                            return
+                        } else {
+                            uploadLink.downloadURL(completion: { (url, error) in
+                                if error != nil {
+                                    print("url not available")
+                                } else {
+                                    let dataBasePath = Database.database().reference().child("audioMemos").child(userID).childByAutoId()
+                                    
+                                    guard let auidoURLString = url?.absoluteString else {return}
+                                    
+                                    let dateFormat = DateFormatter()
+                                    dateFormat.dateFormat = "EEEE, MM-dd-yyyy"
+                                    let dateString = dateFormat.string(from: releaseDate)
+                                    
+                                    let timeFormat = DateFormatter()
+                                    
+                                    timeFormat.dateFormat = "h:mm a"
+                                    
+                                    let timeString = timeFormat.string(from: releaseTime)
+                                    
+                                    dataBasePath.updateChildValues(["audioStorageURL": auidoURLString,"videoTag": audioTag, "releaseDate": dateString, "releaseTime": timeString], withCompletionBlock: { (error, ref) in
+                                        if error != nil {
+                                            print("failed to update Database")
+                                            return
+                                        }
+                                    })
+
+                                }
+                            })
+                        }
+                    }
+                    
                 }
                 catch let error as NSError {
                     print("Could not save. \(error), \(error.userInfo)")
                 }
-            }
-            else{
-                //oh well
-            }
-        } catch let error as NSError {
-            print("Fetch error: \(error) description: \(error.userInfo)")
             
-        }
+        
+        
         
         
     }
 
 
+}
+
+extension VoiceMemoAtrributeViewController {
+    func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
+    }
 }
