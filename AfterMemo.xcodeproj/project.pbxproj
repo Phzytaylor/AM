@@ -8,24 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		33E7F08FAE4056B532E3ABF2 /* Pods_AfterMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54DB5FD0D14D224344C1065 /* Pods_AfterMemo.framework */; };
-		821ED29520C075C6000CECAF /* Recipient+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821ED29320C075C6000CECAF /* Recipient+CoreDataClass.swift */; };
-		821ED29620C075C6000CECAF /* Recipient+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821ED29420C075C6000CECAF /* Recipient+CoreDataProperties.swift */; };
-		821ED29920C075F1000CECAF /* Videos+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821ED29720C075F1000CECAF /* Videos+CoreDataClass.swift */; };
-		821ED29A20C075F1000CECAF /* Videos+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821ED29820C075F1000CECAF /* Videos+CoreDataProperties.swift */; };
-		821ED29D20C07609000CECAF /* VoiceMemos+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821ED29B20C07609000CECAF /* VoiceMemos+CoreDataClass.swift */; };
-		821ED29E20C07609000CECAF /* VoiceMemos+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821ED29C20C07609000CECAF /* VoiceMemos+CoreDataProperties.swift */; };
-		821ED2A120C0761C000CECAF /* Written+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821ED29F20C0761C000CECAF /* Written+CoreDataClass.swift */; };
-		821ED2A220C0761C000CECAF /* Written+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821ED2A020C0761C000CECAF /* Written+CoreDataProperties.swift */; };
+		8201C42A211169B400772AC0 /* MemoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8201C429211169B400772AC0 /* MemoHeaderView.swift */; };
 		821ED2A420C21019000CECAF /* MediaHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821ED2A320C21019000CECAF /* MediaHeader.swift */; };
 		821ED2A620C51A6F000CECAF /* TextMemoPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821ED2A520C51A6F000CECAF /* TextMemoPreviewViewController.swift */; };
 		821ED2A820C52062000CECAF /* TextMemoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821ED2A720C52062000CECAF /* TextMemoPreviewView.swift */; };
 		821ED2AA20C6CE52000CECAF /* IntroPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821ED2A920C6CE52000CECAF /* IntroPageViewController.swift */; };
 		821ED2AC20C70565000CECAF /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821ED2AB20C70565000CECAF /* WelcomeViewController.swift */; };
 		821ED2AF20C7722B000CECAF /* AnimatedMaskLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821ED2AE20C7722B000CECAF /* AnimatedMaskLabel.swift */; };
+		821F346B20D439C000CF509C /* Videos+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821F346120D439BB00CF509C /* Videos+CoreDataProperties.swift */; };
+		821F346C20D439C000CF509C /* VoiceMemos+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821F346220D439BB00CF509C /* VoiceMemos+CoreDataProperties.swift */; };
+		821F346D20D439C000CF509C /* Userinfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821F346320D439BC00CF509C /* Userinfo+CoreDataProperties.swift */; };
+		821F346E20D439C000CF509C /* Userinfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821F346420D439BC00CF509C /* Userinfo+CoreDataClass.swift */; };
+		821F347020D439C000CF509C /* VoiceMemos+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821F346620D439BE00CF509C /* VoiceMemos+CoreDataClass.swift */; };
+		821F347220D439C000CF509C /* Videos+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821F346820D439BF00CF509C /* Videos+CoreDataClass.swift */; };
+		821F347320D439C000CF509C /* Written+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821F346920D439BF00CF509C /* Written+CoreDataProperties.swift */; };
+		821F347420D439C000CF509C /* Written+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821F346A20D439C000CF509C /* Written+CoreDataClass.swift */; };
+		821F347D20D877BD00CF509C /* RemindersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821F347B20D877BD00CF509C /* RemindersCollectionViewCell.swift */; };
+		821F347E20D877BD00CF509C /* RemindersCollectionViewCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 821F347C20D877BD00CF509C /* RemindersCollectionViewCells.xib */; };
+		821F348020D87D6800CF509C /* SellectionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 821F347F20D87D6800CF509C /* SellectionCollectionViewCell.xib */; };
 		8229F14020BC5E6B0033C71F /* WrittenMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229F13F20BC5E6B0033C71F /* WrittenMemoViewController.swift */; };
 		8231DB8E20AE799900CE9668 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231DB8D20AE799900CE9668 /* MainCollectionViewController.swift */; };
 		8234322920AA7B9100912A6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234322820AA7B9100912A6F /* AppDelegate.swift */; };
-		8234322B20AA7B9100912A6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234322A20AA7B9100912A6F /* ViewController.swift */; };
+		8234322B20AA7B9100912A6F /* PinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234322A20AA7B9100912A6F /* PinViewController.swift */; };
 		8234322E20AA7B9100912A6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8234322C20AA7B9100912A6F /* Main.storyboard */; };
 		8234323320AA7B9700912A6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8234323120AA7B9700912A6F /* LaunchScreen.storyboard */; };
 		8234323B20AB422E00912A6F /* PasswordContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8234323A20AB422E00912A6F /* PasswordContainerView.xib */; };
@@ -35,7 +39,18 @@
 		8234324920ACEAE900912A6F /* PasswordInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234324820ACEAE900912A6F /* PasswordInputView.swift */; };
 		8234324B20ACEB5100912A6F /* PasswordUIValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234324A20ACEB5100912A6F /* PasswordUIValidation.swift */; };
 		8234324D20ACEB7800912A6F /* PasswordContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234324C20ACEB7800912A6F /* PasswordContainerView.swift */; };
+		8238F204210B99CC00E81FA7 /* Triggers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8238F203210B99CB00E81FA7 /* Triggers.swift */; };
+		8238F206210F8E1600E81FA7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8238F205210F8E1600E81FA7 /* SettingsViewController.swift */; };
+		823FC83620F02C6F001431A3 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823FC83520F02C6F001431A3 /* ContactsTableViewController.swift */; };
+		823FC83820F02CAE001431A3 /* ContactsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823FC83720F02CAE001431A3 /* ContactsClass.swift */; };
+		823FC83A20F04130001431A3 /* ContactLovedOneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823FC83920F04130001431A3 /* ContactLovedOneTableViewCell.swift */; };
 		8244D48F20AE419A008C6B02 /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8244D48E20AE419A008C6B02 /* KeychainPasswordItem.swift */; };
+		8259DE7120D97792005F14CA /* RandomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8259DE6F20D97792005F14CA /* RandomCollectionViewCell.swift */; };
+		8259DE7220D97792005F14CA /* RandomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8259DE7020D97792005F14CA /* RandomCollectionViewCell.xib */; };
+		8259DE7620DAD038005F14CA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8259DE7520DAD038005F14CA /* Images.xcassets */; };
+		8259DE7820DAD05E005F14CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8259DE7720DAD05D005F14CA /* Assets.xcassets */; };
+		8259DE7C20DDE339005F14CA /* Recipient+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8259DE7A20DDE339005F14CA /* Recipient+CoreDataClass.swift */; };
+		8259DE7D20DDE339005F14CA /* Recipient+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8259DE7B20DDE339005F14CA /* Recipient+CoreDataProperties.swift */; };
 		827458EA20AD174000F13DAD /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827458E920AD174000F13DAD /* AuthController.swift */; };
 		827458ED20AD17C200F13DAD /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827458EC20AD17C200F13DAD /* Settings.swift */; };
 		828703B420AFA733002C530A /* UserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828703B320AFA733002C530A /* UserCollectionViewCell.swift */; };
@@ -47,11 +62,19 @@
 		82996B9320C8AB20007FF306 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82996B9220C8AB20007FF306 /* GoogleService-Info.plist */; };
 		82996B9520C8AF6C007FF306 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82996B9420C8AF6C007FF306 /* UserInfoViewController.swift */; };
 		82996BAB20C970D0007FF306 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82996BAA20C970CF007FF306 /* User.swift */; };
-		82996BAE20C9711D007FF306 /* Userinfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82996BAC20C9711D007FF306 /* Userinfo+CoreDataClass.swift */; };
-		82996BAF20C9711D007FF306 /* Userinfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82996BAD20C9711D007FF306 /* Userinfo+CoreDataProperties.swift */; };
+		82A0243520EB303100AF5EB9 /* extensionsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A0243420EB303100AF5EB9 /* extensionsFile.swift */; };
+		82A0243720ED823000AF5EB9 /* EmptyNavatigonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A0243620ED823000AF5EB9 /* EmptyNavatigonController.swift */; };
+		82C0CE80211518AE00722FF3 /* AllPurposeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C0CE7F211518AE00722FF3 /* AllPurposeHeader.swift */; };
 		82DFF22020BCB6E00010B749 /* LovedOneCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DFF21F20BCB6E00010B749 /* LovedOneCreationViewController.swift */; };
 		82DFF22220BCB77C0010B749 /* LovedOneSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DFF22120BCB77C0010B749 /* LovedOneSelectionTableViewController.swift */; };
 		82DFF22420BCBC4B0010B749 /* LovedOnesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DFF22320BCBC4B0010B749 /* LovedOnesTableViewCell.swift */; };
+		82E333EE20CF3E2400DFCF4F /* DownLoadsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E333ED20CF3E2400DFCF4F /* DownLoadsTableViewController.swift */; };
+		82E333F020CF405100DFCF4F /* VideoClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E333EF20CF405100DFCF4F /* VideoClass.swift */; };
+		82E333F220CF5F4100DFCF4F /* VoiceClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E333F120CF5F4100DFCF4F /* VoiceClass.swift */; };
+		82E333F420CF61A800DFCF4F /* WrittenClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E333F320CF61A800DFCF4F /* WrittenClass.swift */; };
+		82E3340A20D0E69300DFCF4F /* DownloadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E3340920D0E69300DFCF4F /* DownloadTableViewCell.swift */; };
+		82E3340C20D0E95700DFCF4F /* CircularLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E3340B20D0E95700DFCF4F /* CircularLoaderView.swift */; };
+		82E3340E20D246DA00DFCF4F /* GeneralAttributesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E3340D20D246DA00DFCF4F /* GeneralAttributesViewController.swift */; };
 		82EE245E20B23B3B003EF9D2 /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE245D20B23B3B003EF9D2 /* RecordingViewController.swift */; };
 		82EE246020B28B81003EF9D2 /* VideoAtrributesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE245F20B28B81003EF9D2 /* VideoAtrributesViewController.swift */; };
 		82EE246620B39E31003EF9D2 /* VoiceMemoAtrributeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE246520B39E31003EF9D2 /* VoiceMemoAtrributeController.swift */; };
@@ -59,31 +82,34 @@
 		82EE248220B65247003EF9D2 /* RecordingChoiceCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE248120B65247003EF9D2 /* RecordingChoiceCollectionViewController.swift */; };
 		82EE248420B693EE003EF9D2 /* RecordingChoiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE248320B693EE003EF9D2 /* RecordingChoiceCollectionViewCell.swift */; };
 		82EE248820B7A3DB003EF9D2 /* icons8-camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 82EE248720B7A3DB003EF9D2 /* icons8-camera.png */; };
-		82EE248C20B7B741003EF9D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82EE248B20B7B741003EF9D2 /* Images.xcassets */; };
 		82EE248E20B7D805003EF9D2 /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE248D20B7D805003EF9D2 /* colors.swift */; };
 		82EE249020BAFCCE003EF9D2 /* SelectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE248F20BAFCCE003EF9D2 /* SelectionCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		821ED29320C075C6000CECAF /* Recipient+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipient+CoreDataClass.swift"; sourceTree = "<group>"; };
-		821ED29420C075C6000CECAF /* Recipient+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipient+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		821ED29720C075F1000CECAF /* Videos+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Videos+CoreDataClass.swift"; sourceTree = "<group>"; };
-		821ED29820C075F1000CECAF /* Videos+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Videos+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		821ED29B20C07609000CECAF /* VoiceMemos+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VoiceMemos+CoreDataClass.swift"; sourceTree = "<group>"; };
-		821ED29C20C07609000CECAF /* VoiceMemos+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VoiceMemos+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		821ED29F20C0761C000CECAF /* Written+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Written+CoreDataClass.swift"; sourceTree = "<group>"; };
-		821ED2A020C0761C000CECAF /* Written+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Written+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8201C429211169B400772AC0 /* MemoHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoHeaderView.swift; sourceTree = "<group>"; };
 		821ED2A320C21019000CECAF /* MediaHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaHeader.swift; sourceTree = "<group>"; };
 		821ED2A520C51A6F000CECAF /* TextMemoPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMemoPreviewViewController.swift; sourceTree = "<group>"; };
 		821ED2A720C52062000CECAF /* TextMemoPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMemoPreviewView.swift; sourceTree = "<group>"; };
 		821ED2A920C6CE52000CECAF /* IntroPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPageViewController.swift; sourceTree = "<group>"; };
 		821ED2AB20C70565000CECAF /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		821ED2AE20C7722B000CECAF /* AnimatedMaskLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedMaskLabel.swift; sourceTree = "<group>"; };
+		821F346120D439BB00CF509C /* Videos+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Videos+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		821F346220D439BB00CF509C /* VoiceMemos+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VoiceMemos+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		821F346320D439BC00CF509C /* Userinfo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Userinfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		821F346420D439BC00CF509C /* Userinfo+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Userinfo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		821F346620D439BE00CF509C /* VoiceMemos+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VoiceMemos+CoreDataClass.swift"; sourceTree = "<group>"; };
+		821F346820D439BF00CF509C /* Videos+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Videos+CoreDataClass.swift"; sourceTree = "<group>"; };
+		821F346920D439BF00CF509C /* Written+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Written+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		821F346A20D439C000CF509C /* Written+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Written+CoreDataClass.swift"; sourceTree = "<group>"; };
+		821F347B20D877BD00CF509C /* RemindersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersCollectionViewCell.swift; sourceTree = "<group>"; };
+		821F347C20D877BD00CF509C /* RemindersCollectionViewCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RemindersCollectionViewCells.xib; sourceTree = "<group>"; };
+		821F347F20D87D6800CF509C /* SellectionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SellectionCollectionViewCell.xib; sourceTree = "<group>"; };
 		8229F13F20BC5E6B0033C71F /* WrittenMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrittenMemoViewController.swift; sourceTree = "<group>"; };
 		8231DB8D20AE799900CE9668 /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
 		8234322520AA7B9100912A6F /* AfterMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AfterMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8234322820AA7B9100912A6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8234322A20AA7B9100912A6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8234322A20AA7B9100912A6F /* PinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinViewController.swift; sourceTree = "<group>"; };
 		8234322D20AA7B9100912A6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8234323220AA7B9700912A6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8234323420AA7B9700912A6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,7 +120,19 @@
 		8234324820ACEAE900912A6F /* PasswordInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordInputView.swift; sourceTree = "<group>"; };
 		8234324A20ACEB5100912A6F /* PasswordUIValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordUIValidation.swift; sourceTree = "<group>"; };
 		8234324C20ACEB7800912A6F /* PasswordContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordContainerView.swift; sourceTree = "<group>"; };
+		8238F203210B99CB00E81FA7 /* Triggers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triggers.swift; sourceTree = "<group>"; };
+		8238F205210F8E1600E81FA7 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		823FC83520F02C6F001431A3 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		823FC83720F02CAE001431A3 /* ContactsClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsClass.swift; sourceTree = "<group>"; };
+		823FC83920F04130001431A3 /* ContactLovedOneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactLovedOneTableViewCell.swift; sourceTree = "<group>"; };
 		8244D48E20AE419A008C6B02 /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
+		8259DE6F20D97792005F14CA /* RandomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomCollectionViewCell.swift; sourceTree = "<group>"; };
+		8259DE7020D97792005F14CA /* RandomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomCollectionViewCell.xib; sourceTree = "<group>"; };
+		8259DE7520DAD038005F14CA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8259DE7720DAD05D005F14CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = AfterMemo/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		8259DE7920DADE64005F14CA /* AfterMemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AfterMemo.entitlements; sourceTree = "<group>"; };
+		8259DE7A20DDE339005F14CA /* Recipient+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipient+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8259DE7B20DDE339005F14CA /* Recipient+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipient+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		827458E920AD174000F13DAD /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
 		827458EC20AD17C200F13DAD /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		828703B320AFA733002C530A /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -106,11 +144,19 @@
 		82996B9220C8AB20007FF306 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		82996B9420C8AF6C007FF306 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		82996BAA20C970CF007FF306 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		82996BAC20C9711D007FF306 /* Userinfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Userinfo+CoreDataClass.swift"; sourceTree = "<group>"; };
-		82996BAD20C9711D007FF306 /* Userinfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Userinfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		82A0243420EB303100AF5EB9 /* extensionsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionsFile.swift; sourceTree = "<group>"; };
+		82A0243620ED823000AF5EB9 /* EmptyNavatigonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyNavatigonController.swift; sourceTree = "<group>"; };
+		82C0CE7F211518AE00722FF3 /* AllPurposeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPurposeHeader.swift; sourceTree = "<group>"; };
 		82DFF21F20BCB6E00010B749 /* LovedOneCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LovedOneCreationViewController.swift; sourceTree = "<group>"; };
 		82DFF22120BCB77C0010B749 /* LovedOneSelectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LovedOneSelectionTableViewController.swift; sourceTree = "<group>"; };
 		82DFF22320BCBC4B0010B749 /* LovedOnesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LovedOnesTableViewCell.swift; sourceTree = "<group>"; };
+		82E333ED20CF3E2400DFCF4F /* DownLoadsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownLoadsTableViewController.swift; sourceTree = "<group>"; };
+		82E333EF20CF405100DFCF4F /* VideoClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoClass.swift; sourceTree = "<group>"; };
+		82E333F120CF5F4100DFCF4F /* VoiceClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceClass.swift; sourceTree = "<group>"; };
+		82E333F320CF61A800DFCF4F /* WrittenClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrittenClass.swift; sourceTree = "<group>"; };
+		82E3340920D0E69300DFCF4F /* DownloadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadTableViewCell.swift; sourceTree = "<group>"; };
+		82E3340B20D0E95700DFCF4F /* CircularLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularLoaderView.swift; sourceTree = "<group>"; };
+		82E3340D20D246DA00DFCF4F /* GeneralAttributesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralAttributesViewController.swift; sourceTree = "<group>"; };
 		82EE245D20B23B3B003EF9D2 /* RecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
 		82EE245F20B28B81003EF9D2 /* VideoAtrributesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoAtrributesViewController.swift; sourceTree = "<group>"; };
 		82EE246520B39E31003EF9D2 /* VoiceMemoAtrributeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceMemoAtrributeController.swift; sourceTree = "<group>"; };
@@ -118,7 +164,6 @@
 		82EE248120B65247003EF9D2 /* RecordingChoiceCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingChoiceCollectionViewController.swift; sourceTree = "<group>"; };
 		82EE248320B693EE003EF9D2 /* RecordingChoiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingChoiceCollectionViewCell.swift; sourceTree = "<group>"; };
 		82EE248720B7A3DB003EF9D2 /* icons8-camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-camera.png"; sourceTree = "<group>"; };
-		82EE248B20B7B741003EF9D2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		82EE248D20B7D805003EF9D2 /* colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = "<group>"; };
 		82EE248F20BAFCCE003EF9D2 /* SelectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		A54DB5FD0D14D224344C1065 /* Pods_AfterMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AfterMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +204,7 @@
 		8234322720AA7B9100912A6F /* AfterMemo */ = {
 			isa = PBXGroup;
 			children = (
+				8259DE7920DADE64005F14CA /* AfterMemo.entitlements */,
 				828703BB20B11FA6002C530A /* CoreDataFiles */,
 				827458EB20AD17A700F13DAD /* Helpers */,
 				827458E520AD115300F13DAD /* Controllers */,
@@ -169,7 +215,6 @@
 				827458E820AD11C600F13DAD /* Resources */,
 				827458E620AD116000F13DAD /* Services */,
 				827458E420AD114500F13DAD /* Views */,
-				82EE248B20B7B741003EF9D2 /* Images.xcassets */,
 			);
 			path = AfterMemo;
 			sourceTree = "<group>";
@@ -178,6 +223,10 @@
 			isa = PBXGroup;
 			children = (
 				82996BAA20C970CF007FF306 /* User.swift */,
+				82E333EF20CF405100DFCF4F /* VideoClass.swift */,
+				82E333F120CF5F4100DFCF4F /* VoiceClass.swift */,
+				82E333F320CF61A800DFCF4F /* WrittenClass.swift */,
+				823FC83720F02CAE001431A3 /* ContactsClass.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -198,6 +247,18 @@
 				821ED2A320C21019000CECAF /* MediaHeader.swift */,
 				821ED2A720C52062000CECAF /* TextMemoPreviewView.swift */,
 				821ED2AE20C7722B000CECAF /* AnimatedMaskLabel.swift */,
+				82E3340920D0E69300DFCF4F /* DownloadTableViewCell.swift */,
+				82E3340B20D0E95700DFCF4F /* CircularLoaderView.swift */,
+				821F347B20D877BD00CF509C /* RemindersCollectionViewCell.swift */,
+				821F347C20D877BD00CF509C /* RemindersCollectionViewCells.xib */,
+				821F347F20D87D6800CF509C /* SellectionCollectionViewCell.xib */,
+				8259DE6F20D97792005F14CA /* RandomCollectionViewCell.swift */,
+				8259DE7020D97792005F14CA /* RandomCollectionViewCell.xib */,
+				8259DE7520DAD038005F14CA /* Images.xcassets */,
+				8259DE7720DAD05D005F14CA /* Assets.xcassets */,
+				823FC83920F04130001431A3 /* ContactLovedOneTableViewCell.swift */,
+				8201C429211169B400772AC0 /* MemoHeaderView.swift */,
+				82C0CE7F211518AE00722FF3 /* AllPurposeHeader.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,23 +268,28 @@
 			children = (
 				8234322820AA7B9100912A6F /* AppDelegate.swift */,
 				827458E920AD174000F13DAD /* AuthController.swift */,
+				823FC83520F02C6F001431A3 /* ContactsTableViewController.swift */,
+				82E333ED20CF3E2400DFCF4F /* DownLoadsTableViewController.swift */,
+				82A0243620ED823000AF5EB9 /* EmptyNavatigonController.swift */,
+				82E3340D20D246DA00DFCF4F /* GeneralAttributesViewController.swift */,
 				821ED2A920C6CE52000CECAF /* IntroPageViewController.swift */,
 				82DFF21F20BCB6E00010B749 /* LovedOneCreationViewController.swift */,
 				82DFF22120BCB77C0010B749 /* LovedOneSelectionTableViewController.swift */,
 				8231DB8D20AE799900CE9668 /* MainCollectionViewController.swift */,
+				82996B9020C78174007FF306 /* NameInfoViewController.swift */,
+				8234322A20AA7B9100912A6F /* PinViewController.swift */,
 				82EE248120B65247003EF9D2 /* RecordingChoiceCollectionViewController.swift */,
 				82EE245D20B23B3B003EF9D2 /* RecordingViewController.swift */,
 				82EE247F20B64F01003EF9D2 /* SelectionCollectionViewController.swift */,
 				828703B920B11314002C530A /* TestViewController.swift */,
 				821ED2A520C51A6F000CECAF /* TextMemoPreviewViewController.swift */,
+				82996B9420C8AF6C007FF306 /* UserInfoViewController.swift */,
 				82EE245F20B28B81003EF9D2 /* VideoAtrributesViewController.swift */,
 				828703B520AFB2EF002C530A /* VideoRecorderViewController.swift */,
-				8234322A20AA7B9100912A6F /* ViewController.swift */,
 				82EE246520B39E31003EF9D2 /* VoiceMemoAtrributeController.swift */,
 				821ED2AB20C70565000CECAF /* WelcomeViewController.swift */,
 				8229F13F20BC5E6B0033C71F /* WrittenMemoViewController.swift */,
-				82996B9020C78174007FF306 /* NameInfoViewController.swift */,
-				82996B9420C8AF6C007FF306 /* UserInfoViewController.swift */,
+				8238F205210F8E1600E81FA7 /* SettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -241,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				82EE248720B7A3DB003EF9D2 /* icons8-camera.png */,
+				82A0243420EB303100AF5EB9 /* extensionsFile.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -260,6 +327,7 @@
 				82EE248D20B7D805003EF9D2 /* colors.swift */,
 				827458EC20AD17C200F13DAD /* Settings.swift */,
 				828703B720B0D723002C530A /* VideoHelper.swift */,
+				8238F203210B99CB00E81FA7 /* Triggers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -267,16 +335,16 @@
 		828703BB20B11FA6002C530A /* CoreDataFiles */ = {
 			isa = PBXGroup;
 			children = (
-				82996BAC20C9711D007FF306 /* Userinfo+CoreDataClass.swift */,
-				82996BAD20C9711D007FF306 /* Userinfo+CoreDataProperties.swift */,
-				821ED29F20C0761C000CECAF /* Written+CoreDataClass.swift */,
-				821ED2A020C0761C000CECAF /* Written+CoreDataProperties.swift */,
-				821ED29B20C07609000CECAF /* VoiceMemos+CoreDataClass.swift */,
-				821ED29C20C07609000CECAF /* VoiceMemos+CoreDataProperties.swift */,
-				821ED29720C075F1000CECAF /* Videos+CoreDataClass.swift */,
-				821ED29820C075F1000CECAF /* Videos+CoreDataProperties.swift */,
-				821ED29320C075C6000CECAF /* Recipient+CoreDataClass.swift */,
-				821ED29420C075C6000CECAF /* Recipient+CoreDataProperties.swift */,
+				8259DE7A20DDE339005F14CA /* Recipient+CoreDataClass.swift */,
+				8259DE7B20DDE339005F14CA /* Recipient+CoreDataProperties.swift */,
+				821F346820D439BF00CF509C /* Videos+CoreDataClass.swift */,
+				821F346120D439BB00CF509C /* Videos+CoreDataProperties.swift */,
+				821F346420D439BC00CF509C /* Userinfo+CoreDataClass.swift */,
+				821F346320D439BC00CF509C /* Userinfo+CoreDataProperties.swift */,
+				821F346A20D439C000CF509C /* Written+CoreDataClass.swift */,
+				821F346920D439BF00CF509C /* Written+CoreDataProperties.swift */,
+				821F346620D439BE00CF509C /* VoiceMemos+CoreDataClass.swift */,
+				821F346220D439BB00CF509C /* VoiceMemos+CoreDataProperties.swift */,
 				828703BC20B11FD2002C530A /* AfterMemoModel.xcdatamodeld */,
 			);
 			path = CoreDataFiles;
@@ -333,6 +401,11 @@
 				TargetAttributes = {
 					8234322420AA7B9100912A6F = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -359,13 +432,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				821F347E20D877BD00CF509C /* RemindersCollectionViewCells.xib in Resources */,
+				8259DE7620DAD038005F14CA /* Images.xcassets in Resources */,
+				8259DE7820DAD05E005F14CA /* Assets.xcassets in Resources */,
 				8234323320AA7B9700912A6F /* LaunchScreen.storyboard in Resources */,
 				82EE248820B7A3DB003EF9D2 /* icons8-camera.png in Resources */,
 				8234324120AB47E500912A6F /* icons8-clear_symbol_filled.png in Resources */,
 				82996B9320C8AB20007FF306 /* GoogleService-Info.plist in Resources */,
-				82EE248C20B7B741003EF9D2 /* Images.xcassets in Resources */,
+				821F348020D87D6800CF509C /* SellectionCollectionViewCell.xib in Resources */,
 				8234323B20AB422E00912A6F /* PasswordContainerView.xib in Resources */,
 				8234322E20AA7B9100912A6F /* Main.storyboard in Resources */,
+				8259DE7220D97792005F14CA /* RandomCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,15 +477,18 @@
 				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/FanMenu/FanMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/ImageRow/ImageRow.framework",
 				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
 				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/Macaw/Macaw.framework",
 				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
 				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
 				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
 				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -417,15 +497,18 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FanMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageRow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Macaw.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -441,50 +524,68 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8234322B20AA7B9100912A6F /* ViewController.swift in Sources */,
+				821F346C20D439C000CF509C /* VoiceMemos+CoreDataProperties.swift in Sources */,
+				8259DE7120D97792005F14CA /* RandomCollectionViewCell.swift in Sources */,
+				82E3340A20D0E69300DFCF4F /* DownloadTableViewCell.swift in Sources */,
+				8234322B20AA7B9100912A6F /* PinViewController.swift in Sources */,
+				823FC83620F02C6F001431A3 /* ContactsTableViewController.swift in Sources */,
 				821ED2AF20C7722B000CECAF /* AnimatedMaskLabel.swift in Sources */,
+				82E333F420CF61A800DFCF4F /* WrittenClass.swift in Sources */,
 				82996BAB20C970D0007FF306 /* User.swift in Sources */,
+				821F347D20D877BD00CF509C /* RemindersCollectionViewCell.swift in Sources */,
 				8231DB8E20AE799900CE9668 /* MainCollectionViewController.swift in Sources */,
+				821F346B20D439C000CF509C /* Videos+CoreDataProperties.swift in Sources */,
 				82EE246020B28B81003EF9D2 /* VideoAtrributesViewController.swift in Sources */,
-				821ED29920C075F1000CECAF /* Videos+CoreDataClass.swift in Sources */,
 				828703BA20B11314002C530A /* TestViewController.swift in Sources */,
 				821ED2A420C21019000CECAF /* MediaHeader.swift in Sources */,
 				828703B620AFB2EF002C530A /* VideoRecorderViewController.swift in Sources */,
-				821ED29520C075C6000CECAF /* Recipient+CoreDataClass.swift in Sources */,
+				82E333EE20CF3E2400DFCF4F /* DownLoadsTableViewController.swift in Sources */,
+				82E3340C20D0E95700DFCF4F /* CircularLoaderView.swift in Sources */,
 				828703B820B0D723002C530A /* VideoHelper.swift in Sources */,
-				821ED29D20C07609000CECAF /* VoiceMemos+CoreDataClass.swift in Sources */,
 				8234324920ACEAE900912A6F /* PasswordInputView.swift in Sources */,
 				82DFF22220BCB77C0010B749 /* LovedOneSelectionTableViewController.swift in Sources */,
-				821ED29E20C07609000CECAF /* VoiceMemos+CoreDataProperties.swift in Sources */,
 				82DFF22420BCBC4B0010B749 /* LovedOnesTableViewCell.swift in Sources */,
+				823FC83A20F04130001431A3 /* ContactLovedOneTableViewCell.swift in Sources */,
+				82C0CE80211518AE00722FF3 /* AllPurposeHeader.swift in Sources */,
 				8234324720ABDD3200912A6F /* PasswordDotView.swift in Sources */,
 				8229F14020BC5E6B0033C71F /* WrittenMemoViewController.swift in Sources */,
 				8234324B20ACEB5100912A6F /* PasswordUIValidation.swift in Sources */,
 				82EE248E20B7D805003EF9D2 /* colors.swift in Sources */,
 				821ED2AA20C6CE52000CECAF /* IntroPageViewController.swift in Sources */,
-				821ED29A20C075F1000CECAF /* Videos+CoreDataProperties.swift in Sources */,
+				8259DE7C20DDE339005F14CA /* Recipient+CoreDataClass.swift in Sources */,
 				82EE248020B64F01003EF9D2 /* SelectionCollectionViewController.swift in Sources */,
 				82996B9520C8AF6C007FF306 /* UserInfoViewController.swift in Sources */,
-				821ED29620C075C6000CECAF /* Recipient+CoreDataProperties.swift in Sources */,
 				8234324D20ACEB7800912A6F /* PasswordContainerView.swift in Sources */,
+				821F347420D439C000CF509C /* Written+CoreDataClass.swift in Sources */,
+				821F347220D439C000CF509C /* Videos+CoreDataClass.swift in Sources */,
+				8201C42A211169B400772AC0 /* MemoHeaderView.swift in Sources */,
+				82E333F020CF405100DFCF4F /* VideoClass.swift in Sources */,
 				8244D48F20AE419A008C6B02 /* KeychainPasswordItem.swift in Sources */,
 				828703BE20B11FD2002C530A /* AfterMemoModel.xcdatamodeld in Sources */,
+				8238F204210B99CC00E81FA7 /* Triggers.swift in Sources */,
 				82EE249020BAFCCE003EF9D2 /* SelectionCollectionViewCell.swift in Sources */,
+				82E3340E20D246DA00DFCF4F /* GeneralAttributesViewController.swift in Sources */,
 				827458EA20AD174000F13DAD /* AuthController.swift in Sources */,
+				82A0243720ED823000AF5EB9 /* EmptyNavatigonController.swift in Sources */,
 				821ED2AC20C70565000CECAF /* WelcomeViewController.swift in Sources */,
 				82DFF22020BCB6E00010B749 /* LovedOneCreationViewController.swift in Sources */,
+				8259DE7D20DDE339005F14CA /* Recipient+CoreDataProperties.swift in Sources */,
+				8238F206210F8E1600E81FA7 /* SettingsViewController.swift in Sources */,
 				827458ED20AD17C200F13DAD /* Settings.swift in Sources */,
+				823FC83820F02CAE001431A3 /* ContactsClass.swift in Sources */,
+				82A0243520EB303100AF5EB9 /* extensionsFile.swift in Sources */,
 				821ED2A820C52062000CECAF /* TextMemoPreviewView.swift in Sources */,
 				821ED2A620C51A6F000CECAF /* TextMemoPreviewViewController.swift in Sources */,
-				821ED2A220C0761C000CECAF /* Written+CoreDataProperties.swift in Sources */,
-				821ED2A120C0761C000CECAF /* Written+CoreDataClass.swift in Sources */,
-				82996BAF20C9711D007FF306 /* Userinfo+CoreDataProperties.swift in Sources */,
+				821F346D20D439C000CF509C /* Userinfo+CoreDataProperties.swift in Sources */,
+				821F346E20D439C000CF509C /* Userinfo+CoreDataClass.swift in Sources */,
 				8234324520AB58DF00912A6F /* Keyboard.swift in Sources */,
+				82E333F220CF5F4100DFCF4F /* VoiceClass.swift in Sources */,
 				8234322920AA7B9100912A6F /* AppDelegate.swift in Sources */,
 				82EE246620B39E31003EF9D2 /* VoiceMemoAtrributeController.swift in Sources */,
+				821F347020D439C000CF509C /* VoiceMemos+CoreDataClass.swift in Sources */,
+				821F347320D439C000CF509C /* Written+CoreDataProperties.swift in Sources */,
 				82EE245E20B23B3B003EF9D2 /* RecordingViewController.swift in Sources */,
 				82996B9120C78174007FF306 /* NameInfoViewController.swift in Sources */,
-				82996BAE20C9711D007FF306 /* Userinfo+CoreDataClass.swift in Sources */,
 				828703B420AFA733002C530A /* UserCollectionViewCell.swift in Sources */,
 				82EE248220B65247003EF9D2 /* RecordingChoiceCollectionViewController.swift in Sources */,
 				82EE248420B693EE003EF9D2 /* RecordingChoiceCollectionViewCell.swift in Sources */,
@@ -633,6 +734,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = AfterMemo/AfterMemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TR2MLK3WQ4;
 				INFOPLIST_FILE = "$(SRCROOT)/AfterMemo/Resources/Info.plist";
@@ -653,6 +755,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = AfterMemo/AfterMemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TR2MLK3WQ4;
 				INFOPLIST_FILE = "$(SRCROOT)/AfterMemo/Resources/Info.plist";

@@ -14,13 +14,38 @@ import MobileCoreServices
 import DZNEmptyDataSet
 import MaterialComponents
 
-class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataSetDelegate, DZNEmptyDataSetSource {
+class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataSetDelegate, DZNEmptyDataSetSource, NSFetchedResultsControllerDelegate {
     var mediaSelected = ""
     var fileName = ""
     var personsArray: [NSManagedObject] = []
     var selectedCellBeforeAlert: Int?
     var appBar = MDCAppBar()
     var videoToPass: Videos?
+    var selectedMemoType = ""
+    var newMemoDelegate: newMemoDelegate!
+    let memoHeaderView = GeneralHeaderView()
+    
+    func configureAppBar(){
+        self.addChildViewController(appBar.headerViewController)
+        appBar.navigationBar.backgroundColor = .clear
+        appBar.navigationBar.title = nil
+        
+        let headerView = appBar.headerViewController.headerView
+        headerView.backgroundColor = .clear
+        headerView.maximumHeight = MemoHeaderView.Constants.maxHeight
+        headerView.minimumHeight = MemoHeaderView.Constants.minHeight
+        
+        memoHeaderView.frame = headerView.bounds
+        headerView.insertSubview(memoHeaderView, at: 0)
+        
+      headerView.trackingScrollView = self.tableView
+        
+        appBar.addSubviewsToParent()
+        
+//        appBar.headerViewController.layoutDelegate = self
+        
+        
+    }
    
     @objc func createNewLovedOne() {
         performSegue(withIdentifier: "createLovedOne", sender: self)
@@ -32,22 +57,54 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.isHidden = true
+        self.tableView.reloadData()
     }
     
+    lazy var fetchedRC: NSFetchedResultsController<Recipient> = {
+        
+        
+        
+        let fetchRequest:NSFetchRequest<Recipient> = Recipient.fetchRequest()
+        
+       
+        
+        
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext:managedContext , sectionNameKeyPath: nil, cacheName: nil)
+        
+        
+        fetchedResultsController.delegate = self
+        
+        
+        
+        return fetchedResultsController
+    }()
     
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.emptyDataSetDelegate = self
         self.tableView.emptyDataSetSource = self
         tableView.tableFooterView = UIView()
+       configureAppBar()
+        self.appBar.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        self.appBar.navigationBar.tintColor = .white
+//        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        title = "Loved Ones"
         
-        self.addChildViewController(appBar.headerViewController)
-        self.appBar.headerViewController.headerView.trackingScrollView = self.tableView
-        appBar.addSubviewsToParent()
+//        self.addChildViewController(appBar.headerViewController)
+//        self.appBar.headerViewController.headerView.trackingScrollView = self.tableView
+//        appBar.addSubviewsToParent()
+//
+//        MDCAppBarColorThemer.applySemanticColorScheme(ApplicationScheme.shared.colorScheme, to: self.appBar)
         
-        MDCAppBarColorThemer.applySemanticColorScheme(ApplicationScheme.shared.colorScheme, to: self.appBar)
-        
+       
         let rightButton = UIBarButtonItem(title: "Add Loved One", style: .plain, target: self, action: #selector(self.createNewLovedOne))
         self.navigationItem.rightBarButtonItem = rightButton
         
@@ -59,7 +116,9 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
        
         
         do {
-           personsArray = try managedContext.fetch(recipientFetch)
+//           personsArray = try managedContext.fetch(recipientFetch)
+            
+           try fetchedRC.performFetch()
            
            
                 
@@ -122,13 +181,14 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return personsArray.count
+        let count = fetchedRC.fetchedObjects?.count ?? 0
+        return count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "lovedOnes", for: indexPath) as! LovedOnesTableViewCell
-        let lovedOne = personsArray[indexPath.row]
+        let lovedOne = fetchedRC.object(at: IndexPath(row: indexPath.row, section: 0))
         guard let lovedOneImage = lovedOne.value(forKey: "avatar") as? Data else {return cell}
         guard let lovedOneName = lovedOne.value(forKey: "name") as? String else {
             return cell
@@ -158,6 +218,33 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
         } else if mediaSelected == "none" {
               selectedCellBeforeAlert = indexPath.row
             self.performSegue(withIdentifier: "showMemos", sender: self)
+        } else if mediaSelected == "downloads" {
+            selectedCellBeforeAlert = indexPath.row
+            
+            let downloadSelection = UIAlertController(title: "Choose One", message: "Selected Which Kind Of Memo You Want To Download", preferredStyle: .actionSheet)
+            
+            downloadSelection.addAction(UIAlertAction(title: "Video Memos", style: .default, handler: { (Action) in
+                
+                self.selectedMemoType = "video"
+                self.performSegue(withIdentifier: "toDownloads", sender: self)
+            }))
+            
+            downloadSelection.addAction(UIAlertAction(title: "Voice Memos", style: .default, handler: { (Action) in
+                self.selectedMemoType = "audio"
+                self.performSegue(withIdentifier: "toDownloads", sender: self)
+                
+            }))
+            
+            downloadSelection.addAction(UIAlertAction(title: "Text Memos", style: .default, handler: { (Action) in
+                self.selectedMemoType = "text"
+                self.performSegue(withIdentifier: "toDownloads", sender: self)
+            }))
+            
+            downloadSelection.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            
+            self.present(downloadSelection, animated: true, completion: nil)
+            
+            
         }
     }
     
@@ -213,7 +300,7 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
             
             guard let desitnationVC = segue.destination as? RecordingViewController else {return}
             
-            desitnationVC.selectedPerson = personsArray[person] as? Recipient
+            desitnationVC.selectedPerson = fetchedRC.object(at: IndexPath(item: person, section: 0))
             
         } else if segue.identifier == "videoAtributes" {
             
@@ -223,8 +310,8 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
             
             guard let desitnationVC = segue.destination as? VideoAtrributesViewController else {return}
             
-            desitnationVC.selectedPerson = personsArray[person] as? Recipient
-            print(personsArray[person])
+            desitnationVC.selectedPerson = fetchedRC.object(at: IndexPath(item: person, section: 0))
+            print(fetchedRC.object(at: IndexPath(item: person, section: 0)))
             
             desitnationVC.passedVideo = videoToPass
             
@@ -235,14 +322,20 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
             
             guard let desitnationVC = segue.destination as? WrittenMemoViewController else {return}
             
-            desitnationVC.selectedPerson = personsArray[person] as? Recipient
+            desitnationVC.selectedPerson = fetchedRC.object(at: IndexPath(item: person, section: 0))
             
         } else if segue.identifier == "showMemos" {
             guard let destinationVC = segue.destination as? MainCollectionViewController else {return}
             
-            print(personsArray[person] as? Recipient)
+            //print(personsArray[person] as? Recipient)
             
-            destinationVC.passedRecipient = personsArray[person] as? Recipient
+            destinationVC.passedRecipient = fetchedRC.object(at: IndexPath(item: person, section: 0))
+        } else if segue.identifier == "toDownloads" {
+            
+            guard let desitnationVC = segue.destination as? DownLoadsTableViewController else {return}
+            
+            desitnationVC.personPassed = fetchedRC.object(at: IndexPath(item: person, section: 0))
+            desitnationVC.selectedMemoTypePassed = selectedMemoType
         }
         
     }
@@ -257,14 +350,20 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
         }
         print("THe SELECTED CELL: \(cellSelected)")
         
-        var selectedPerson = personsArray[cellSelected] as? Recipient
+        let selectedPerson = fetchedRC.object(at: IndexPath(item: cellSelected, section: 0))
         
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{ return }
-        
-      let managedContext = appDelegate.persistentContainer.viewContext
+//        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{ return }
+//
+//      let managedContext = appDelegate.persistentContainer.viewContext
    
         
-        let video = Videos(context: managedContext)
+        guard let currentContext = selectedPerson.managedObjectContext else {
+            print("I AM NOT SET")
+            return
+        }
+        
+        let video = Videos(context: currentContext)
+        
         
         videoToPass = video
         
@@ -272,18 +371,26 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
             return
         }
         let savedImageData = UIImagePNGRepresentation(savedImage) as NSData?
-        
+        let uuid = UUID().uuidString
         
         video.thumbNail = savedImageData
         video.urlPath = url
         video.isVideo = true
         video.isVoiceMemo = false
         video.isWrittenMemo = false
+        video.uuID = uuid
+        video.creationDate = NSDate()
         
         
-        if let videos = selectedPerson?.videos?.mutableCopy() as? NSMutableOrderedSet {
+        if let videos = selectedPerson.videos?.mutableCopy() as? NSMutableOrderedSet {
             videos.add(video)
-            selectedPerson?.videos = videos
+            selectedPerson.latestMemoDate = NSDate()
+           
+            //selectedPerson.videos = videos
+            selectedPerson.addToVideos(videos)
+            
+            
+            
         }
         
         let addAtributesAlert = UIAlertController(title: "Add Now?", message: "Would you like to add detials to the video?", preferredStyle: .alert)
@@ -292,10 +399,21 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
             self.performSegue(withIdentifier: "videoAtributes", sender: LovedOneSelectionTableViewController())
         }))
         
-        addAtributesAlert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+       
+        
+        addAtributesAlert.addAction(UIAlertAction(title: "No", style: .cancel, handler: { (action) in
+            
+            self.navigationController?.popViewController(animated: true)
+        }))
         
         do {
-            try managedContext.save()
+            //try currentContext.save()
+//            try selectedPerson.managedObjectContext?.save()
+//            try video.managedObjectContext?.save()
+            try currentContext.save()
+            
+            
+            
             print("THIS IS THE SELECTED PERSON: \(selectedPerson)")
             print("I saved")
             
@@ -303,9 +421,11 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
             DispatchQueue.main.async {
                 
                 
+                self.present(addAtributesAlert, animated: true, completion: {
+                    
+                })
                 
-                
-                self.present(addAtributesAlert, animated: true, completion: nil)
+               // self.present(addAtributesAlert, animated: true, completion: nil)
             }
             
         }
@@ -358,6 +478,7 @@ extension LovedOneSelectionTableViewController: UIImagePickerControllerDelegate 
                 
                 self.save(url: self.fileName, dataPath)
                 
+             
                 
             }
             catch {

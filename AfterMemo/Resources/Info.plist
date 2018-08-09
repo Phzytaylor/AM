@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>AfterMemo uses the microphone so you can record your voice or video memos</string>
-	<key>NSCameraUsageDescription</key>
-	<string>AfterMemo uses the camera to record your video memos for later</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -21,13 +17,19 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2.0.3</string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>AfterMemo uses the camera to record your video memos for later</string>
+	<key>NSContactsUsageDescription</key>
+	<string>AfterMemo uses your contacts to import imformation to aid in the creation of a loved one</string>
 	<key>NSFaceIDUsageDescription</key>
 	<string>AfterMemo uses FaceID to secure your data and to make sure no unintended person have access to your data.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>AfterMemo uses the microphone so you can record your voice or video memos</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

@@ -16,26 +16,66 @@ import ImageRow
 import FirebaseDatabase
 import FirebaseAuth
 import FirebaseStorage
+import MaterialComponents
 
 class VideoAtrributesViewController: FormViewController {
-
+var appBar = MDCAppBar()
+    let memoHeaderView = GeneralHeaderView()
+    
+    func configureAppBar(){
+        self.addChildViewController(appBar.headerViewController)
+        appBar.navigationBar.backgroundColor = .clear
+        appBar.navigationBar.title = nil
+        
+        let headerView = appBar.headerViewController.headerView
+        headerView.backgroundColor = .clear
+        headerView.maximumHeight = MemoHeaderView.Constants.maxHeight
+        headerView.minimumHeight = MemoHeaderView.Constants.minHeight
+        
+        memoHeaderView.frame = headerView.bounds
+        headerView.insertSubview(memoHeaderView, at: 0)
+        
+        headerView.trackingScrollView = self.tableView
+        
+        appBar.addSubviewsToParent()
+        
+        //appBar.headerViewController.layoutDelegate = self
+        
+        
+    }
     var passedVideoURL: String = ""
     var selectedPerson: Recipient?
     var passedVideo: Videos?
+    var triggers = Triggers()
+    
+     //let uuid = UUID().uuidString
+    @IBOutlet weak var progressReport: CircularLoaderView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        progressReport.translatesAutoresizingMaskIntoConstraints = false
+        
+        configureAppBar()
+        appBar.navigationBar.tintColor = .white
+        
+//        self.addChildViewController(appBar.headerViewController)
+//        self.appBar.headerViewController.headerView.trackingScrollView = self.tableView
+//        appBar.addSubviewsToParent()
+//
+//        MDCAppBarColorThemer.applySemanticColorScheme(ApplicationScheme.shared.colorScheme, to: self.appBar)
+        
         form +++ Section()
-            <<< TextRow(){ row in
-                row.title = "Video Tag"
-                row.placeholder = "Enter a name"
+            <<< PickerInlineRow<String>(){ row in
+                row.title = "Release Trigger"
+               row.options = triggers.triggerArray
                 row.tag = "videoTag"
                 row.add(rule: RuleRequired())
                 row.validationOptions = .validatesOnChange
         }
                 .cellUpdate({ (cell, row) in
                     if !row.isValid {
-                        cell.titleLabel?.textColor = .red
+                        cell.textLabel?.textColor = .red
                     }
                 })
         <<< DateRow() { row in
@@ -52,6 +92,7 @@ class VideoAtrributesViewController: FormViewController {
 
             <<< TimeRow() { row in
                 row.title = "Enter the time for realease"
+                row.value = Date()
                 row.tag = "timeTag"
                 row.add(rule: RuleRequired())
                 row.validationOptions = .validatesOnChange
@@ -72,7 +113,7 @@ class VideoAtrributesViewController: FormViewController {
                 }
                 .onCellSelection { [weak self] (cell, row) in
                     
-                    guard let videoTagRow: TextRow = self?.form.rowBy(tag: "videoTag") else {
+                    guard let videoTagRow: PickerInlineRow<String> = self?.form.rowBy(tag: "videoTag") else {
                         print("fail 1")
                         return}
                     guard let videoTagRowValue = videoTagRow.value else {
@@ -98,6 +139,8 @@ class VideoAtrributesViewController: FormViewController {
                     if row.section?.form?.validate().count == 0{
                         
                         //save function
+                        
+                        self?.view.bringSubview(toFront: (self?.progressReport)!)
                         
                         self?.save(videoTag: videoTagRowValue, releaseDate: dateRowValue, releaseTime: timeRowValue, passedURL: (self?.passedVideoURL)!)
                         
@@ -126,6 +169,10 @@ class VideoAtrributesViewController: FormViewController {
                 currentVideo.videoTag = videoTag
                 currentVideo.dateToBeReleased = releaseDate as NSDate
                 currentVideo.releaseTime = releaseTime as NSDate
+                let uuID = currentVideo.uuID
+        guard let lovedOneEmail = selectedPerson?.email else {
+            return
+        }
                 
                 
                 do {
@@ -145,7 +192,7 @@ class VideoAtrributesViewController: FormViewController {
                     
                     
                     
-                    uploadLink.putFile(from: videoURLForUpload, metadata: nil) { (metadatas, error) in
+                let uploadTask =  uploadLink.putFile(from: videoURLForUpload, metadata: nil) { (metadatas, error) in
                         if error != nil {
                             print("This video could not load!")
                             return
@@ -156,26 +203,54 @@ class VideoAtrributesViewController: FormViewController {
                                 if error != nil {
                                     
                                     print("Failure to grab url")
+                                    let uploadError = UIAlertController(title: "Error!", message: "The download url could not be grabbed", preferredStyle: .alert)
+                                    
+                                    uploadError.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                                    
+                                    self.present(uploadError, animated: true, completion: nil)
+                                    
                                     return
                                 } else {
                                 let dataBasePath = Database.database().reference().child("videos").child(userID).childByAutoId()
                                     
                                     guard let videoURLString = url?.absoluteString else {return}
                                     
+                                    guard let creationDate = currentVideo.creationDate as Date? else {return}
                                     let dateFormat = DateFormatter()
                                     dateFormat.dateFormat = "EEEE, MM-dd-yyyy"
                                     let dateString = dateFormat.string(from: releaseDate)
+                                    
+                                    let createdDateString = dateFormat.string(from: creationDate)
                                     
                                     let timeFormat = DateFormatter()
                                     
                                     timeFormat.dateFormat = "h:mm a"
                                     
                                     let timeString = timeFormat.string(from: releaseTime)
+                                    
+                                    guard let lovedOneName = self.selectedPerson?.name else {return}
                                 
-                                    dataBasePath.updateChildValues(["videoStorageURL": videoURLString,"videoTag": videoTag, "releaseDate": dateString, "releaseTime": timeString], withCompletionBlock: { (error, ref) in
+                                    dataBasePath.updateChildValues(["videoStorageURL": videoURLString,"videoTag": videoTag, "releaseDate": dateString, "releaseTime": timeString, "lovedOne": lovedOneName, "uuID": currentVideo.uuID, "videoOnDeviceURL":videoURL, "createdDate": createdDateString, "lovedOneEmail": lovedOneEmail], withCompletionBlock: { (error, ref) in
                                         if error != nil {
                                             print("failed to update Database")
+                                            
+                                            let databaseError = UIAlertController(title: "Database Error", message: error?.localizedDescription, preferredStyle: .alert)
+                                            
+                                            databaseError.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                                            
+                                            self.present(databaseError, animated: true, completion: nil)
                                             return
+                                        }else {
+                                            
+                                            let successAlert = UIAlertController(title: "Success", message: "Your video and it's attributes were uploaded successfully", preferredStyle: .alert)
+                                            
+                                            successAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (Action) in
+                                                self.performSegue(withIdentifier: "backtoMain", sender: self)
+                                            }))
+                                            
+                                            self.present(successAlert, animated: true, completion: nil)
+                                            
+                                            
                                         }
                                     })
                                     
@@ -183,6 +258,14 @@ class VideoAtrributesViewController: FormViewController {
                             })
                             
                         }
+                    }
+                    
+                    uploadTask.observe(.progress) { (snapshot) in
+                        // Upload reported progress
+                        let percentComplete = 100.0 * Double(snapshot.progress!.completedUnitCount)
+                            / Double(snapshot.progress!.totalUnitCount)
+                        
+                        self.progressReport.progress = CGFloat(percentComplete)
                     }
                     
                 }
@@ -210,4 +293,36 @@ class VideoAtrributesViewController: FormViewController {
     }
     */
 
+}
+
+extension VideoAtrributesViewController{
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if (scrollView == self.appBar.headerViewController.headerView.trackingScrollView) {
+            self.appBar.headerViewController.headerView.trackingScrollDidScroll()
+        }
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        if (scrollView == self.appBar.headerViewController.headerView.trackingScrollView) {
+            self.appBar.headerViewController.headerView.trackingScrollDidEndDecelerating()
+        }
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView,
+                                  willDecelerate decelerate: Bool) {
+        let headerView = self.appBar.headerViewController.headerView
+        if (scrollView == headerView.trackingScrollView) {
+            headerView.trackingScrollDidEndDraggingWillDecelerate(decelerate)
+        }
+    }
+    
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView,
+                                   withVelocity velocity: CGPoint,
+                                   targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        let headerView = self.appBar.headerViewController.headerView
+        if (scrollView == headerView.trackingScrollView) {
+            headerView.trackingScrollWillEndDragging(withVelocity: velocity,
+                                                     targetContentOffset: targetContentOffset)
+        }
+    }
 }

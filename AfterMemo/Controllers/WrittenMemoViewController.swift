@@ -11,11 +11,42 @@ import Eureka
 import ImageRow
 import CoreData
 import MaterialComponents
+import FirebaseDatabase
+import FirebaseAuth
 
 
 class WrittenMemoViewController: FormViewController{
 var appBar = MDCAppBar()
+    let memoHeaderView = GeneralHeaderView()
+    
+    func configureAppBar(){
+        self.addChildViewController(appBar.headerViewController)
+        appBar.navigationBar.backgroundColor = .clear
+        appBar.navigationBar.title = nil
+        
+        let headerView = appBar.headerViewController.headerView
+        headerView.backgroundColor = .clear
+        headerView.maximumHeight = MemoHeaderView.Constants.maxHeight
+        headerView.minimumHeight = MemoHeaderView.Constants.minHeight
+        
+        memoHeaderView.frame = headerView.bounds
+        headerView.insertSubview(memoHeaderView, at: 0)
+                headerView.trackingScrollView = self.tableView
+        
+        appBar.addSubviewsToParent()
+        
+        //appBar.headerViewController.layoutDelegate = self
+        
+        
+    }
+    
+    @IBOutlet weak var loadingView: CircularLoaderView!
+    let uuid = UUID().uuidString
+    
     var selectedPerson: Recipient?
+    
+    var triggers = Triggers()
+  
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -26,12 +57,17 @@ var appBar = MDCAppBar()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "New Written Memo"
-
-        self.addChildViewController(appBar.headerViewController)
-        self.appBar.headerViewController.headerView.trackingScrollView = self.tableView
-        appBar.addSubviewsToParent()
         
-        MDCAppBarColorThemer.applySemanticColorScheme(ApplicationScheme.shared.colorScheme, to: self.appBar)
+        loadingView.translatesAutoresizingMaskIntoConstraints = false
+        
+        configureAppBar()
+        appBar.navigationBar.tintColor = .white
+
+//        self.addChildViewController(appBar.headerViewController)
+//        self.appBar.headerViewController.headerView.trackingScrollView = self.tableView
+//        appBar.addSubviewsToParent()
+//
+//        MDCAppBarColorThemer.applySemanticColorScheme(ApplicationScheme.shared.colorScheme, to: self.appBar)
         
         form +++ Section("Write a Memo for a loved one")
             <<< TextAreaRow(){row in
@@ -41,21 +77,21 @@ var appBar = MDCAppBar()
         }
         
        +++ Section("Add some details")
-            <<< TextRow(){ row in
-                row.title = "Memo Tag"
-                row.placeholder = "Enter a name"
+            <<< PickerInlineRow<String>(){ row in
+                row.title = "Release Trigger"
+                row.options = triggers.triggerArray
                 row.tag = "memoTag"
                 row.add(rule: RuleRequired())
                 row.validationOptions = .validatesOnChange
                 }
                 .cellUpdate({ (cell, row) in
                     if !row.isValid {
-                        cell.titleLabel?.textColor = .red
+                        cell.textLabel?.textColor = .red
                     }
                 })
             <<< DateRow() { row in
                 row.title = "Date To Be Released"
-                row.value = Date(timeIntervalSinceReferenceDate: 0)
+                row.value = Date()
                 row.tag = "dateTag"
                 row.add(rule: RuleRequired())
                 row.validationOptions = .validatesOnChange
@@ -68,6 +104,7 @@ var appBar = MDCAppBar()
             <<< TimeRow() { row in
                 row.title = "Enter the time for realease"
                 row.tag = "timeTag"
+                row.value = Date()
                 row.add(rule: RuleRequired())
                 row.validationOptions = .validatesOnChange
                 
@@ -87,7 +124,7 @@ var appBar = MDCAppBar()
                 }
                 .onCellSelection { [weak self] (cell, row) in
                     
-                    guard let memoTagRow: TextRow = self?.form.rowBy(tag: "memoTag") else {return}
+                    guard let memoTagRow: PickerInlineRow<String> = self?.form.rowBy(tag: "memoTag") else {return}
                     guard let memoTagRowValue = memoTagRow.value else {return}
                     guard let dateRow: DateRow = self?.form.rowBy(tag: "dateTag") else {
                         return
@@ -152,9 +189,12 @@ var appBar = MDCAppBar()
         written.isVoiceMemo = false
         written.isWrittenMemo = true
         written.memoText = memoText
+        written.uuID = uuid
+        written.creationDate = NSDate()
         
         if let writtens = theSelectedPerson.written?.mutableCopy() as? NSMutableOrderedSet {
             writtens.add(written)
+            theSelectedPerson.latestMemoDate = NSDate()
             theSelectedPerson.written = writtens
         }
         
@@ -162,6 +202,54 @@ var appBar = MDCAppBar()
                 do {
                     try managedContext.save()
                     print(" I saved")
+                    loadingView.progress = 0.5
+                       guard let userID = Auth.auth().currentUser?.uid else {return}
+                    let dataBasePath = Database.database().reference().child("writtenMemos").child(userID).childByAutoId()
+                    
+                    guard let creationDate = written.creationDate as Date? else {return}
+                   
+                    
+                    
+                    let dateFormat = DateFormatter()
+                    dateFormat.dateFormat = "EEEE, MM-dd-yyyy"
+                    let dateString = dateFormat.string(from: releaseDate)
+                    let createdDateString = dateFormat.string(from: creationDate)
+                    
+                    let timeFormat = DateFormatter()
+                    
+                    timeFormat.dateFormat = "h:mm a"
+                    
+                    let timeString = timeFormat.string(from: releaseTime)
+                    
+                    guard let lovedOneName = selectedPerson?.name else {return}
+                    guard let lovedOneEmail = selectedPerson?.email else {return}
+                    
+                    dataBasePath.updateChildValues(["memoTag": memoTag, "releaseDate": dateString, "releaseTime": timeString, "memoText": memoText, "lovedOne" : lovedOneName, "uuID": uuid,"createdDate": createdDateString, "lovedOneEmail": lovedOneEmail]) { (error, ref) in
+                        if error != nil {
+                            print("Upload did not work")
+                            
+                            let databaseError = UIAlertController(title: "Database Error", message: error?.localizedDescription, preferredStyle: .alert)
+                            
+                            databaseError.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                            
+                            self.present(databaseError, animated: true, completion: nil)
+                            return
+                        }else{
+                            
+                            self.loadingView.progress = 1.0
+                            
+                            
+                            let successAlert = UIAlertController(title: "Success", message: "Your written and it's attributes were uploaded successfully", preferredStyle: .alert)
+                            
+                            successAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (Action) in
+                                 self.performSegue(withIdentifier: "fromWritten", sender: self)
+                            }))
+                            
+                            self.present(successAlert, animated: true, completion: nil)
+                            
+                           
+                        }
+                    }
                     
                 }
                 catch let error as NSError {

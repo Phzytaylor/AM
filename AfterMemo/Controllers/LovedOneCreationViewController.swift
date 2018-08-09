@@ -11,9 +11,60 @@ import Eureka
 import ImageRow
 import CoreData
 import MaterialComponents
+import Contacts
 
-class LovedOneCreationViewController: FormViewController  {
+class LovedOneCreationViewController: FormViewController, grabbedContactInfoDelegate   {
+    func didChoose(name: String, email: String, number: String, photo: Data, birthday: Date) {
+        guard let nameRow: TextRow = self.form.rowBy(tag: "lovedOneName") else {return}
+        nameRow.value = name
+        
+        guard let avatarRow: ImageRow = self.form.rowBy(tag: "lovedOnePicture") else {return}
+        
+        avatarRow.value = UIImage(data: photo)
+        
+      
+        
+        guard let birthdayRow: DateRow = self.form.rowBy(tag: "birthdayDateTag") else {return}
+        
+        birthdayRow.value = birthday
+        
+       
+        
+        guard let emailRow: EmailRow = self.form.rowBy(tag: "email") else {return}
+        
+        emailRow.value = email
+        
+        self.tableView.reloadData()
+    }
+    
+   
+    
+  
+    
 var appBar = MDCAppBar()
+    let memoHeaderView = GeneralHeaderView()
+    
+    func configureAppBar(){
+        self.addChildViewController(appBar.headerViewController)
+        appBar.navigationBar.backgroundColor = .clear
+        appBar.navigationBar.title = nil
+        
+        let headerView = appBar.headerViewController.headerView
+        headerView.backgroundColor = .clear
+        headerView.maximumHeight = MemoHeaderView.Constants.maxHeight
+        headerView.minimumHeight = MemoHeaderView.Constants.minHeight
+        
+        memoHeaderView.frame = headerView.bounds
+        headerView.insertSubview(memoHeaderView, at: 0)
+        
+        headerView.trackingScrollView = self.tableView
+        
+        appBar.addSubviewsToParent()
+        
+        //        appBar.headerViewController.layoutDelegate = self
+        
+        
+    }
     
     
     
@@ -22,14 +73,38 @@ var appBar = MDCAppBar()
         self.navigationController?.navigationBar.isHidden = true
     }
     
+    let contactItem = UIBarButtonItem(title: "Import Contact", style: .plain, target: self, action: #selector(showContactList))
+    
+    @objc func showContactList(){
+        
+        guard let contactNavigationController = storyboard?.instantiateViewController(withIdentifier: "contactsNavigator") as? UINavigationController else {return}
+        
+        guard let contactController = contactNavigationController.viewControllers.first as? ContactsTableViewController else {return}
+        
+        self.present(contactNavigationController, animated: true) {
+            contactController.grabbedContactDelegate = self
+        }
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        self.addChildViewController(appBar.headerViewController)
-        self.appBar.headerViewController.headerView.trackingScrollView = self.tableView
-        appBar.addSubviewsToParent()
         
-        MDCAppBarColorThemer.applySemanticColorScheme(ApplicationScheme.shared.colorScheme, to: self.appBar)
+        configureAppBar()
+        title = "Add"
+        self.appBar.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        
+        self.appBar.navigationBar.tintColor = .white
+       
+//        self.addChildViewController(appBar.headerViewController)
+//        self.appBar.headerViewController.headerView.trackingScrollView = self.tableView
+//        appBar.addSubviewsToParent()
+//        
+//        MDCAppBarColorThemer.applySemanticColorScheme(ApplicationScheme.shared.colorScheme, to: self.appBar)
+        
+        self.appBar.navigationBar.rightBarButtonItems = [self.contactItem]
+        
+        
         
         
         
@@ -42,9 +117,19 @@ var appBar = MDCAppBar()
                 row.add(rule: RuleRequired())
                 row.validationOptions = .validatesOnChange
             }
+            <<< EmailRow(){ row in
+                row.title = "Loved One's Email"
+                row.placeholder = "email@gmail.com"
+                row.tag = "email"
+                row.add(rule: RuleEmail())
+                row.add(rule: RuleRequired())
+                row.validationOptions = .validatesOnChange
+            }
             <<< ImageRow() { row in
                 row.title = "Image of Loved One"
                 row.tag = "lovedOnePicture"
+                row.allowEditor = true
+                row.useEditedImage = true
                 row.add(rule: RuleRequired())
                 row.validationOptions = .validatesOnChange
             }
@@ -77,12 +162,16 @@ var appBar = MDCAppBar()
                     
                     guard let birthDayRowValue = birthdayRow.value else {return}
                     
+                    guard let emailRow: EmailRow = self?.form.rowBy(tag: "email") else {return}
+                    
+                    guard let emailRowValue = emailRow.value else {return}
+                    
                     print("validating errors: \(row.section?.form?.validate().count)")
                     if row.section?.form?.validate().count == 0{
                         
                         //save function
                         
-                        self?.save(recipientName: nameRowValue, avatar: avatarRowValue, birthday: birthDayRowValue)
+                        self?.save(recipientName: nameRowValue, avatar: avatarRowValue, birthday: birthDayRowValue, email: emailRowValue)
                         
                     }
                         
@@ -99,13 +188,16 @@ var appBar = MDCAppBar()
 
     }
     
+    
+    
 
-    func save(recipientName: String, avatar: UIImage, birthday: Date){
+    func save(recipientName: String, avatar: UIImage, birthday: Date, email: String){
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{ return }
         
         let managedContext = appDelegate.persistentContainer.viewContext
       
+       
         
         do {
             
@@ -115,9 +207,13 @@ var appBar = MDCAppBar()
                 guard let savedImageData = UIImageJPEGRepresentation(avatar, 0.80) as NSData? else {return}
                 
             
-                person.setValue(recipientName, forKey: "name")
-                person.setValue(savedImageData, forKey: "avatar")
-                person.setValue(birthday, forKey: "age")
+//                person.setValue(recipientName, forKey: "name")
+//                person.setValue(savedImageData, forKey: "avatar")
+//                person.setValue(birthday, forKey: "age")
+                person.name = recipientName
+                person.avatar = savedImageData
+                person.age = birthday as NSDate
+                person.email = email
             
                 
             
@@ -126,6 +222,7 @@ var appBar = MDCAppBar()
                 do {
                     try managedContext.save()
                     print(" I saved")
+                    self.performSegue(withIdentifier: "unwindToMenu", sender: self)
                     
                 }
                 catch let error as NSError {
@@ -184,4 +281,6 @@ extension LovedOneCreationViewController {
     }
 
 }
+
+
 

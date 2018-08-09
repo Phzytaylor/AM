@@ -1,9 +1,8 @@
 //
 //  Videos+CoreDataProperties.swift
-//  AfterMemo
+//  
 //
-//  Created by Taylor Simpson on 5/31/18.
-//  Copyright © 2018 Taylor Simpson. All rights reserved.
+//  Created by Taylor Simpson on 6/15/18.
 //
 //
 
@@ -24,7 +23,9 @@ extension Videos {
     @NSManaged public var releaseTime: NSDate?
     @NSManaged public var thumbNail: NSData?
     @NSManaged public var urlPath: String?
+    @NSManaged public var uuID: String?
     @NSManaged public var videoTag: String?
+    @NSManaged public var creationDate: NSDate?
     @NSManaged public var recipient: Recipient?
 
 }

@@ -106,10 +106,27 @@ class UserInfoViewController: FormViewController {
                                 var dateString = dateFormat.string(from: birthDayRowValue)
                                 print("\(dateString)")
                                 
-                                userRef.updateChildValues(["email": emailRowValue, "phoneNumber": phoneRowValue, "birhday": dateString]  )}
+                                userRef.updateChildValues(["email": emailRowValue, "phoneNumber": phoneRowValue, "birthday": dateString]  )
+                                
+                                UserDefaults.standard.set(true, forKey: "hasSetup")
+                                
+                                self?.performSegue(withIdentifier: "userInfoDone", sender: self)
+                                
+                            } else if error != nil {
+                                
+                                guard let firebaseError = error else {return}
+                                
+                                
+                                let passwordAlert = UIAlertController(title: "Registration Error", message: firebaseError.localizedDescription, preferredStyle: .alert)
+                                
+                                passwordAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                                
+                                self?.present(passwordAlert, animated: true, completion: nil)
+                                
+                            }
                             
                             
-                            UserDefaults.standard.set(true, forKey: "hasSetup")
+                            
                             
                         }
                         

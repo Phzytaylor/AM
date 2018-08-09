@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import MaterialComponents
 
 class TextMemoPreviewView: UIView {
 
+    @IBOutlet weak var textMemoCard: MDCCard!
+    @IBOutlet weak var avatarImage: UIImageView!
     @IBOutlet weak var textMemoTextView: UITextView!
+    
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

@@ -8,29 +8,64 @@
 
 import UIKit
 import MaterialComponents
+import CoreData
 class TextMemoPreviewViewController: UIViewController {
 
     var textForMemo:String?
     var appBar = MDCAppBar()
+    let memoHeaderView = GeneralHeaderView()
     
+    func configureAppBar(){
+        self.addChildViewController(appBar.headerViewController)
+        appBar.navigationBar.backgroundColor = .clear
+        appBar.navigationBar.title = nil
+        
+        let headerView = appBar.headerViewController.headerView
+        headerView.backgroundColor = .clear
+        headerView.maximumHeight = MemoHeaderView.Constants.maxHeight
+        headerView.minimumHeight = MemoHeaderView.Constants.minHeight
+        
+        memoHeaderView.frame = headerView.bounds
+        headerView.insertSubview(memoHeaderView, at: 0)
+        
+//        headerView.trackingScrollView = self.collectionView
+        
+        appBar.addSubviewsToParent()
+        
+        //appBar.headerViewController.layoutDelegate = self
+        
+        
+    }
+    var lovedOneSelected: Recipient?
     public var textMemoPreviewView: TextMemoPreviewView! {
         guard isViewLoaded else { return nil }
         return view as! TextMemoPreviewView
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Written Memo Preview"
         self.textMemoPreviewView.textMemoTextView.isUserInteractionEnabled = false
         
-        self.title = "AfterMemo"
+        guard let lovedOneAvatar = lovedOneSelected?.avatar  as Data? else {return}
         
+        let avatarImage = UIImage(data: lovedOneAvatar)
+        textMemoPreviewView.avatarImage.translatesAutoresizingMaskIntoConstraints = false
+        textMemoPreviewView.avatarImage.contentMode = .scaleToFill
         
-        self.addChildViewController(appBar.headerViewController)
-      
-        appBar.addSubviewsToParent()
+        textMemoPreviewView.avatarImage.image = avatarImage
         
+       // self.title = "AfterMemo"
+        configureAppBar()
+        appBar.navigationBar.tintColor = .white
         
-        
-        MDCAppBarColorThemer.applySemanticColorScheme(ApplicationScheme.shared.colorScheme, to: self.appBar)
+//        self.addChildViewController(appBar.headerViewController)
+//
+//        appBar.addSubviewsToParent()
+//
+//
+//
+//        MDCAppBarColorThemer.applySemanticColorScheme(ApplicationScheme.shared.colorScheme, to: self.appBar)
         
         guard let memoText = textForMemo else {return}
         

@@ -2,7 +2,7 @@
 //  Recipient+CoreDataProperties.swift
 //  AfterMemo
 //
-//  Created by Taylor Simpson on 5/31/18.
+//  Created by Taylor Simpson on 6/22/18.
 //  Copyright © 2018 Taylor Simpson. All rights reserved.
 //
 //
@@ -19,7 +19,9 @@ extension Recipient {
 
     @NSManaged public var age: NSDate?
     @NSManaged public var avatar: NSData?
+    @NSManaged public var latestMemoDate: NSDate?
     @NSManaged public var name: String?
+    @NSManaged public var email: String?
     @NSManaged public var videos: NSOrderedSet?
     @NSManaged public var voice: NSOrderedSet?
     @NSManaged public var written: NSOrderedSet?

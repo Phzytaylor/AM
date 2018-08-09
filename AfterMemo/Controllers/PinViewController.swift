@@ -11,7 +11,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PinViewController: UIViewController {
 
 
     @IBOutlet weak var createAndEnterLabel: UILabel!
@@ -25,6 +25,8 @@ class ViewController: UIViewController {
     let enterPinTag = 1
     let verifyPinTag = 2
     let deviceName = UIDevice.current.name
+    var appDidComeBack = false
+    var didDismiss = false
     
     var firstPin: String?
     
@@ -43,15 +45,22 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         
     
-        
+       
         
     }
     
-   
+    @objc func appCameBack() {
+        print("App moved to foreground!")
+        
+        appDidComeBack = true
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(appCameBack), name: Notification.Name.UIApplicationWillEnterForeground, object: nil)
         
         passwordContainerView = PasswordContainerView.create(in: passwordStackView, digit: kPasswordDigit)
         passwordContainerView.delegate = self
@@ -128,7 +137,22 @@ class ViewController: UIViewController {
             if checkLogin(userName: deviceName, password: storedPassword){
                 print("I DID IT!")
                 
-                performSegue(withIdentifier: "toMain", sender: self)
+                if self.appDidComeBack == false {
+                    
+                    performSegue(withIdentifier: "toMain", sender: self)
+                    
+                } else if self.appDidComeBack == true {
+                    
+                    print(self.view.superview)
+                    self.dismiss(animated: true) {
+                        print("I dismmised")
+                        self.didDismiss = true
+                    }
+                    
+                    if didDismiss == false {
+                        performSegue(withIdentifier: "toMain", sender: self)
+                    }
+                }
             } else {
                 // animates the dots to show that the password is incorrect
                 passwordContainerView.wrongPassword()
@@ -168,7 +192,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: PasswordInputCompleteProtocol {
+extension PinViewController: PasswordInputCompleteProtocol {
     func passwordInputComplete(_ passwordContainerView: PasswordContainerView, input: String) {
         
     let pinVerified = UserDefaults.standard.bool(forKey: "hasVerified")
@@ -212,7 +236,7 @@ extension ViewController: PasswordInputCompleteProtocol {
     }
 }
 
-private extension ViewController {
+private extension PinViewController {
     func validation(_ input: String) -> Bool {
         return input == "123456"
     }

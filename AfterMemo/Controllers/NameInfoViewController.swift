@@ -9,12 +9,18 @@
 import UIKit
 import CoreData
 
+protocol LastPageDelegate {
+    func didSave(isSaved:Bool)
+}
+
 class NameInfoViewController: UIViewController, UITextFieldDelegate {
+      var lastPageDelegate: LastPageDelegate!
     
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var nextLabel: AnimatedMaskLabel!
     
+    @IBOutlet weak var saveButton: UIButton!
     @IBAction func saveAction(_ sender: Any) {
         
         guard let nameText = firstNameTextField.text else {return}
@@ -27,6 +33,8 @@ class NameInfoViewController: UIViewController, UITextFieldDelegate {
 //        controller.lastName = lastText
 //
         save(firstName: nameText, lastName: lastText)
+        
+      
     }
     
     
@@ -41,6 +49,7 @@ class NameInfoViewController: UIViewController, UITextFieldDelegate {
         nextLabel.isHidden = true
         firstNameTextField.delegate = self
         lastNameTextField.delegate = self
+        
 
         // Do any additional setup after loading the view.
     }
@@ -97,6 +106,10 @@ class NameInfoViewController: UIViewController, UITextFieldDelegate {
                 nextLabel.isHidden = false
                  self.view.endEditing(true)
                 print(" I saved")
+                saveButton.isHidden = true
+                lastPageDelegate.didSave(isSaved: true)
+                
+                
                 
             }
             catch let error as NSError {

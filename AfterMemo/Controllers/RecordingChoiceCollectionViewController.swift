@@ -23,8 +23,23 @@ class RecordingChoiceCollectionViewController: UICollectionViewController {
         
        
         
-        collectionView?.backgroundColor = UIColor(red: 0.01, green: 0.66, blue: 0.96, alpha: 1.0)
+       // collectionView?.backgroundColor = UIColor(red: 0.01, green: 0.66, blue: 0.96, alpha: 1.0)
         
+        let myImageView: UIImageView = {
+            let imageView = UIImageView(image:#imageLiteral(resourceName: "iStock-174765643 (2)"))
+            imageView.clipsToBounds = true
+//            imageView.frame = CGRect(x: 0, y: 200, width: UIApplication.shared.statusBarFrame.width, height: 100)
+//            imageView.contentMode = .center
+            
+            return imageView
+        }()
+        
+     collectionView?.backgroundView = myImageView
+//        collectionView?.backgroundColor = .clear
+       
+        
+        let layout = self.collectionViewLayout as? UICollectionViewFlowLayout
+        layout?.minimumLineSpacing = 8
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -66,12 +81,24 @@ class RecordingChoiceCollectionViewController: UICollectionViewController {
             
         } else if segue.identifier == "toLovedOne" && indexPath.row == 1 {
             
+            guard let selectionController = storyboard?.instantiateViewController(withIdentifier: "selection") as? SelectionCollectionViewController else {
+                
+                print(" I didn't work :(")
+                return
+            }
+            
+           
+            
+            
             destinationVC.mediaSelected = "video"
             
         } else if segue.identifier == "toLovedOne" && indexPath.row == 2 {
             destinationVC.mediaSelected = "written"
         } else if segue.identifier == "toLovedOne" && indexPath.row == 3 {
             destinationVC.mediaSelected = "none"
+        } else if segue.identifier == "toLovedOne" && indexPath.row == 4 {
+            destinationVC.mediaSelected = "downloads"
+            
         }
         
     }
@@ -95,21 +122,25 @@ class RecordingChoiceCollectionViewController: UICollectionViewController {
         // Configure the cell
         if indexPath.row == 0 {
            
-            cell.choiceImage.backgroundColor = #colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)
-            cell.choiceImage.image = #imageLiteral(resourceName: "sharp_mic_none_white_18pt")
+           
+           
+           
+            cell.choiceImage.image = #imageLiteral(resourceName: "audioPic")
             cell.memoChoiceLabel.text = "New Audio"
         } else if indexPath.row == 1 {
-            cell.choiceImage.backgroundColor = .red
-            cell.choiceImage.image = #imageLiteral(resourceName: "outline_videocam_white_18pt")
+           
+            //cell.choiceImage.backgroundColor = .red
+            cell.choiceImage.image = #imageLiteral(resourceName: "VideoPic")
             cell.memoChoiceLabel.text = "New Video"
         } else if indexPath.row == 2 {
             
-            cell.choiceImage.backgroundColor = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
-            cell.choiceImage.image = #imageLiteral(resourceName: "sharp_edit_white_18pt")
+          
+            cell.choiceImage.image = #imageLiteral(resourceName: "WrittenPic")
             cell.memoChoiceLabel.text = "New Text"
         } else if indexPath.row == 3 {
-            cell.choiceImage.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
-            cell.choiceImage.image = #imageLiteral(resourceName: "outline_favorite_border_white_18pt")
+            
+          
+            cell.choiceImage.image = #imageLiteral(resourceName: "lovedOnePic")
             cell.memoChoiceLabel.text = "Loved Ones"
         }
        
@@ -208,7 +239,7 @@ class RecordingChoiceCollectionViewController: UICollectionViewController {
 extension RecordingChoiceCollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 130,
-               height: 110)
+               height: 130)
     }
     
     

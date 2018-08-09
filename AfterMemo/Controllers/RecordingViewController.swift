@@ -25,6 +25,29 @@ class RecordingViewController: UIViewController {
     var silence: AKBooster!
     var selectedPerson: Recipient?
     var appBar = MDCAppBar()
+    let memoHeaderView = GeneralHeaderView()
+    
+    func configureAppBar(){
+        self.addChildViewController(appBar.headerViewController)
+        appBar.navigationBar.backgroundColor = .clear
+        appBar.navigationBar.title = nil
+        
+        let headerView = appBar.headerViewController.headerView
+        headerView.backgroundColor = .clear
+        headerView.maximumHeight = MemoHeaderView.Constants.maxHeight
+        headerView.minimumHeight = MemoHeaderView.Constants.minHeight
+        
+        memoHeaderView.frame = headerView.bounds
+        headerView.insertSubview(memoHeaderView, at: 0)
+        
+        
+        
+        appBar.addSubviewsToParent()
+        
+        //appBar.headerViewController.layoutDelegate = self
+        
+        
+    }
     var voiceMemoToBeSent: VoiceMemos?
     
     let noteFrequencies = [16.35, 17.32, 18.35, 19.45, 20.6, 21.83, 23.12, 24.5, 25.96, 27.5, 29.14, 30.87]
@@ -86,11 +109,13 @@ class RecordingViewController: UIViewController {
     audio.isVoiceMemo = true
     audio.isWrittenMemo = false
     audio.isVideo = false
+    audio.creationDate = NSDate()
     
     voiceMemoToBeSent = audio
     
     if let audios = theSelectedPerson.voice?.mutableCopy() as?NSMutableOrderedSet {
         audios.add(audio)
+        theSelectedPerson.latestMemoDate = NSDate()
         theSelectedPerson.voice = audios
     }
     
@@ -131,12 +156,13 @@ class RecordingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.addChildViewController(appBar.headerViewController)
-       // self.appBar.headerViewController.headerView.trackingScrollView = self.view
-        appBar.addSubviewsToParent()
-        
-        MDCAppBarColorThemer.applySemanticColorScheme(ApplicationScheme.shared.colorScheme, to: self.appBar)
+        configureAppBar()
+        appBar.navigationBar.tintColor = .white
+//        self.addChildViewController(appBar.headerViewController)
+//       // self.appBar.headerViewController.headerView.trackingScrollView = self.view
+//        appBar.addSubviewsToParent()
+//
+//        MDCAppBarColorThemer.applySemanticColorScheme(ApplicationScheme.shared.colorScheme, to: self.appBar)
         
         AKSettings.audioInputEnabled = true
         mic = AKMicrophone()
@@ -258,7 +284,7 @@ extension RecordingViewController: AVAudioRecorderDelegate {
                 self.audioRecorder = try AVAudioRecorder(url: audioFilename, settings: settings)
                 self.audioRecorder.delegate = self
                 self.audioRecorder.record()
-                AudioKit.output = self.silence
+                //AudioKit.output = self.silence
                 do {
                     try AudioKit.start()
                 } catch {
