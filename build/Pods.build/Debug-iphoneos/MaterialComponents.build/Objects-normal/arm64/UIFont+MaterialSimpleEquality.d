@@ -1,7 +1,0 @@
-dependencies: \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Typography/src/UIFont+MaterialSimpleEquality.m \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/build/Pods.build/Debug-iphoneos/MaterialComponents.build/module.modulemap \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/Target\ Support\ Files/MaterialComponents/MaterialComponents-prefix.pch \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Typography/src/UIFont+MaterialSimpleEquality.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/private/Math/src/MaterialMath.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/private/Math/src/MDCMath.h

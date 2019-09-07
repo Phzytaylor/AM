@@ -1,7 +1,0 @@
-version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
-options: "2449ba1c11bbd5b929eac688ffc1f4d2"
-build_time: [1563498122, 922287000]
-inputs:
-  "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/SWXMLHash/Source/shim.swift": [1554607430, 537792448]
-  "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/SWXMLHash/Source/SWXMLHash.swift": [1554607430, 534002343]
-  "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/SWXMLHash/Source/XMLIndexer+XMLIndexerDeserializable.swift": [1554607430, 543030276]

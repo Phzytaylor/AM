@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "aa128d77c3d563ec11c6eb543c3c12e3"
-build_time: [1565364946, 47292000]
+build_time: [1567831870, 899117000]
 inputs:
   "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/AfterMemo/Helpers/TriggersAndRelations.swift": [1551225957, 663767137]
   "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/AfterMemo/Views/DownloadTableViewCell.swift": [1537572544, 587041154]
