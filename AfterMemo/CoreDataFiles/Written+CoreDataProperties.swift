@@ -10,7 +10,6 @@
 import Foundation
 import CoreData
 
-
 extension Written {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Written> {

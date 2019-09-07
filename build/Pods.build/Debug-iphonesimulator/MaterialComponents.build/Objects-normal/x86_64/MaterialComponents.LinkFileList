@@ -36,8 +36,12 @@
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCAppBarTypographyThemer.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCAppBarViewController+MaterialTheming.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCAppBarViewController.o
+/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCBannerView+MaterialTheming.o
+/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCBannerView.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCBaseCell+MaterialTheming.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCBaseCell.o
+/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCBaseTextField.o
+/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCBaseTextFieldLayout.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCBottomAppBarColorThemer.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCBottomAppBarLayer.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCBottomAppBarView.o
@@ -47,6 +51,7 @@
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCBottomDrawerPresentationController.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCBottomDrawerTransitionController.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCBottomDrawerViewController.o
+/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCBottomNavigationBar+MaterialTheming.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCBottomNavigationBar.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCBottomNavigationBarColorThemer.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCBottomNavigationBarTypographyThemer.o
@@ -100,6 +105,7 @@
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCCollectionViewTextCell.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCContainedButtonColorThemer.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCContainedButtonThemer.o
+/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCContainedInputViewVerticalPositioningGuideBase.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCContainerScheme.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCCornerTreatment+CornerTypeInitalizer.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCCornerTreatment.o
@@ -190,6 +196,7 @@
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCPalettes.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCPathGenerator.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCPillShapeGenerator.o
+/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCProgressView+MaterialTheming.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCProgressView.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCProgressViewColorThemer.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCProgressViewMotionSpec.o
@@ -260,11 +267,15 @@
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/MDCTypographyUtilities.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/UIApplication+AppExtensions.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/UICollectionViewController+MDCCardReordering.o
+/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/UIColor+MaterialBlending.o
+/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/UIColor+MaterialDynamic.o
+/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/UIColor+MaterialElevation.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/UIFont+MaterialScalable.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/UIFont+MaterialSimpleEquality.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/UIFont+MaterialTypography.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/UIFont+MaterialTypographyPrivate.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/UIFontDescriptor+MaterialTypography.o
+/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/UIView+MaterialElevationResponding.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/UIView+MDCTimingFunction.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/UIViewController+MaterialBottomSheet.o
 /Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/MaterialComponents.build/Objects-normal/x86_64/UIViewController+MaterialDialogs.o

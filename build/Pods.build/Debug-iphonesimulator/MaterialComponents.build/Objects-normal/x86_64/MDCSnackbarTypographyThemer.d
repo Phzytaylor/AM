@@ -6,6 +6,13 @@ dependencies: \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Snackbar/src/MaterialSnackbar.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Snackbar/src/MDCSnackbarAlignment.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Snackbar/src/MDCSnackbarManager.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Elevation/src/MaterialElevation.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Elevation/src/MDCElevatable.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Elevation/src/MDCElevationOverriding.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Elevation/src/UIColor+MaterialElevation.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Elevation/src/UIView+MaterialElevationResponding.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/ShadowElevations/src/MaterialShadowElevations.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/ShadowElevations/src/MDCShadowElevations.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Snackbar/src/MDCSnackbarMessage.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Snackbar/src/MDCSnackbarMessageView.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Buttons/src/MaterialButtons.h \
@@ -14,8 +21,6 @@ dependencies: \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Ink/src/MDCInkGestureRecognizer.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Ink/src/MDCInkTouchController.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Ink/src/MDCInkView.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/ShadowElevations/src/MaterialShadowElevations.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/ShadowElevations/src/MDCShadowElevations.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Shapes/src/MaterialShapes.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Shapes/src/MDCCornerTreatment.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Shapes/src/MDCEdgeTreatment.h \

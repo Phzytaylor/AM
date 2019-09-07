@@ -9,6 +9,7 @@ provides-dynamic-lookup:
 - "forwardingTarget"
 - "responds"
 - "scrollViewDidScroll"
+- "scrollViewWillBeginDragging"
 - "scrollViewWillEndDragging"
 depends-top-level:
 - !private "!"
@@ -18,6 +19,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "Bool"
 - "CGPoint"
+- !private "CastingPrecedence"
 - "NSKeyValueObservation"
 - "NSObject"
 - "OverlayScrollViewDelegate"
@@ -35,7 +37,6 @@ depends-member:
 - !private ["s7CVarArgP", "cancelForwarding"]
 - !private ["s7CVarArgP", "delegate"]
 - !private ["s7CVarArgP", "forwardingTarget"]
-- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "invalidate"]
 - !private ["s7CVarArgP", "observe"]
@@ -62,7 +63,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "cancelForwarding"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "forwardingTarget"]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "invalidate"]
 - !private ["s28CustomDebugStringConvertibleP", "multiply"]
@@ -92,7 +92,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "delegate"]
 - !private ["s23CustomStringConvertibleP", "forwardingTarget"]
 - !private ["s23CustomStringConvertibleP", "init"]
-- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "invalidate"]
 - !private ["s23CustomStringConvertibleP", "observe"]
 - !private ["s23CustomStringConvertibleP", "originalDelegate"]
@@ -121,7 +120,6 @@ depends-member:
 - !private ["SQ", "delegate"]
 - !private ["SQ", "forwardingTarget"]
 - !private ["SQ", "init"]
-- !private ["SQ", "init"]
 - !private ["SQ", "invalidate"]
 - !private ["SQ", "multiply"]
 - !private ["SQ", "observe"]
@@ -148,7 +146,6 @@ depends-member:
 - !private ["SH", "cancelForwarding"]
 - !private ["SH", "delegate"]
 - !private ["SH", "forwardingTarget"]
-- !private ["SH", "init"]
 - !private ["SH", "init"]
 - !private ["SH", "invalidate"]
 - !private ["SH", "observe"]
@@ -178,6 +175,7 @@ depends-member:
 - ["So8NSObjectC", "CGPoint"]
 - ["So8NSObjectC", "NSKeyValueObservation"]
 - ["So8NSObjectC", "OverlayScrollViewDelegate"]
+- !private ["So8NSObjectC", "OverlayScrollViewDelegateProxy"]
 - ["So8NSObjectC", "Selector"]
 - ["So8NSObjectC", "UIScrollView"]
 - ["So8NSObjectC", "UIScrollViewDelegate"]
@@ -188,7 +186,6 @@ depends-member:
 - ["So8NSObjectC", "forward"]
 - ["So8NSObjectC", "forwardingTarget"]
 - ["So8NSObjectC", "init"]
-- !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "invalidate"]
 - !private ["So8NSObjectC", "observe"]
 - ["So8NSObjectC", "originalDelegate"]
@@ -215,7 +212,6 @@ depends-member:
 - !private ["So8NSObjectP", "delegate"]
 - !private ["So8NSObjectP", "forwardingTarget"]
 - !private ["So8NSObjectP", "init"]
-- !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "invalidate"]
 - !private ["So8NSObjectP", "observe"]
 - !private ["So8NSObjectP", "originalDelegate"]
@@ -239,10 +235,12 @@ depends-member:
 - ["So8NSObjectP", "viewForZoomingInScrollView"]
 - !private ["16OverlayContainer0A18ScrollViewDelegateP", "overlayScrollView"]
 - !private ["16OverlayContainer0A18ScrollViewDelegateP", "overlayScrollViewDidScroll"]
+- !private ["16OverlayContainer0A18ScrollViewDelegateP", "overlayScrollViewWillBeginDragging"]
 - ["16OverlayContainer0A23ScrollViewDelegateProxyC", "Bool"]
 - ["16OverlayContainer0A23ScrollViewDelegateProxyC", "CGPoint"]
 - ["16OverlayContainer0A23ScrollViewDelegateProxyC", "NSKeyValueObservation"]
 - ["16OverlayContainer0A23ScrollViewDelegateProxyC", "OverlayScrollViewDelegate"]
+- !private ["16OverlayContainer0A23ScrollViewDelegateProxyC", "OverlayScrollViewDelegateProxy"]
 - ["16OverlayContainer0A23ScrollViewDelegateProxyC", "Selector"]
 - ["16OverlayContainer0A23ScrollViewDelegateProxyC", "UIScrollView"]
 - ["16OverlayContainer0A23ScrollViewDelegateProxyC", "UIScrollViewDelegate"]
@@ -331,7 +329,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cancelForwarding"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "forwardingTarget"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "invalidate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "observe"]
@@ -423,4 +420,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "f8e438a85128f3b554e272003c7c7c6e"
+interface-hash: "c613761279e467db241e367f22f01eb4"

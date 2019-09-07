@@ -29,7 +29,7 @@ struct VideosFromDatabase {
     let relation: String?
     let adminName: String?
     let adminEmail: String?
-    init(lovedOne: String?, videoStorageURL: String?, videoTag: String?, releaseTime: String?, releaseDate: String?, uuID: String?, key: String? = "", videoOnDeviceURL: String?,createdDate: String?, lovedOneEmail: String?, relation:String?, adminName: String?, adminEmail: String?) {
+    init(lovedOne: String?, videoStorageURL: String?, videoTag: String?, releaseTime: String?, releaseDate: String?, uuID: String?, key: String? = "", videoOnDeviceURL: String?, createdDate: String?, lovedOneEmail: String?, relation:String?, adminName: String?, adminEmail: String?) {
         self.ref = nil
         self.key = key
         self.lovedOne = lovedOne
@@ -45,9 +45,7 @@ struct VideosFromDatabase {
         self.adminName = adminName
         self.adminEmail = adminEmail
     }
-    
     init?(snapshot: DataSnapshot) {
-        
         guard let value = snapshot.value as? [String:AnyObject] else {
             return nil
         }
@@ -63,7 +61,6 @@ struct VideosFromDatabase {
                     let relation = value["relation"] as? String
                     let adminName = value["adminName"] as? String
                     let adminEmail = value["adminEmail"] as? String
-        
 //        guard
 //            let value = snapshot.value as? [String: AnyObject],
 //            let lovedOne = value["lovedOne"] as? String,
@@ -79,7 +76,6 @@ struct VideosFromDatabase {
 //        let adminName = value["adminName"] as? String else {
 //                return nil
 //        }
-        
         self.ref = snapshot.ref
         self.key = snapshot.key
         self.lovedOne = lovedOne
@@ -95,7 +91,6 @@ struct VideosFromDatabase {
         self.adminName = adminName
         self.adminEmail = adminEmail
     }
-    
     func toAnyObject() -> Any {
         return [
             "lovedOne": lovedOne,

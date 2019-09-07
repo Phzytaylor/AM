@@ -22,5 +22,6 @@ pod 'Firebase/Storage'
 pod 'Macaw'
 pod 'MaterialComponents'
 pod 'OverlayContainer'
+pod 'SwiftLint'
 
 end

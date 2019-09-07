@@ -8,6 +8,7 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
+- "Bool"
 - "CGFloat"
 - "Int"
 - "InterruptibleAnimatorOverlayContainerTransitionCoordinator"
@@ -17,6 +18,14 @@ depends-top-level:
 - "UIViewImplicitlyAnimating"
 - "Void"
 depends-member:
+- !private ["s28CustomDebugStringConvertibleP", "flatMap"]
+- !private ["s17CustomReflectableP", "flatMap"]
+- !private ["Se", "flatMap"]
+- !private ["SE", "flatMap"]
+- !private ["SQ", "flatMap"]
+- !private ["s23ExpressibleByNilLiteralP", "flatMap"]
+- !private ["SH", "flatMap"]
+- ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "Bool"]
 - ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "CGFloat"]
 - ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "Int"]
 - ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "OverlayContainerTransitionCoordinatorContext"]
@@ -29,44 +38,59 @@ depends-member:
 - ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "deinit"]
 - ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "height"]
 - ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "init"]
+- ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "isAnimated"]
+- ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "isCancelled"]
+- ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "markAsCancelled"]
 - ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "notchIndexes"]
 - ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "overlayTranslationHeight"]
 - ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "reachableIndexes"]
-- ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "targetNotchHeight"]
-- ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "targetNotchIndex"]
+- ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "targetTranslationHeight"]
 - !private ["So8NSObjectP", "addAnimations"]
 - !private ["So8NSObjectP", "addCompletion"]
+- !private ["Sq", "flatMap"]
 - ["16OverlayContainer0aB21TransitionCoordinatorP", ""]
 - ["16OverlayContainer0aB21TransitionCoordinatorP", "animate"]
 - !private ["16OverlayContainer0aB21TransitionCoordinatorP", "animator"]
 - !private ["16OverlayContainer0aB21TransitionCoordinatorP", "context"]
 - ["16OverlayContainer0aB21TransitionCoordinatorP", "height"]
+- ["16OverlayContainer0aB21TransitionCoordinatorP", "isAnimated"]
+- ["16OverlayContainer0aB21TransitionCoordinatorP", "isCancelled"]
 - ["16OverlayContainer0aB21TransitionCoordinatorP", "notchIndexes"]
 - ["16OverlayContainer0aB21TransitionCoordinatorP", "overlayTranslationHeight"]
 - ["16OverlayContainer0aB21TransitionCoordinatorP", "reachableIndexes"]
-- ["16OverlayContainer0aB21TransitionCoordinatorP", "targetNotchHeight"]
-- ["16OverlayContainer0aB21TransitionCoordinatorP", "targetNotchIndex"]
+- ["16OverlayContainer0aB21TransitionCoordinatorP", "targetTranslationHeight"]
 - ["16OverlayContainer0aB28TransitionCoordinatorContextP", ""]
 - ["16OverlayContainer0aB28TransitionCoordinatorContextP", "animate"]
 - !private ["16OverlayContainer0aB28TransitionCoordinatorContextP", "animator"]
 - !private ["16OverlayContainer0aB28TransitionCoordinatorContextP", "context"]
 - ["16OverlayContainer0aB28TransitionCoordinatorContextP", "height"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "isAnimated"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "isCancelled"]
 - ["16OverlayContainer0aB28TransitionCoordinatorContextP", "notchIndexes"]
 - ["16OverlayContainer0aB28TransitionCoordinatorContextP", "overlayTranslationHeight"]
 - ["16OverlayContainer0aB28TransitionCoordinatorContextP", "reachableIndexes"]
-- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "targetNotchHeight"]
-- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "targetNotchIndex"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "targetTranslationHeight"]
 - !private ["So15UIViewAnimatingP", "addAnimations"]
 - !private ["So15UIViewAnimatingP", "addCompletion"]
 - !private ["So25UIViewImplicitlyAnimatingP", "addAnimations"]
 - !private ["So25UIViewImplicitlyAnimatingP", "addCompletion"]
+- !private ["s21_ObjectiveCBridgeableP", "flatMap"]
 depends-nominal:
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "SH"
 - "16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC"
 - !private "So8NSObjectP"
+- !private "Sq"
 - "16OverlayContainer0aB21TransitionCoordinatorP"
 - "16OverlayContainer0aB28TransitionCoordinatorContextP"
 - !private "So15UIViewAnimatingP"
 - !private "So25UIViewImplicitlyAnimatingP"
+- !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -95,4 +119,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "1285165171704fd2a257ef950666939c"
+interface-hash: "3a50c1433490e41f7e5f9144242684c1"

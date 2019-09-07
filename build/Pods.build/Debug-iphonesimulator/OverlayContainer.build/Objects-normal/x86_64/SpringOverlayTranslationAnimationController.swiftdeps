@@ -13,10 +13,12 @@ depends-top-level:
 - !private "+"
 - !private "-"
 - !private "/"
+- "AssignmentPrecedence"
 - "CGFloat"
 - "Constant"
 - "OverlayAnimatedTransitioning"
 - "OverlayContainerContextTransitioning"
+- "OverlayContainerViewController"
 - "SpringOverlayTranslationAnimationController"
 - "UISpringTimingParameters"
 - "UIViewImplicitlyAnimating"
@@ -31,16 +33,19 @@ depends-member:
 - !private ["12CoreGraphics7CGFloatV", "pi"]
 - !private ["So7CGPointV", "y"]
 - !private ["So8CGVectorV", "zero"]
+- ["s7CVarArgP", "OverlayStyle"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "pi"]
 - !private ["s7CVarArgP", "pow"]
 - !private ["SL", "pi"]
+- ["s28CustomDebugStringConvertibleP", "OverlayStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "pow"]
 - !private ["s28CustomDebugStringConvertibleP", "y"]
 - !private ["s28CustomDebugStringConvertibleP", "zero"]
 - !private ["s17CustomReflectableP", "pi"]
 - !private ["s17CustomReflectableP", "y"]
+- ["s23CustomStringConvertibleP", "OverlayStyle"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "pi"]
 - !private ["s23CustomStringConvertibleP", "pow"]
@@ -50,24 +55,37 @@ depends-member:
 - !private ["SE", "pi"]
 - !private ["SE", "y"]
 - !private ["SE", "zero"]
+- ["SQ", "OverlayStyle"]
+- ["SQ", "expandableHeight"]
+- ["SQ", "flexibleHeight"]
 - !private ["SQ", "init"]
 - !private ["SQ", "pi"]
 - !private ["SQ", "pow"]
+- ["SQ", "rigid"]
 - !private ["SQ", "y"]
 - !private ["SQ", "zero"]
 - !private ["s25ExpressibleByFloatLiteralP", "pi"]
 - !private ["s27ExpressibleByIntegerLiteralP", "pi"]
 - !private ["SF", "pi"]
+- ["SH", "OverlayStyle"]
+- ["SH", "expandableHeight"]
+- ["SH", "flexibleHeight"]
 - !private ["SH", "init"]
 - !private ["SH", "pi"]
 - !private ["SH", "pow"]
+- ["SH", "rigid"]
+- ["16OverlayContainer016HeightConstraintA29TranslationControllerDelegateP", "OverlayStyle"]
+- ["So8NSCodingP", "OverlayStyle"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "pow"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "pow"]
+- ["So26NSExtensionRequestHandlingP", "OverlayStyle"]
 - ["So8NSObjectC", "CGFloat"]
+- ["So8NSObjectC", "OverlayStyle"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "pow"]
+- ["So8NSObjectP", "OverlayStyle"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "pow"]
 - !private ["Sj", "pi"]
@@ -83,10 +101,15 @@ depends-member:
 - !private ["16OverlayContainer0A21AnimatedTransitioningP", "min"]
 - !private ["16OverlayContainer0A21AnimatedTransitioningP", "response"]
 - !private ["16OverlayContainer0aB20ContextTransitioningP", "velocity"]
+- ["16OverlayContainer0aB14ViewControllerC", "OverlayStyle"]
+- ["16OverlayContainer0aB14ViewControllerC0A5StyleO", "expandableHeight"]
+- ["16OverlayContainer0aB14ViewControllerC0A5StyleO", "flexibleHeight"]
+- ["16OverlayContainer0aB14ViewControllerC0A5StyleO", "rigid"]
 - !private ["s13SignedNumericP", "pi"]
 - ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "CGFloat"]
 - ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "Constant"]
 - ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "OverlayContainerContextTransitioning"]
+- ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "OverlayContainerViewController"]
 - !private ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "UISpringTimingParameters"]
 - ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "UIViewImplicitlyAnimating"]
 - !private ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "UIViewPropertyAnimator"]
@@ -100,17 +123,28 @@ depends-member:
 - !private ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "min"]
 - ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "response"]
 - !private ["Sx", "pi"]
+- ["So21UIAppearanceContainerP", "OverlayStyle"]
+- ["So18UIContentContainerP", "OverlayStyle"]
+- ["So18UIFocusEnvironmentP", "OverlayStyle"]
+- ["So30UIPasteConfigurationSupportingP", "OverlayStyle"]
+- ["So11UIResponderC", "OverlayStyle"]
+- ["So30UIResponderStandardEditActionsP", "OverlayStyle"]
 - ["So24UISpringTimingParametersC", "CGFloat"]
 - ["So24UISpringTimingParametersC", "init"]
 - !private ["So24UISpringTimingParametersC", "pow"]
+- ["So16UIStateRestoringP", "OverlayStyle"]
 - !private ["So21UITimingCurveProviderP", "init"]
 - !private ["So21UITimingCurveProviderP", "pow"]
+- ["So18UITraitEnvironmentP", "OverlayStyle"]
+- ["So23UIUserActivityRestoringP", "OverlayStyle"]
 - !private ["So15UIViewAnimatingP", "init"]
+- ["So16UIViewControllerC", "OverlayStyle"]
 - !private ["So25UIViewImplicitlyAnimatingP", "init"]
 - !private ["So22UIViewPropertyAnimatorC", "init"]
 - !private ["s15_CVarArgAlignedP", "pi"]
 - !private ["s22_CVarArgPassedAsDoubleP", "pi"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "y"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "OverlayStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "pow"]
 - !private ["s21_ObjectiveCBridgeableP", "pi"]
@@ -122,37 +156,51 @@ depends-nominal:
 - !private "12CoreGraphics7CGFloatV"
 - !private "So7CGPointV"
 - !private "So8CGVectorV"
-- !private "s7CVarArgP"
+- "s7CVarArgP"
 - !private "SL"
-- !private "s28CustomDebugStringConvertibleP"
+- "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
-- !private "s23CustomStringConvertibleP"
+- "s23CustomStringConvertibleP"
 - !private "Se"
 - !private "SE"
-- !private "SQ"
+- "SQ"
 - !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "SF"
-- !private "SH"
-- !private "So8NSCodingP"
+- "SH"
+- "16OverlayContainer016HeightConstraintA29TranslationControllerDelegateP"
+- "So8NSCodingP"
 - !private "So9NSCopyingP"
+- "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
-- !private "So8NSObjectP"
+- "So8NSObjectP"
 - !private "Sj"
 - "16OverlayContainer0A21AnimatedTransitioningP"
 - !private "16OverlayContainer0aB20ContextTransitioningP"
+- "16OverlayContainer0aB14ViewControllerC"
+- "16OverlayContainer0aB14ViewControllerC0A5StyleO"
 - !private "s13SignedNumericP"
 - "16OverlayContainer06SpringA30TranslationAnimationControllerC"
 - !private "Sx"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- "So18UIFocusEnvironmentP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
 - "So24UISpringTimingParametersC"
+- "So16UIStateRestoringP"
 - !private "So21UITimingCurveProviderP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
 - !private "So15UIViewAnimatingP"
+- "So16UIViewControllerC"
 - !private "So25UIViewImplicitlyAnimatingP"
 - !private "So22UIViewPropertyAnimatorC"
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
 - !private "s30_CustomPlaygroundQuickLookableP"
-- !private "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
@@ -182,4 +230,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "753a022d85fa18072c199552f959fbe2"
+interface-hash: "63dc6922443068e93ccd12e1b9501437"

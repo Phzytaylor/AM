@@ -130,6 +130,7 @@ depends-member:
 - !private ["16OverlayContainer0A21TranslationControllerP", "dragOverlay"]
 - !private ["16OverlayContainer0A21TranslationControllerP", "endOverlayTranslation"]
 - !private ["16OverlayContainer0A21TranslationControllerP", "isDraggable"]
+- !private ["16OverlayContainer0A21TranslationControllerP", "startOverlayTranslation"]
 - ["16OverlayContainer0A17TranslationDriverP", ""]
 - ["16OverlayContainer0A17TranslationDriverP", "clean"]
 - !private ["16OverlayContainer0A17TranslationDriverP", "overlayPanGestureAction"]

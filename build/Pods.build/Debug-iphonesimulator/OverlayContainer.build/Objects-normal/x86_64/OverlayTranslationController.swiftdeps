@@ -1,15 +1,12 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "OverlayTranslationPosition"
-- "OverlayTranslationControllerDelegate"
 - "OverlayTranslationController"
 provides-nominal:
 - "16OverlayContainer0A19TranslationPositionO"
-- "16OverlayContainer0A29TranslationControllerDelegateP"
 - "16OverlayContainer0A21TranslationControllerP"
 provides-member:
 - ["16OverlayContainer0A19TranslationPositionO", ""]
-- ["16OverlayContainer0A29TranslationControllerDelegateP", ""]
 - ["16OverlayContainer0A21TranslationControllerP", ""]
 provides-dynamic-lookup:
 depends-top-level:
@@ -18,15 +15,10 @@ depends-top-level:
 - "Bool"
 - "CGFloat"
 - "CGPoint"
-- !private "FloatLiteralType"
 - "Int"
-- !private "IntegerLiteralType"
-- "OverlayContainerTransitionCoordinator"
 - "OverlayTranslationController"
-- "OverlayTranslationControllerDelegate"
 - "OverlayTranslationPosition"
 - "UICoordinateSpace"
-- "Void"
 depends-member:
 - ["SQ", "=="]
 - ["SQ", ""]
@@ -45,19 +37,14 @@ depends-member:
 - ["16OverlayContainer0A21TranslationControllerP", "Int"]
 - ["16OverlayContainer0A21TranslationControllerP", "OverlayTranslationPosition"]
 - ["16OverlayContainer0A21TranslationControllerP", "UICoordinateSpace"]
-- ["16OverlayContainer0A21TranslationControllerP", "Void"]
 - ["16OverlayContainer0A21TranslationControllerP", "dragOverlay"]
 - ["16OverlayContainer0A21TranslationControllerP", "endOverlayTranslation"]
 - ["16OverlayContainer0A21TranslationControllerP", "isDraggable"]
-- ["16OverlayContainer0A21TranslationControllerP", "moveOverlay"]
+- ["16OverlayContainer0A21TranslationControllerP", "lastTranslationEndNotchIndex"]
 - ["16OverlayContainer0A21TranslationControllerP", "overlayHasReachedANotch"]
+- ["16OverlayContainer0A21TranslationControllerP", "startOverlayTranslation"]
 - ["16OverlayContainer0A21TranslationControllerP", "translationHeight"]
 - ["16OverlayContainer0A21TranslationControllerP", "translationPosition"]
-- ["16OverlayContainer0A29TranslationControllerDelegateP", "CGFloat"]
-- ["16OverlayContainer0A29TranslationControllerDelegateP", "Int"]
-- ["16OverlayContainer0A29TranslationControllerDelegateP", "OverlayContainerTransitionCoordinator"]
-- ["16OverlayContainer0A29TranslationControllerDelegateP", "OverlayTranslationController"]
-- ["16OverlayContainer0A29TranslationControllerDelegateP", "translationController"]
 - ["16OverlayContainer0A19TranslationPositionO", "=="]
 - ["16OverlayContainer0A19TranslationPositionO", "__derived_enum_equals"]
 - ["16OverlayContainer0A19TranslationPositionO", "_rawHashValue"]
@@ -73,7 +60,6 @@ depends-nominal:
 - "SH"
 - !private "s6HasherV"
 - "16OverlayContainer0A21TranslationControllerP"
-- "16OverlayContainer0A29TranslationControllerDelegateP"
 - "16OverlayContainer0A19TranslationPositionO"
 depends-dynamic-lookup:
 depends-external:
@@ -103,4 +89,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "71d3b32e1e611ebf8b8d981c008cc488"
+interface-hash: "d4881993f4ab4bf20e16f0ec98db0bf7"

@@ -6,15 +6,19 @@
 	<dict>
 		<key>Headers/FIRStorage.h</key>
 		<data>
-		DhKLP0sXifPcMZLQoAr0h399OLk=
+		yDYs5i3xhc1MfB5J2N1zO8s+eS0=
 		</data>
 		<key>Headers/FIRStorageConstants.h</key>
 		<data>
-		h+zDY5hn0phyREn7WLHL83VFY+4=
+		86gA/cYwV+C7Z1v0963Adl6mOoA=
 		</data>
 		<key>Headers/FIRStorageDownloadTask.h</key>
 		<data>
 		PXLLxQ7YFhCDokJAS9mlcgxhIz4=
+		</data>
+		<key>Headers/FIRStorageListResult.h</key>
+		<data>
+		6Sch/5ilcrb4gs9zZ0cKLS6kGLc=
 		</data>
 		<key>Headers/FIRStorageMetadata.h</key>
 		<data>
@@ -26,7 +30,7 @@
 		</data>
 		<key>Headers/FIRStorageReference.h</key>
 		<data>
-		6++t+gvM296+zUWcLggHwJ+0y0M=
+		kJ4066POu0+Z7gBpJXvJlkq55zY=
 		</data>
 		<key>Headers/FIRStorageTask.h</key>
 		<data>
@@ -42,15 +46,15 @@
 		</data>
 		<key>Headers/FirebaseStorage-umbrella.h</key>
 		<data>
-		vHwU7gBTt/OyI5VEmXeqHIb5/MQ=
+		PU3Y1sAEBY6eaakWCrkP9VSdMUQ=
 		</data>
 		<key>Headers/FirebaseStorage.h</key>
 		<data>
-		kUxdEiIKQcjswIH0YZ709xUTTO4=
+		NqdHHKe8nl1LIONeM9Ut/NNkcVs=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CvRRn1OQQ5PzTTlyKs5E3eFDAjQ=
+		OcbC/sSmEzDpbGsA3CHMmnE7cjI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,22 +67,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DhKLP0sXifPcMZLQoAr0h399OLk=
+			yDYs5i3xhc1MfB5J2N1zO8s+eS0=
 			</data>
 			<key>hash2</key>
 			<data>
-			oNDPPj8rVFoUF9EXwQFcvUB0FqqD0EQqaRHi6Fnxh4o=
+			iwrPUIbef3ydrFQYGA5UqMaZV95Xsri+bqNAXW/0Ecg=
 			</data>
 		</dict>
 		<key>Headers/FIRStorageConstants.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			h+zDY5hn0phyREn7WLHL83VFY+4=
+			86gA/cYwV+C7Z1v0963Adl6mOoA=
 			</data>
 			<key>hash2</key>
 			<data>
-			s2xym4+OLk2nlmQ8yIHqhLw9lAUW0Gxo4Da0jpb1UBY=
+			XhfQ8cB9Z+5O9xGKvu3K2JFmuUjqc/pXszs4OIMXF+I=
 			</data>
 		</dict>
 		<key>Headers/FIRStorageDownloadTask.h</key>
@@ -90,6 +94,17 @@
 			<key>hash2</key>
 			<data>
 			7xQPdDQUdJEDnbYECIuw+FYn++lMumeT+Sc3rQwrjII=
+			</data>
+		</dict>
+		<key>Headers/FIRStorageListResult.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6Sch/5ilcrb4gs9zZ0cKLS6kGLc=
+			</data>
+			<key>hash2</key>
+			<data>
+			Nn4+0+7iMc5bBRHMMT7Syxfcx69hER4Z4lCn6kEtGh4=
 			</data>
 		</dict>
 		<key>Headers/FIRStorageMetadata.h</key>
@@ -118,11 +133,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6++t+gvM296+zUWcLggHwJ+0y0M=
+			kJ4066POu0+Z7gBpJXvJlkq55zY=
 			</data>
 			<key>hash2</key>
 			<data>
-			19X/Hii3NtUu8T+7wx6XfIVZzHJPWsZ0E4VTdsOdatM=
+			HyxGx6Q6AxsjNGkw2+wLL6NDBBVB2yoJtTLFSG6lG70=
 			</data>
 		</dict>
 		<key>Headers/FIRStorageTask.h</key>
@@ -162,22 +177,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vHwU7gBTt/OyI5VEmXeqHIb5/MQ=
+			PU3Y1sAEBY6eaakWCrkP9VSdMUQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			zazRccgeT1mtrfkYPJA8gCxPpGRvZ54AO4FQd2bP1iA=
+			PMAQcFfnH1gfs6He6TJ4VSeKhHd7Jg0HNjLIZM/p0qk=
 			</data>
 		</dict>
 		<key>Headers/FirebaseStorage.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kUxdEiIKQcjswIH0YZ709xUTTO4=
+			NqdHHKe8nl1LIONeM9Ut/NNkcVs=
 			</data>
 			<key>hash2</key>
 			<data>
-			drlqV/Z7s5uDTe/XkVXJqZgCw6tqUgP+TLGC1ww0mi8=
+			qnBM+CYaKJmr0f8Xul/+UjG5PWkTi3YJSQfBci/WMOU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

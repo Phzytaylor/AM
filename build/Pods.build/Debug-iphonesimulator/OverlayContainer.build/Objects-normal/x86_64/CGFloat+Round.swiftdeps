@@ -9,77 +9,122 @@ depends-top-level:
 - !private "*"
 - !private "/"
 - "CGFloat"
+- !private "Double"
 - "FloatLiteralType"
-- "FloatingPointRoundingRule"
 - "Int"
 - "IntegerLiteralType"
-- !private "^"
+- !private "pow"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "CGFloat"]
+- !private ["s18AdditiveArithmeticP", "Double"]
 - !private ["s18AdditiveArithmeticP", "init"]
+- !private ["s18AdditiveArithmeticP", "pow"]
 - !private ["s18AdditiveArithmeticP", "rounded"]
 - !private ["SB", "CGFloat"]
+- !private ["SB", "Double"]
 - !private ["SB", "init"]
+- !private ["SB", "pow"]
 - !private ["SB", "rounded"]
 - ["12CoreGraphics7CGFloatV", "CGFloat"]
-- ["12CoreGraphics7CGFloatV", "FloatingPointRoundingRule"]
+- !private ["12CoreGraphics7CGFloatV", "Double"]
 - ["12CoreGraphics7CGFloatV", "Int"]
 - !private ["12CoreGraphics7CGFloatV", "init"]
 - ["12CoreGraphics7CGFloatV", "oc_rounded"]
+- !private ["12CoreGraphics7CGFloatV", "pow"]
 - !private ["12CoreGraphics7CGFloatV", "rounded"]
 - !private ["s7CVarArgP", "CGFloat"]
+- !private ["s7CVarArgP", "Double"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "pow"]
 - !private ["s7CVarArgP", "rounded"]
 - !private ["SL", "CGFloat"]
+- !private ["SL", "Double"]
 - !private ["SL", "init"]
+- !private ["SL", "pow"]
 - !private ["SL", "rounded"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s17CustomReflectableP", "CGFloat"]
+- !private ["s17CustomReflectableP", "Double"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "pow"]
 - !private ["s17CustomReflectableP", "rounded"]
 - !private ["s23CustomStringConvertibleP", "CGFloat"]
+- !private ["s23CustomStringConvertibleP", "Double"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "pow"]
 - !private ["s23CustomStringConvertibleP", "rounded"]
 - !private ["Se", "CGFloat"]
+- !private ["Se", "Double"]
 - !private ["Se", "init"]
+- !private ["Se", "pow"]
 - !private ["Se", "rounded"]
+- !private ["Sd", "init"]
 - !private ["SE", "CGFloat"]
+- !private ["SE", "Double"]
 - !private ["SE", "init"]
+- !private ["SE", "pow"]
 - !private ["SE", "rounded"]
 - !private ["SQ", "CGFloat"]
-- !private ["SQ", "down"]
+- !private ["SQ", "Double"]
 - !private ["SQ", "init"]
+- !private ["SQ", "pow"]
 - !private ["SQ", "rounded"]
 - !private ["s25ExpressibleByFloatLiteralP", "CGFloat"]
+- !private ["s25ExpressibleByFloatLiteralP", "Double"]
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "pow"]
 - !private ["s25ExpressibleByFloatLiteralP", "rounded"]
 - !private ["s27ExpressibleByIntegerLiteralP", "CGFloat"]
+- !private ["s27ExpressibleByIntegerLiteralP", "Double"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "pow"]
 - !private ["s27ExpressibleByIntegerLiteralP", "rounded"]
 - !private ["SF", "CGFloat"]
+- !private ["SF", "Double"]
 - !private ["SF", "init"]
+- !private ["SF", "pow"]
 - !private ["SF", "rounded"]
-- !private ["s25FloatingPointRoundingRuleO", "down"]
 - !private ["SH", "CGFloat"]
-- !private ["SH", "down"]
+- !private ["SH", "Double"]
 - !private ["SH", "init"]
+- !private ["SH", "pow"]
 - !private ["SH", "rounded"]
+- !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["Sj", "CGFloat"]
+- !private ["Sj", "Double"]
 - !private ["Sj", "init"]
+- !private ["Sj", "pow"]
 - !private ["Sj", "rounded"]
+- !private ["s10SIMDScalarP", "init"]
 - !private ["s13SignedNumericP", "CGFloat"]
+- !private ["s13SignedNumericP", "Double"]
 - !private ["s13SignedNumericP", "init"]
+- !private ["s13SignedNumericP", "pow"]
 - !private ["s13SignedNumericP", "rounded"]
 - !private ["Sx", "CGFloat"]
+- !private ["Sx", "Double"]
 - !private ["Sx", "init"]
+- !private ["Sx", "pow"]
 - !private ["Sx", "rounded"]
+- !private ["s20TextOutputStreamableP", "init"]
 - !private ["s15_CVarArgAlignedP", "CGFloat"]
+- !private ["s15_CVarArgAlignedP", "Double"]
 - !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s15_CVarArgAlignedP", "pow"]
 - !private ["s15_CVarArgAlignedP", "rounded"]
 - !private ["s22_CVarArgPassedAsDoubleP", "CGFloat"]
+- !private ["s22_CVarArgPassedAsDoubleP", "Double"]
 - !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "pow"]
 - !private ["s22_CVarArgPassedAsDoubleP", "rounded"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "CGFloat"]
+- !private ["s21_ObjectiveCBridgeableP", "Double"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "pow"]
 - !private ["s21_ObjectiveCBridgeableP", "rounded"]
 depends-nominal:
 - !private "s18AdditiveArithmeticP"
@@ -87,21 +132,29 @@ depends-nominal:
 - "12CoreGraphics7CGFloatV"
 - !private "s7CVarArgP"
 - !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
 - !private "Se"
+- !private "Sd"
 - !private "SE"
 - !private "SQ"
 - !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "SF"
-- !private "s25FloatingPointRoundingRuleO"
 - !private "SH"
+- !private "s25LosslessStringConvertibleP"
 - !private "Sj"
+- !private "s10SIMDScalarP"
 - !private "s13SignedNumericP"
 - !private "Sx"
+- !private "s20TextOutputStreamableP"
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
@@ -131,4 +184,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "2457b02266edbf0191e91b76477f83db"
+interface-hash: "b9959d78a726286283842f7db2c4ca5c"

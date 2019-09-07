@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "a96a5ab01f418d33797976dc19c7269a"
-build_time: [1567831822, 76278000]
+build_time: [1567840456, 132549000]
 inputs:
   "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Macaw/Source/model/draw/Align.swift": [1567831433, 827263810]
   "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Macaw/Source/model/draw/AlphaEffect.swift": [1567831433, 821734859]

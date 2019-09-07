@@ -10,10 +10,12 @@ provides-member:
 - ["16OverlayContainer0aB22ViewControllerDelegateP", "overlayContainerViewController"]
 - ["16OverlayContainer0aB22ViewControllerDelegateP", "overlayContainerViewController"]
 - ["16OverlayContainer0aB22ViewControllerDelegateP", "overlayContainerViewController"]
+- ["16OverlayContainer0aB22ViewControllerDelegateP", "overlayContainerViewController"]
+- ["16OverlayContainer0aB22ViewControllerDelegateP", "overlayContainerViewController"]
+- ["16OverlayContainer0aB22ViewControllerDelegateP", "overlayContainerViewController"]
 provides-dynamic-lookup:
 depends-top-level:
 - "Bool"
-- "CGFloat"
 - "CGPoint"
 - "Int"
 - "OverlayContainerTransitionCoordinator"
@@ -56,7 +58,6 @@ depends-member:
 - !private ["So8NSObjectP", "view"]
 - !private ["Sq", "bounds"]
 - ["16OverlayContainer0aB22ViewControllerDelegateP", "Bool"]
-- ["16OverlayContainer0aB22ViewControllerDelegateP", "CGFloat"]
 - ["16OverlayContainer0aB22ViewControllerDelegateP", "CGPoint"]
 - ["16OverlayContainer0aB22ViewControllerDelegateP", "Int"]
 - ["16OverlayContainer0aB22ViewControllerDelegateP", "OverlayContainerTransitionCoordinator"]
@@ -165,4 +166,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "6ddeaa3a275a7f9f7d338a62553736cb"
+interface-hash: "de99c299eb15c209cd2f9d972729410c"

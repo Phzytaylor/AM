@@ -156,133 +156,7 @@ class ReCoverAccountViewController: FormViewController {
                 row.validationOptions = .validatesOnChange
                 }.cellSetup({ (cell, row) in
                 })
-            
-//            <<< ButtonRow() { (row: ButtonRow) -> Void in
-//                row.title = "Recover"
-//                row.tag = "recoverButton"
-//
-//                }
-//                .cellSetup() {cell, row in
-//                    cell.backgroundColor = #colorLiteral(red: 0.04111137241, green: 0.394802928, blue: 0.5176765919, alpha: 1)
-//                    cell.tintColor = .white
-//
-//                }
-//                .onCellSelection { [weak self] (cell, row) in
-//
-//
-//                    guard let emailRow: EmailRow = self?.form.rowBy(tag: "email") else {return}
-//                    guard let emailRowValue = emailRow.value else {return}
-//
-//                    guard let passwordRow: PasswordRow = self?.form.rowBy(tag: "password") else {return}
-//
-//                    guard let passwordRowValue = passwordRow.value else {return}
-//
-//                    guard let passwordVerifyRow: PasswordRow = self?.form.rowBy(tag: "verifyPassword") else {return}
-//
-//                    guard let passwordVerifyRowValue = passwordVerifyRow.value else {return}
-//
-//
-//
-//
-//                    print("validating errors: \(row.section?.form?.validate().count)")
-//                    if row.section?.form?.validate().count == 0 && passwordRowValue == passwordVerifyRowValue{
-//
-//                        Auth.auth().signIn(withEmail: emailRowValue, password: passwordVerifyRowValue, completion: { (result, error) in
-//                            if error == nil {
-//                                guard let userID = Auth.auth().currentUser?.uid else {return}
-//
-//                                let userRef = Database.database().reference().child("users").child(userID)
-//
-//                                userRef.observeSingleEvent(of: .value, with: { (snapshot) in
-//                                    let userInfoDict = snapshot.value as? [String : AnyObject] ?? [:]
-//
-//                                    let firstName = userInfoDict["firstName"] as? String ?? ""
-//                                    let lastName = userInfoDict["lastName"] as? String ?? ""
-//                                    let email = userInfoDict["email"] as? String ?? ""
-//
-//                                    let phoneNumber = userInfoDict["phoneNumber"] as? String ?? ""
-//
-//                                    let birthday = userInfoDict["birthday"] as? String ?? ""
-//
-//                                    self?.saveRecoveredData(first: firstName, last: lastName, number: phoneNumber, email: email, birthday: birthday, completionHandler: { (saved) in
-//                                        if saved {
-//                                           print("I saved")
-//                                            let loveOneRef = Database.database().reference().child("users").child(userID).child("lovedOnes")
-//
-//                                            loveOneRef.observeSingleEvent(of: .value, with: { (snapshot) in
-//                                                if snapshot.exists() {
-//
-//                                                var newLovedOnesArray = [String]()
-//                                                for child in snapshot.children {
-//
-//                                                    guard let name = child as? DataSnapshot else {
-//                                                        continue
-//                                                    }
-//
-//                                                    newLovedOnesArray.append(name.key)
-//
-//                                                }
-//
-//                                                    for person in newLovedOnesArray{
-//
-//                                                        loveOneRef.child(person).child("info").observeSingleEvent(of: .value, with: { (snapshot) in
-//
-//                                                            let lovedOneObject = RecipientFromDatabase(snapshot: snapshot)
-//
-//                                                            if let avatarString = lovedOneObject?.avatar {
-//
-//                                                                lovedOneObject?.downLoadMedia(avatar: avatarString, completion: { (imageData) in
-//                                                                    self?.saveRecoveredLovedOnes(lovedOne: lovedOneObject!, imageData: imageData, completionHandler: { (saved) in
-//                                                                        print("I am saved \(saved)")
-//                                                                    })
-//                                                                })
-//                                                            }
-//
-//
-//
-//
-//
-//                                                        })
-//
-//                                                    }
-//
-//
-//                                            }
-//
-//                                                self?.performSegue(withIdentifier: "toPin", sender: self)
-//                                            })
-//
-//
-//
-//
-//                                        } else {
-//                                            print("Not saved")
-//                                        }
-//                                    })
-//
-//
-//                                })
-//                            }
-//                        })
-//
-//
-//                    }
-//
-//                    else {
-//                        let uploadAlert = UIAlertController(title: "Input Error", message: "All fields must contain values in order to save or your passwords don't match", preferredStyle: .alert)
-//                        uploadAlert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-//
-//                        self?.present(uploadAlert, animated: true, completion: nil)
-//                    }
-//
-//
-//
-//
-//                    // Do any additional setup after loading the view.
-//        }
-            
-         
-            
+
             +++ Section(){ section in
                 var header = HeaderFooterView<UIView>(.class) // most flexible way to set up a header using any view type
                 header.height = { 50 }  // height can be calculated
@@ -306,44 +180,13 @@ class ReCoverAccountViewController: FormViewController {
                 section.header = header
             }
         
-//            <<< ButtonRow() {row in
-//                row.title = "Reset Password"
-//                }.cellSetup() {cell, row in
-//                    cell.backgroundColor = #colorLiteral(red: 0.04111137241, green: 0.394802928, blue: 0.5176765919, alpha: 1)
-//                    cell.tintColor = .white
-//                   
-//                }.onCellSelection({ [weak self] (cell, row) in
-//                    guard let emailRow: EmailRow = self?.form.rowBy(tag: "email") else {return}
-//                    guard let emailRowValue = emailRow.value else {
-//                        
-//                        self?.errorAlertView(title: "Input Error", message: "You must enter a valid email.")
-//                        return}
-//                    if emailRowValue.isEmpty == false {
-//                    
-//                    Auth.auth().sendPasswordReset(withEmail: emailRowValue) { error in
-//                        
-//                        if let error = error {
-//                            print(error.localizedDescription)
-//                            
-//                            self?.errorAlertView(title: "Error", message: error.localizedDescription)
-//                        }
-//                    }
-//                    
-//                    } else {
-//                        self?.errorAlertView(title: "Input Error", message: "You must enter a valid email.")
-//                    }
-//                })
-        
             +++ Section(){ section in
                 var header = HeaderFooterView<UIView>(.class) // most flexible way to set up a header using any view type
                 header.height = { 50 }  // height can be calculated
                 let button = MDCButton()
                 
-                
-                header.onSetupView = { view, section in  // each time the view is about to be displayed onSetupView is invoked.
-                    //view.backgroundColor = .orange
-                    
-                    
+
+                header.onSetupView = { view, section in  // each time the view is about to be
                     view.addSubview(button)
                     button.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
                     button.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
@@ -390,7 +233,7 @@ class ReCoverAccountViewController: FormViewController {
         
         guard let passwordVerifyRowValue = passwordVerifyRow.value else {return}
         
-        if !form.validate().isEmpty && passwordRowValue == passwordVerifyRowValue {
+        if form.validate().isEmpty && passwordRowValue == passwordVerifyRowValue {
             
             Auth.auth().signIn(withEmail: emailRowValue, password: passwordVerifyRowValue, completion: { (result, error) in
                 if error == nil {
@@ -443,30 +286,21 @@ class ReCoverAccountViewController: FormViewController {
                                                     })
                                                 }
                                                 
-                                                
-                                                
-                                                
-                                                
                                             })
                                             
                                         }
-                                        
                                         
                                     }
                                     
                                     self.performSegue(withIdentifier: "toPin", sender: self)
                                 })
-                                
-                                
-                                
-                                
                             } else {
                                 print("Not saved")
                             }
                         })
-                        
-                        
                     })
+                } else {
+                    print(error?.localizedDescription)
                 }
             })
         }else {
@@ -474,10 +308,7 @@ class ReCoverAccountViewController: FormViewController {
                                     uploadAlert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             
             self.present(uploadAlert, animated: true, completion: nil)
-            
         }
-        
-        
     }
     
     @objc func recoverPassword(){

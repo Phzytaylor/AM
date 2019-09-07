@@ -1,0 +1,178 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DraggingOverlayContainerTransitionCoordinator"
+provides-nominal:
+- "16OverlayContainer08DraggingaB21TransitionCoordinatorC"
+provides-member:
+- ["16OverlayContainer08DraggingaB21TransitionCoordinatorC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- "Bool"
+- "CGFloat"
+- "Completion"
+- "DraggingOverlayContainerTransitionCoordinator"
+- "Int"
+- "OverlayContainerTransitionCoordinator"
+- "OverlayContainerTransitionCoordinatorContext"
+- "Range"
+- "Void"
+depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "forEach"]
+- !private ["SK", "append"]
+- !private ["SK", "forEach"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "forEach"]
+- !private ["Sl", "append"]
+- !private ["Sl", "forEach"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "forEach"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "flatMap"]
+- !private ["s28CustomDebugStringConvertibleP", "forEach"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "flatMap"]
+- !private ["s17CustomReflectableP", "forEach"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "forEach"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "forEach"]
+- !private ["Se", "append"]
+- !private ["Se", "flatMap"]
+- !private ["Se", "forEach"]
+- ["16OverlayContainer08DraggingaB21TransitionCoordinatorC", "Bool"]
+- ["16OverlayContainer08DraggingaB21TransitionCoordinatorC", "CGFloat"]
+- ["16OverlayContainer08DraggingaB21TransitionCoordinatorC", "Completion"]
+- ["16OverlayContainer08DraggingaB21TransitionCoordinatorC", "Int"]
+- ["16OverlayContainer08DraggingaB21TransitionCoordinatorC", "OverlayContainerTransitionCoordinatorContext"]
+- ["16OverlayContainer08DraggingaB21TransitionCoordinatorC", "Range"]
+- ["16OverlayContainer08DraggingaB21TransitionCoordinatorC", "Void"]
+- ["16OverlayContainer08DraggingaB21TransitionCoordinatorC", "animate"]
+- !private ["16OverlayContainer08DraggingaB21TransitionCoordinatorC", "completions"]
+- !private ["16OverlayContainer08DraggingaB21TransitionCoordinatorC", "context"]
+- ["16OverlayContainer08DraggingaB21TransitionCoordinatorC", "deinit"]
+- ["16OverlayContainer08DraggingaB21TransitionCoordinatorC", "height"]
+- ["16OverlayContainer08DraggingaB21TransitionCoordinatorC", "init"]
+- ["16OverlayContainer08DraggingaB21TransitionCoordinatorC", "isAnimated"]
+- ["16OverlayContainer08DraggingaB21TransitionCoordinatorC", "isCancelled"]
+- ["16OverlayContainer08DraggingaB21TransitionCoordinatorC", "notchIndexes"]
+- ["16OverlayContainer08DraggingaB21TransitionCoordinatorC", "overlayTranslationHeight"]
+- ["16OverlayContainer08DraggingaB21TransitionCoordinatorC", "performCompletions"]
+- ["16OverlayContainer08DraggingaB21TransitionCoordinatorC", "reachableIndexes"]
+- ["16OverlayContainer08DraggingaB21TransitionCoordinatorC", "targetTranslationHeight"]
+- !private ["SE", "append"]
+- !private ["SE", "flatMap"]
+- !private ["SE", "forEach"]
+- !private ["SQ", "append"]
+- !private ["SQ", "flatMap"]
+- !private ["SQ", "forEach"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "forEach"]
+- !private ["s23ExpressibleByNilLiteralP", "flatMap"]
+- !private ["SH", "append"]
+- !private ["SH", "flatMap"]
+- !private ["SH", "forEach"]
+- !private ["SM", "append"]
+- !private ["SM", "forEach"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "forEach"]
+- !private ["Sq", "flatMap"]
+- ["16OverlayContainer0aB21TransitionCoordinatorP", ""]
+- ["16OverlayContainer0aB21TransitionCoordinatorP", "animate"]
+- !private ["16OverlayContainer0aB21TransitionCoordinatorP", "completions"]
+- !private ["16OverlayContainer0aB21TransitionCoordinatorP", "context"]
+- ["16OverlayContainer0aB21TransitionCoordinatorP", "height"]
+- ["16OverlayContainer0aB21TransitionCoordinatorP", "isAnimated"]
+- ["16OverlayContainer0aB21TransitionCoordinatorP", "isCancelled"]
+- ["16OverlayContainer0aB21TransitionCoordinatorP", "notchIndexes"]
+- ["16OverlayContainer0aB21TransitionCoordinatorP", "overlayTranslationHeight"]
+- ["16OverlayContainer0aB21TransitionCoordinatorP", "reachableIndexes"]
+- ["16OverlayContainer0aB21TransitionCoordinatorP", "targetTranslationHeight"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", ""]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "animate"]
+- !private ["16OverlayContainer0aB28TransitionCoordinatorContextP", "completions"]
+- !private ["16OverlayContainer0aB28TransitionCoordinatorContextP", "context"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "height"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "isAnimated"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "isCancelled"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "notchIndexes"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "overlayTranslationHeight"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "reachableIndexes"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "targetTranslationHeight"]
+- !private ["Sk", "append"]
+- !private ["Sk", "forEach"]
+- !private ["Sm", "append"]
+- !private ["Sm", "forEach"]
+- !private ["ST", "append"]
+- !private ["ST", "forEach"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "forEach"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "forEach"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "forEach"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "forEach"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "flatMap"]
+- !private ["s21_ObjectiveCBridgeableP", "forEach"]
+depends-nominal:
+- !private "Sa"
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- "16OverlayContainer08DraggingaB21TransitionCoordinatorC"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "SH"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "Sq"
+- "16OverlayContainer0aB21TransitionCoordinatorP"
+- "16OverlayContainer0aB28TransitionCoordinatorContextP"
+- !private "Sk"
+- !private "Sm"
+- !private "ST"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/OverlayContainer/OverlayContainer-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/OverlayContainer.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "5200b3742cf3949576805066ffce2364"

@@ -72,6 +72,7 @@
 		8215594F2221DD230069AD4A /* AccountInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8215594E2221DD220069AD4A /* AccountInfoViewController.swift */; };
 		821559522221DF410069AD4A /* Userinfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821559502221DF410069AD4A /* Userinfo+CoreDataClass.swift */; };
 		821559532221DF410069AD4A /* Userinfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821559512221DF410069AD4A /* Userinfo+CoreDataProperties.swift */; };
+		821B438F232395C700C4892A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 821B438E232395C700C4892A /* .swiftlint.yml */; };
 		822D886F21545C170094AF10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 822D886E21545B590094AF10 /* Main.storyboard */; };
 		822D8871215469F30094AF10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 822D8870215469F30094AF10 /* Assets.xcassets */; };
 		8234324120AB47E500912A6F /* icons8-clear_symbol_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 8234324020AB47E500912A6F /* icons8-clear_symbol_filled.png */; };
@@ -162,6 +163,7 @@
 		8215594E2221DD220069AD4A /* AccountInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoViewController.swift; sourceTree = "<group>"; };
 		821559502221DF410069AD4A /* Userinfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Userinfo+CoreDataClass.swift"; sourceTree = "<group>"; };
 		821559512221DF410069AD4A /* Userinfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Userinfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		821B438E232395C700C4892A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		822D886E21545B590094AF10 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		822D8870215469F30094AF10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = AfterMemo/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		8234322520AA7B9100912A6F /* AfterMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AfterMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,6 +208,7 @@
 		8234321C20AA7B9100912A6F = {
 			isa = PBXGroup;
 			children = (
+				821B438E232395C700C4892A /* .swiftlint.yml */,
 				8234322720AA7B9100912A6F /* AfterMemo */,
 				8234322620AA7B9100912A6F /* Products */,
 				A520C19B9D3B915BB9C1E698 /* Pods */,
@@ -404,6 +407,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8234323720AA7B9700912A6F /* Build configuration list for PBXNativeTarget "AfterMemo" */;
 			buildPhases = (
+				821B438D23238F5C00C4892A /* ShellScript */,
 				44E514CD0FF9CC2BD1CB6D3C /* [CP] Check Pods Manifest.lock */,
 				8234322120AA7B9100912A6F /* Sources */,
 				8234322220AA7B9100912A6F /* Frameworks */,
@@ -463,6 +467,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				821B438F232395C700C4892A /* .swiftlint.yml in Resources */,
 				82EE248820B7A3DB003EF9D2 /* icons8-camera.png in Resources */,
 				820E632C215309090097BCD6 /* Images.xcassets in Resources */,
 				8234324120AB47E500912A6F /* icons8-clear_symbol_filled.png in Resources */,
@@ -501,6 +506,23 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		821B438D23238F5C00C4892A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		B8404EBA210F3D4A57B2F9E9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

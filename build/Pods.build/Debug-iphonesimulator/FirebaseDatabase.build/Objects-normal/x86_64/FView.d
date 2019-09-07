@@ -2,19 +2,33 @@ dependencies: \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/View/FView.m \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/FirebaseDatabase.build/module.modulemap \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/View/FView.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/View/FCacheNode.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/View/FCancelEvent.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/View/FEvent.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDataEventType.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Snapshot/FEmptyNode.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Snapshot/FNode.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/Utilities/FPath.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Api/Private/FTypedefs_Private.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/FWriteTreeRef.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/Operation/FOperation.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDatabaseQuery.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDataEventType.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/FEventGenerator.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/View/FEventRegistration.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/View/FChange.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDatabaseReference.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDataSnapshot.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDatabase.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDatabaseQuery.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Public/FIRMutableData.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Public/FIRServerValue.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Public/FIRTransactionResult.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Snapshot/FIndexedNode.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/FIndex.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/FNamedNode.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Api/Private/FIRDatabaseQuery_Private.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/FQueryParams.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/FRepo.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/FRepoInfo.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/FPersistentConnection.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Realtime/FConnection.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Utilities/FTypedefs.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Realtime/FWebSocketConnection.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/third_party/SocketRocket/FSRWebSocket.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Utilities/FUtilities.h \
@@ -27,30 +41,16 @@ dependencies: \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseCore/Firebase/Core/Public/FIRApp.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/Target\ Support\ Files/FirebaseCore/FirebaseCore-umbrella.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Utilities/FParsedUrl.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Utilities/FTypedefs.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/FRepoInfo.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Utilities/Tuples/FTupleUserCallback.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/FQueryParams.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/FRepoManager.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Api/FIRDatabaseConfig.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/View/FEventRegistration.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/View/FChange.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDatabaseReference.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDatabase.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Public/FIRMutableData.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Public/FIRTransactionResult.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Public/FIRServerValue.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Snapshot/FIndexedNode.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/FIndex.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/FNamedNode.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/FQuerySpec.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/View/FViewCache.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/FEventGenerator.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/Operation/FOperationSource.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/View/FCancelEvent.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/View/FEvent.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/View/Filter/FIndexedFilter.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/View/Filter/FNodeFilter.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/View/FCacheNode.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Snapshot/FEmptyNode.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/Operation/FOperation.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/Operation/FOperationSource.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/FQuerySpec.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/View/FViewCache.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/FViewProcessor.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/FViewProcessorResult.h
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/FViewProcessorResult.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/FWriteTreeRef.h

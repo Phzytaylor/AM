@@ -32,12 +32,14 @@ dependencies: \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/FIRAuthRPCRequest.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Auth/FIRAuthTokenResult_Internal.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthTokenResult.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Utilities/FIRAuthWebUtils.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/RPC/FIRDeleteAccountRequest.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/FIRIdentityToolkitRequest.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/RPC/FIRDeleteAccountResponse.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/FIRAuthRPCResponse.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIREmailAuthProvider.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/AuthProvider/Email/FIREmailPasswordAuthCredential.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/RPC/FIREmailLinkSignInRequest.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/AuthProvider/GameCenter/FIRGameCenterAuthCredential.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/RPC/FIRGetAccountInfoRequest.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/RPC/FIRGetAccountInfoResponse.h \

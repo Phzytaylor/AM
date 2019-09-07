@@ -1,0 +1,207 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "OverlayContainerConfiguration"
+- "OverlayContainerConfigurationInvalidating"
+provides-nominal:
+- "16OverlayContainer0aB13ConfigurationP"
+- "16OverlayContainer0aB25ConfigurationInvalidatingP"
+provides-member:
+- ["16OverlayContainer0aB13ConfigurationP", ""]
+- ["16OverlayContainer0aB25ConfigurationInvalidatingP", ""]
+- ["16OverlayContainer0aB13ConfigurationP", "maximumNotchIndex"]
+- ["16OverlayContainer0aB13ConfigurationP", "minimumNotchIndex"]
+- ["16OverlayContainer0aB13ConfigurationP", "maximumNotchHeight"]
+- ["16OverlayContainer0aB13ConfigurationP", "minimumNotchHeight"]
+- ["16OverlayContainer0aB13ConfigurationP", "notchHeightByIndex"]
+- ["16OverlayContainer0aB13ConfigurationP", "sortedHeights"]
+- ["16OverlayContainer0aB13ConfigurationP", "enabledNotchIndexes"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "-"
+- !private "..<"
+- !private "Array"
+- "Bool"
+- "CGFloat"
+- "CGPoint"
+- !private "Dictionary"
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- "OverlayAnimatedTransitioning"
+- "OverlayContainerConfiguration"
+- "OverlayContainerConfigurationInvalidating"
+- "OverlayTranslationFunction"
+- "OverlayTranslationParameters"
+- "OverlayTranslationTargetNotchPolicy"
+- "UICoordinateSpace"
+- "UIScrollView"
+- "UIViewController"
+- !private "max"
+depends-member:
+- !private ["Sa", "init"]
+- !private ["SK", "filter"]
+- !private ["SK", "init"]
+- !private ["SK", "map"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "values"]
+- !private ["Sl", "filter"]
+- !private ["Sl", "init"]
+- !private ["Sl", "map"]
+- !private ["Sl", "sorted"]
+- !private ["Sl", "values"]
+- !private ["10Foundation15ContiguousBytesP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "filter"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "sorted"]
+- !private ["s28CustomDebugStringConvertibleP", "values"]
+- !private ["s17CustomReflectableP", "filter"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "map"]
+- !private ["s17CustomReflectableP", "values"]
+- !private ["s23CustomStringConvertibleP", "filter"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- !private ["s23CustomStringConvertibleP", "sorted"]
+- !private ["s23CustomStringConvertibleP", "values"]
+- !private ["10Foundation12DataProtocolP", "init"]
+- !private ["Se", "filter"]
+- !private ["Se", "init"]
+- !private ["Se", "map"]
+- !private ["Se", "values"]
+- !private ["SD", "init"]
+- !private ["SD", "values"]
+- !private ["SE", "filter"]
+- !private ["SE", "init"]
+- !private ["SE", "map"]
+- !private ["SE", "values"]
+- !private ["SQ", "filter"]
+- !private ["SQ", "init"]
+- !private ["SQ", "map"]
+- !private ["SQ", "values"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "init"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "values"]
+- !private ["SH", "filter"]
+- !private ["SH", "init"]
+- !private ["SH", "map"]
+- !private ["SH", "values"]
+- !private ["SM", "init"]
+- !private ["SM", "sorted"]
+- !private ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["16OverlayContainer0aB13ConfigurationP", "Array"]
+- ["16OverlayContainer0aB13ConfigurationP", "Bool"]
+- ["16OverlayContainer0aB13ConfigurationP", "CGFloat"]
+- ["16OverlayContainer0aB13ConfigurationP", "CGPoint"]
+- !private ["16OverlayContainer0aB13ConfigurationP", "Dictionary"]
+- ["16OverlayContainer0aB13ConfigurationP", "Int"]
+- ["16OverlayContainer0aB13ConfigurationP", "OverlayAnimatedTransitioning"]
+- ["16OverlayContainer0aB13ConfigurationP", "OverlayTranslationFunction"]
+- ["16OverlayContainer0aB13ConfigurationP", "OverlayTranslationParameters"]
+- ["16OverlayContainer0aB13ConfigurationP", "OverlayTranslationTargetNotchPolicy"]
+- ["16OverlayContainer0aB13ConfigurationP", "UICoordinateSpace"]
+- ["16OverlayContainer0aB13ConfigurationP", "UIScrollView"]
+- ["16OverlayContainer0aB13ConfigurationP", "UIViewController"]
+- ["16OverlayContainer0aB13ConfigurationP", ""]
+- ["16OverlayContainer0aB13ConfigurationP", "animationController"]
+- ["16OverlayContainer0aB13ConfigurationP", "canReachNotch"]
+- ["16OverlayContainer0aB13ConfigurationP", "enabledNotchIndexes"]
+- ["16OverlayContainer0aB13ConfigurationP", "heightForNotch"]
+- ["16OverlayContainer0aB13ConfigurationP", "invalidateOverlayMetrics"]
+- !private ["16OverlayContainer0aB13ConfigurationP", "max"]
+- ["16OverlayContainer0aB13ConfigurationP", "maximumNotchHeight"]
+- ["16OverlayContainer0aB13ConfigurationP", "maximumNotchIndex"]
+- ["16OverlayContainer0aB13ConfigurationP", "minimumNotchHeight"]
+- ["16OverlayContainer0aB13ConfigurationP", "minimumNotchIndex"]
+- ["16OverlayContainer0aB13ConfigurationP", "notchHeightByIndex"]
+- ["16OverlayContainer0aB13ConfigurationP", "numberOfNotches"]
+- ["16OverlayContainer0aB13ConfigurationP", "overlayTargetNotchPolicy"]
+- ["16OverlayContainer0aB13ConfigurationP", "overlayTranslationFunction"]
+- ["16OverlayContainer0aB13ConfigurationP", "requestOverlayMetricsIfNeeded"]
+- ["16OverlayContainer0aB13ConfigurationP", "scrollView"]
+- ["16OverlayContainer0aB13ConfigurationP", "shouldStartDraggingOverlay"]
+- ["16OverlayContainer0aB13ConfigurationP", "sortedHeights"]
+- ["16OverlayContainer0aB25ConfigurationInvalidatingP", "invalidateOverlayMetrics"]
+- ["16OverlayContainer0aB25ConfigurationInvalidatingP", "requestOverlayMetricsIfNeeded"]
+- !private ["Sk", "filter"]
+- !private ["Sk", "init"]
+- !private ["Sk", "map"]
+- !private ["Sn", "filter"]
+- !private ["Sn", "map"]
+- !private ["SX", "filter"]
+- !private ["SX", "map"]
+- !private ["Sm", "init"]
+- !private ["ST", "filter"]
+- !private ["ST", "init"]
+- !private ["ST", "map"]
+- !private ["ST", "sorted"]
+- !private ["ST", "values"]
+- !private ["SD6ValuesV", "sorted"]
+- !private ["s14_ArrayProtocolP", "init"]
+- !private ["s24_DestructorSafeContainerP", "init"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "values"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "values"]
+depends-nominal:
+- !private "Sa"
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "SD"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "SH"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- "16OverlayContainer0aB13ConfigurationP"
+- "16OverlayContainer0aB25ConfigurationInvalidatingP"
+- !private "Sk"
+- !private "Sn"
+- !private "SX"
+- !private "Sm"
+- !private "ST"
+- !private "SD6ValuesV"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/OverlayContainer/OverlayContainer-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/OverlayContainer.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "41391cfec89c2769da2b44c3c55966d4"

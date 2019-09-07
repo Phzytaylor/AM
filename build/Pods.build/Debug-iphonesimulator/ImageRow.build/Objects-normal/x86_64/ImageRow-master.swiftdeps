@@ -1,7 +1,7 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "bd2874851dc9b35a83dd71065fafe322"
-build_time: [1567831848, 48758000]
+build_time: [1567840503, 404570000]
 inputs:
-  "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/ImageRow/Sources/ImageCell.swift": [1567831310, 538669145]
-  "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/ImageRow/Sources/ImagePickerController.swift": [1567831310, 534997723]
-  "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/ImageRow/Sources/ImageRow.swift": [1567831310, 537317718]
+  "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/ImageRow/Sources/ImageCell.swift": [1567840038, 281104656]
+  "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/ImageRow/Sources/ImagePickerController.swift": [1567840038, 278100701]
+  "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/ImageRow/Sources/ImageRow.swift": [1567840038, 279988452]

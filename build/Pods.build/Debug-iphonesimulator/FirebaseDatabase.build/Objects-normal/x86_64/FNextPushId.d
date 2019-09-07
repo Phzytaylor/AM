@@ -12,5 +12,5 @@ dependencies: \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseCore/Firebase/Core/Public/FIRApp.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/Target\ Support\ Files/FirebaseCore/FirebaseCore-umbrella.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Utilities/FParsedUrl.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/FRepoInfo.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/Utilities/FPath.h
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/Utilities/FPath.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseDatabase/Firebase/Database/Core/FRepoInfo.h

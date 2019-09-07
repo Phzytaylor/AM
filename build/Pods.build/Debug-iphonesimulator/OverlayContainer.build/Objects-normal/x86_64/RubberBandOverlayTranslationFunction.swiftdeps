@@ -15,7 +15,10 @@ depends-top-level:
 - !private "<="
 - !private ">"
 - !private ">="
+- "BooleanLiteralType"
 - "CGFloat"
+- "FloatLiteralType"
+- !private "IntegerLiteralType"
 - "OverlayTranslationFunction"
 - "OverlayTranslationParameters"
 - "RubberBandOverlayTranslationFunction"
@@ -23,6 +26,21 @@ depends-top-level:
 - !private "max"
 - !private "min"
 depends-member:
+- !private ["s18AdditiveArithmeticP", "oc_rounded"]
+- !private ["SB", "oc_rounded"]
+- !private ["12CoreGraphics7CGFloatV", "oc_rounded"]
+- !private ["s7CVarArgP", "oc_rounded"]
+- !private ["SL", "oc_rounded"]
+- !private ["s17CustomReflectableP", "oc_rounded"]
+- !private ["s23CustomStringConvertibleP", "oc_rounded"]
+- !private ["Se", "oc_rounded"]
+- !private ["SE", "oc_rounded"]
+- !private ["SQ", "oc_rounded"]
+- !private ["s25ExpressibleByFloatLiteralP", "oc_rounded"]
+- !private ["s27ExpressibleByIntegerLiteralP", "oc_rounded"]
+- !private ["SF", "oc_rounded"]
+- !private ["SH", "oc_rounded"]
+- !private ["Sj", "oc_rounded"]
 - ["16OverlayContainer0A19TranslationFunctionP", ""]
 - !private ["16OverlayContainer0A19TranslationFunctionP", "bouncesAtMaximumHeight"]
 - !private ["16OverlayContainer0A19TranslationFunctionP", "bouncesAtMinimumHeight"]
@@ -47,10 +65,35 @@ depends-member:
 - !private ["16OverlayContainer010RubberBandA19TranslationFunctionC", "max"]
 - !private ["16OverlayContainer010RubberBandA19TranslationFunctionC", "min"]
 - ["16OverlayContainer010RubberBandA19TranslationFunctionC", "overlayTranslationHeight"]
+- !private ["s13SignedNumericP", "oc_rounded"]
+- !private ["Sx", "oc_rounded"]
+- !private ["s15_CVarArgAlignedP", "oc_rounded"]
+- !private ["s22_CVarArgPassedAsDoubleP", "oc_rounded"]
+- !private ["s21_ObjectiveCBridgeableP", "oc_rounded"]
 depends-nominal:
+- !private "s18AdditiveArithmeticP"
+- !private "SB"
+- !private "12CoreGraphics7CGFloatV"
+- !private "s7CVarArgP"
+- !private "SL"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "SF"
+- !private "SH"
+- !private "Sj"
 - "16OverlayContainer0A19TranslationFunctionP"
 - !private "16OverlayContainer0A21TranslationParametersP"
 - "16OverlayContainer010RubberBandA19TranslationFunctionC"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"

@@ -34,7 +34,6 @@ let iPhoneStevenoteDate = userCalendar.date(from: iPhoneStevenoteDateComponents)
 //
 //yearsMonthsDaysHoursMinutesBetweenStevenotes.year   // 0
 
-
 let dateComponentsFormatter = DateComponentsFormatter()
 let calendar = Calendar.current
 

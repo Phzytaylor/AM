@@ -14,7 +14,6 @@ import MaterialComponents
 import FirebaseDatabase
 import FirebaseAuth
 
-
 class WrittenMemoViewController: FormViewController{
 var appBar = MDCAppBar()
     let memoHeaderView = MemoHeaderView()
@@ -24,7 +23,6 @@ var appBar = MDCAppBar()
         self.addChild(appBar.headerViewController)
         appBar.navigationBar.backgroundColor = .clear
         appBar.navigationBar.title = nil
-        
         let headerView = appBar.headerViewController.headerView
         headerView.backgroundColor = .clear
         headerView.maximumHeight = MemoHeaderView.Constants.maxHeight
@@ -33,12 +31,8 @@ var appBar = MDCAppBar()
         memoHeaderView.frame = headerView.bounds
         headerView.insertSubview(memoHeaderView, at: 0)
                 headerView.trackingScrollView = self.tableView
-        
         appBar.addSubviewsToParent()
-        
         //appBar.headerViewController.layoutDelegate = self
-        
-        
     }
     func alertFunction(titleText:String, bodyText:String){
         let alertView = UIAlertController(title: titleText, message: bodyText, preferredStyle: .alert)
@@ -48,126 +42,82 @@ var appBar = MDCAppBar()
     @objc func dismissME(){
         self.dismiss(animated: true, completion: nil)
     }
-    
     @IBOutlet weak var loadingView: CircularLoaderView!
     let uuid = UUID().uuidString
     
     var selectedPerson: Recipient?
     
     var triggers = Triggers()
-    
     var passedMemo: Written?
-    
     // Screen width.
     public var screenWidth: CGFloat {
         return UIScreen.main.bounds.width
     }
-    
     // Screen height.
     public var screenHeight: CGFloat {
         return UIScreen.main.bounds.height
     }
-    
-    
     func findFutureDate( birthday: NSDate, targetAge: Int, mileStone: MileStones) -> Date {
         
         //We need to grab the birthday
         //then we need to add the target age to the birthday to get the future date
-        
         let formatter = DateFormatter()
         // initially set the format based on your datepicker date / server String
         formatter.dateFormat = "M-d-yyyy"
-        
         let myString = formatter.string(from: birthday as Date) // string
-        
         print("MY STRING:\(myString)")
-        
         let ageComponents = myString.components(separatedBy: "-") //["1986", "06", "28"]
-        
         print(ageComponents)
         
         let dateDOB = Calendar.current.date(from: DateComponents(year:
             Int(ageComponents[2]), month: Int(ageComponents[0]), day:
             Int(ageComponents[1])))!
-        
-        
         let myAge = dateDOB.age
-        
         print(myAge)
-        
-        
         var dateComponent = DateComponents()
-        
         let diff = targetAge - myAge
-        
         // dateComponent.year = targetAge - myAge
-        
         let releaseYear = Calendar.current.date(byAdding: .year, value: diff, to: Date())
-        
         let calender = Calendar(identifier: .gregorian)
-        
         dateComponent.year = calender.component(.year, from: releaseYear ?? Date())
-        
         //TODO: Will want to grab the wedding date of the user and change the month to match just as I have done for graduations.
         switch mileStone {
         case .GraduatingCollege , .GraduatingHighSchool:
             dateComponent.month = 6
             let date = calender.date(from: dateComponent)
-            
             return date ?? Date()
-            
         case .Birthday:
             dateComponent.year = Calendar.current.component(.year, from: Date())
-            
             let date = calender.date(from: dateComponent)
-            
             return date ?? Date()
-            
         default:
             let date = calender.date(from: dateComponent)
             return date ?? Date()
         }
-        
         //        guard let futureDate = Calendar.current.date(byAdding: dateComponent, to: Date()) else {
         //            return Date()
         //        }
-        
         // return futureDate
     }
-    
-    
-  
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         self.navigationController?.navigationBar.isHidden = true 
     }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         loadingView.translatesAutoresizingMaskIntoConstraints = false
-        
         configureAppBar()
         appBar.navigationBar.tintColor = .white
-        
         memoHeaderView.imageViewCenterCon = memoHeaderView.imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         memoHeaderView.imageViewCenterCon?.isActive = true
-        
         memoHeaderView.imageViewYCon = memoHeaderView.imageView.topAnchor.constraint(equalTo: memoHeaderView.centerYAnchor, constant: -30.0)
-        
         memoHeaderView.imageViewYCon?.isActive = true
-        
         memoHeaderView.imageView.layoutIfNeeded()
-        
         if passedSender is OptionsViewController {
             self.appBar.navigationBar.backItem = UIBarButtonItem(title: "back", style: .plain, target: self, action: #selector(dismissME))
         }
-        
         if passedSender is SelectionCollectionViewController {
-            
+
             navigationController?.setNavigationBarHidden(true, animated: false)
             
             
@@ -179,14 +129,13 @@ var appBar = MDCAppBar()
                 row.title = "Write A Memo"
                 row.placeholder = "Think of a future event such as a graduation, tell them how much you love them and how proud you are."
                 row.tag = "memoText"
-              
+
                 if passedSender is MemoListViewTableViewCell {
                     if let rowValue = passedMemo?.memoText {
                         row.value = rowValue
                     }
                 }
         }
-        
        +++ Section("When will you send this memo?")
             <<< PickerInputRow<String>(){ row in
                 row.title = "Mile Stone"
@@ -195,15 +144,13 @@ var appBar = MDCAppBar()
                 row.tag = "memoTag"
                 row.add(rule: RuleRequired())
                 row.validationOptions = .validatesOnChange
-                
-                
+
                 if passedSender is MemoListViewTableViewCell{
                     guard let textToEdit = passedMemo else{
                         return
                     }
                     row.value = textToEdit.mileStone
                 }
-                
                 }
                 .cellUpdate({ (cell, row) in
                     if !row.isValid {
@@ -211,22 +158,16 @@ var appBar = MDCAppBar()
                     }
                 }).onChange({ (row) in
                     let releaseDateRow = self.form.rowBy(tag: "dateTag") as! DateRow
-                    
                     guard let currentValue = row.value else {
-                        
                         print("No Value")
                         return
                     }
-                    
                     let estimatedAgeRow = self.form.rowBy(tag: "estimatedAge") as! IntRow
-                    
-                    
                     guard let currentPerson = self.selectedPerson else {
                         print("Could not grab person")
                         return}
                     
                     guard let birthday = currentPerson.age else {
-                        
                         print("Could not grab age")
                         return}
                     switch currentValue {

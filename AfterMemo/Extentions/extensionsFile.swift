@@ -8,12 +8,13 @@
 
 import Foundation
 import UIKit
-
+protocol newMemoDelegate {
+    func updateFeed()
+}
 enum AudioStatus: Int, CustomStringConvertible {
-    case Stopped = 0,
-    Playing,
-    Recording
-    
+    case stopped = 0,
+    playing,
+    recording
     var audioName: String {
         let audioNames = [
             "Audio: Stopped",
@@ -41,9 +42,7 @@ extension IntroPageViewController {
 }
 }
 
-protocol newMemoDelegate {
-    func updateFeed()
-}
+
 
 extension Date {
     /// Returns the amount of years from another date
@@ -141,4 +140,3 @@ extension DateComponentsFormatter {
         return self.string(from: fromDate, to: toDate)
     }
 }
-

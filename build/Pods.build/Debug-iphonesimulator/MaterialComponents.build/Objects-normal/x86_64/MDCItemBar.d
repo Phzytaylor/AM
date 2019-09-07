@@ -18,11 +18,26 @@ dependencies: \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Ink/src/MDCInkGestureRecognizer.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Ink/src/MDCInkTouchController.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Ink/src/MDCInkView.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Ripple/src/MaterialRipple.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Ripple/src/MDCRippleTouchController.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Ripple/src/MDCRippleView.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Ripple/src/MDCStatefulRippleView.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Tabs/src/MDCTabBarDisplayDelegate.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Tabs/src/MDCTabBar.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Tabs/src/MDCTabBarAlignment.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Tabs/src/MDCTabBarItemAppearance.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Tabs/src/MDCTabBarTextTransform.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Elevation/src/MaterialElevation.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Elevation/src/MDCElevatable.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Elevation/src/MDCElevationOverriding.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Elevation/src/UIColor+MaterialElevation.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Elevation/src/UIView+MaterialElevationResponding.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Tabs/src/MDCTabBarIndicatorAttributes.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Tabs/src/MDCTabBarIndicatorTemplate.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Tabs/src/private/MDCTabBarIndicatorView.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Tabs/src/private/MDCTabBarPrivateIndicatorContext.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Tabs/src/MDCTabBarIndicatorContext.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Tabs/src/MDCTabBarSizeClassDelegate.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/AnimationTiming/src/MaterialAnimationTiming.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/AnimationTiming/src/CAMediaTimingFunction+MDCAnimationTiming.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/AnimationTiming/src/UIView+MDCTimingFunction.h

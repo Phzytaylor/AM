@@ -1,0 +1,428 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "OverlayContainerConfigurationImplementation"
+provides-nominal:
+- "16OverlayContainer0aB27ConfigurationImplementationC"
+provides-member:
+- ["16OverlayContainer0aB27ConfigurationImplementationC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "..<"
+- !private "=="
+- !private ">="
+- !private "??"
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "CGFloat"
+- "CGPoint"
+- !private "Dictionary"
+- "Int"
+- "OverlayAnimatedTransitioning"
+- "OverlayContainerConfigurationImplementation"
+- "OverlayContainerConfigurationInvalidating"
+- "OverlayContainerViewController"
+- "OverlayContainerViewControllerDelegate"
+- "OverlayTranslationFunction"
+- "OverlayTranslationParameters"
+- "OverlayTranslationTargetNotchPolicy"
+- !private "RubberBandOverlayTranslationFunction"
+- !private "RushingForwardTargetNotchPolicy"
+- !private "SpringOverlayTranslationAnimationController"
+- !private "StringLiteralType"
+- "UICoordinateSpace"
+- "UIScrollView"
+- "UIViewController"
+- !private "assert"
+depends-member:
+- !private ["Sa", "enumerated"]
+- !private ["Sa", "sorted"]
+- !private ["SK", "enumerated"]
+- !private ["SK", "map"]
+- !private ["SK", "sorted"]
+- !private ["So15CALayerDelegateP", "frame"]
+- !private ["So6CGRectV", "height"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "enumerated"]
+- !private ["s7CVarArgP", "frame"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "sorted"]
+- !private ["s7CVarArgP", "style"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "view"]
+- !private ["Sl", "count"]
+- !private ["Sl", "enumerated"]
+- !private ["Sl", "init"]
+- !private ["Sl", "map"]
+- !private ["Sl", "sorted"]
+- !private ["Sl", "subscript"]
+- !private ["10Foundation15ContiguousBytesP", "enumerated"]
+- !private ["10Foundation15ContiguousBytesP", "sorted"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "enumerated"]
+- !private ["s28CustomDebugStringConvertibleP", "frame"]
+- !private ["s28CustomDebugStringConvertibleP", "height"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "sorted"]
+- !private ["s28CustomDebugStringConvertibleP", "style"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "view"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "enumerated"]
+- !private ["s17CustomReflectableP", "frame"]
+- !private ["s17CustomReflectableP", "height"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "map"]
+- !private ["s17CustomReflectableP", "sorted"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "enumerated"]
+- !private ["s23CustomStringConvertibleP", "frame"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- !private ["s23CustomStringConvertibleP", "sorted"]
+- !private ["s23CustomStringConvertibleP", "style"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "view"]
+- !private ["10Foundation12DataProtocolP", "enumerated"]
+- !private ["10Foundation12DataProtocolP", "sorted"]
+- !private ["Se", "count"]
+- !private ["Se", "enumerated"]
+- !private ["Se", "frame"]
+- !private ["Se", "height"]
+- !private ["Se", "init"]
+- !private ["Se", "map"]
+- !private ["Se", "sorted"]
+- !private ["Se", "subscript"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SD", "count"]
+- !private ["SD", "init"]
+- !private ["SD", "subscript"]
+- !private ["SE", "count"]
+- !private ["SE", "enumerated"]
+- !private ["SE", "frame"]
+- !private ["SE", "height"]
+- !private ["SE", "init"]
+- !private ["SE", "map"]
+- !private ["SE", "sorted"]
+- !private ["SE", "subscript"]
+- !private ["s18EnumeratedSequenceV", "map"]
+- !private ["SQ", "count"]
+- !private ["SQ", "enumerated"]
+- !private ["SQ", "frame"]
+- !private ["SQ", "height"]
+- !private ["SQ", "init"]
+- !private ["SQ", "map"]
+- !private ["SQ", "sorted"]
+- !private ["SQ", "style"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "view"]
+- !private ["s25ExpressibleByArrayLiteralP", "enumerated"]
+- !private ["s25ExpressibleByArrayLiteralP", "sorted"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "count"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "init"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s23ExpressibleByNilLiteralP", "frame"]
+- !private ["SH", "count"]
+- !private ["SH", "enumerated"]
+- !private ["SH", "frame"]
+- !private ["SH", "init"]
+- !private ["SH", "map"]
+- !private ["SH", "sorted"]
+- !private ["SH", "style"]
+- !private ["SH", "subscript"]
+- !private ["SH", "view"]
+- !private ["16OverlayContainer016HeightConstraintA29TranslationControllerDelegateP", "style"]
+- !private ["16OverlayContainer016HeightConstraintA29TranslationControllerDelegateP", "view"]
+- !private ["SM", "enumerated"]
+- !private ["SM", "sorted"]
+- !private ["10Foundation19MutableDataProtocolP", "enumerated"]
+- !private ["10Foundation19MutableDataProtocolP", "sorted"]
+- !private ["So8NSCodingP", "frame"]
+- !private ["So8NSCodingP", "style"]
+- !private ["So8NSCodingP", "view"]
+- !private ["So26NSExtensionRequestHandlingP", "style"]
+- !private ["So26NSExtensionRequestHandlingP", "view"]
+- !private ["So8NSObjectC", "frame"]
+- !private ["So8NSObjectC", "style"]
+- !private ["So8NSObjectC", "view"]
+- !private ["So8NSObjectP", "frame"]
+- !private ["So8NSObjectP", "style"]
+- !private ["So8NSObjectP", "view"]
+- !private ["Sq", "frame"]
+- !private ["16OverlayContainer0A21AnimatedTransitioningP", "init"]
+- !private ["16OverlayContainer0aB13ConfigurationP", "Dictionary"]
+- !private ["16OverlayContainer0aB13ConfigurationP", "RubberBandOverlayTranslationFunction"]
+- !private ["16OverlayContainer0aB13ConfigurationP", "RushingForwardTargetNotchPolicy"]
+- !private ["16OverlayContainer0aB13ConfigurationP", "SpringOverlayTranslationAnimationController"]
+- ["16OverlayContainer0aB13ConfigurationP", ""]
+- ["16OverlayContainer0aB13ConfigurationP", "animationController"]
+- !private ["16OverlayContainer0aB13ConfigurationP", "assert"]
+- ["16OverlayContainer0aB13ConfigurationP", "canReachNotch"]
+- !private ["16OverlayContainer0aB13ConfigurationP", "delegate"]
+- ["16OverlayContainer0aB13ConfigurationP", "heightForNotch"]
+- ["16OverlayContainer0aB13ConfigurationP", "invalidateOverlayMetrics"]
+- !private ["16OverlayContainer0aB13ConfigurationP", "needsMetricUpdate"]
+- !private ["16OverlayContainer0aB13ConfigurationP", "notchHeightByIndex"]
+- ["16OverlayContainer0aB13ConfigurationP", "numberOfNotches"]
+- !private ["16OverlayContainer0aB13ConfigurationP", "overlayContainerViewController"]
+- ["16OverlayContainer0aB13ConfigurationP", "overlayTargetNotchPolicy"]
+- ["16OverlayContainer0aB13ConfigurationP", "overlayTranslationFunction"]
+- !private ["16OverlayContainer0aB13ConfigurationP", "requestHeightForNotch"]
+- !private ["16OverlayContainer0aB13ConfigurationP", "requestNumberOfNotches"]
+- ["16OverlayContainer0aB13ConfigurationP", "requestOverlayMetricsIfNeeded"]
+- ["16OverlayContainer0aB13ConfigurationP", "scrollView"]
+- ["16OverlayContainer0aB13ConfigurationP", "shouldStartDraggingOverlay"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "Bool"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "CGFloat"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "CGPoint"]
+- !private ["16OverlayContainer0aB27ConfigurationImplementationC", "Dictionary"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "Int"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "OverlayAnimatedTransitioning"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "OverlayContainerViewController"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "OverlayContainerViewControllerDelegate"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "OverlayTranslationFunction"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "OverlayTranslationParameters"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "OverlayTranslationTargetNotchPolicy"]
+- !private ["16OverlayContainer0aB27ConfigurationImplementationC", "RubberBandOverlayTranslationFunction"]
+- !private ["16OverlayContainer0aB27ConfigurationImplementationC", "RushingForwardTargetNotchPolicy"]
+- !private ["16OverlayContainer0aB27ConfigurationImplementationC", "SpringOverlayTranslationAnimationController"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "UICoordinateSpace"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "UIScrollView"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "UIViewController"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "animationController"]
+- !private ["16OverlayContainer0aB27ConfigurationImplementationC", "assert"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "canReachNotch"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "deinit"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "delegate"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "heightForNotch"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "init"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "invalidateOverlayMetrics"]
+- !private ["16OverlayContainer0aB27ConfigurationImplementationC", "needsMetricUpdate"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "notchHeightByIndex"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "numberOfNotches"]
+- !private ["16OverlayContainer0aB27ConfigurationImplementationC", "overlayContainerViewController"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "overlayTargetNotchPolicy"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "overlayTranslationFunction"]
+- !private ["16OverlayContainer0aB27ConfigurationImplementationC", "requestHeightForNotch"]
+- !private ["16OverlayContainer0aB27ConfigurationImplementationC", "requestNumberOfNotches"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "requestOverlayMetricsIfNeeded"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "scrollView"]
+- ["16OverlayContainer0aB27ConfigurationImplementationC", "shouldStartDraggingOverlay"]
+- !private ["16OverlayContainer0aB25ConfigurationInvalidatingP", "Dictionary"]
+- !private ["16OverlayContainer0aB25ConfigurationInvalidatingP", "RubberBandOverlayTranslationFunction"]
+- !private ["16OverlayContainer0aB25ConfigurationInvalidatingP", "RushingForwardTargetNotchPolicy"]
+- !private ["16OverlayContainer0aB25ConfigurationInvalidatingP", "SpringOverlayTranslationAnimationController"]
+- ["16OverlayContainer0aB25ConfigurationInvalidatingP", ""]
+- ["16OverlayContainer0aB25ConfigurationInvalidatingP", "animationController"]
+- !private ["16OverlayContainer0aB25ConfigurationInvalidatingP", "assert"]
+- ["16OverlayContainer0aB25ConfigurationInvalidatingP", "canReachNotch"]
+- !private ["16OverlayContainer0aB25ConfigurationInvalidatingP", "delegate"]
+- ["16OverlayContainer0aB25ConfigurationInvalidatingP", "heightForNotch"]
+- ["16OverlayContainer0aB25ConfigurationInvalidatingP", "invalidateOverlayMetrics"]
+- !private ["16OverlayContainer0aB25ConfigurationInvalidatingP", "needsMetricUpdate"]
+- !private ["16OverlayContainer0aB25ConfigurationInvalidatingP", "notchHeightByIndex"]
+- ["16OverlayContainer0aB25ConfigurationInvalidatingP", "numberOfNotches"]
+- !private ["16OverlayContainer0aB25ConfigurationInvalidatingP", "overlayContainerViewController"]
+- ["16OverlayContainer0aB25ConfigurationInvalidatingP", "overlayTargetNotchPolicy"]
+- ["16OverlayContainer0aB25ConfigurationInvalidatingP", "overlayTranslationFunction"]
+- !private ["16OverlayContainer0aB25ConfigurationInvalidatingP", "requestHeightForNotch"]
+- !private ["16OverlayContainer0aB25ConfigurationInvalidatingP", "requestNumberOfNotches"]
+- ["16OverlayContainer0aB25ConfigurationInvalidatingP", "requestOverlayMetricsIfNeeded"]
+- ["16OverlayContainer0aB25ConfigurationInvalidatingP", "scrollView"]
+- ["16OverlayContainer0aB25ConfigurationInvalidatingP", "shouldStartDraggingOverlay"]
+- !private ["16OverlayContainer0aB14ViewControllerC", "style"]
+- !private ["16OverlayContainer0aB14ViewControllerC", "view"]
+- !private ["16OverlayContainer0aB22ViewControllerDelegateP", "numberOfNotches"]
+- !private ["16OverlayContainer0aB22ViewControllerDelegateP", "overlayContainerViewController"]
+- !private ["16OverlayContainer0A21TransitioningDelegateP", "animationController"]
+- !private ["16OverlayContainer0A21TransitioningDelegateP", "overlayTargetNotchPolicy"]
+- !private ["16OverlayContainer0A19TranslationFunctionP", "init"]
+- !private ["16OverlayContainer0A28TranslationTargetNotchPolicyP", "init"]
+- !private ["Sk", "enumerated"]
+- !private ["Sk", "map"]
+- !private ["Sk", "sorted"]
+- !private ["Sn", "map"]
+- !private ["SX", "map"]
+- !private ["Sm", "enumerated"]
+- !private ["Sm", "sorted"]
+- !private ["16OverlayContainer010RubberBandA19TranslationFunctionC", "deinit"]
+- !private ["16OverlayContainer010RubberBandA19TranslationFunctionC", "init"]
+- !private ["16OverlayContainer31RushingForwardTargetNotchPolicyC", "deinit"]
+- !private ["16OverlayContainer31RushingForwardTargetNotchPolicyC", "init"]
+- !private ["ST", "count"]
+- !private ["ST", "enumerated"]
+- !private ["ST", "init"]
+- !private ["ST", "map"]
+- !private ["ST", "sorted"]
+- !private ["ST", "subscript"]
+- !private ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "deinit"]
+- !private ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "init"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["So29UIAccessibilityIdentificationP", "frame"]
+- !private ["So12UIAppearanceP", "frame"]
+- !private ["So21UIAppearanceContainerP", "frame"]
+- !private ["So21UIAppearanceContainerP", "style"]
+- !private ["So21UIAppearanceContainerP", "view"]
+- !private ["So18UIContentContainerP", "style"]
+- !private ["So18UIContentContainerP", "view"]
+- !private ["So17UICoordinateSpaceP", "frame"]
+- !private ["So13UIDynamicItemP", "frame"]
+- !private ["So18UIFocusEnvironmentP", "frame"]
+- !private ["So18UIFocusEnvironmentP", "style"]
+- !private ["So18UIFocusEnvironmentP", "view"]
+- !private ["So11UIFocusItemP", "frame"]
+- !private ["So20UIFocusItemContainerP", "frame"]
+- !private ["So30UIPasteConfigurationSupportingP", "frame"]
+- !private ["So30UIPasteConfigurationSupportingP", "style"]
+- !private ["So30UIPasteConfigurationSupportingP", "view"]
+- !private ["So11UIResponderC", "frame"]
+- !private ["So11UIResponderC", "style"]
+- !private ["So11UIResponderC", "view"]
+- !private ["So30UIResponderStandardEditActionsP", "frame"]
+- !private ["So30UIResponderStandardEditActionsP", "style"]
+- !private ["So30UIResponderStandardEditActionsP", "view"]
+- !private ["So16UIStateRestoringP", "style"]
+- !private ["So16UIStateRestoringP", "view"]
+- !private ["So18UITraitEnvironmentP", "frame"]
+- !private ["So18UITraitEnvironmentP", "style"]
+- !private ["So18UITraitEnvironmentP", "view"]
+- !private ["So23UIUserActivityRestoringP", "frame"]
+- !private ["So23UIUserActivityRestoringP", "style"]
+- !private ["So23UIUserActivityRestoringP", "view"]
+- !private ["So6UIViewC", "frame"]
+- !private ["So16UIViewControllerC", "style"]
+- !private ["So16UIViewControllerC", "view"]
+- !private ["s14_ArrayProtocolP", "enumerated"]
+- !private ["s14_ArrayProtocolP", "sorted"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "height"]
+- !private ["s24_DestructorSafeContainerP", "enumerated"]
+- !private ["s24_DestructorSafeContainerP", "sorted"]
+- !private ["s19_HasContiguousBytesP", "enumerated"]
+- !private ["s19_HasContiguousBytesP", "sorted"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "enumerated"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "sorted"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "style"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "enumerated"]
+- !private ["s21_ObjectiveCBridgeableP", "frame"]
+- !private ["s21_ObjectiveCBridgeableP", "height"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "sorted"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "frame"]
+depends-nominal:
+- !private "Sa"
+- !private "SK"
+- !private "So15CALayerDelegateP"
+- !private "So6CGRectV"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "SD"
+- !private "SE"
+- !private "s18EnumeratedSequenceV"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "SH"
+- !private "16OverlayContainer016HeightConstraintA29TranslationControllerDelegateP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "So8NSCodingP"
+- !private "So26NSExtensionRequestHandlingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "Sq"
+- !private "16OverlayContainer0A21AnimatedTransitioningP"
+- "16OverlayContainer0aB13ConfigurationP"
+- "16OverlayContainer0aB27ConfigurationImplementationC"
+- "16OverlayContainer0aB25ConfigurationInvalidatingP"
+- !private "16OverlayContainer0aB14ViewControllerC"
+- !private "16OverlayContainer0aB22ViewControllerDelegateP"
+- !private "16OverlayContainer0A21TransitioningDelegateP"
+- !private "16OverlayContainer0A19TranslationFunctionP"
+- !private "16OverlayContainer0A28TranslationTargetNotchPolicyP"
+- !private "Sk"
+- !private "Sn"
+- !private "SX"
+- !private "Sm"
+- !private "16OverlayContainer010RubberBandA19TranslationFunctionC"
+- !private "16OverlayContainer31RushingForwardTargetNotchPolicyC"
+- !private "ST"
+- !private "16OverlayContainer06SpringA30TranslationAnimationControllerC"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So18UIContentContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So16UIStateRestoringP"
+- !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- !private "So16UIViewControllerC"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/OverlayContainer/OverlayContainer-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/OverlayContainer.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "4d4840359ad41a18296b3713edebb110"

@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/FIROptions.h</key>
 		<data>
-		FAsM/N9mt3BGpHGtGEvNVcp+OxQ=
+		6DWVDpjkBlwzR8fb5c966x27FTE=
 		</data>
 		<key>Headers/FirebaseCore-umbrella.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hDrVNzk7Yvqgbfw1P7LUtJJ6DtQ=
+		WI9P0vwTPwq3aE1/zmEIDfpyOOg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>PrivateHeaders/FIRAppInternal.h</key>
 		<data>
-		34DIpjp09XdjURQkxGWkd5mUAio=
+		5YW09R2E4Fkdt2OTeKslWd8cYV0=
 		</data>
 		<key>PrivateHeaders/FIRBundleUtil.h</key>
 		<data>
@@ -72,9 +72,17 @@
 		<data>
 		h2KGppHRZO4Kxy0b6XHtbiqvPRI=
 		</data>
+		<key>PrivateHeaders/FIRCoreDiagnosticsConnector.h</key>
+		<data>
+		Vvl+2bDxUv2RaMjETxlOZwEEQHg=
+		</data>
 		<key>PrivateHeaders/FIRDependency.h</key>
 		<data>
 		uYNS0fL/S1gyBI3/J3erEWzHuiU=
+		</data>
+		<key>PrivateHeaders/FIRDiagnosticsData.h</key>
+		<data>
+		qfRBcoVEhdN+cI+eaWFetpKzDFU=
 		</data>
 		<key>PrivateHeaders/FIRErrorCode.h</key>
 		<data>
@@ -140,11 +148,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FAsM/N9mt3BGpHGtGEvNVcp+OxQ=
+			6DWVDpjkBlwzR8fb5c966x27FTE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Fyj+qtQgzl2fDyYzbbI+gD4TgEHmf3lhvkhMD/Xgk7I=
+			zcXC79XeyaDj8u8hrKDyOLQOxzF+1NMvQHAmok5EMK8=
 			</data>
 		</dict>
 		<key>Headers/FirebaseCore-umbrella.h</key>
@@ -206,11 +214,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			34DIpjp09XdjURQkxGWkd5mUAio=
+			5YW09R2E4Fkdt2OTeKslWd8cYV0=
 			</data>
 			<key>hash2</key>
 			<data>
-			mLkzCF9BmW6wZOLxpr0pSP/78J5yJgJ4kmWFCb7/2yo=
+			OyVurtegMsfK5o6b38GpNe+ycp9lOhEqmgufKjaKk0U=
 			</data>
 		</dict>
 		<key>PrivateHeaders/FIRBundleUtil.h</key>
@@ -279,6 +287,17 @@
 			iwSHGJwpVNRFRuzhGyWCxQMnu4EpeKb0qauuccDN2pw=
 			</data>
 		</dict>
+		<key>PrivateHeaders/FIRCoreDiagnosticsConnector.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Vvl+2bDxUv2RaMjETxlOZwEEQHg=
+			</data>
+			<key>hash2</key>
+			<data>
+			MbqX0nT4LH/ifZ7j6k/J7/WEgvk3JsTCT2HA4NfNdlA=
+			</data>
+		</dict>
 		<key>PrivateHeaders/FIRDependency.h</key>
 		<dict>
 			<key>hash</key>
@@ -288,6 +307,17 @@
 			<key>hash2</key>
 			<data>
 			0+AUURSQjKipNiWLkzUCn83IOO3+Slk3Wna7bKy8Jrk=
+			</data>
+		</dict>
+		<key>PrivateHeaders/FIRDiagnosticsData.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qfRBcoVEhdN+cI+eaWFetpKzDFU=
+			</data>
+			<key>hash2</key>
+			<data>
+			+qhUNDKeS8P3hd/8WbPHWY2wFZL3rhXKWZKDBH9zFwY=
 			</data>
 		</dict>
 		<key>PrivateHeaders/FIRErrorCode.h</key>

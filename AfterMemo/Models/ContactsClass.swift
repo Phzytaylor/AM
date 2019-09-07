@@ -17,7 +17,6 @@ class LovedOneContact {
     let email: String
     let profileImage: Data
     let birthDay: Date
-    
     init(firstName:String, phoneNumber:String, email:String, profileImage:Data, birthDay:Date) {
         self.firstName = firstName
         self.birthDay = birthDay

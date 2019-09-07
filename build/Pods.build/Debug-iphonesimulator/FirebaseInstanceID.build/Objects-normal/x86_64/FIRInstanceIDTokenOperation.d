@@ -2,8 +2,7 @@ dependencies: \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDTokenOperation.m \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/FirebaseInstanceID.build/module.modulemap \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDTokenOperation.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDCheckinPreferences.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDDefines.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseInstanceID/Firebase/InstanceID/Private/FIRInstanceIDCheckinPreferences.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDKeyPair.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDKeyPairUtilities.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDLogger.h \

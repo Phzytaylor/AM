@@ -7,4 +7,7 @@ dependencies: \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/ShadowLayer/src/MDCShadowLayer.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/ShadowElevations/src/MaterialShadowElevations.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/ShadowElevations/src/MDCShadowElevations.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Shapes/src/MDCShapeGenerating.h
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Shapes/src/MDCShapeGenerating.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/private/Color/src/MaterialColor.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/private/Color/src/UIColor+MaterialBlending.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/private/Color/src/UIColor+MaterialDynamic.h

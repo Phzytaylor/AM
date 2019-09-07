@@ -1,155 +1,186 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "TranslationCompletionBlock"
+- "TranslationType"
+- "HeightConstraintOverlayTranslationControllerDelegate"
 - "HeightConstraintOverlayTranslationController"
 provides-nominal:
+- "16OverlayContainer15TranslationTypeO"
+- "16OverlayContainer016HeightConstraintA29TranslationControllerDelegateP"
 - "16OverlayContainer016HeightConstraintA21TranslationControllerC"
 provides-member:
+- ["16OverlayContainer15TranslationTypeO", ""]
+- ["16OverlayContainer016HeightConstraintA29TranslationControllerDelegateP", ""]
 - ["16OverlayContainer016HeightConstraintA21TranslationControllerC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "!"
 - !private "!="
 - !private "&&"
 - !private "-"
-- !private "<"
 - !private "=="
+- !private "==="
 - !private "??"
+- "AnyObject"
 - "AssignmentPrecedence"
 - "Bool"
-- !private "BooleanLiteralType"
+- "BooleanLiteralType"
 - "CGFloat"
 - "CGPoint"
 - !private "ConcreteOverlayContainerContextTargetNotchPolicy"
 - !private "ConcreteOverlayContainerContextTransitioning"
 - !private "ConcreteOverlayTranslationParameters"
+- !private "DraggingOverlayContainerTransitionCoordinator"
 - "HeightConstraintOverlayTranslationController"
+- "HeightConstraintOverlayTranslationControllerDelegate"
 - "Int"
 - !private "InterruptibleAnimatorOverlayContainerTransitionCoordinator"
 - "NSLayoutConstraint"
-- "OverlayContainerViewControllerConfiguration"
+- "OverlayContainerConfiguration"
+- "OverlayContainerTransitionCoordinator"
 - "OverlayTranslationController"
-- "OverlayTranslationControllerDelegate"
 - "OverlayTranslationPosition"
-- !private "StringLiteralType"
+- "TranslationCompletionBlock"
+- "TranslationMetaData"
+- "TranslationType"
 - "UICoordinateSpace"
 - "UIViewController"
-- !private "UnicodeScalarType"
+- "UIViewImplicitlyAnimating"
 - "Void"
-- !private "assert"
 - !private "max"
 - !private "min"
 depends-member:
-- !private ["s18AdditiveArithmeticP", "oc_rounded"]
+- !private ["Sa", "append"]
 - !private ["Sa", "contains"]
 - !private ["Sa", "first"]
-- !private ["Sa", "index"]
+- !private ["Sa", "firstIndex"]
+- !private ["Sa", "forEach"]
 - !private ["Sa", "last"]
 - !private ["Sa", "map"]
+- !private ["SK", "append"]
 - !private ["SK", "contains"]
 - !private ["SK", "first"]
-- !private ["SK", "index"]
+- !private ["SK", "firstIndex"]
+- !private ["SK", "forEach"]
 - !private ["SK", "last"]
 - !private ["SK", "map"]
-- !private ["SB", "oc_rounded"]
-- !private ["12CoreGraphics7CGFloatV", "oc_rounded"]
+- !private ["So7CGPointV", "zero"]
+- !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "constant"]
 - !private ["s7CVarArgP", "contains"]
 - !private ["s7CVarArgP", "first"]
-- !private ["s7CVarArgP", "index"]
+- !private ["s7CVarArgP", "firstIndex"]
+- !private ["s7CVarArgP", "forEach"]
 - !private ["s7CVarArgP", "last"]
 - !private ["s7CVarArgP", "map"]
-- !private ["s7CVarArgP", "oc_rounded"]
+- !private ["Sl", "append"]
 - !private ["Sl", "contains"]
 - !private ["Sl", "first"]
-- !private ["Sl", "index"]
+- !private ["Sl", "firstIndex"]
+- !private ["Sl", "forEach"]
 - !private ["Sl", "last"]
 - !private ["Sl", "map"]
-- !private ["SL", "oc_rounded"]
 - !private ["16OverlayContainer08ConcreteaB24ContextTargetNotchPolicyV", "deinit"]
 - !private ["16OverlayContainer08ConcreteaB24ContextTargetNotchPolicyV", "init"]
 - !private ["16OverlayContainer08ConcreteaB20ContextTransitioningV", "deinit"]
 - !private ["16OverlayContainer08ConcreteaB20ContextTransitioningV", "init"]
 - !private ["16OverlayContainer08ConcreteA21TranslationParametersV", "deinit"]
 - !private ["16OverlayContainer08ConcreteA21TranslationParametersV", "init"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
 - !private ["10Foundation15ContiguousBytesP", "contains"]
 - !private ["10Foundation15ContiguousBytesP", "first"]
-- !private ["10Foundation15ContiguousBytesP", "index"]
+- !private ["10Foundation15ContiguousBytesP", "firstIndex"]
+- !private ["10Foundation15ContiguousBytesP", "forEach"]
 - !private ["10Foundation15ContiguousBytesP", "last"]
 - !private ["10Foundation15ContiguousBytesP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "constant"]
 - !private ["s28CustomDebugStringConvertibleP", "contains"]
 - !private ["s28CustomDebugStringConvertibleP", "first"]
+- !private ["s28CustomDebugStringConvertibleP", "firstIndex"]
 - !private ["s28CustomDebugStringConvertibleP", "flatMap"]
-- !private ["s28CustomDebugStringConvertibleP", "index"]
+- !private ["s28CustomDebugStringConvertibleP", "forEach"]
 - !private ["s28CustomDebugStringConvertibleP", "last"]
 - !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "zero"]
+- !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "contains"]
 - !private ["s17CustomReflectableP", "first"]
+- !private ["s17CustomReflectableP", "firstIndex"]
 - !private ["s17CustomReflectableP", "flatMap"]
-- !private ["s17CustomReflectableP", "index"]
+- !private ["s17CustomReflectableP", "forEach"]
 - !private ["s17CustomReflectableP", "last"]
 - !private ["s17CustomReflectableP", "map"]
-- !private ["s17CustomReflectableP", "oc_rounded"]
-- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
-- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s17CustomReflectableP", "zero"]
+- !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "constant"]
 - !private ["s23CustomStringConvertibleP", "contains"]
 - !private ["s23CustomStringConvertibleP", "first"]
-- !private ["s23CustomStringConvertibleP", "index"]
+- !private ["s23CustomStringConvertibleP", "firstIndex"]
+- !private ["s23CustomStringConvertibleP", "forEach"]
 - !private ["s23CustomStringConvertibleP", "last"]
 - !private ["s23CustomStringConvertibleP", "map"]
-- !private ["s23CustomStringConvertibleP", "oc_rounded"]
+- !private ["10Foundation12DataProtocolP", "append"]
 - !private ["10Foundation12DataProtocolP", "contains"]
 - !private ["10Foundation12DataProtocolP", "first"]
-- !private ["10Foundation12DataProtocolP", "index"]
+- !private ["10Foundation12DataProtocolP", "firstIndex"]
+- !private ["10Foundation12DataProtocolP", "forEach"]
 - !private ["10Foundation12DataProtocolP", "last"]
 - !private ["10Foundation12DataProtocolP", "map"]
+- !private ["Se", "append"]
 - !private ["Se", "contains"]
 - !private ["Se", "first"]
+- !private ["Se", "firstIndex"]
 - !private ["Se", "flatMap"]
-- !private ["Se", "index"]
+- !private ["Se", "forEach"]
 - !private ["Se", "last"]
 - !private ["Se", "map"]
-- !private ["Se", "oc_rounded"]
-- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
-- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["Se", "zero"]
+- !private ["16OverlayContainer08DraggingaB21TransitionCoordinatorC", "deinit"]
+- !private ["16OverlayContainer08DraggingaB21TransitionCoordinatorC", "init"]
+- !private ["16OverlayContainer08DraggingaB21TransitionCoordinatorC", "performCompletions"]
+- !private ["SE", "append"]
 - !private ["SE", "contains"]
 - !private ["SE", "first"]
+- !private ["SE", "firstIndex"]
 - !private ["SE", "flatMap"]
-- !private ["SE", "index"]
+- !private ["SE", "forEach"]
 - !private ["SE", "last"]
 - !private ["SE", "map"]
-- !private ["SE", "oc_rounded"]
+- !private ["SE", "zero"]
+- !private ["SQ", "append"]
 - !private ["SQ", "bottom"]
 - !private ["SQ", "constant"]
 - !private ["SQ", "contains"]
 - !private ["SQ", "first"]
+- !private ["SQ", "firstIndex"]
 - !private ["SQ", "flatMap"]
+- !private ["SQ", "forEach"]
 - !private ["SQ", "inFlight"]
-- !private ["SQ", "index"]
 - !private ["SQ", "last"]
 - !private ["SQ", "map"]
-- !private ["SQ", "oc_rounded"]
 - !private ["SQ", "stationary"]
 - !private ["SQ", "top"]
+- !private ["SQ", "zero"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "contains"]
 - !private ["s25ExpressibleByArrayLiteralP", "first"]
-- !private ["s25ExpressibleByArrayLiteralP", "index"]
+- !private ["s25ExpressibleByArrayLiteralP", "firstIndex"]
+- !private ["s25ExpressibleByArrayLiteralP", "forEach"]
 - !private ["s25ExpressibleByArrayLiteralP", "last"]
 - !private ["s25ExpressibleByArrayLiteralP", "map"]
-- !private ["s25ExpressibleByFloatLiteralP", "oc_rounded"]
-- !private ["s27ExpressibleByIntegerLiteralP", "oc_rounded"]
 - !private ["s23ExpressibleByNilLiteralP", "flatMap"]
-- !private ["SF", "oc_rounded"]
+- !private ["SH", "append"]
 - !private ["SH", "bottom"]
 - !private ["SH", "constant"]
 - !private ["SH", "contains"]
 - !private ["SH", "first"]
+- !private ["SH", "firstIndex"]
 - !private ["SH", "flatMap"]
+- !private ["SH", "forEach"]
 - !private ["SH", "inFlight"]
-- !private ["SH", "index"]
 - !private ["SH", "last"]
 - !private ["SH", "map"]
-- !private ["SH", "oc_rounded"]
 - !private ["SH", "stationary"]
 - !private ["SH", "top"]
 - ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "Bool"]
@@ -158,47 +189,75 @@ depends-member:
 - !private ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "ConcreteOverlayContainerContextTargetNotchPolicy"]
 - !private ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "ConcreteOverlayContainerContextTransitioning"]
 - !private ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "ConcreteOverlayTranslationParameters"]
+- !private ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "DraggingOverlayContainerTransitionCoordinator"]
+- ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "HeightConstraintOverlayTranslationControllerDelegate"]
 - ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "Int"]
 - !private ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "InterruptibleAnimatorOverlayContainerTransitionCoordinator"]
 - ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "NSLayoutConstraint"]
-- ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "OverlayContainerViewControllerConfiguration"]
-- ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "OverlayTranslationControllerDelegate"]
+- ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "OverlayContainerConfiguration"]
 - ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "OverlayTranslationPosition"]
+- ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "TranslationCompletionBlock"]
+- ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "TranslationMetaData"]
+- ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "TranslationType"]
 - ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "UICoordinateSpace"]
 - ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "UIViewController"]
+- ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "UIViewImplicitlyAnimating"]
 - ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "Void"]
-- !private ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "assert"]
 - !private ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "configuration"]
+- !private ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "deferredTranslation"]
+- !private ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "deferredTranslationCompletionBlocks"]
 - ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "deinit"]
 - ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "delegate"]
 - ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "dragOverlay"]
 - !private ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "enabledNotchIndexes"]
 - ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "endOverlayTranslation"]
+- ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "hasPendingTranslation"]
 - ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "init"]
 - ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "isDraggable"]
+- !private ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "isDragging"]
+- !private ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "lastScheduledTranslationAnimator"]
+- ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "lastTranslationEndNotchIndex"]
 - !private ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "max"]
 - !private ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "maximumReachableNotchHeight"]
 - !private ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "min"]
 - !private ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "minimumReachableNotchHeight"]
-- ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "moveOverlay"]
 - !private ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "overlayHasAmibiguousTranslationHeight"]
 - ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "overlayHasReachedANotch"]
 - !private ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "overlayViewController"]
+- ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "performDeferredTranslations"]
+- ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "scheduleOverlayTranslation"]
+- ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "startOverlayTranslation"]
+- !private ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "translateOverlayWithoutAnimation"]
 - !private ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "translationEndNotchHeight"]
-- ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "translationEndNotchIndex"]
+- !private ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "translationEndNotchIndex"]
 - ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "translationHeight"]
 - !private ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "translationHeightConstraint"]
 - ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "translationPosition"]
+- !private ["16OverlayContainer016HeightConstraintA21TranslationControllerC", "updateConstraint"]
+- ["16OverlayContainer016HeightConstraintA29TranslationControllerDelegateP", "CGPoint"]
+- ["16OverlayContainer016HeightConstraintA29TranslationControllerDelegateP", "Int"]
+- ["16OverlayContainer016HeightConstraintA29TranslationControllerDelegateP", "OverlayContainerTransitionCoordinator"]
+- ["16OverlayContainer016HeightConstraintA29TranslationControllerDelegateP", "OverlayTranslationController"]
+- ["16OverlayContainer016HeightConstraintA29TranslationControllerDelegateP", "UIViewController"]
+- ["16OverlayContainer016HeightConstraintA29TranslationControllerDelegateP", "overlayViewController"]
+- ["16OverlayContainer016HeightConstraintA29TranslationControllerDelegateP", "translationController"]
+- ["16OverlayContainer016HeightConstraintA29TranslationControllerDelegateP", "translationControllerDidScheduleTranslations"]
+- ["16OverlayContainer016HeightConstraintA29TranslationControllerDelegateP", "translationControllerWillStartDraggingOverlay"]
 - !private ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "deinit"]
 - !private ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "init"]
+- !private ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "markAsCancelled"]
+- !private ["SM", "append"]
 - !private ["SM", "contains"]
 - !private ["SM", "first"]
-- !private ["SM", "index"]
+- !private ["SM", "firstIndex"]
+- !private ["SM", "forEach"]
 - !private ["SM", "last"]
 - !private ["SM", "map"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
 - !private ["10Foundation19MutableDataProtocolP", "contains"]
 - !private ["10Foundation19MutableDataProtocolP", "first"]
-- !private ["10Foundation19MutableDataProtocolP", "index"]
+- !private ["10Foundation19MutableDataProtocolP", "firstIndex"]
+- !private ["10Foundation19MutableDataProtocolP", "forEach"]
 - !private ["10Foundation19MutableDataProtocolP", "last"]
 - !private ["10Foundation19MutableDataProtocolP", "map"]
 - !private ["So18NSLayoutConstraintC", "constant"]
@@ -206,48 +265,58 @@ depends-member:
 - !private ["So8NSObjectP", "addCompletion"]
 - !private ["So8NSObjectP", "constant"]
 - !private ["So8NSObjectP", "startAnimation"]
-- !private ["Sj", "oc_rounded"]
 - !private ["Sq", "flatMap"]
 - !private ["16OverlayContainer0A21AnimatedTransitioningP", "interruptibleAnimator"]
+- !private ["16OverlayContainer0aB13ConfigurationP", "animationController"]
+- !private ["16OverlayContainer0aB13ConfigurationP", "enabledNotchIndexes"]
+- !private ["16OverlayContainer0aB13ConfigurationP", "heightForNotch"]
+- !private ["16OverlayContainer0aB13ConfigurationP", "maximumNotchHeight"]
+- !private ["16OverlayContainer0aB13ConfigurationP", "notchHeightByIndex"]
+- !private ["16OverlayContainer0aB13ConfigurationP", "overlayTargetNotchPolicy"]
+- !private ["16OverlayContainer0aB13ConfigurationP", "overlayTranslationFunction"]
+- !private ["16OverlayContainer0aB13ConfigurationP", "shouldStartDraggingOverlay"]
 - !private ["16OverlayContainer0aB24ContextTargetNotchPolicyP", "init"]
 - !private ["16OverlayContainer0aB20ContextTransitioningP", "init"]
 - !private ["16OverlayContainer0aB21TransitionCoordinatorP", "init"]
+- !private ["16OverlayContainer0aB21TransitionCoordinatorP", "markAsCancelled"]
+- !private ["16OverlayContainer0aB21TransitionCoordinatorP", "performCompletions"]
 - !private ["16OverlayContainer0aB28TransitionCoordinatorContextP", "init"]
-- !private ["16OverlayContainer0aB27ViewControllerConfigurationC", "animationController"]
-- !private ["16OverlayContainer0aB27ViewControllerConfigurationC", "enabledNotchIndexes"]
-- !private ["16OverlayContainer0aB27ViewControllerConfigurationC", "heightForNotch"]
-- !private ["16OverlayContainer0aB27ViewControllerConfigurationC", "maximumNotchHeight"]
-- !private ["16OverlayContainer0aB27ViewControllerConfigurationC", "notchHeightByIndex"]
-- !private ["16OverlayContainer0aB27ViewControllerConfigurationC", "numberOfNotches"]
-- !private ["16OverlayContainer0aB27ViewControllerConfigurationC", "overlayTargetNotchPolicy"]
-- !private ["16OverlayContainer0aB27ViewControllerConfigurationC", "overlayTranslationFunction"]
-- !private ["16OverlayContainer0aB27ViewControllerConfigurationC", "shouldStartDraggingOverlay"]
+- !private ["16OverlayContainer0aB28TransitionCoordinatorContextP", "markAsCancelled"]
+- !private ["16OverlayContainer0aB28TransitionCoordinatorContextP", "performCompletions"]
 - !private ["16OverlayContainer0A21TranslationControllerP", "ConcreteOverlayContainerContextTargetNotchPolicy"]
 - !private ["16OverlayContainer0A21TranslationControllerP", "ConcreteOverlayContainerContextTransitioning"]
 - !private ["16OverlayContainer0A21TranslationControllerP", "ConcreteOverlayTranslationParameters"]
+- !private ["16OverlayContainer0A21TranslationControllerP", "DraggingOverlayContainerTransitionCoordinator"]
 - !private ["16OverlayContainer0A21TranslationControllerP", "InterruptibleAnimatorOverlayContainerTransitionCoordinator"]
+- !private ["16OverlayContainer0A21TranslationControllerP", "TranslationMetaData"]
 - ["16OverlayContainer0A21TranslationControllerP", ""]
-- !private ["16OverlayContainer0A21TranslationControllerP", "assert"]
 - !private ["16OverlayContainer0A21TranslationControllerP", "configuration"]
+- !private ["16OverlayContainer0A21TranslationControllerP", "deferredTranslation"]
+- !private ["16OverlayContainer0A21TranslationControllerP", "deferredTranslationCompletionBlocks"]
 - !private ["16OverlayContainer0A21TranslationControllerP", "delegate"]
 - ["16OverlayContainer0A21TranslationControllerP", "dragOverlay"]
 - !private ["16OverlayContainer0A21TranslationControllerP", "enabledNotchIndexes"]
 - ["16OverlayContainer0A21TranslationControllerP", "endOverlayTranslation"]
 - ["16OverlayContainer0A21TranslationControllerP", "isDraggable"]
+- !private ["16OverlayContainer0A21TranslationControllerP", "isDragging"]
+- !private ["16OverlayContainer0A21TranslationControllerP", "lastScheduledTranslationAnimator"]
+- ["16OverlayContainer0A21TranslationControllerP", "lastTranslationEndNotchIndex"]
 - !private ["16OverlayContainer0A21TranslationControllerP", "max"]
 - !private ["16OverlayContainer0A21TranslationControllerP", "maximumReachableNotchHeight"]
 - !private ["16OverlayContainer0A21TranslationControllerP", "min"]
 - !private ["16OverlayContainer0A21TranslationControllerP", "minimumReachableNotchHeight"]
-- ["16OverlayContainer0A21TranslationControllerP", "moveOverlay"]
 - !private ["16OverlayContainer0A21TranslationControllerP", "overlayHasAmibiguousTranslationHeight"]
 - ["16OverlayContainer0A21TranslationControllerP", "overlayHasReachedANotch"]
 - !private ["16OverlayContainer0A21TranslationControllerP", "overlayViewController"]
+- !private ["16OverlayContainer0A21TranslationControllerP", "scheduleOverlayTranslation"]
+- ["16OverlayContainer0A21TranslationControllerP", "startOverlayTranslation"]
+- !private ["16OverlayContainer0A21TranslationControllerP", "translateOverlayWithoutAnimation"]
 - !private ["16OverlayContainer0A21TranslationControllerP", "translationEndNotchHeight"]
 - !private ["16OverlayContainer0A21TranslationControllerP", "translationEndNotchIndex"]
 - ["16OverlayContainer0A21TranslationControllerP", "translationHeight"]
 - !private ["16OverlayContainer0A21TranslationControllerP", "translationHeightConstraint"]
 - ["16OverlayContainer0A21TranslationControllerP", "translationPosition"]
-- !private ["16OverlayContainer0A29TranslationControllerDelegateP", "translationController"]
+- !private ["16OverlayContainer0A21TranslationControllerP", "updateConstraint"]
 - !private ["16OverlayContainer0A19TranslationFunctionP", "overlayTranslationHeight"]
 - !private ["16OverlayContainer0A21TranslationParametersP", "init"]
 - !private ["16OverlayContainer0A19TranslationPositionO", "bottom"]
@@ -255,70 +324,80 @@ depends-member:
 - !private ["16OverlayContainer0A19TranslationPositionO", "stationary"]
 - !private ["16OverlayContainer0A19TranslationPositionO", "top"]
 - !private ["16OverlayContainer0A28TranslationTargetNotchPolicyP", "targetNotchIndex"]
+- !private ["Sk", "append"]
 - !private ["Sk", "contains"]
 - !private ["Sk", "first"]
-- !private ["Sk", "index"]
+- !private ["Sk", "firstIndex"]
+- !private ["Sk", "forEach"]
 - !private ["Sk", "last"]
 - !private ["Sk", "map"]
+- !private ["Sm", "append"]
 - !private ["Sm", "contains"]
 - !private ["Sm", "first"]
-- !private ["Sm", "index"]
+- !private ["Sm", "firstIndex"]
+- !private ["Sm", "forEach"]
 - !private ["Sm", "last"]
 - !private ["Sm", "map"]
+- !private ["ST", "append"]
 - !private ["ST", "contains"]
 - !private ["ST", "first"]
-- !private ["ST", "index"]
+- !private ["ST", "firstIndex"]
+- !private ["ST", "forEach"]
 - !private ["ST", "last"]
 - !private ["ST", "map"]
-- !private ["s13SignedNumericP", "oc_rounded"]
-- !private ["Sx", "oc_rounded"]
-- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
-- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
-- !private ["s16TextOutputStreamP", "appendInterpolation"]
-- !private ["s16TextOutputStreamP", "appendLiteral"]
+- ["16OverlayContainer15TranslationTypeO", "Int"]
+- ["16OverlayContainer15TranslationTypeO", "basedOnTargetPolicy"]
+- ["16OverlayContainer15TranslationTypeO", "toIndex"]
+- ["16OverlayContainer15TranslationTypeO", "toLastReachedNotchIndex"]
 - !private ["So15UIViewAnimatingP", "addCompletion"]
 - !private ["So15UIViewAnimatingP", "startAnimation"]
 - !private ["So25UIViewImplicitlyAnimatingP", "addCompletion"]
 - !private ["So25UIViewImplicitlyAnimatingP", "startAnimation"]
+- !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "contains"]
 - !private ["s14_ArrayProtocolP", "first"]
-- !private ["s14_ArrayProtocolP", "index"]
+- !private ["s14_ArrayProtocolP", "firstIndex"]
+- !private ["s14_ArrayProtocolP", "forEach"]
 - !private ["s14_ArrayProtocolP", "last"]
 - !private ["s14_ArrayProtocolP", "map"]
-- !private ["s15_CVarArgAlignedP", "oc_rounded"]
-- !private ["s22_CVarArgPassedAsDoubleP", "oc_rounded"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "zero"]
+- !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "contains"]
 - !private ["s24_DestructorSafeContainerP", "first"]
-- !private ["s24_DestructorSafeContainerP", "index"]
+- !private ["s24_DestructorSafeContainerP", "firstIndex"]
+- !private ["s24_DestructorSafeContainerP", "forEach"]
 - !private ["s24_DestructorSafeContainerP", "last"]
 - !private ["s24_DestructorSafeContainerP", "map"]
+- !private ["s19_HasContiguousBytesP", "append"]
 - !private ["s19_HasContiguousBytesP", "contains"]
 - !private ["s19_HasContiguousBytesP", "first"]
-- !private ["s19_HasContiguousBytesP", "index"]
+- !private ["s19_HasContiguousBytesP", "firstIndex"]
+- !private ["s19_HasContiguousBytesP", "forEach"]
 - !private ["s19_HasContiguousBytesP", "last"]
 - !private ["s19_HasContiguousBytesP", "map"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "contains"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "index"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "firstIndex"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "forEach"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "last"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "constant"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "contains"]
 - !private ["s21_ObjectiveCBridgeableP", "first"]
+- !private ["s21_ObjectiveCBridgeableP", "firstIndex"]
 - !private ["s21_ObjectiveCBridgeableP", "flatMap"]
-- !private ["s21_ObjectiveCBridgeableP", "index"]
+- !private ["s21_ObjectiveCBridgeableP", "forEach"]
 - !private ["s21_ObjectiveCBridgeableP", "last"]
 - !private ["s21_ObjectiveCBridgeableP", "map"]
-- !private ["s21_ObjectiveCBridgeableP", "oc_rounded"]
+- !private ["s21_ObjectiveCBridgeableP", "zero"]
 depends-nominal:
-- !private "s18AdditiveArithmeticP"
 - !private "Sa"
 - !private "SK"
-- !private "SB"
-- !private "12CoreGraphics7CGFloatV"
+- !private "So7CGPointV"
 - !private "s7CVarArgP"
 - !private "Sl"
-- !private "SL"
 - !private "16OverlayContainer08ConcreteaB24ContextTargetNotchPolicyV"
 - !private "16OverlayContainer08ConcreteaB20ContextTransitioningV"
 - !private "16OverlayContainer08ConcreteA21TranslationParametersV"
@@ -328,32 +407,28 @@ depends-nominal:
 - !private "s23CustomStringConvertibleP"
 - !private "10Foundation12DataProtocolP"
 - !private "Se"
-- !private "s26DefaultStringInterpolationV"
+- !private "16OverlayContainer08DraggingaB21TransitionCoordinatorC"
 - !private "SE"
 - !private "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
-- !private "s25ExpressibleByFloatLiteralP"
-- !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
-- !private "SF"
 - !private "SH"
 - "16OverlayContainer016HeightConstraintA21TranslationControllerC"
+- "16OverlayContainer016HeightConstraintA29TranslationControllerDelegateP"
 - !private "16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
 - !private "So18NSLayoutConstraintC"
 - !private "So8NSObjectC"
 - !private "So8NSObjectP"
-- !private "Sj"
 - !private "Sq"
 - !private "16OverlayContainer0A21AnimatedTransitioningP"
+- !private "16OverlayContainer0aB13ConfigurationP"
 - !private "16OverlayContainer0aB24ContextTargetNotchPolicyP"
 - !private "16OverlayContainer0aB20ContextTransitioningP"
 - !private "16OverlayContainer0aB21TransitionCoordinatorP"
 - !private "16OverlayContainer0aB28TransitionCoordinatorContextP"
-- !private "16OverlayContainer0aB27ViewControllerConfigurationC"
 - "16OverlayContainer0A21TranslationControllerP"
-- !private "16OverlayContainer0A29TranslationControllerDelegateP"
 - !private "16OverlayContainer0A19TranslationFunctionP"
 - !private "16OverlayContainer0A21TranslationParametersP"
 - !private "16OverlayContainer0A19TranslationPositionO"
@@ -361,15 +436,11 @@ depends-nominal:
 - !private "Sk"
 - !private "Sm"
 - !private "ST"
-- !private "s13SignedNumericP"
-- !private "Sx"
-- !private "s27StringInterpolationProtocolP"
-- !private "s16TextOutputStreamP"
+- "16OverlayContainer15TranslationTypeO"
 - !private "So15UIViewAnimatingP"
 - !private "So25UIViewImplicitlyAnimatingP"
 - !private "s14_ArrayProtocolP"
-- !private "s15_CVarArgAlignedP"
-- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
@@ -403,4 +474,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "279315f6612cc6dd69bfa75b3ae5e545"
+interface-hash: "00f2c3255438c0f4ab91c0a577f05c47"

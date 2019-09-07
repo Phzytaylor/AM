@@ -21,4 +21,8 @@ dependencies: \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/Target\ Support\ Files/MDFInternationalization/MDFInternationalization-umbrella.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/private/ThumbTrack/src/MDCThumbView.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/private/Math/src/MaterialMath.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/private/Math/src/MDCMath.h
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/private/Math/src/MDCMath.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Ripple/src/MaterialRipple.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Ripple/src/MDCRippleTouchController.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Ripple/src/MDCRippleView.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Ripple/src/MDCStatefulRippleView.h

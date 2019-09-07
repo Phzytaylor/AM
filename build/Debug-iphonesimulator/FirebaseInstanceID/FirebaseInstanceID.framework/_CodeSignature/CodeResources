@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/FIRInstanceID.h</key>
 		<data>
-		W4s5xKZaHzNhgQMjfsi566InRyc=
+		q4KRKS5ioKhvZkUFHIXsrHClF3E=
 		</data>
 		<key>Headers/FirebaseInstanceID-umbrella.h</key>
 		<data>
@@ -18,11 +18,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jdwx8O7aueIJFN5DBIEi9QDuU2U=
+		MthWK92fQr7JgewNK+BCZsu9Nsk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		aHtjWJ0UCO6y4SVAxmigh79V4ZY=
+		</data>
+		<key>PrivateHeaders/FIRInstanceID+Private.h</key>
+		<data>
+		KUXD+2H5QwE3oeesooYP0/sqo+k=
+		</data>
+		<key>PrivateHeaders/FIRInstanceIDCheckinPreferences.h</key>
+		<data>
+		f3dsz0IGi2T4Xreb0T6rvGd9QRM=
 		</data>
 		<key>PrivateHeaders/FIRInstanceID_Private.h</key>
 		<data>
@@ -35,11 +43,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			W4s5xKZaHzNhgQMjfsi566InRyc=
+			q4KRKS5ioKhvZkUFHIXsrHClF3E=
 			</data>
 			<key>hash2</key>
 			<data>
-			r2ViRngumkx6K5mjQsmRN5NfBQGToL0JueV/TT9ypGA=
+			RxY+fkMma4KBqnHddKaIKAX58Ad42VvV46dTx4VsdQ0=
 			</data>
 		</dict>
 		<key>Headers/FirebaseInstanceID-umbrella.h</key>
@@ -73,6 +81,28 @@
 			<key>hash2</key>
 			<data>
 			NQ5y81thh9X30Xafg4AcTtMIZJbayTbbtYceCUr2hpQ=
+			</data>
+		</dict>
+		<key>PrivateHeaders/FIRInstanceID+Private.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KUXD+2H5QwE3oeesooYP0/sqo+k=
+			</data>
+			<key>hash2</key>
+			<data>
+			/WsVIDKiJIo9XHDsjUq41bvddocGRCEXvS/BVr3ln/g=
+			</data>
+		</dict>
+		<key>PrivateHeaders/FIRInstanceIDCheckinPreferences.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			f3dsz0IGi2T4Xreb0T6rvGd9QRM=
+			</data>
+			<key>hash2</key>
+			<data>
+			X8720GNwI7/ILeQNe0xFMOFXfVxCVe8pizcq8e3HhTM=
 			</data>
 		</dict>
 		<key>PrivateHeaders/FIRInstanceID_Private.h</key>

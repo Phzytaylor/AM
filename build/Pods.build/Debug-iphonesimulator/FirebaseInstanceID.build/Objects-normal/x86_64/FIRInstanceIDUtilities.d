@@ -13,6 +13,5 @@ dependencies: \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/GoogleUtilities/GoogleUtilities/UserDefaults/Private/GULUserDefaults.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseInstanceID/Firebase/InstanceID/Public/FIRInstanceID.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDConstants.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDDefines.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDLogger.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRIMessageCode.h

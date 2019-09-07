@@ -7,6 +7,11 @@ dependencies: \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Tabs/src/MDCTabBarAlignment.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Tabs/src/MDCTabBarItemAppearance.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Tabs/src/MDCTabBarTextTransform.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Elevation/src/MaterialElevation.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Elevation/src/MDCElevatable.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Elevation/src/MDCElevationOverriding.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Elevation/src/UIColor+MaterialElevation.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Elevation/src/UIView+MaterialElevationResponding.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/ShadowElevations/src/MaterialShadowElevations.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/ShadowElevations/src/MDCShadowElevations.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/ShadowLayer/src/MaterialShadowLayer.h \

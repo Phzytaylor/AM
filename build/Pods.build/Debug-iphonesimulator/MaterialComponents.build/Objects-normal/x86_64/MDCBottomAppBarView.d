@@ -5,6 +5,11 @@ dependencies: \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/BottomAppBar/src/MDCBottomAppBarView.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Buttons/src/MaterialButtons.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Buttons/src/MDCButton.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Elevation/src/MaterialElevation.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Elevation/src/MDCElevatable.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Elevation/src/MDCElevationOverriding.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Elevation/src/UIColor+MaterialElevation.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Elevation/src/UIView+MaterialElevationResponding.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Ink/src/MaterialInk.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Ink/src/MDCInkGestureRecognizer.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/Ink/src/MDCInkTouchController.h \
@@ -33,6 +38,8 @@ dependencies: \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/build/Debug-iphonesimulator/MDFInternationalization/MDFInternationalization.framework/Headers/MDFRTL.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/build/Debug-iphonesimulator/MDFInternationalization/MDFInternationalization.framework/Headers/MDFInternationalization.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/Target\ Support\ Files/MDFInternationalization/MDFInternationalization-umbrella.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/private/Math/src/MaterialMath.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/private/Math/src/MDCMath.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/NavigationBar/src/MaterialNavigationBar.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/NavigationBar/src/MDCNavigationBar.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/MaterialComponents/components/BottomAppBar/src/private/MDCBottomAppBarAttributes.h \

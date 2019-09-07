@@ -10,7 +10,6 @@
 import Foundation
 import CoreData
 
-
 extension Videos {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Videos> {

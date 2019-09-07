@@ -22,6 +22,7 @@ dependencies: \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/FIRAuthRequestConfiguration.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/FIRAuthRPCRequest.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Utilities/FIRAuthWebUtils.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRFacebookAuthProvider.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/AuthProvider/OAuth/FIROAuthCredential_Internal.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIROAuthCredential.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthCredential.h \

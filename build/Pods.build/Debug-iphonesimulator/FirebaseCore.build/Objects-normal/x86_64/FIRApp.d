@@ -15,6 +15,7 @@ dependencies: \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseCore/Firebase/Core/Private/FIRConfigurationInternal.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseCore/Firebase/Core/Public/FIRConfiguration.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseCore/Firebase/Core/Public/FIRLoggerLevel.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseCore/Firebase/Core/Private/FIRCoreDiagnosticsConnector.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseCore/Firebase/Core/Private/FIRLogger.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseCore/Firebase/Core/Private/FIROptionsInternal.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseCore/Firebase/Core/Public/FIROptions.h

@@ -5,7 +5,6 @@ dependencies: \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuth.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthErrors.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthAPNSTokenType.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Storage/FIRAuthKeychain.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Auth/FIRAuthSerialTaskQueue.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/FIRAuthBackend.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/FIRAuthRequestConfiguration.h \

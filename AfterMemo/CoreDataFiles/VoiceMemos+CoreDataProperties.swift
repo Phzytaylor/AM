@@ -10,7 +10,6 @@
 import Foundation
 import CoreData
 
-
 extension VoiceMemos {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<VoiceMemos> {

@@ -4,6 +4,7 @@ dependencies: \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/leveldb-library/db/version_edit.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/leveldb-library/db/dbformat.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/leveldb-library/include/leveldb/comparator.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/leveldb-library/include/leveldb/export.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/leveldb-library/include/leveldb/db.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/leveldb-library/include/leveldb/iterator.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/leveldb-library/include/leveldb/slice.h \
@@ -13,8 +14,7 @@ dependencies: \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/leveldb-library/include/leveldb/table_builder.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/leveldb-library/util/coding.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/leveldb-library/port/port.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/leveldb-library/port/port_posix.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/leveldb-library/port/atomic_pointer.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/leveldb-library/port/port_stdcxx.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/leveldb-library/port/thread_annotations.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/leveldb-library/util/logging.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/leveldb-library/db/version_set.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/leveldb-library/port/thread_annotations.h
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/leveldb-library/db/version_set.h

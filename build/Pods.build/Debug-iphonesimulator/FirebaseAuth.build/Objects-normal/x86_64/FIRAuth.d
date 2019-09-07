@@ -36,13 +36,14 @@ dependencies: \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Utilities/FIRAuthErrorUtils.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Utilities/FIRAuthExceptionUtils.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Auth/FIRAuthGlobalWorkQueue.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Storage/FIRAuthKeychain.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Storage/FIRAuthKeychainServices.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Auth/FIRAuthOperationType.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthSettings.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/SystemService/FIRAuthStoredUserManager.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRUser.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRUserInfo.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Storage/FIRAuthUserDefaultsStorage.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Storage/FIRAuthUserDefaults.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Utilities/FIRAuthWebUtils.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/User/FIRUser_Internal.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FirebaseAuth.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRActionCodeSettings.h \
@@ -95,6 +96,7 @@ dependencies: \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/SystemService/FIRAuthAPNSToken.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/SystemService/FIRAuthAPNSTokenManager.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/SystemService/FIRAuthAppCredentialManager.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/SystemService/FIRAuthAppCredential.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/AuthProvider/Phone/FIRPhoneAuthCredential_Internal.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/SystemService/FIRAuthNotificationManager.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseAuth/Firebase/Auth/Source/Utilities/FIRAuthURLPresenter.h

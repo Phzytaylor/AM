@@ -18,6 +18,7 @@ depends-member:
 - ["16OverlayContainer0A18ScrollViewDelegateP", "UnsafeMutablePointer"]
 - ["16OverlayContainer0A18ScrollViewDelegateP", "overlayScrollView"]
 - ["16OverlayContainer0A18ScrollViewDelegateP", "overlayScrollViewDidScroll"]
+- ["16OverlayContainer0A18ScrollViewDelegateP", "overlayScrollViewWillBeginDragging"]
 depends-nominal:
 - "16OverlayContainer0A18ScrollViewDelegateP"
 depends-dynamic-lookup:
@@ -48,4 +49,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "02d53ee1f5342dd5f279be341e888246"
+interface-hash: "7eb7c4e9b8c1bd7cccfc4dc701ec52ed"

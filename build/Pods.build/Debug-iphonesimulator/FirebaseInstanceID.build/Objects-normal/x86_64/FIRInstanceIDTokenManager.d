@@ -7,7 +7,7 @@ dependencies: \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDAuthService.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDCheckinService.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDUtilities.h \
-  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDCheckinPreferences.h \
+  /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseInstanceID/Firebase/InstanceID/Private/FIRInstanceIDCheckinPreferences.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDConstants.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDDefines.h \
   /Users/taylorsimpson/Desktop/Operation\ Fix/AfterMemo/Pods/FirebaseInstanceID/Firebase/InstanceID/FIRInstanceIDLogger.h \

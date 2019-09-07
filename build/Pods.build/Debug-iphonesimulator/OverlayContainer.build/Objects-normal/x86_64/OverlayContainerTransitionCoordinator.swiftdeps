@@ -8,18 +8,71 @@ provides-nominal:
 provides-member:
 - ["16OverlayContainer0aB28TransitionCoordinatorContextP", ""]
 - ["16OverlayContainer0aB21TransitionCoordinatorP", ""]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "minimumReachableHeight"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "maximumReachableHeight"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "minimumHeight"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "maximumHeight"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "translationProgress"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "overallTranslationProgress"]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "!="
+- !private "-"
+- !private "/"
+- !private "??"
+- "Bool"
 - "CGFloat"
 - "Int"
 - "OverlayContainerTransitionCoordinator"
 - "OverlayContainerTransitionCoordinatorContext"
 - "Range"
+- "TernaryPrecedence"
 - "Void"
 depends-member:
+- !private ["Sa", "first"]
+- !private ["Sa", "last"]
+- !private ["SK", "first"]
+- !private ["SK", "last"]
+- !private ["s7CVarArgP", "first"]
+- !private ["s7CVarArgP", "last"]
+- !private ["Sl", "first"]
+- !private ["Sl", "last"]
+- !private ["10Foundation15ContiguousBytesP", "first"]
+- !private ["10Foundation15ContiguousBytesP", "last"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
+- !private ["s28CustomDebugStringConvertibleP", "flatMap"]
+- !private ["s28CustomDebugStringConvertibleP", "last"]
+- !private ["s17CustomReflectableP", "first"]
+- !private ["s17CustomReflectableP", "flatMap"]
+- !private ["s17CustomReflectableP", "last"]
+- !private ["s23CustomStringConvertibleP", "first"]
+- !private ["s23CustomStringConvertibleP", "last"]
+- !private ["10Foundation12DataProtocolP", "first"]
+- !private ["10Foundation12DataProtocolP", "last"]
+- !private ["Se", "first"]
+- !private ["Se", "flatMap"]
+- !private ["Se", "last"]
+- !private ["SE", "first"]
+- !private ["SE", "flatMap"]
+- !private ["SE", "last"]
+- !private ["SQ", "first"]
+- !private ["SQ", "flatMap"]
+- !private ["SQ", "last"]
+- !private ["s25ExpressibleByArrayLiteralP", "first"]
+- !private ["s25ExpressibleByArrayLiteralP", "last"]
+- !private ["s23ExpressibleByNilLiteralP", "flatMap"]
+- !private ["SH", "first"]
+- !private ["SH", "flatMap"]
+- !private ["SH", "last"]
+- !private ["SM", "first"]
+- !private ["SM", "last"]
+- !private ["10Foundation19MutableDataProtocolP", "first"]
+- !private ["10Foundation19MutableDataProtocolP", "last"]
+- !private ["Sq", "flatMap"]
 - ["16OverlayContainer0aB21TransitionCoordinatorP", "OverlayContainerTransitionCoordinatorContext"]
 - ["16OverlayContainer0aB21TransitionCoordinatorP", "Void"]
 - ["16OverlayContainer0aB21TransitionCoordinatorP", "animate"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "Bool"]
 - ["16OverlayContainer0aB28TransitionCoordinatorContextP", "CGFloat"]
 - ["16OverlayContainer0aB28TransitionCoordinatorContextP", "Int"]
 - ["16OverlayContainer0aB28TransitionCoordinatorContextP", "OverlayContainerTransitionCoordinatorContext"]
@@ -28,14 +81,70 @@ depends-member:
 - ["16OverlayContainer0aB28TransitionCoordinatorContextP", ""]
 - ["16OverlayContainer0aB28TransitionCoordinatorContextP", "animate"]
 - ["16OverlayContainer0aB28TransitionCoordinatorContextP", "height"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "isAnimated"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "isCancelled"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "maximumHeight"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "maximumReachableHeight"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "minimumHeight"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "minimumReachableHeight"]
 - ["16OverlayContainer0aB28TransitionCoordinatorContextP", "notchIndexes"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "overallTranslationProgress"]
 - ["16OverlayContainer0aB28TransitionCoordinatorContextP", "overlayTranslationHeight"]
 - ["16OverlayContainer0aB28TransitionCoordinatorContextP", "reachableIndexes"]
-- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "targetNotchHeight"]
-- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "targetNotchIndex"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "targetTranslationHeight"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "translationProgress"]
+- !private ["Sk", "first"]
+- !private ["Sk", "last"]
+- !private ["Sn", "first"]
+- !private ["Sn", "last"]
+- !private ["SX", "first"]
+- !private ["SX", "last"]
+- !private ["Sm", "first"]
+- !private ["Sm", "last"]
+- !private ["ST", "first"]
+- !private ["ST", "last"]
+- !private ["s14_ArrayProtocolP", "first"]
+- !private ["s14_ArrayProtocolP", "last"]
+- !private ["s24_DestructorSafeContainerP", "first"]
+- !private ["s24_DestructorSafeContainerP", "last"]
+- !private ["s19_HasContiguousBytesP", "first"]
+- !private ["s19_HasContiguousBytesP", "last"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "last"]
+- !private ["s21_ObjectiveCBridgeableP", "first"]
+- !private ["s21_ObjectiveCBridgeableP", "flatMap"]
+- !private ["s21_ObjectiveCBridgeableP", "last"]
 depends-nominal:
+- !private "Sa"
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "SH"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "Sq"
 - "16OverlayContainer0aB21TransitionCoordinatorP"
 - "16OverlayContainer0aB28TransitionCoordinatorContextP"
+- !private "Sk"
+- !private "Sn"
+- !private "SX"
+- !private "Sm"
+- !private "ST"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -64,4 +173,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "86e86f30ba169f6a34c9e6be5b4033aa"
+interface-hash: "aae539f27647497adc4b8418fa40db8e"

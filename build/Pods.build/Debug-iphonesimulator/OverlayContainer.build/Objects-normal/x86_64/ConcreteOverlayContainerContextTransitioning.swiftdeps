@@ -9,6 +9,7 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "..<"
 - !private "??"
+- "Bool"
 - "CGFloat"
 - "CGPoint"
 - "ConcreteOverlayContainerContextTransitioning"
@@ -22,6 +23,7 @@ depends-member:
 - !private ["s7CVarArgP", "subscript"]
 - !private ["Sl", "count"]
 - !private ["Sl", "subscript"]
+- ["16OverlayContainer08ConcreteaB20ContextTransitioningV", "Bool"]
 - ["16OverlayContainer08ConcreteaB20ContextTransitioningV", "CGFloat"]
 - ["16OverlayContainer08ConcreteaB20ContextTransitioningV", "CGPoint"]
 - ["16OverlayContainer08ConcreteaB20ContextTransitioningV", "Int"]
@@ -30,6 +32,8 @@ depends-member:
 - ["16OverlayContainer08ConcreteaB20ContextTransitioningV", "deinit"]
 - ["16OverlayContainer08ConcreteaB20ContextTransitioningV", "height"]
 - ["16OverlayContainer08ConcreteaB20ContextTransitioningV", "init"]
+- ["16OverlayContainer08ConcreteaB20ContextTransitioningV", "isAnimated"]
+- ["16OverlayContainer08ConcreteaB20ContextTransitioningV", "isCancelled"]
 - ["16OverlayContainer08ConcreteaB20ContextTransitioningV", "notchHeightByIndex"]
 - ["16OverlayContainer08ConcreteaB20ContextTransitioningV", "notchIndexes"]
 - ["16OverlayContainer08ConcreteaB20ContextTransitioningV", "overlayTranslationHeight"]
@@ -37,6 +41,7 @@ depends-member:
 - ["16OverlayContainer08ConcreteaB20ContextTransitioningV", "reachableIndexes"]
 - ["16OverlayContainer08ConcreteaB20ContextTransitioningV", "targetNotchHeight"]
 - ["16OverlayContainer08ConcreteaB20ContextTransitioningV", "targetNotchIndex"]
+- ["16OverlayContainer08ConcreteaB20ContextTransitioningV", "targetTranslationHeight"]
 - ["16OverlayContainer08ConcreteaB20ContextTransitioningV", "velocity"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
@@ -58,6 +63,8 @@ depends-member:
 - !private ["SH", "subscript"]
 - ["16OverlayContainer0aB20ContextTransitioningP", ""]
 - ["16OverlayContainer0aB20ContextTransitioningP", "height"]
+- ["16OverlayContainer0aB20ContextTransitioningP", "isAnimated"]
+- ["16OverlayContainer0aB20ContextTransitioningP", "isCancelled"]
 - !private ["16OverlayContainer0aB20ContextTransitioningP", "notchHeightByIndex"]
 - ["16OverlayContainer0aB20ContextTransitioningP", "notchIndexes"]
 - ["16OverlayContainer0aB20ContextTransitioningP", "overlayTranslationHeight"]
@@ -65,9 +72,12 @@ depends-member:
 - ["16OverlayContainer0aB20ContextTransitioningP", "reachableIndexes"]
 - ["16OverlayContainer0aB20ContextTransitioningP", "targetNotchHeight"]
 - ["16OverlayContainer0aB20ContextTransitioningP", "targetNotchIndex"]
+- ["16OverlayContainer0aB20ContextTransitioningP", "targetTranslationHeight"]
 - ["16OverlayContainer0aB20ContextTransitioningP", "velocity"]
 - ["16OverlayContainer0aB28TransitionCoordinatorContextP", ""]
 - ["16OverlayContainer0aB28TransitionCoordinatorContextP", "height"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "isAnimated"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "isCancelled"]
 - !private ["16OverlayContainer0aB28TransitionCoordinatorContextP", "notchHeightByIndex"]
 - ["16OverlayContainer0aB28TransitionCoordinatorContextP", "notchIndexes"]
 - ["16OverlayContainer0aB28TransitionCoordinatorContextP", "overlayTranslationHeight"]
@@ -75,6 +85,7 @@ depends-member:
 - ["16OverlayContainer0aB28TransitionCoordinatorContextP", "reachableIndexes"]
 - ["16OverlayContainer0aB28TransitionCoordinatorContextP", "targetNotchHeight"]
 - ["16OverlayContainer0aB28TransitionCoordinatorContextP", "targetNotchIndex"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "targetTranslationHeight"]
 - ["16OverlayContainer0aB28TransitionCoordinatorContextP", "velocity"]
 - !private ["ST", "count"]
 - !private ["ST", "subscript"]
@@ -128,4 +139,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "16840e89abf3671fa8b10eed953e329e"
+interface-hash: "616a73cde2a0b4f05ddae21a0edb8915"
