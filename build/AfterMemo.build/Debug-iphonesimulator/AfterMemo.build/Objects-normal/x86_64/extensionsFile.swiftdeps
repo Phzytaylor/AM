@@ -1,14 +1,14 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "AudioStatus"
 - "newMemoDelegate"
+- "AudioStatus"
 provides-nominal:
-- "9AfterMemo11AudioStatusO"
 - "9AfterMemo03newB8DelegateP"
+- "9AfterMemo11AudioStatusO"
 provides-member:
+- ["9AfterMemo03newB8DelegateP", ""]
 - ["9AfterMemo11AudioStatusO", ""]
 - ["9AfterMemo23IntroPageViewControllerC", ""]
-- ["9AfterMemo03newB8DelegateP", ""]
 - ["10Foundation4DateV", ""]
 - ["So12UIScrollViewC", ""]
 - ["So16UICollectionViewC", ""]
@@ -43,6 +43,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "AudioStatus"
 - "Bool"
+- "BooleanLiteralType"
 - "CGFloat"
 - !private "Calendar"
 - "CustomStringConvertible"
@@ -61,10 +62,7 @@ depends-member:
 - !private ["Sa", "first"]
 - !private ["Sa", "subscript"]
 - ["9AfterMemo11AudioStatusO", "=="]
-- ["9AfterMemo11AudioStatusO", "Playing"]
 - ["9AfterMemo11AudioStatusO", "RawValue"]
-- ["9AfterMemo11AudioStatusO", "Recording"]
-- ["9AfterMemo11AudioStatusO", "Stopped"]
 - ["9AfterMemo11AudioStatusO", "String"]
 - ["9AfterMemo11AudioStatusO", "_Default_RawValue"]
 - ["9AfterMemo11AudioStatusO", "_rawHashValue"]
@@ -74,7 +72,10 @@ depends-member:
 - ["9AfterMemo11AudioStatusO", "hash"]
 - ["9AfterMemo11AudioStatusO", "hashValue"]
 - ["9AfterMemo11AudioStatusO", "init"]
+- ["9AfterMemo11AudioStatusO", "playing"]
 - ["9AfterMemo11AudioStatusO", "rawValue"]
+- ["9AfterMemo11AudioStatusO", "recording"]
+- ["9AfterMemo11AudioStatusO", "stopped"]
 - !private ["SK", "first"]
 - !private ["SK", "init"]
 - !private ["SK", "subscript"]
@@ -1750,4 +1751,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "659a29c48c4fbe5827d2e81e60574fb3"
+interface-hash: "ac932db905cc3cf98df031e3d503ae31"

@@ -13,6 +13,7 @@ depends-top-level:
 - "DataSnapshot"
 - "DatabaseReference"
 - "String"
+- "StringLiteralType"
 - "VoicesFromDatabase"
 depends-member:
 - !private ["s7CVarArgP", "key"]

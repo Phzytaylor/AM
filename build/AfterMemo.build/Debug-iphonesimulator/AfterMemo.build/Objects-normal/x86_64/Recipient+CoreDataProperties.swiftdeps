@@ -85,6 +85,7 @@ depends-top-level:
 - "NSOrderedSet"
 - "Recipient"
 - "String"
+- !private "StringLiteralType"
 - "Videos"
 - "VoiceMemos"
 - "Written"

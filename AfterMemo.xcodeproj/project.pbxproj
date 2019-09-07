@@ -73,6 +73,7 @@
 		821559522221DF410069AD4A /* Userinfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821559502221DF410069AD4A /* Userinfo+CoreDataClass.swift */; };
 		821559532221DF410069AD4A /* Userinfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821559512221DF410069AD4A /* Userinfo+CoreDataProperties.swift */; };
 		821B438F232395C700C4892A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 821B438E232395C700C4892A /* .swiftlint.yml */; };
+		821B439123241FD900C4892A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 821B439023241FD900C4892A /* GoogleService-Info.plist */; };
 		822D886F21545C170094AF10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 822D886E21545B590094AF10 /* Main.storyboard */; };
 		822D8871215469F30094AF10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 822D8870215469F30094AF10 /* Assets.xcassets */; };
 		8234324120AB47E500912A6F /* icons8-clear_symbol_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 8234324020AB47E500912A6F /* icons8-clear_symbol_filled.png */; };
@@ -89,7 +90,6 @@
 		82987CAA2157110200F2E596 /* Videos+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82987CA02157110200F2E596 /* Videos+CoreDataProperties.swift */; };
 		82987CAD2157110200F2E596 /* Written+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82987CA32157110200F2E596 /* Written+CoreDataClass.swift */; };
 		82987CAE2157110200F2E596 /* Written+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82987CA42157110200F2E596 /* Written+CoreDataProperties.swift */; };
-		82996B9320C8AB20007FF306 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82996B9220C8AB20007FF306 /* GoogleService-Info.plist */; };
 		82A0243520EB303100AF5EB9 /* extensionsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A0243420EB303100AF5EB9 /* extensionsFile.swift */; };
 		82EE248820B7A3DB003EF9D2 /* icons8-camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 82EE248720B7A3DB003EF9D2 /* icons8-camera.png */; };
 		82FA979A222E0B100002AD24 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FA9799222E0B100002AD24 /* IntroductionViewController.swift */; };
@@ -164,6 +164,7 @@
 		821559502221DF410069AD4A /* Userinfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Userinfo+CoreDataClass.swift"; sourceTree = "<group>"; };
 		821559512221DF410069AD4A /* Userinfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Userinfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		821B438E232395C700C4892A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		821B439023241FD900C4892A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		822D886E21545B590094AF10 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		822D8870215469F30094AF10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = AfterMemo/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		8234322520AA7B9100912A6F /* AfterMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AfterMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,7 +184,6 @@
 		82987CA02157110200F2E596 /* Videos+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Videos+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		82987CA32157110200F2E596 /* Written+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Written+CoreDataClass.swift"; sourceTree = "<group>"; };
 		82987CA42157110200F2E596 /* Written+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Written+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		82996B9220C8AB20007FF306 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		82A0243420EB303100AF5EB9 /* extensionsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionsFile.swift; sourceTree = "<group>"; };
 		82EE248720B7A3DB003EF9D2 /* icons8-camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-camera.png"; sourceTree = "<group>"; };
 		82FA9799222E0B100002AD24 /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
@@ -347,7 +347,7 @@
 		827458E820AD11C600F13DAD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				82996B9220C8AB20007FF306 /* GoogleService-Info.plist */,
+				821B439023241FD900C4892A /* GoogleService-Info.plist */,
 				8234323420AA7B9700912A6F /* Info.plist */,
 			);
 			path = Resources;
@@ -471,8 +471,8 @@
 				82EE248820B7A3DB003EF9D2 /* icons8-camera.png in Resources */,
 				820E632C215309090097BCD6 /* Images.xcassets in Resources */,
 				8234324120AB47E500912A6F /* icons8-clear_symbol_filled.png in Resources */,
-				82996B9320C8AB20007FF306 /* GoogleService-Info.plist in Resources */,
 				822D8871215469F30094AF10 /* Assets.xcassets in Resources */,
+				821B439123241FD900C4892A /* GoogleService-Info.plist in Resources */,
 				820E633C215309090097BCD6 /* RemindersCollectionViewCells.xib in Resources */,
 				820E6340215309090097BCD6 /* RandomCollectionViewCell.xib in Resources */,
 				822D886F21545C170094AF10 /* Main.storyboard in Resources */,

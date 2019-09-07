@@ -50,6 +50,7 @@ depends-top-level:
 - "AudioEditingViewController"
 - "AudioStatus"
 - "Bool"
+- "BooleanLiteralType"
 - "CADisplayLink"
 - !private "CAGradientLayer"
 - !private "CGPoint"
@@ -60,7 +61,9 @@ depends-top-level:
 - "Double"
 - !private "FileManager"
 - !private "Float"
+- !private "FloatLiteralType"
 - !private "Int"
+- !private "IntegerLiteralType"
 - "MDCButton"
 - "MDCButtonScheme"
 - !private "MDCContainedButtonThemer"
@@ -68,12 +71,14 @@ depends-top-level:
 - "NSURL"
 - !private "RunLoop"
 - "String"
+- "StringLiteralType"
 - "UIButton"
 - !private "UIImage"
 - "UILabel"
 - "UISlider"
 - "UIViewController"
 - "URL"
+- !private "_ColorLiteralType"
 - !private "kAudioFormatMPEG4AAC"
 - !private "kCMPersistentTrackID_Invalid"
 - !private "print"
@@ -406,6 +411,7 @@ depends-member:
 - !private ["9AfterMemo11AudioStatusO", "Playing"]
 - !private ["9AfterMemo11AudioStatusO", "Recording"]
 - ["9AfterMemo11AudioStatusO", "Stopped"]
+- ["9AfterMemo11AudioStatusO", "deinit"]
 - !private ["SK", "first"]
 - !private ["SK", "init"]
 - !private ["SB", "init"]
