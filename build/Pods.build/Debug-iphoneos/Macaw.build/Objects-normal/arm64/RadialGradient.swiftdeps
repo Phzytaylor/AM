@@ -1,0 +1,115 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "RadialGradient"
+provides-nominal:
+- "5Macaw14RadialGradientC"
+provides-member:
+- ["5Macaw14RadialGradientC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "&&"
+- !private "=="
+- "AssignmentPrecedence"
+- "Bool"
+- "Double"
+- "Gradient"
+- "RadialGradient"
+- "Stop"
+depends-member:
+- ["SQ", ""]
+- !private ["SQ", "cx"]
+- !private ["SQ", "cy"]
+- !private ["SQ", "equals"]
+- !private ["SQ", "fx"]
+- !private ["SQ", "fy"]
+- !private ["SQ", "init"]
+- !private ["SQ", "r"]
+- ["5Macaw4FillC", "Bool"]
+- ["5Macaw4FillC", "Double"]
+- ["5Macaw4FillC", "RadialGradient"]
+- ["5Macaw4FillC", "Stop"]
+- ["5Macaw4FillC", "cx"]
+- ["5Macaw4FillC", "cy"]
+- ["5Macaw4FillC", "equals"]
+- ["5Macaw4FillC", "fx"]
+- ["5Macaw4FillC", "fy"]
+- ["5Macaw4FillC", "r"]
+- ["5Macaw17FillInterpolationP", ""]
+- !private ["5Macaw17FillInterpolationP", "cx"]
+- !private ["5Macaw17FillInterpolationP", "cy"]
+- !private ["5Macaw17FillInterpolationP", "equals"]
+- !private ["5Macaw17FillInterpolationP", "fx"]
+- !private ["5Macaw17FillInterpolationP", "fy"]
+- !private ["5Macaw17FillInterpolationP", "init"]
+- !private ["5Macaw17FillInterpolationP", "r"]
+- ["5Macaw8GradientC", "Bool"]
+- ["5Macaw8GradientC", "Double"]
+- ["5Macaw8GradientC", "RadialGradient"]
+- ["5Macaw8GradientC", "Stop"]
+- ["5Macaw8GradientC", ""]
+- ["5Macaw8GradientC", "cx"]
+- ["5Macaw8GradientC", "cy"]
+- ["5Macaw8GradientC", "equals"]
+- ["5Macaw8GradientC", "fx"]
+- ["5Macaw8GradientC", "fy"]
+- ["5Macaw8GradientC", "init"]
+- ["5Macaw8GradientC", "r"]
+- ["5Macaw12InterpolableP", ""]
+- !private ["5Macaw12InterpolableP", "cx"]
+- !private ["5Macaw12InterpolableP", "cy"]
+- !private ["5Macaw12InterpolableP", "equals"]
+- !private ["5Macaw12InterpolableP", "fx"]
+- !private ["5Macaw12InterpolableP", "fy"]
+- !private ["5Macaw12InterpolableP", "init"]
+- !private ["5Macaw12InterpolableP", "r"]
+- ["5Macaw14RadialGradientC", "Bool"]
+- ["5Macaw14RadialGradientC", "Double"]
+- ["5Macaw14RadialGradientC", "RadialGradient"]
+- ["5Macaw14RadialGradientC", "Stop"]
+- ["5Macaw14RadialGradientC", "cx"]
+- ["5Macaw14RadialGradientC", "cy"]
+- ["5Macaw14RadialGradientC", "equals"]
+- ["5Macaw14RadialGradientC", "fx"]
+- ["5Macaw14RadialGradientC", "fy"]
+- ["5Macaw14RadialGradientC", "init"]
+- ["5Macaw14RadialGradientC", "r"]
+depends-nominal:
+- "SQ"
+- "5Macaw4FillC"
+- "5Macaw17FillInterpolationP"
+- "5Macaw8GradientC"
+- "5Macaw12InterpolableP"
+- "5Macaw14RadialGradientC"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/SWXMLHash/SWXMLHash.framework/Modules/SWXMLHash.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/SWXMLHash/SWXMLHash-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/Macaw/Macaw-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/SWXMLHash/SWXMLHash.framework/Headers/SWXMLHash-Swift.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphoneos/Macaw.build/unextended-module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphoneos/SWXMLHash.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "fc49da06a673ead337113b3ce6262871"

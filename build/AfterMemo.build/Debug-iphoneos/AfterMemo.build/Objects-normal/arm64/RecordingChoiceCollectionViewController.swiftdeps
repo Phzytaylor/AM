@@ -1,0 +1,2215 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "RecordingChoiceCollectionViewController"
+provides-nominal:
+- "9AfterMemo39RecordingChoiceCollectionViewControllerC"
+provides-member:
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", ""]
+provides-dynamic-lookup:
+- "collectionView"
+- "didReceiveMemoryWarning"
+- "numberOfSections"
+- "prepare"
+- "scrollAuto2"
+- "scrollAutomatically"
+- "viewDidLoad"
+depends-top-level:
+- !private "&&"
+- !private "+"
+- !private "-"
+- !private "/"
+- !private "<"
+- !private "=="
+- !private ">"
+- "AssignmentPrecedence"
+- "Bool"
+- "CGSize"
+- "CastingPrecedence"
+- "IndexPath"
+- "Int"
+- !private "LovedOneSelectionTableViewController"
+- !private "RecordingChoiceCollectionViewCell"
+- "RecordingChoiceCollectionViewController"
+- !private "SelectionCollectionViewController"
+- "Timer"
+- !private "UIApplication"
+- "UICollectionView"
+- "UICollectionViewCell"
+- "UICollectionViewController"
+- "UICollectionViewDelegateFlowLayout"
+- !private "UICollectionViewFlowLayout"
+- "UICollectionViewLayout"
+- !private "UIDevice"
+- !private "UIImageView"
+- "UINavigationControllerDelegate"
+- "UIStoryboardSegue"
+- "UserDefaults"
+- "Videos"
+- "Void"
+- "_ImageLiteralType"
+- !private "print"
+depends-member:
+- !private ["So21AVAudioPlayerDelegateP", "mediaSelected"]
+- !private ["Sa", "reversed"]
+- !private ["SK", "init"]
+- !private ["SK", "reversed"]
+- !private ["SK", "row"]
+- !private ["SK", "section"]
+- !private ["So15CALayerDelegateP", "backgroundView"]
+- !private ["So15CALayerDelegateP", "choiceImage"]
+- !private ["So15CALayerDelegateP", "clipsToBounds"]
+- !private ["So15CALayerDelegateP", "contentMode"]
+- !private ["So15CALayerDelegateP", "dequeueReusableCell"]
+- !private ["So15CALayerDelegateP", "frame"]
+- !private ["So15CALayerDelegateP", "image"]
+- !private ["So15CALayerDelegateP", "indexPath"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "memoChoiceLabel"]
+- !private ["So15CALayerDelegateP", "scrollToItem"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["So15CALayerDelegateP", "visibleCells"]
+- !private ["So6CGRectV", "width"]
+- !private ["So6CGSizeV", "init"]
+- !private ["s7CVarArgP", "CGSize"]
+- !private ["s7CVarArgP", "IndexPath"]
+- !private ["s7CVarArgP", "Timer"]
+- !private ["s7CVarArgP", "UIApplication"]
+- !private ["s7CVarArgP", "UIDevice"]
+- !private ["s7CVarArgP", "UIImageView"]
+- ["s7CVarArgP", "UserDefaults"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "backgroundView"]
+- !private ["s7CVarArgP", "bool"]
+- !private ["s7CVarArgP", "choiceImage"]
+- !private ["s7CVarArgP", "clipsToBounds"]
+- ["s7CVarArgP", "collectionView"]
+- !private ["s7CVarArgP", "collectionViewLayout"]
+- !private ["s7CVarArgP", "contentMode"]
+- !private ["s7CVarArgP", "current"]
+- !private ["s7CVarArgP", "defaults"]
+- !private ["s7CVarArgP", "dequeueReusableCell"]
+- !private ["s7CVarArgP", "destination"]
+- !private ["s7CVarArgP", "didReceiveMemoryWarning"]
+- !private ["s7CVarArgP", "frame"]
+- !private ["s7CVarArgP", "identifier"]
+- !private ["s7CVarArgP", "image"]
+- !private ["s7CVarArgP", "indexPath"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "instantiateViewController"]
+- !private ["s7CVarArgP", "mediaSelected"]
+- !private ["s7CVarArgP", "memoChoiceLabel"]
+- !private ["s7CVarArgP", "minimumInteritemSpacing"]
+- !private ["s7CVarArgP", "minimumLineSpacing"]
+- ["s7CVarArgP", "navigationController"]
+- ["s7CVarArgP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["s7CVarArgP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["s7CVarArgP", "orientation"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "reversed"]
+- !private ["s7CVarArgP", "scheduledTimer"]
+- !private ["s7CVarArgP", "scrollAuto2"]
+- !private ["s7CVarArgP", "scrollAutomatically"]
+- !private ["s7CVarArgP", "scrollDirection"]
+- !private ["s7CVarArgP", "scrollToItem"]
+- !private ["s7CVarArgP", "sectionInset"]
+- !private ["s7CVarArgP", "set"]
+- !private ["s7CVarArgP", "shared"]
+- ["s7CVarArgP", "standard"]
+- !private ["s7CVarArgP", "startTimer"]
+- !private ["s7CVarArgP", "startTimer2"]
+- !private ["s7CVarArgP", "statusBarOrientation"]
+- !private ["s7CVarArgP", "storyboard"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s7CVarArgP", "visibleCells"]
+- !private ["Sl", "init"]
+- !private ["Sl", "reversed"]
+- !private ["Sl", "row"]
+- !private ["Sl", "section"]
+- !private ["SL", "init"]
+- !private ["SL", "row"]
+- !private ["SL", "section"]
+- !private ["So17UIViewContentModeV", "scaleAspectFill"]
+- !private ["5Macaw21ContentsInterpolationP", "reversed"]
+- !private ["10Foundation15ContiguousBytesP", "reversed"]
+- !private ["s28CustomDebugStringConvertibleP", "CGSize"]
+- !private ["s28CustomDebugStringConvertibleP", "IndexPath"]
+- !private ["s28CustomDebugStringConvertibleP", "Timer"]
+- !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
+- !private ["s28CustomDebugStringConvertibleP", "UIDevice"]
+- !private ["s28CustomDebugStringConvertibleP", "UIImageView"]
+- ["s28CustomDebugStringConvertibleP", "UserDefaults"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "backgroundView"]
+- !private ["s28CustomDebugStringConvertibleP", "bool"]
+- !private ["s28CustomDebugStringConvertibleP", "choiceImage"]
+- !private ["s28CustomDebugStringConvertibleP", "clipsToBounds"]
+- ["s28CustomDebugStringConvertibleP", "collectionView"]
+- !private ["s28CustomDebugStringConvertibleP", "collectionViewLayout"]
+- !private ["s28CustomDebugStringConvertibleP", "contentMode"]
+- !private ["s28CustomDebugStringConvertibleP", "current"]
+- !private ["s28CustomDebugStringConvertibleP", "defaults"]
+- !private ["s28CustomDebugStringConvertibleP", "dequeueReusableCell"]
+- !private ["s28CustomDebugStringConvertibleP", "destination"]
+- !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s28CustomDebugStringConvertibleP", "frame"]
+- !private ["s28CustomDebugStringConvertibleP", "identifier"]
+- !private ["s28CustomDebugStringConvertibleP", "image"]
+- !private ["s28CustomDebugStringConvertibleP", "indexPath"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "mediaSelected"]
+- !private ["s28CustomDebugStringConvertibleP", "memoChoiceLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "minimumInteritemSpacing"]
+- !private ["s28CustomDebugStringConvertibleP", "minimumLineSpacing"]
+- ["s28CustomDebugStringConvertibleP", "navigationController"]
+- ["s28CustomDebugStringConvertibleP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["s28CustomDebugStringConvertibleP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["s28CustomDebugStringConvertibleP", "orientation"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "reversed"]
+- !private ["s28CustomDebugStringConvertibleP", "row"]
+- !private ["s28CustomDebugStringConvertibleP", "scheduledTimer"]
+- !private ["s28CustomDebugStringConvertibleP", "scrollAuto2"]
+- !private ["s28CustomDebugStringConvertibleP", "scrollAutomatically"]
+- !private ["s28CustomDebugStringConvertibleP", "scrollDirection"]
+- !private ["s28CustomDebugStringConvertibleP", "scrollToItem"]
+- !private ["s28CustomDebugStringConvertibleP", "section"]
+- !private ["s28CustomDebugStringConvertibleP", "sectionInset"]
+- !private ["s28CustomDebugStringConvertibleP", "set"]
+- !private ["s28CustomDebugStringConvertibleP", "shared"]
+- ["s28CustomDebugStringConvertibleP", "standard"]
+- !private ["s28CustomDebugStringConvertibleP", "startTimer"]
+- !private ["s28CustomDebugStringConvertibleP", "startTimer2"]
+- !private ["s28CustomDebugStringConvertibleP", "statusBarOrientation"]
+- !private ["s28CustomDebugStringConvertibleP", "storyboard"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s28CustomDebugStringConvertibleP", "visibleCells"]
+- !private ["s28CustomDebugStringConvertibleP", "width"]
+- !private ["s17CustomReflectableP", "image"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "reversed"]
+- !private ["s17CustomReflectableP", "row"]
+- !private ["s17CustomReflectableP", "section"]
+- !private ["s17CustomReflectableP", "text"]
+- !private ["s17CustomReflectableP", "width"]
+- !private ["s23CustomStringConvertibleP", "CGSize"]
+- !private ["s23CustomStringConvertibleP", "IndexPath"]
+- !private ["s23CustomStringConvertibleP", "Timer"]
+- !private ["s23CustomStringConvertibleP", "UIApplication"]
+- !private ["s23CustomStringConvertibleP", "UIDevice"]
+- !private ["s23CustomStringConvertibleP", "UIImageView"]
+- ["s23CustomStringConvertibleP", "UserDefaults"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "backgroundView"]
+- !private ["s23CustomStringConvertibleP", "bool"]
+- !private ["s23CustomStringConvertibleP", "choiceImage"]
+- !private ["s23CustomStringConvertibleP", "clipsToBounds"]
+- ["s23CustomStringConvertibleP", "collectionView"]
+- !private ["s23CustomStringConvertibleP", "collectionViewLayout"]
+- !private ["s23CustomStringConvertibleP", "contentMode"]
+- !private ["s23CustomStringConvertibleP", "current"]
+- !private ["s23CustomStringConvertibleP", "defaults"]
+- !private ["s23CustomStringConvertibleP", "dequeueReusableCell"]
+- !private ["s23CustomStringConvertibleP", "destination"]
+- !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s23CustomStringConvertibleP", "frame"]
+- !private ["s23CustomStringConvertibleP", "identifier"]
+- !private ["s23CustomStringConvertibleP", "image"]
+- !private ["s23CustomStringConvertibleP", "indexPath"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "instantiateViewController"]
+- !private ["s23CustomStringConvertibleP", "mediaSelected"]
+- !private ["s23CustomStringConvertibleP", "memoChoiceLabel"]
+- !private ["s23CustomStringConvertibleP", "minimumInteritemSpacing"]
+- !private ["s23CustomStringConvertibleP", "minimumLineSpacing"]
+- ["s23CustomStringConvertibleP", "navigationController"]
+- ["s23CustomStringConvertibleP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["s23CustomStringConvertibleP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["s23CustomStringConvertibleP", "orientation"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "reversed"]
+- !private ["s23CustomStringConvertibleP", "row"]
+- !private ["s23CustomStringConvertibleP", "scheduledTimer"]
+- !private ["s23CustomStringConvertibleP", "scrollAuto2"]
+- !private ["s23CustomStringConvertibleP", "scrollAutomatically"]
+- !private ["s23CustomStringConvertibleP", "scrollDirection"]
+- !private ["s23CustomStringConvertibleP", "scrollToItem"]
+- !private ["s23CustomStringConvertibleP", "section"]
+- !private ["s23CustomStringConvertibleP", "sectionInset"]
+- !private ["s23CustomStringConvertibleP", "set"]
+- !private ["s23CustomStringConvertibleP", "shared"]
+- ["s23CustomStringConvertibleP", "standard"]
+- !private ["s23CustomStringConvertibleP", "startTimer"]
+- !private ["s23CustomStringConvertibleP", "startTimer2"]
+- !private ["s23CustomStringConvertibleP", "statusBarOrientation"]
+- !private ["s23CustomStringConvertibleP", "storyboard"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["s23CustomStringConvertibleP", "visibleCells"]
+- !private ["So23DZNEmptyDataSetDelegateP", "mediaSelected"]
+- !private ["So21DZNEmptyDataSetSourceP", "mediaSelected"]
+- !private ["10Foundation12DataProtocolP", "reversed"]
+- !private ["Se", "image"]
+- !private ["Se", "init"]
+- !private ["Se", "left"]
+- !private ["Se", "reversed"]
+- !private ["Se", "right"]
+- !private ["Se", "row"]
+- !private ["Se", "section"]
+- !private ["Se", "text"]
+- !private ["Se", "width"]
+- !private ["SE", "image"]
+- !private ["SE", "init"]
+- !private ["SE", "left"]
+- !private ["SE", "reversed"]
+- !private ["SE", "right"]
+- !private ["SE", "row"]
+- !private ["SE", "section"]
+- !private ["SE", "text"]
+- !private ["SE", "width"]
+- !private ["SQ", "CGSize"]
+- !private ["SQ", "IndexPath"]
+- !private ["SQ", "Timer"]
+- !private ["SQ", "UIApplication"]
+- !private ["SQ", "UIDevice"]
+- !private ["SQ", "UIImageView"]
+- ["SQ", "UserDefaults"]
+- ["SQ", ""]
+- !private ["SQ", "backgroundView"]
+- !private ["SQ", "bool"]
+- !private ["SQ", "choiceImage"]
+- !private ["SQ", "clipsToBounds"]
+- ["SQ", "collectionView"]
+- !private ["SQ", "collectionViewLayout"]
+- !private ["SQ", "contentMode"]
+- !private ["SQ", "current"]
+- !private ["SQ", "defaults"]
+- !private ["SQ", "dequeueReusableCell"]
+- !private ["SQ", "destination"]
+- !private ["SQ", "didReceiveMemoryWarning"]
+- !private ["SQ", "frame"]
+- !private ["SQ", "horizontal"]
+- !private ["SQ", "identifier"]
+- !private ["SQ", "image"]
+- !private ["SQ", "indexPath"]
+- !private ["SQ", "init"]
+- !private ["SQ", "instantiateViewController"]
+- !private ["SQ", "isLandscape"]
+- !private ["SQ", "isPortrait"]
+- ["SQ", "landscapeLeft"]
+- ["SQ", "landscapeRight"]
+- !private ["SQ", "left"]
+- !private ["SQ", "mediaSelected"]
+- !private ["SQ", "memoChoiceLabel"]
+- !private ["SQ", "minimumInteritemSpacing"]
+- !private ["SQ", "minimumLineSpacing"]
+- ["SQ", "navigationController"]
+- ["SQ", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["SQ", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["SQ", "orientation"]
+- ["SQ", "portrait"]
+- ["SQ", "portraitUpsideDown"]
+- !private ["SQ", "print"]
+- !private ["SQ", "reversed"]
+- !private ["SQ", "right"]
+- !private ["SQ", "row"]
+- !private ["SQ", "scaleAspectFill"]
+- !private ["SQ", "scheduledTimer"]
+- !private ["SQ", "scrollAuto2"]
+- !private ["SQ", "scrollAutomatically"]
+- !private ["SQ", "scrollDirection"]
+- !private ["SQ", "scrollToItem"]
+- !private ["SQ", "section"]
+- !private ["SQ", "sectionInset"]
+- !private ["SQ", "set"]
+- !private ["SQ", "shared"]
+- ["SQ", "standard"]
+- !private ["SQ", "startTimer"]
+- !private ["SQ", "startTimer2"]
+- !private ["SQ", "statusBarOrientation"]
+- !private ["SQ", "storyboard"]
+- !private ["SQ", "text"]
+- !private ["SQ", "viewDidLoad"]
+- !private ["SQ", "visibleCells"]
+- !private ["SQ", "width"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "left"]
+- !private ["s25ExpressibleByArrayLiteralP", "reversed"]
+- !private ["s25ExpressibleByArrayLiteralP", "right"]
+- !private ["s25ExpressibleByArrayLiteralP", "row"]
+- !private ["s25ExpressibleByArrayLiteralP", "section"]
+- !private ["s23ExpressibleByNilLiteralP", "image"]
+- !private ["s23ExpressibleByNilLiteralP", "text"]
+- !private ["SH", "CGSize"]
+- !private ["SH", "IndexPath"]
+- !private ["SH", "Timer"]
+- !private ["SH", "UIApplication"]
+- !private ["SH", "UIDevice"]
+- !private ["SH", "UIImageView"]
+- ["SH", "UserDefaults"]
+- ["SH", ""]
+- !private ["SH", "backgroundView"]
+- !private ["SH", "bool"]
+- !private ["SH", "choiceImage"]
+- !private ["SH", "clipsToBounds"]
+- ["SH", "collectionView"]
+- !private ["SH", "collectionViewLayout"]
+- !private ["SH", "contentMode"]
+- !private ["SH", "current"]
+- !private ["SH", "defaults"]
+- !private ["SH", "dequeueReusableCell"]
+- !private ["SH", "destination"]
+- !private ["SH", "didReceiveMemoryWarning"]
+- !private ["SH", "frame"]
+- !private ["SH", "horizontal"]
+- !private ["SH", "identifier"]
+- !private ["SH", "image"]
+- !private ["SH", "indexPath"]
+- !private ["SH", "init"]
+- !private ["SH", "instantiateViewController"]
+- !private ["SH", "isLandscape"]
+- !private ["SH", "isPortrait"]
+- ["SH", "landscapeLeft"]
+- ["SH", "landscapeRight"]
+- !private ["SH", "mediaSelected"]
+- !private ["SH", "memoChoiceLabel"]
+- !private ["SH", "minimumInteritemSpacing"]
+- !private ["SH", "minimumLineSpacing"]
+- ["SH", "navigationController"]
+- ["SH", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["SH", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["SH", "orientation"]
+- ["SH", "portrait"]
+- ["SH", "portraitUpsideDown"]
+- !private ["SH", "print"]
+- !private ["SH", "reversed"]
+- !private ["SH", "row"]
+- !private ["SH", "scaleAspectFill"]
+- !private ["SH", "scheduledTimer"]
+- !private ["SH", "scrollAuto2"]
+- !private ["SH", "scrollAutomatically"]
+- !private ["SH", "scrollDirection"]
+- !private ["SH", "scrollToItem"]
+- !private ["SH", "section"]
+- !private ["SH", "sectionInset"]
+- !private ["SH", "set"]
+- !private ["SH", "shared"]
+- ["SH", "standard"]
+- !private ["SH", "startTimer"]
+- !private ["SH", "startTimer2"]
+- !private ["SH", "statusBarOrientation"]
+- !private ["SH", "storyboard"]
+- !private ["SH", "text"]
+- !private ["SH", "viewDidLoad"]
+- !private ["SH", "visibleCells"]
+- !private ["10Foundation9IndexPathV", "init"]
+- !private ["10Foundation9IndexPathV", "row"]
+- !private ["10Foundation9IndexPathV", "section"]
+- !private ["5Macaw12InterpolableP", "reversed"]
+- !private ["9AfterMemo36LovedOneSelectionTableViewControllerC", "mediaSelected"]
+- !private ["SM", "init"]
+- !private ["SM", "reversed"]
+- !private ["SM", "row"]
+- !private ["SM", "section"]
+- !private ["10Foundation19MutableDataProtocolP", "reversed"]
+- !private ["So8NSCodingP", "CGSize"]
+- !private ["So8NSCodingP", "IndexPath"]
+- !private ["So8NSCodingP", "Timer"]
+- !private ["So8NSCodingP", "UIApplication"]
+- !private ["So8NSCodingP", "UIDevice"]
+- !private ["So8NSCodingP", "UIImageView"]
+- ["So8NSCodingP", "UserDefaults"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "backgroundView"]
+- !private ["So8NSCodingP", "choiceImage"]
+- !private ["So8NSCodingP", "clipsToBounds"]
+- ["So8NSCodingP", "collectionView"]
+- !private ["So8NSCodingP", "collectionViewLayout"]
+- !private ["So8NSCodingP", "contentMode"]
+- !private ["So8NSCodingP", "defaults"]
+- !private ["So8NSCodingP", "dequeueReusableCell"]
+- !private ["So8NSCodingP", "didReceiveMemoryWarning"]
+- !private ["So8NSCodingP", "frame"]
+- !private ["So8NSCodingP", "image"]
+- !private ["So8NSCodingP", "indexPath"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "mediaSelected"]
+- !private ["So8NSCodingP", "memoChoiceLabel"]
+- !private ["So8NSCodingP", "minimumInteritemSpacing"]
+- !private ["So8NSCodingP", "minimumLineSpacing"]
+- ["So8NSCodingP", "navigationController"]
+- ["So8NSCodingP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So8NSCodingP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "scrollAuto2"]
+- !private ["So8NSCodingP", "scrollAutomatically"]
+- !private ["So8NSCodingP", "scrollDirection"]
+- !private ["So8NSCodingP", "scrollToItem"]
+- !private ["So8NSCodingP", "sectionInset"]
+- !private ["So8NSCodingP", "startTimer"]
+- !private ["So8NSCodingP", "startTimer2"]
+- !private ["So8NSCodingP", "storyboard"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So8NSCodingP", "visibleCells"]
+- !private ["So26NSExtensionRequestHandlingP", "CGSize"]
+- !private ["So26NSExtensionRequestHandlingP", "IndexPath"]
+- !private ["So26NSExtensionRequestHandlingP", "Timer"]
+- !private ["So26NSExtensionRequestHandlingP", "UIApplication"]
+- !private ["So26NSExtensionRequestHandlingP", "UIDevice"]
+- !private ["So26NSExtensionRequestHandlingP", "UIImageView"]
+- ["So26NSExtensionRequestHandlingP", "UserDefaults"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- ["So26NSExtensionRequestHandlingP", "collectionView"]
+- !private ["So26NSExtensionRequestHandlingP", "collectionViewLayout"]
+- !private ["So26NSExtensionRequestHandlingP", "defaults"]
+- !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "mediaSelected"]
+- ["So26NSExtensionRequestHandlingP", "navigationController"]
+- ["So26NSExtensionRequestHandlingP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So26NSExtensionRequestHandlingP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
+- !private ["So26NSExtensionRequestHandlingP", "scrollAuto2"]
+- !private ["So26NSExtensionRequestHandlingP", "scrollAutomatically"]
+- !private ["So26NSExtensionRequestHandlingP", "startTimer"]
+- !private ["So26NSExtensionRequestHandlingP", "startTimer2"]
+- !private ["So26NSExtensionRequestHandlingP", "storyboard"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- !private ["So34NSFetchedResultsControllerDelegateP", "mediaSelected"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "CGSize"]
+- ["So8NSObjectC", "IndexPath"]
+- ["So8NSObjectC", "Int"]
+- !private ["So8NSObjectC", "LovedOneSelectionTableViewController"]
+- !private ["So8NSObjectC", "RecordingChoiceCollectionViewCell"]
+- !private ["So8NSObjectC", "SelectionCollectionViewController"]
+- ["So8NSObjectC", "Timer"]
+- !private ["So8NSObjectC", "UIApplication"]
+- ["So8NSObjectC", "UICollectionView"]
+- ["So8NSObjectC", "UICollectionViewCell"]
+- !private ["So8NSObjectC", "UICollectionViewFlowLayout"]
+- ["So8NSObjectC", "UICollectionViewLayout"]
+- !private ["So8NSObjectC", "UIDevice"]
+- !private ["So8NSObjectC", "UIImageView"]
+- ["So8NSObjectC", "UIStoryboardSegue"]
+- ["So8NSObjectC", "UserDefaults"]
+- ["So8NSObjectC", "Videos"]
+- ["So8NSObjectC", "Void"]
+- !private ["So8NSObjectC", "backgroundView"]
+- !private ["So8NSObjectC", "bool"]
+- !private ["So8NSObjectC", "choiceImage"]
+- !private ["So8NSObjectC", "clipsToBounds"]
+- ["So8NSObjectC", "collectionView"]
+- !private ["So8NSObjectC", "collectionViewLayout"]
+- !private ["So8NSObjectC", "contentMode"]
+- !private ["So8NSObjectC", "current"]
+- ["So8NSObjectC", "defaults"]
+- !private ["So8NSObjectC", "dequeueReusableCell"]
+- !private ["So8NSObjectC", "destination"]
+- ["So8NSObjectC", "didReceiveMemoryWarning"]
+- ["So8NSObjectC", "fileName"]
+- !private ["So8NSObjectC", "frame"]
+- ["So8NSObjectC", "hasFired1"]
+- ["So8NSObjectC", "hasFired2"]
+- !private ["So8NSObjectC", "identifier"]
+- !private ["So8NSObjectC", "image"]
+- !private ["So8NSObjectC", "indexPath"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "instantiateViewController"]
+- !private ["So8NSObjectC", "mediaSelected"]
+- !private ["So8NSObjectC", "memoChoiceLabel"]
+- !private ["So8NSObjectC", "minimumInteritemSpacing"]
+- !private ["So8NSObjectC", "minimumLineSpacing"]
+- ["So8NSObjectC", "navigationController"]
+- ["So8NSObjectC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So8NSObjectC", "navigationControllerSupportedInterfaceOrientations"]
+- ["So8NSObjectC", "numberOfSections"]
+- !private ["So8NSObjectC", "orientation"]
+- ["So8NSObjectC", "prepare"]
+- !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "scheduledTimer"]
+- ["So8NSObjectC", "scrollAuto2"]
+- ["So8NSObjectC", "scrollAutomatically"]
+- !private ["So8NSObjectC", "scrollDirection"]
+- !private ["So8NSObjectC", "scrollToItem"]
+- !private ["So8NSObjectC", "sectionInset"]
+- !private ["So8NSObjectC", "set"]
+- !private ["So8NSObjectC", "shared"]
+- ["So8NSObjectC", "standard"]
+- ["So8NSObjectC", "startTimer"]
+- ["So8NSObjectC", "startTimer2"]
+- !private ["So8NSObjectC", "statusBarOrientation"]
+- !private ["So8NSObjectC", "storyboard"]
+- !private ["So8NSObjectC", "text"]
+- ["So8NSObjectC", "videoToPass"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So8NSObjectC", "visibleCells"]
+- !private ["So8NSObjectP", "CGSize"]
+- !private ["So8NSObjectP", "IndexPath"]
+- !private ["So8NSObjectP", "Timer"]
+- !private ["So8NSObjectP", "UIApplication"]
+- !private ["So8NSObjectP", "UIDevice"]
+- !private ["So8NSObjectP", "UIImageView"]
+- ["So8NSObjectP", "UserDefaults"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "backgroundView"]
+- !private ["So8NSObjectP", "bool"]
+- !private ["So8NSObjectP", "choiceImage"]
+- !private ["So8NSObjectP", "clipsToBounds"]
+- ["So8NSObjectP", "collectionView"]
+- !private ["So8NSObjectP", "collectionViewLayout"]
+- !private ["So8NSObjectP", "contentMode"]
+- !private ["So8NSObjectP", "current"]
+- !private ["So8NSObjectP", "defaults"]
+- !private ["So8NSObjectP", "dequeueReusableCell"]
+- !private ["So8NSObjectP", "destination"]
+- !private ["So8NSObjectP", "didReceiveMemoryWarning"]
+- !private ["So8NSObjectP", "frame"]
+- !private ["So8NSObjectP", "identifier"]
+- !private ["So8NSObjectP", "image"]
+- !private ["So8NSObjectP", "indexPath"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "instantiateViewController"]
+- !private ["So8NSObjectP", "mediaSelected"]
+- !private ["So8NSObjectP", "memoChoiceLabel"]
+- !private ["So8NSObjectP", "minimumInteritemSpacing"]
+- !private ["So8NSObjectP", "minimumLineSpacing"]
+- ["So8NSObjectP", "navigationController"]
+- ["So8NSObjectP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So8NSObjectP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So8NSObjectP", "orientation"]
+- !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "scheduledTimer"]
+- !private ["So8NSObjectP", "scrollAuto2"]
+- !private ["So8NSObjectP", "scrollAutomatically"]
+- !private ["So8NSObjectP", "scrollDirection"]
+- !private ["So8NSObjectP", "scrollToItem"]
+- !private ["So8NSObjectP", "sectionInset"]
+- !private ["So8NSObjectP", "set"]
+- !private ["So8NSObjectP", "shared"]
+- ["So8NSObjectP", "standard"]
+- !private ["So8NSObjectP", "startTimer"]
+- !private ["So8NSObjectP", "startTimer2"]
+- !private ["So8NSObjectP", "statusBarOrientation"]
+- !private ["So8NSObjectP", "storyboard"]
+- !private ["So8NSObjectP", "text"]
+- !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["So8NSObjectP", "visibleCells"]
+- !private ["8AudioKit10OccupiableP", "reversed"]
+- !private ["s9OptionSetP", "left"]
+- !private ["s9OptionSetP", "right"]
+- !private ["Sq", "image"]
+- !private ["Sq", "text"]
+- !private ["Sk", "init"]
+- !private ["Sk", "reversed"]
+- !private ["Sk", "row"]
+- !private ["Sk", "section"]
+- !private ["Sm", "reversed"]
+- !private ["SY", "horizontal"]
+- !private ["SY", "isLandscape"]
+- !private ["SY", "isPortrait"]
+- ["SY", "landscapeLeft"]
+- ["SY", "landscapeRight"]
+- !private ["SY", "left"]
+- ["SY", "portrait"]
+- ["SY", "portraitUpsideDown"]
+- !private ["SY", "right"]
+- !private ["SY", "scaleAspectFill"]
+- !private ["9AfterMemo33RecordingChoiceCollectionViewCellC", "choiceImage"]
+- !private ["9AfterMemo33RecordingChoiceCollectionViewCellC", "memoChoiceLabel"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "Bool"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "CGSize"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "IndexPath"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "Int"]
+- !private ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "LovedOneSelectionTableViewController"]
+- !private ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "RecordingChoiceCollectionViewCell"]
+- !private ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "SelectionCollectionViewController"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "Timer"]
+- !private ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "UIApplication"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "UICollectionView"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "UICollectionViewCell"]
+- !private ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "UICollectionViewFlowLayout"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "UICollectionViewLayout"]
+- !private ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "UIDevice"]
+- !private ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "UIImageView"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "UIStoryboardSegue"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "UserDefaults"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "Videos"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "Void"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "collectionView"]
+- !private ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "collectionViewLayout"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "defaults"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "deinit"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "didReceiveMemoryWarning"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "fileName"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "hasFired1"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "hasFired2"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "init"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "navigationController"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "navigationControllerSupportedInterfaceOrientations"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "numberOfSections"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "prepare"]
+- !private ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "print"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "scrollAuto2"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "scrollAutomatically"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "startTimer"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "startTimer2"]
+- !private ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "storyboard"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "videoToPass"]
+- ["9AfterMemo39RecordingChoiceCollectionViewControllerC", "viewDidLoad"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "row"]
+- !private ["10Foundation20ReferenceConvertibleP", "section"]
+- !private ["So31UICollectionViewScrollDirectionV", "horizontal"]
+- !private ["So30UICollectionViewScrollPositionV", "left"]
+- !private ["So30UICollectionViewScrollPositionV", "right"]
+- !private ["ST", "init"]
+- !private ["ST", "reversed"]
+- !private ["ST", "row"]
+- !private ["ST", "section"]
+- !private ["s10SetAlgebraP", "left"]
+- !private ["s10SetAlgebraP", "right"]
+- !private ["So7NSTimerC", "scheduledTimer"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "clipsToBounds"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "backgroundView"]
+- !private ["So29UIAccessibilityIdentificationP", "choiceImage"]
+- !private ["So29UIAccessibilityIdentificationP", "clipsToBounds"]
+- !private ["So29UIAccessibilityIdentificationP", "contentMode"]
+- !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
+- !private ["So29UIAccessibilityIdentificationP", "frame"]
+- !private ["So29UIAccessibilityIdentificationP", "image"]
+- !private ["So29UIAccessibilityIdentificationP", "indexPath"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "memoChoiceLabel"]
+- !private ["So29UIAccessibilityIdentificationP", "scrollToItem"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So29UIAccessibilityIdentificationP", "visibleCells"]
+- !private ["So12UIAppearanceP", "backgroundView"]
+- !private ["So12UIAppearanceP", "choiceImage"]
+- !private ["So12UIAppearanceP", "clipsToBounds"]
+- !private ["So12UIAppearanceP", "contentMode"]
+- !private ["So12UIAppearanceP", "dequeueReusableCell"]
+- !private ["So12UIAppearanceP", "frame"]
+- !private ["So12UIAppearanceP", "image"]
+- !private ["So12UIAppearanceP", "indexPath"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "memoChoiceLabel"]
+- !private ["So12UIAppearanceP", "scrollToItem"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So12UIAppearanceP", "visibleCells"]
+- !private ["So21UIAppearanceContainerP", "CGSize"]
+- !private ["So21UIAppearanceContainerP", "IndexPath"]
+- !private ["So21UIAppearanceContainerP", "Timer"]
+- !private ["So21UIAppearanceContainerP", "UIApplication"]
+- !private ["So21UIAppearanceContainerP", "UIDevice"]
+- !private ["So21UIAppearanceContainerP", "UIImageView"]
+- ["So21UIAppearanceContainerP", "UserDefaults"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "backgroundView"]
+- !private ["So21UIAppearanceContainerP", "choiceImage"]
+- !private ["So21UIAppearanceContainerP", "clipsToBounds"]
+- ["So21UIAppearanceContainerP", "collectionView"]
+- !private ["So21UIAppearanceContainerP", "collectionViewLayout"]
+- !private ["So21UIAppearanceContainerP", "contentMode"]
+- !private ["So21UIAppearanceContainerP", "defaults"]
+- !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
+- !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
+- !private ["So21UIAppearanceContainerP", "frame"]
+- !private ["So21UIAppearanceContainerP", "image"]
+- !private ["So21UIAppearanceContainerP", "indexPath"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "mediaSelected"]
+- !private ["So21UIAppearanceContainerP", "memoChoiceLabel"]
+- ["So21UIAppearanceContainerP", "navigationController"]
+- ["So21UIAppearanceContainerP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So21UIAppearanceContainerP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So21UIAppearanceContainerP", "print"]
+- !private ["So21UIAppearanceContainerP", "scrollAuto2"]
+- !private ["So21UIAppearanceContainerP", "scrollAutomatically"]
+- !private ["So21UIAppearanceContainerP", "scrollToItem"]
+- !private ["So21UIAppearanceContainerP", "startTimer"]
+- !private ["So21UIAppearanceContainerP", "startTimer2"]
+- !private ["So21UIAppearanceContainerP", "storyboard"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So21UIAppearanceContainerP", "visibleCells"]
+- !private ["So13UIApplicationC", "shared"]
+- !private ["So13UIApplicationC", "statusBarOrientation"]
+- !private ["So24UICollectionReusableViewC", "choiceImage"]
+- !private ["So24UICollectionReusableViewC", "memoChoiceLabel"]
+- !private ["So16UICollectionViewC", "backgroundView"]
+- !private ["So16UICollectionViewC", "dequeueReusableCell"]
+- !private ["So16UICollectionViewC", "frame"]
+- !private ["So16UICollectionViewC", "indexPath"]
+- !private ["So16UICollectionViewC", "scrollToItem"]
+- !private ["So16UICollectionViewC", "visibleCells"]
+- !private ["So20UICollectionViewCellC", "choiceImage"]
+- !private ["So20UICollectionViewCellC", "memoChoiceLabel"]
+- ["So26UICollectionViewControllerC", "Bool"]
+- ["So26UICollectionViewControllerC", "CGSize"]
+- ["So26UICollectionViewControllerC", "IndexPath"]
+- ["So26UICollectionViewControllerC", "Int"]
+- !private ["So26UICollectionViewControllerC", "LovedOneSelectionTableViewController"]
+- !private ["So26UICollectionViewControllerC", "RecordingChoiceCollectionViewCell"]
+- !private ["So26UICollectionViewControllerC", "SelectionCollectionViewController"]
+- ["So26UICollectionViewControllerC", "Timer"]
+- !private ["So26UICollectionViewControllerC", "UIApplication"]
+- ["So26UICollectionViewControllerC", "UICollectionView"]
+- ["So26UICollectionViewControllerC", "UICollectionViewCell"]
+- !private ["So26UICollectionViewControllerC", "UICollectionViewFlowLayout"]
+- ["So26UICollectionViewControllerC", "UICollectionViewLayout"]
+- !private ["So26UICollectionViewControllerC", "UIDevice"]
+- !private ["So26UICollectionViewControllerC", "UIImageView"]
+- ["So26UICollectionViewControllerC", "UIStoryboardSegue"]
+- ["So26UICollectionViewControllerC", "UserDefaults"]
+- ["So26UICollectionViewControllerC", "Videos"]
+- ["So26UICollectionViewControllerC", "Void"]
+- ["So26UICollectionViewControllerC", ""]
+- ["So26UICollectionViewControllerC", "collectionView"]
+- !private ["So26UICollectionViewControllerC", "collectionViewLayout"]
+- ["So26UICollectionViewControllerC", "defaults"]
+- ["So26UICollectionViewControllerC", "didReceiveMemoryWarning"]
+- ["So26UICollectionViewControllerC", "fileName"]
+- ["So26UICollectionViewControllerC", "hasFired1"]
+- ["So26UICollectionViewControllerC", "hasFired2"]
+- ["So26UICollectionViewControllerC", "init"]
+- ["So26UICollectionViewControllerC", "navigationController"]
+- ["So26UICollectionViewControllerC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So26UICollectionViewControllerC", "navigationControllerSupportedInterfaceOrientations"]
+- ["So26UICollectionViewControllerC", "numberOfSections"]
+- ["So26UICollectionViewControllerC", "prepare"]
+- !private ["So26UICollectionViewControllerC", "print"]
+- ["So26UICollectionViewControllerC", "scrollAuto2"]
+- ["So26UICollectionViewControllerC", "scrollAutomatically"]
+- ["So26UICollectionViewControllerC", "startTimer"]
+- ["So26UICollectionViewControllerC", "startTimer2"]
+- !private ["So26UICollectionViewControllerC", "storyboard"]
+- ["So26UICollectionViewControllerC", "videoToPass"]
+- ["So26UICollectionViewControllerC", "viewDidLoad"]
+- !private ["So26UICollectionViewDataSourceP", "CGSize"]
+- !private ["So26UICollectionViewDataSourceP", "IndexPath"]
+- !private ["So26UICollectionViewDataSourceP", "Timer"]
+- !private ["So26UICollectionViewDataSourceP", "UIApplication"]
+- !private ["So26UICollectionViewDataSourceP", "UIDevice"]
+- !private ["So26UICollectionViewDataSourceP", "UIImageView"]
+- ["So26UICollectionViewDataSourceP", "UserDefaults"]
+- ["So26UICollectionViewDataSourceP", ""]
+- ["So26UICollectionViewDataSourceP", "collectionView"]
+- !private ["So26UICollectionViewDataSourceP", "collectionViewLayout"]
+- !private ["So26UICollectionViewDataSourceP", "defaults"]
+- !private ["So26UICollectionViewDataSourceP", "didReceiveMemoryWarning"]
+- !private ["So26UICollectionViewDataSourceP", "init"]
+- ["So26UICollectionViewDataSourceP", "navigationController"]
+- ["So26UICollectionViewDataSourceP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So26UICollectionViewDataSourceP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So26UICollectionViewDataSourceP", "print"]
+- !private ["So26UICollectionViewDataSourceP", "scrollAuto2"]
+- !private ["So26UICollectionViewDataSourceP", "scrollAutomatically"]
+- !private ["So26UICollectionViewDataSourceP", "startTimer"]
+- !private ["So26UICollectionViewDataSourceP", "startTimer2"]
+- !private ["So26UICollectionViewDataSourceP", "storyboard"]
+- !private ["So26UICollectionViewDataSourceP", "viewDidLoad"]
+- !private ["So24UICollectionViewDelegateP", "CGSize"]
+- !private ["So24UICollectionViewDelegateP", "IndexPath"]
+- !private ["So24UICollectionViewDelegateP", "Timer"]
+- !private ["So24UICollectionViewDelegateP", "UIApplication"]
+- !private ["So24UICollectionViewDelegateP", "UIDevice"]
+- !private ["So24UICollectionViewDelegateP", "UIImageView"]
+- ["So24UICollectionViewDelegateP", "UserDefaults"]
+- ["So24UICollectionViewDelegateP", ""]
+- ["So24UICollectionViewDelegateP", "collectionView"]
+- !private ["So24UICollectionViewDelegateP", "collectionViewLayout"]
+- !private ["So24UICollectionViewDelegateP", "defaults"]
+- !private ["So24UICollectionViewDelegateP", "didReceiveMemoryWarning"]
+- !private ["So24UICollectionViewDelegateP", "init"]
+- ["So24UICollectionViewDelegateP", "navigationController"]
+- ["So24UICollectionViewDelegateP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So24UICollectionViewDelegateP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So24UICollectionViewDelegateP", "print"]
+- !private ["So24UICollectionViewDelegateP", "scrollAuto2"]
+- !private ["So24UICollectionViewDelegateP", "scrollAutomatically"]
+- !private ["So24UICollectionViewDelegateP", "startTimer"]
+- !private ["So24UICollectionViewDelegateP", "startTimer2"]
+- !private ["So24UICollectionViewDelegateP", "storyboard"]
+- !private ["So24UICollectionViewDelegateP", "viewDidLoad"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "CGSize"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "IndexPath"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "Timer"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "UIApplication"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "UIDevice"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "UIImageView"]
+- ["So34UICollectionViewDelegateFlowLayoutP", "UserDefaults"]
+- ["So34UICollectionViewDelegateFlowLayoutP", ""]
+- ["So34UICollectionViewDelegateFlowLayoutP", "collectionView"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "collectionViewLayout"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "defaults"]
+- ["So34UICollectionViewDelegateFlowLayoutP", "navigationController"]
+- ["So34UICollectionViewDelegateFlowLayoutP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So34UICollectionViewDelegateFlowLayoutP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "print"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "scrollAuto2"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "scrollAutomatically"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "startTimer"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "startTimer2"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "storyboard"]
+- !private ["So26UICollectionViewFlowLayoutC", "minimumInteritemSpacing"]
+- !private ["So26UICollectionViewFlowLayoutC", "minimumLineSpacing"]
+- !private ["So26UICollectionViewFlowLayoutC", "scrollDirection"]
+- !private ["So26UICollectionViewFlowLayoutC", "sectionInset"]
+- !private ["So22UICollectionViewLayoutC", "minimumInteritemSpacing"]
+- !private ["So22UICollectionViewLayoutC", "minimumLineSpacing"]
+- !private ["So22UICollectionViewLayoutC", "scrollDirection"]
+- !private ["So22UICollectionViewLayoutC", "sectionInset"]
+- !private ["So18UIContentContainerP", "CGSize"]
+- !private ["So18UIContentContainerP", "IndexPath"]
+- !private ["So18UIContentContainerP", "Timer"]
+- !private ["So18UIContentContainerP", "UIApplication"]
+- !private ["So18UIContentContainerP", "UIDevice"]
+- !private ["So18UIContentContainerP", "UIImageView"]
+- ["So18UIContentContainerP", "UserDefaults"]
+- ["So18UIContentContainerP", ""]
+- ["So18UIContentContainerP", "collectionView"]
+- !private ["So18UIContentContainerP", "collectionViewLayout"]
+- !private ["So18UIContentContainerP", "defaults"]
+- !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "mediaSelected"]
+- ["So18UIContentContainerP", "navigationController"]
+- ["So18UIContentContainerP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So18UIContentContainerP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So18UIContentContainerP", "print"]
+- !private ["So18UIContentContainerP", "scrollAuto2"]
+- !private ["So18UIContentContainerP", "scrollAutomatically"]
+- !private ["So18UIContentContainerP", "startTimer"]
+- !private ["So18UIContentContainerP", "startTimer2"]
+- !private ["So18UIContentContainerP", "storyboard"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So17UICoordinateSpaceP", "backgroundView"]
+- !private ["So17UICoordinateSpaceP", "choiceImage"]
+- !private ["So17UICoordinateSpaceP", "clipsToBounds"]
+- !private ["So17UICoordinateSpaceP", "contentMode"]
+- !private ["So17UICoordinateSpaceP", "dequeueReusableCell"]
+- !private ["So17UICoordinateSpaceP", "frame"]
+- !private ["So17UICoordinateSpaceP", "image"]
+- !private ["So17UICoordinateSpaceP", "indexPath"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "memoChoiceLabel"]
+- !private ["So17UICoordinateSpaceP", "scrollToItem"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So17UICoordinateSpaceP", "visibleCells"]
+- !private ["So23UIDataSourceTranslatingP", "backgroundView"]
+- !private ["So23UIDataSourceTranslatingP", "dequeueReusableCell"]
+- !private ["So23UIDataSourceTranslatingP", "frame"]
+- !private ["So23UIDataSourceTranslatingP", "indexPath"]
+- !private ["So23UIDataSourceTranslatingP", "scrollToItem"]
+- !private ["So23UIDataSourceTranslatingP", "visibleCells"]
+- !private ["So8UIDeviceC", "current"]
+- !private ["So8UIDeviceC", "orientation"]
+- !private ["So19UIDeviceOrientationV", "isPortrait"]
+- !private ["So13UIDynamicItemP", "backgroundView"]
+- !private ["So13UIDynamicItemP", "choiceImage"]
+- !private ["So13UIDynamicItemP", "clipsToBounds"]
+- !private ["So13UIDynamicItemP", "contentMode"]
+- !private ["So13UIDynamicItemP", "dequeueReusableCell"]
+- !private ["So13UIDynamicItemP", "frame"]
+- !private ["So13UIDynamicItemP", "image"]
+- !private ["So13UIDynamicItemP", "indexPath"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "memoChoiceLabel"]
+- !private ["So13UIDynamicItemP", "scrollToItem"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So13UIDynamicItemP", "visibleCells"]
+- !private ["So12UIEdgeInsetsV", "left"]
+- !private ["So12UIEdgeInsetsV", "right"]
+- !private ["So18UIFocusEnvironmentP", "CGSize"]
+- !private ["So18UIFocusEnvironmentP", "IndexPath"]
+- !private ["So18UIFocusEnvironmentP", "Timer"]
+- !private ["So18UIFocusEnvironmentP", "UIApplication"]
+- !private ["So18UIFocusEnvironmentP", "UIDevice"]
+- !private ["So18UIFocusEnvironmentP", "UIImageView"]
+- ["So18UIFocusEnvironmentP", "UserDefaults"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "backgroundView"]
+- !private ["So18UIFocusEnvironmentP", "choiceImage"]
+- !private ["So18UIFocusEnvironmentP", "clipsToBounds"]
+- ["So18UIFocusEnvironmentP", "collectionView"]
+- !private ["So18UIFocusEnvironmentP", "collectionViewLayout"]
+- !private ["So18UIFocusEnvironmentP", "contentMode"]
+- !private ["So18UIFocusEnvironmentP", "defaults"]
+- !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
+- !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UIFocusEnvironmentP", "frame"]
+- !private ["So18UIFocusEnvironmentP", "image"]
+- !private ["So18UIFocusEnvironmentP", "indexPath"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "mediaSelected"]
+- !private ["So18UIFocusEnvironmentP", "memoChoiceLabel"]
+- ["So18UIFocusEnvironmentP", "navigationController"]
+- ["So18UIFocusEnvironmentP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So18UIFocusEnvironmentP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So18UIFocusEnvironmentP", "print"]
+- !private ["So18UIFocusEnvironmentP", "scrollAuto2"]
+- !private ["So18UIFocusEnvironmentP", "scrollAutomatically"]
+- !private ["So18UIFocusEnvironmentP", "scrollToItem"]
+- !private ["So18UIFocusEnvironmentP", "startTimer"]
+- !private ["So18UIFocusEnvironmentP", "startTimer2"]
+- !private ["So18UIFocusEnvironmentP", "storyboard"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So18UIFocusEnvironmentP", "visibleCells"]
+- !private ["So11UIFocusItemP", "backgroundView"]
+- !private ["So11UIFocusItemP", "choiceImage"]
+- !private ["So11UIFocusItemP", "clipsToBounds"]
+- !private ["So11UIFocusItemP", "contentMode"]
+- !private ["So11UIFocusItemP", "dequeueReusableCell"]
+- !private ["So11UIFocusItemP", "frame"]
+- !private ["So11UIFocusItemP", "image"]
+- !private ["So11UIFocusItemP", "indexPath"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "memoChoiceLabel"]
+- !private ["So11UIFocusItemP", "scrollToItem"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So11UIFocusItemP", "visibleCells"]
+- !private ["So20UIFocusItemContainerP", "backgroundView"]
+- !private ["So20UIFocusItemContainerP", "choiceImage"]
+- !private ["So20UIFocusItemContainerP", "clipsToBounds"]
+- !private ["So20UIFocusItemContainerP", "contentMode"]
+- !private ["So20UIFocusItemContainerP", "dequeueReusableCell"]
+- !private ["So20UIFocusItemContainerP", "frame"]
+- !private ["So20UIFocusItemContainerP", "image"]
+- !private ["So20UIFocusItemContainerP", "indexPath"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "memoChoiceLabel"]
+- !private ["So20UIFocusItemContainerP", "scrollToItem"]
+- !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So20UIFocusItemContainerP", "visibleCells"]
+- !private ["So30UIFocusItemScrollableContainerP", "backgroundView"]
+- !private ["So30UIFocusItemScrollableContainerP", "dequeueReusableCell"]
+- !private ["So30UIFocusItemScrollableContainerP", "frame"]
+- !private ["So30UIFocusItemScrollableContainerP", "indexPath"]
+- !private ["So30UIFocusItemScrollableContainerP", "scrollToItem"]
+- !private ["So30UIFocusItemScrollableContainerP", "visibleCells"]
+- !private ["So27UIGestureRecognizerDelegateP", "CGSize"]
+- !private ["So27UIGestureRecognizerDelegateP", "IndexPath"]
+- !private ["So27UIGestureRecognizerDelegateP", "Timer"]
+- !private ["So27UIGestureRecognizerDelegateP", "UIApplication"]
+- !private ["So27UIGestureRecognizerDelegateP", "UIDevice"]
+- !private ["So27UIGestureRecognizerDelegateP", "UIImageView"]
+- ["So27UIGestureRecognizerDelegateP", "UserDefaults"]
+- ["So27UIGestureRecognizerDelegateP", ""]
+- ["So27UIGestureRecognizerDelegateP", "collectionView"]
+- !private ["So27UIGestureRecognizerDelegateP", "collectionViewLayout"]
+- !private ["So27UIGestureRecognizerDelegateP", "defaults"]
+- !private ["So27UIGestureRecognizerDelegateP", "didReceiveMemoryWarning"]
+- !private ["So27UIGestureRecognizerDelegateP", "init"]
+- ["So27UIGestureRecognizerDelegateP", "navigationController"]
+- ["So27UIGestureRecognizerDelegateP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So27UIGestureRecognizerDelegateP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So27UIGestureRecognizerDelegateP", "print"]
+- !private ["So27UIGestureRecognizerDelegateP", "scrollAuto2"]
+- !private ["So27UIGestureRecognizerDelegateP", "scrollAutomatically"]
+- !private ["So27UIGestureRecognizerDelegateP", "startTimer"]
+- !private ["So27UIGestureRecognizerDelegateP", "startTimer2"]
+- !private ["So27UIGestureRecognizerDelegateP", "storyboard"]
+- !private ["So27UIGestureRecognizerDelegateP", "viewDidLoad"]
+- !private ["So31UIImagePickerControllerDelegateP", "mediaSelected"]
+- !private ["So11UIImageViewC", "clipsToBounds"]
+- !private ["So11UIImageViewC", "image"]
+- !private ["So11UIImageViewC", "init"]
+- !private ["So22UIInterfaceOrientationV", "isLandscape"]
+- !private ["So22UIInterfaceOrientationV", "isPortrait"]
+- ["So22UIInterfaceOrientationV", "landscapeLeft"]
+- ["So22UIInterfaceOrientationV", "landscapeRight"]
+- ["So22UIInterfaceOrientationV", "portrait"]
+- ["So22UIInterfaceOrientationV", "portraitUpsideDown"]
+- !private ["So7UILabelC", "text"]
+- !private ["So30UINavigationControllerDelegateP", "CGSize"]
+- !private ["So30UINavigationControllerDelegateP", "IndexPath"]
+- !private ["So30UINavigationControllerDelegateP", "Timer"]
+- !private ["So30UINavigationControllerDelegateP", "UIApplication"]
+- !private ["So30UINavigationControllerDelegateP", "UIDevice"]
+- !private ["So30UINavigationControllerDelegateP", "UIImageView"]
+- ["So30UINavigationControllerDelegateP", "UserDefaults"]
+- ["So30UINavigationControllerDelegateP", ""]
+- ["So30UINavigationControllerDelegateP", "collectionView"]
+- !private ["So30UINavigationControllerDelegateP", "collectionViewLayout"]
+- !private ["So30UINavigationControllerDelegateP", "defaults"]
+- !private ["So30UINavigationControllerDelegateP", "mediaSelected"]
+- ["So30UINavigationControllerDelegateP", "navigationController"]
+- ["So30UINavigationControllerDelegateP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So30UINavigationControllerDelegateP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So30UINavigationControllerDelegateP", "print"]
+- !private ["So30UINavigationControllerDelegateP", "scrollAuto2"]
+- !private ["So30UINavigationControllerDelegateP", "scrollAutomatically"]
+- !private ["So30UINavigationControllerDelegateP", "startTimer"]
+- !private ["So30UINavigationControllerDelegateP", "startTimer2"]
+- !private ["So30UINavigationControllerDelegateP", "storyboard"]
+- !private ["So30UIPasteConfigurationSupportingP", "CGSize"]
+- !private ["So30UIPasteConfigurationSupportingP", "IndexPath"]
+- !private ["So30UIPasteConfigurationSupportingP", "Timer"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIDevice"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIImageView"]
+- ["So30UIPasteConfigurationSupportingP", "UserDefaults"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "backgroundView"]
+- !private ["So30UIPasteConfigurationSupportingP", "choiceImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "clipsToBounds"]
+- ["So30UIPasteConfigurationSupportingP", "collectionView"]
+- !private ["So30UIPasteConfigurationSupportingP", "collectionViewLayout"]
+- !private ["So30UIPasteConfigurationSupportingP", "contentMode"]
+- !private ["So30UIPasteConfigurationSupportingP", "defaults"]
+- !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
+- !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
+- !private ["So30UIPasteConfigurationSupportingP", "frame"]
+- !private ["So30UIPasteConfigurationSupportingP", "image"]
+- !private ["So30UIPasteConfigurationSupportingP", "indexPath"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "mediaSelected"]
+- !private ["So30UIPasteConfigurationSupportingP", "memoChoiceLabel"]
+- ["So30UIPasteConfigurationSupportingP", "navigationController"]
+- ["So30UIPasteConfigurationSupportingP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So30UIPasteConfigurationSupportingP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "scrollAuto2"]
+- !private ["So30UIPasteConfigurationSupportingP", "scrollAutomatically"]
+- !private ["So30UIPasteConfigurationSupportingP", "scrollToItem"]
+- !private ["So30UIPasteConfigurationSupportingP", "shared"]
+- !private ["So30UIPasteConfigurationSupportingP", "startTimer"]
+- !private ["So30UIPasteConfigurationSupportingP", "startTimer2"]
+- !private ["So30UIPasteConfigurationSupportingP", "statusBarOrientation"]
+- !private ["So30UIPasteConfigurationSupportingP", "storyboard"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- !private ["So30UIPasteConfigurationSupportingP", "visibleCells"]
+- ["So11UIResponderC", "Bool"]
+- ["So11UIResponderC", "CGSize"]
+- ["So11UIResponderC", "IndexPath"]
+- ["So11UIResponderC", "Int"]
+- !private ["So11UIResponderC", "LovedOneSelectionTableViewController"]
+- !private ["So11UIResponderC", "RecordingChoiceCollectionViewCell"]
+- !private ["So11UIResponderC", "SelectionCollectionViewController"]
+- ["So11UIResponderC", "Timer"]
+- !private ["So11UIResponderC", "UIApplication"]
+- ["So11UIResponderC", "UICollectionView"]
+- ["So11UIResponderC", "UICollectionViewCell"]
+- !private ["So11UIResponderC", "UICollectionViewFlowLayout"]
+- ["So11UIResponderC", "UICollectionViewLayout"]
+- !private ["So11UIResponderC", "UIDevice"]
+- !private ["So11UIResponderC", "UIImageView"]
+- ["So11UIResponderC", "UIStoryboardSegue"]
+- ["So11UIResponderC", "UserDefaults"]
+- ["So11UIResponderC", "Videos"]
+- ["So11UIResponderC", "Void"]
+- !private ["So11UIResponderC", "backgroundView"]
+- !private ["So11UIResponderC", "choiceImage"]
+- !private ["So11UIResponderC", "clipsToBounds"]
+- ["So11UIResponderC", "collectionView"]
+- !private ["So11UIResponderC", "collectionViewLayout"]
+- !private ["So11UIResponderC", "contentMode"]
+- ["So11UIResponderC", "defaults"]
+- !private ["So11UIResponderC", "dequeueReusableCell"]
+- ["So11UIResponderC", "didReceiveMemoryWarning"]
+- ["So11UIResponderC", "fileName"]
+- !private ["So11UIResponderC", "frame"]
+- ["So11UIResponderC", "hasFired1"]
+- ["So11UIResponderC", "hasFired2"]
+- !private ["So11UIResponderC", "image"]
+- !private ["So11UIResponderC", "indexPath"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "mediaSelected"]
+- !private ["So11UIResponderC", "memoChoiceLabel"]
+- ["So11UIResponderC", "navigationController"]
+- ["So11UIResponderC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So11UIResponderC", "navigationControllerSupportedInterfaceOrientations"]
+- ["So11UIResponderC", "numberOfSections"]
+- ["So11UIResponderC", "prepare"]
+- !private ["So11UIResponderC", "print"]
+- ["So11UIResponderC", "scrollAuto2"]
+- ["So11UIResponderC", "scrollAutomatically"]
+- !private ["So11UIResponderC", "scrollToItem"]
+- !private ["So11UIResponderC", "shared"]
+- ["So11UIResponderC", "startTimer"]
+- ["So11UIResponderC", "startTimer2"]
+- !private ["So11UIResponderC", "statusBarOrientation"]
+- !private ["So11UIResponderC", "storyboard"]
+- !private ["So11UIResponderC", "text"]
+- ["So11UIResponderC", "videoToPass"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So11UIResponderC", "visibleCells"]
+- !private ["So30UIResponderStandardEditActionsP", "CGSize"]
+- !private ["So30UIResponderStandardEditActionsP", "IndexPath"]
+- !private ["So30UIResponderStandardEditActionsP", "Timer"]
+- !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
+- !private ["So30UIResponderStandardEditActionsP", "UIDevice"]
+- !private ["So30UIResponderStandardEditActionsP", "UIImageView"]
+- ["So30UIResponderStandardEditActionsP", "UserDefaults"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "backgroundView"]
+- !private ["So30UIResponderStandardEditActionsP", "choiceImage"]
+- !private ["So30UIResponderStandardEditActionsP", "clipsToBounds"]
+- ["So30UIResponderStandardEditActionsP", "collectionView"]
+- !private ["So30UIResponderStandardEditActionsP", "collectionViewLayout"]
+- !private ["So30UIResponderStandardEditActionsP", "contentMode"]
+- !private ["So30UIResponderStandardEditActionsP", "defaults"]
+- !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
+- !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
+- !private ["So30UIResponderStandardEditActionsP", "frame"]
+- !private ["So30UIResponderStandardEditActionsP", "image"]
+- !private ["So30UIResponderStandardEditActionsP", "indexPath"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "mediaSelected"]
+- !private ["So30UIResponderStandardEditActionsP", "memoChoiceLabel"]
+- ["So30UIResponderStandardEditActionsP", "navigationController"]
+- ["So30UIResponderStandardEditActionsP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So30UIResponderStandardEditActionsP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "scrollAuto2"]
+- !private ["So30UIResponderStandardEditActionsP", "scrollAutomatically"]
+- !private ["So30UIResponderStandardEditActionsP", "scrollToItem"]
+- !private ["So30UIResponderStandardEditActionsP", "shared"]
+- !private ["So30UIResponderStandardEditActionsP", "startTimer"]
+- !private ["So30UIResponderStandardEditActionsP", "startTimer2"]
+- !private ["So30UIResponderStandardEditActionsP", "statusBarOrientation"]
+- !private ["So30UIResponderStandardEditActionsP", "storyboard"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "visibleCells"]
+- !private ["So12UIScrollViewC", "backgroundView"]
+- !private ["So12UIScrollViewC", "dequeueReusableCell"]
+- !private ["So12UIScrollViewC", "frame"]
+- !private ["So12UIScrollViewC", "indexPath"]
+- !private ["So12UIScrollViewC", "scrollToItem"]
+- !private ["So12UIScrollViewC", "visibleCells"]
+- !private ["So20UIScrollViewDelegateP", "CGSize"]
+- !private ["So20UIScrollViewDelegateP", "IndexPath"]
+- !private ["So20UIScrollViewDelegateP", "Timer"]
+- !private ["So20UIScrollViewDelegateP", "UIApplication"]
+- !private ["So20UIScrollViewDelegateP", "UIDevice"]
+- !private ["So20UIScrollViewDelegateP", "UIImageView"]
+- ["So20UIScrollViewDelegateP", "UserDefaults"]
+- ["So20UIScrollViewDelegateP", ""]
+- ["So20UIScrollViewDelegateP", "collectionView"]
+- !private ["So20UIScrollViewDelegateP", "collectionViewLayout"]
+- !private ["So20UIScrollViewDelegateP", "defaults"]
+- !private ["So20UIScrollViewDelegateP", "didReceiveMemoryWarning"]
+- !private ["So20UIScrollViewDelegateP", "init"]
+- !private ["So20UIScrollViewDelegateP", "mediaSelected"]
+- ["So20UIScrollViewDelegateP", "navigationController"]
+- ["So20UIScrollViewDelegateP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So20UIScrollViewDelegateP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So20UIScrollViewDelegateP", "print"]
+- !private ["So20UIScrollViewDelegateP", "scrollAuto2"]
+- !private ["So20UIScrollViewDelegateP", "scrollAutomatically"]
+- !private ["So20UIScrollViewDelegateP", "startTimer"]
+- !private ["So20UIScrollViewDelegateP", "startTimer2"]
+- !private ["So20UIScrollViewDelegateP", "storyboard"]
+- !private ["So20UIScrollViewDelegateP", "viewDidLoad"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "backgroundView"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "frame"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "indexPath"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "scrollToItem"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "visibleCells"]
+- !private ["So16UIStateRestoringP", "CGSize"]
+- !private ["So16UIStateRestoringP", "IndexPath"]
+- !private ["So16UIStateRestoringP", "Timer"]
+- !private ["So16UIStateRestoringP", "UIApplication"]
+- !private ["So16UIStateRestoringP", "UIDevice"]
+- !private ["So16UIStateRestoringP", "UIImageView"]
+- ["So16UIStateRestoringP", "UserDefaults"]
+- ["So16UIStateRestoringP", ""]
+- ["So16UIStateRestoringP", "collectionView"]
+- !private ["So16UIStateRestoringP", "collectionViewLayout"]
+- !private ["So16UIStateRestoringP", "defaults"]
+- !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "mediaSelected"]
+- ["So16UIStateRestoringP", "navigationController"]
+- ["So16UIStateRestoringP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So16UIStateRestoringP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So16UIStateRestoringP", "print"]
+- !private ["So16UIStateRestoringP", "scrollAuto2"]
+- !private ["So16UIStateRestoringP", "scrollAutomatically"]
+- !private ["So16UIStateRestoringP", "startTimer"]
+- !private ["So16UIStateRestoringP", "startTimer2"]
+- !private ["So16UIStateRestoringP", "storyboard"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So12UIStoryboardC", "instantiateViewController"]
+- !private ["So17UIStoryboardSegueC", "destination"]
+- !private ["So17UIStoryboardSegueC", "identifier"]
+- !private ["So21UITableViewControllerC", "mediaSelected"]
+- !private ["So21UITableViewDataSourceP", "mediaSelected"]
+- !private ["So19UITableViewDelegateP", "mediaSelected"]
+- !private ["So18UITraitEnvironmentP", "CGSize"]
+- !private ["So18UITraitEnvironmentP", "IndexPath"]
+- !private ["So18UITraitEnvironmentP", "Timer"]
+- !private ["So18UITraitEnvironmentP", "UIApplication"]
+- !private ["So18UITraitEnvironmentP", "UIDevice"]
+- !private ["So18UITraitEnvironmentP", "UIImageView"]
+- ["So18UITraitEnvironmentP", "UserDefaults"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "backgroundView"]
+- !private ["So18UITraitEnvironmentP", "choiceImage"]
+- !private ["So18UITraitEnvironmentP", "clipsToBounds"]
+- ["So18UITraitEnvironmentP", "collectionView"]
+- !private ["So18UITraitEnvironmentP", "collectionViewLayout"]
+- !private ["So18UITraitEnvironmentP", "contentMode"]
+- !private ["So18UITraitEnvironmentP", "defaults"]
+- !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
+- !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UITraitEnvironmentP", "frame"]
+- !private ["So18UITraitEnvironmentP", "image"]
+- !private ["So18UITraitEnvironmentP", "indexPath"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "mediaSelected"]
+- !private ["So18UITraitEnvironmentP", "memoChoiceLabel"]
+- ["So18UITraitEnvironmentP", "navigationController"]
+- ["So18UITraitEnvironmentP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So18UITraitEnvironmentP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So18UITraitEnvironmentP", "print"]
+- !private ["So18UITraitEnvironmentP", "scrollAuto2"]
+- !private ["So18UITraitEnvironmentP", "scrollAutomatically"]
+- !private ["So18UITraitEnvironmentP", "scrollToItem"]
+- !private ["So18UITraitEnvironmentP", "startTimer"]
+- !private ["So18UITraitEnvironmentP", "startTimer2"]
+- !private ["So18UITraitEnvironmentP", "storyboard"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So18UITraitEnvironmentP", "visibleCells"]
+- !private ["So23UIUserActivityRestoringP", "CGSize"]
+- !private ["So23UIUserActivityRestoringP", "IndexPath"]
+- !private ["So23UIUserActivityRestoringP", "Timer"]
+- !private ["So23UIUserActivityRestoringP", "UIApplication"]
+- !private ["So23UIUserActivityRestoringP", "UIDevice"]
+- !private ["So23UIUserActivityRestoringP", "UIImageView"]
+- ["So23UIUserActivityRestoringP", "UserDefaults"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "backgroundView"]
+- !private ["So23UIUserActivityRestoringP", "choiceImage"]
+- !private ["So23UIUserActivityRestoringP", "clipsToBounds"]
+- ["So23UIUserActivityRestoringP", "collectionView"]
+- !private ["So23UIUserActivityRestoringP", "collectionViewLayout"]
+- !private ["So23UIUserActivityRestoringP", "contentMode"]
+- !private ["So23UIUserActivityRestoringP", "defaults"]
+- !private ["So23UIUserActivityRestoringP", "dequeueReusableCell"]
+- !private ["So23UIUserActivityRestoringP", "didReceiveMemoryWarning"]
+- !private ["So23UIUserActivityRestoringP", "frame"]
+- !private ["So23UIUserActivityRestoringP", "image"]
+- !private ["So23UIUserActivityRestoringP", "indexPath"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "mediaSelected"]
+- !private ["So23UIUserActivityRestoringP", "memoChoiceLabel"]
+- ["So23UIUserActivityRestoringP", "navigationController"]
+- ["So23UIUserActivityRestoringP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So23UIUserActivityRestoringP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So23UIUserActivityRestoringP", "print"]
+- !private ["So23UIUserActivityRestoringP", "scrollAuto2"]
+- !private ["So23UIUserActivityRestoringP", "scrollAutomatically"]
+- !private ["So23UIUserActivityRestoringP", "scrollToItem"]
+- !private ["So23UIUserActivityRestoringP", "shared"]
+- !private ["So23UIUserActivityRestoringP", "startTimer"]
+- !private ["So23UIUserActivityRestoringP", "startTimer2"]
+- !private ["So23UIUserActivityRestoringP", "statusBarOrientation"]
+- !private ["So23UIUserActivityRestoringP", "storyboard"]
+- !private ["So23UIUserActivityRestoringP", "text"]
+- !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "visibleCells"]
+- !private ["So6UIViewC", "backgroundView"]
+- !private ["So6UIViewC", "choiceImage"]
+- !private ["So6UIViewC", "clipsToBounds"]
+- !private ["So6UIViewC", "contentMode"]
+- !private ["So6UIViewC", "dequeueReusableCell"]
+- !private ["So6UIViewC", "frame"]
+- !private ["So6UIViewC", "image"]
+- !private ["So6UIViewC", "indexPath"]
+- !private ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "memoChoiceLabel"]
+- !private ["So6UIViewC", "scrollToItem"]
+- !private ["So6UIViewC", "text"]
+- !private ["So6UIViewC", "visibleCells"]
+- ["So16UIViewControllerC", "Bool"]
+- ["So16UIViewControllerC", "CGSize"]
+- ["So16UIViewControllerC", "IndexPath"]
+- ["So16UIViewControllerC", "Int"]
+- !private ["So16UIViewControllerC", "LovedOneSelectionTableViewController"]
+- !private ["So16UIViewControllerC", "RecordingChoiceCollectionViewCell"]
+- !private ["So16UIViewControllerC", "SelectionCollectionViewController"]
+- ["So16UIViewControllerC", "Timer"]
+- !private ["So16UIViewControllerC", "UIApplication"]
+- ["So16UIViewControllerC", "UICollectionView"]
+- ["So16UIViewControllerC", "UICollectionViewCell"]
+- !private ["So16UIViewControllerC", "UICollectionViewFlowLayout"]
+- ["So16UIViewControllerC", "UICollectionViewLayout"]
+- !private ["So16UIViewControllerC", "UIDevice"]
+- !private ["So16UIViewControllerC", "UIImageView"]
+- ["So16UIViewControllerC", "UIStoryboardSegue"]
+- ["So16UIViewControllerC", "UserDefaults"]
+- ["So16UIViewControllerC", "Videos"]
+- ["So16UIViewControllerC", "Void"]
+- ["So16UIViewControllerC", "collectionView"]
+- !private ["So16UIViewControllerC", "collectionViewLayout"]
+- ["So16UIViewControllerC", "defaults"]
+- ["So16UIViewControllerC", "didReceiveMemoryWarning"]
+- ["So16UIViewControllerC", "fileName"]
+- ["So16UIViewControllerC", "hasFired1"]
+- ["So16UIViewControllerC", "hasFired2"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "mediaSelected"]
+- ["So16UIViewControllerC", "navigationController"]
+- ["So16UIViewControllerC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So16UIViewControllerC", "navigationControllerSupportedInterfaceOrientations"]
+- ["So16UIViewControllerC", "numberOfSections"]
+- ["So16UIViewControllerC", "prepare"]
+- !private ["So16UIViewControllerC", "print"]
+- ["So16UIViewControllerC", "scrollAuto2"]
+- ["So16UIViewControllerC", "scrollAutomatically"]
+- ["So16UIViewControllerC", "startTimer"]
+- ["So16UIViewControllerC", "startTimer2"]
+- !private ["So16UIViewControllerC", "storyboard"]
+- ["So16UIViewControllerC", "videoToPass"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["So14NSUserDefaultsC", "bool"]
+- !private ["So14NSUserDefaultsC", "set"]
+- ["So14NSUserDefaultsC", "standard"]
+- !private ["s14_ArrayProtocolP", "reversed"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "width"]
+- !private ["s24_DestructorSafeContainerP", "reversed"]
+- !private ["s19_HasContiguousBytesP", "reversed"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "reversed"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGSize"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "IndexPath"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Timer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIDevice"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImageView"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "UserDefaults"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bool"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "choiceImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "clipsToBounds"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "collectionView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "collectionViewLayout"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contentMode"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "current"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "defaults"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dequeueReusableCell"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "destination"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "identifier"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "indexPath"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mediaSelected"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "memoChoiceLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "minimumInteritemSpacing"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "minimumLineSpacing"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "orientation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scheduledTimer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scrollAuto2"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scrollAutomatically"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scrollDirection"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scrollToItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sectionInset"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "set"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "standard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "startTimer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "startTimer2"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "statusBarOrientation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "storyboard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "visibleCells"]
+- !private ["s21_ObjectiveCBridgeableP", "image"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "left"]
+- !private ["s21_ObjectiveCBridgeableP", "reversed"]
+- !private ["s21_ObjectiveCBridgeableP", "right"]
+- !private ["s21_ObjectiveCBridgeableP", "row"]
+- !private ["s21_ObjectiveCBridgeableP", "section"]
+- !private ["s21_ObjectiveCBridgeableP", "text"]
+- !private ["s21_ObjectiveCBridgeableP", "width"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "backgroundView"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "choiceImage"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "clipsToBounds"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "contentMode"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "frame"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "image"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "indexPath"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "memoChoiceLabel"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "scrollToItem"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "visibleCells"]
+depends-nominal:
+- !private "So21AVAudioPlayerDelegateP"
+- !private "Sa"
+- !private "SK"
+- !private "So15CALayerDelegateP"
+- !private "So6CGRectV"
+- !private "So6CGSizeV"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "So17UIViewContentModeV"
+- !private "5Macaw21ContentsInterpolationP"
+- !private "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "So23DZNEmptyDataSetDelegateP"
+- !private "So21DZNEmptyDataSetSourceP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- "SH"
+- !private "10Foundation9IndexPathV"
+- !private "5Macaw12InterpolableP"
+- !private "9AfterMemo36LovedOneSelectionTableViewControllerC"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- "So8NSCodingP"
+- "So26NSExtensionRequestHandlingP"
+- !private "So34NSFetchedResultsControllerDelegateP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "8AudioKit10OccupiableP"
+- !private "s9OptionSetP"
+- !private "Sq"
+- !private "Sk"
+- !private "Sm"
+- "SY"
+- !private "9AfterMemo33RecordingChoiceCollectionViewCellC"
+- "9AfterMemo39RecordingChoiceCollectionViewControllerC"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "So31UICollectionViewScrollDirectionV"
+- !private "So30UICollectionViewScrollPositionV"
+- !private "ST"
+- !private "s10SetAlgebraP"
+- !private "So7NSTimerC"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So13UIApplicationC"
+- !private "So24UICollectionReusableViewC"
+- !private "So16UICollectionViewC"
+- !private "So20UICollectionViewCellC"
+- "So26UICollectionViewControllerC"
+- "So26UICollectionViewDataSourceP"
+- "So24UICollectionViewDelegateP"
+- "So34UICollectionViewDelegateFlowLayoutP"
+- !private "So26UICollectionViewFlowLayoutC"
+- !private "So22UICollectionViewLayoutC"
+- "So18UIContentContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So17UICoordinateSpaceP"
+- !private "So23UIDataSourceTranslatingP"
+- !private "So8UIDeviceC"
+- !private "So19UIDeviceOrientationV"
+- !private "So13UIDynamicItemP"
+- !private "So12UIEdgeInsetsV"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So30UIFocusItemScrollableContainerP"
+- "So27UIGestureRecognizerDelegateP"
+- !private "So31UIImagePickerControllerDelegateP"
+- !private "So11UIImageViewC"
+- "So22UIInterfaceOrientationV"
+- !private "So7UILabelC"
+- "So30UINavigationControllerDelegateP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So12UIScrollViewC"
+- "So20UIScrollViewDelegateP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- "So16UIStateRestoringP"
+- !private "So12UIStoryboardC"
+- !private "So17UIStoryboardSegueC"
+- !private "So21UITableViewControllerC"
+- !private "So21UITableViewDataSourceP"
+- !private "So19UITableViewDelegateP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- "So14NSUserDefaultsC"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKitUI.framework/Modules/AudioKitUI.swiftmodule/arm64.swiftmodule"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/Eureka/Eureka.framework/Modules/Eureka.swiftmodule/arm64.swiftmodule"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/SWXMLHash/SWXMLHash.framework/Modules/SWXMLHash.swiftmodule/arm64.swiftmodule"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/CryptoSwift/CryptoSwift.framework/Modules/CryptoSwift.swiftmodule/arm64.swiftmodule"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Modules/AudioKit.swiftmodule/arm64.swiftmodule"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/Macaw/Macaw.framework/Modules/Macaw.swiftmodule/arm64.swiftmodule"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/ImageRow/ImageRow.framework/Modules/ImageRow.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ModelIO.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Accelerate.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/os.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Contacts.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/GLKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKitUI.framework/Headers/AudioKitUI.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKitUI.framework/Headers/EZAudioPlotGL.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudioFFT.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTextInputControllerOutlinedTextArea.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/Eureka/Eureka.framework/Headers/Eureka-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/SWXMLHash/SWXMLHash.framework/Headers/SWXMLHash-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialComponents-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/DZNEmptyDataSet/DZNEmptyDataSet.framework/Headers/DZNEmptyDataSet-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/CryptoSwift/CryptoSwift.framework/Headers/CryptoSwift-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/Macaw/Macaw.framework/Headers/Macaw-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/ImageRow/ImageRow.framework/Headers/ImageRow-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MDFTextAccessibility/MDFTextAccessibility.framework/Headers/MDFTextAccessibility-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudioFloatData.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialIcons+ic_radio_button_unchecked.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTextInputControllerFilled.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTextInputControllerOutlined.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCChipField.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTextField.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCMultilineTextField.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCCard.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudioDevice.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBarItemAppearance.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCSnackbarMessage.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/UIFont+MaterialScalable.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialFeatureHighlightStrings_table.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialIcons+ic_check_circle.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudioFile.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialRipple.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCFontTextStyle.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCCardScheme.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCShapeScheme.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialShapeScheme.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCButtonScheme.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCContainerScheme.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialContainerScheme.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCColorScheme.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCSemanticColorScheme.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialColorScheme.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTonalColorScheme.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCLegacyTonalColorScheme.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCLegacyColorScheme.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCFontScheme.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCLegacyFontScheme.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCAlertScheme.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCListScheme.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCChipViewScheme.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTypographyScheme.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialTypographyScheme.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKSamplerMetronome.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKMicrophoneTrackerEngine.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKTimeline.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTextInputControllerUnderline.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialIcons+ic_help_outline.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZMicrophone.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/soundpipe.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTextInputControllerBase.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKAudioUnitBase.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKGeneratorAudioUnitBase.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Firebase/CoreOnly/Sources/Firebase.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCCollectionViewStylingDelegate.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTextFieldPositioningDelegate.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCCollectionViewEditingDelegate.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCMultilineTextInputDelegate.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBarUnderlineIndicatorTemplate.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBarIndicatorTemplate.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCBottomDrawerState.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCSheetState.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTonalPalette.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCLegacyTonalPalette.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCCollectionViewStyling.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialAppBar+Theming.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialTabs+Theming.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialTextFields+Theming.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialCards+Theming.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialDialogs+Theming.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialButtons+Theming.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialChips+Theming.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialActionSheet+Theming.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialList+Theming.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTextInputControllerFilled+MaterialTheming.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTextInputControllerOutlined+MaterialTheming.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCCard+MaterialTheming.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCBaseCell+MaterialTheming.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCCardCollectionCell+MaterialTheming.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCSelfSizingStereoCell+MaterialTheming.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCButton+MaterialTheming.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCFloatingButton+MaterialTheming.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar+MaterialTheming.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCDialogPresentationController+MaterialTheming.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCActionSheetController+MaterialTheming.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCAlertController+MaterialTheming.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCAppBarViewController+MaterialTheming.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCChipView+MaterialTheming.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/CAMediaTimingFunction+MDCAnimationTiming.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialAnimationTiming.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCOverlayTransitioning.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/UICollectionViewController+MDCCardReordering.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCShapeGenerating.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCCollectionViewEditing.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCMath.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialMath.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTextInputControllerFullWidth.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTextInputControllerLegacyFullWidth.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialIcons+ic_arrow_back.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCThumbTrack.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialThumbTrack.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKSporthStack.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialIcons+ic_check.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialInk.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKitUI.framework/Headers/EZAudioDisplayLink.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthCredential.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCNumericValueLabel.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCBaseCell.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCCardCollectionCell.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCSelfSizingStereoCell.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCCollectionViewTextCell.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCCollectionViewCell.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCChipCollectionViewCell.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCPageControl.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialPageControl.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBarTextTransform.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialApplication.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialBottomNavigation.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCFloatingButton+Animation.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCAlertController+ButtonForAction.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/UIView+MDCTimingFunction.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialMaskedTransition.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCButton.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCRaisedButton.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCFloatingButton.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCButtonBarButton.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCFlatButton.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCLibraryInfo.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialLibraryInfo.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialIcons+ic_info.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudio.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKTimelineTap.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKRenderTap.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKLazyTap.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKInterop.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBar.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCNavigationBar.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialNavigationBar.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCBottomNavigationBar.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCButtonBar.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialButtonBar.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCAppBar.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialAppBar.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialBottomAppBar.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialSnackbar.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialFlexibleHeader.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCBottomDrawerHeader.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCIcons+BundleLoader.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCSlider.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialSlider.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTextInputControllerFloatingPlaceholder.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZRecorder.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialIcons+ic_reorder.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/TPCircularBuffer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCSnackbarManager.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPresetManager.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/ExceptionCatcher.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCKeyboardWatcher.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialKeyboardWatcher.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudioFileMarker.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCFontScaler.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCRippleTouchController.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCInkTouchController.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCAppBarNavigationController.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCDialogPresentationController.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCBottomDrawerPresentationController.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCBottomSheetPresentationController.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCMaskedTransitionController.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCDialogTransitionController.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCBottomDrawerTransitionController.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCBottomSheetTransitionController.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCBottomSheetController.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCActionSheetController.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCAlertController.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTextInputController.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCCollectionViewController.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBarViewController.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCAppBarViewController.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCFlexibleHeaderViewController.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCAppBarContainerViewController.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCFlexibleHeaderContainerViewController.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCBottomDrawerViewController.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCFeatureHighlightViewController.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialCards+CardThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCCardThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialCards+ShapeThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialButtons+ShapeThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialChips+ShapeThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialBottomSheet+ShapeThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCButtonShapeThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCFloatingButtonShapeThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCBottomSheetControllerShapeThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCCardsShapeThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCChipViewShapeThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialDialogs+DialogThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialButtons+ButtonThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCContainedButtonThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCOutlinedButtonThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCFloatingActionButtonThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTextButtonThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialChips+ChipThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCAlertControllerThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialInk+ColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialPageControl+ColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialBottomNavigation+ColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialNavigationBar+ColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialButtonBar+ColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialAppBar+ColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialBottomAppBar+ColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialSnackbar+ColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialFlexibleHeader+ColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialSlider+ColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialNavigationDrawer+ColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialActivityIndicator+ColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialTabs+ColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialTextFields+ColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialCards+ColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialDialogs+ColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialButtons+ColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialChips+ColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialFeatureHighlight+ColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialList+ColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialHeaderStackView+ColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialProgressView+ColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTextFieldColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCFilledTextFieldColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCOutlinedTextFieldColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCInkColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCPageControlColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCButtonColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCContainedButtonColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCOutlinedButtonColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCFloatingButtonColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTextButtonColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBarColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCNavigationBarColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCBottomNavigationBarColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCButtonBarColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCAppBarColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCBottomAppBarColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCSnackbarColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCFlexibleHeaderColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCSliderColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCBottomDrawerColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCActivityIndicatorColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCCardsColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCFeatureHighlightColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCAlertColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCListColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCHeaderStackViewColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCChipViewColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCProgressViewColorThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialSnackbar+FontThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialTabs+FontThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialTextFields+FontThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialChips+FontThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialFeatureHighlight+FontThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTextFieldFontThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBarFontThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCSnackbarFontThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCFeatureHighlightFontThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCChipViewFontThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialList+ListThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCListThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCChipViewThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialBottomNavigation+TypographyThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialNavigationBar+TypographyThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialButtonBar+TypographyThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialAppBar+TypographyThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialSnackbar+TypographyThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialTabs+TypographyThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialTextFields+TypographyThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialDialogs+TypographyThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialButtons+TypographyThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialChips+TypographyThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialFeatureHighlight+TypographyThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialList+TypographyThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTextFieldTypographyThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCButtonTypographyThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBarTypographyThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCNavigationBarTypographyThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCBottomNavigationBarTypographyThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCButtonBarTypographyThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCAppBarTypographyThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCSnackbarTypographyThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCFeatureHighlightTypographyThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCAlertTypographyThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCListTypographyThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCChipViewTypographyThemer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/vocwrapper.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTextInputCharacterCounter.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudioFloatConverter.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCOverlayObserver.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialNavigationDrawer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCShadowLayer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCShapedShadowLayer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialShadowLayer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudioPlayer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCCornerTreatment+CornerTypeInitalizer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCInkGestureRecognizer.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCFlexibleHeaderView+ShiftBehavior.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCActivityIndicator.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialActivityIndicator.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCRectangleShapeGenerator.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCPillShapeGenerator.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCSlantedRectShapeGenerator.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCCurvedRectShapeGenerator.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCPathGenerator.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialButtons+TitleColorAccessibilityMutator.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCButtonTitleColorAccessibilityMutator.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialFeatureHighlight+FeatureHighlightAccessibilityMutator.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCFeatureHighlightAccessibilityMutator.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCOverlayImplementor.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialTabs.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialUIMetrics.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCLayoutMetrics.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialTextFields.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialCards.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudioUtilities.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialThemes.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialShapes.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCPalettes.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialPalettes.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBarIndicatorAttributes.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialCollectionLayoutAttributes.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCCollectionViewLayoutAttributes.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKSampler_Typedefs.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKModulatedDelay_Typedefs.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialFeatureHighlightStrings.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialIcons+ic_settings.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/UIViewController+MaterialDialogs.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialDialogs.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialCollectionCells.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialIcons+ic_color_lens.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCIcons.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialIcons.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/UIApplication+AppExtensions.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCShadowElevations.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialShadowElevations.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialCollections.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialButtons.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialChips.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/DZNEmptyDataSet/DZNEmptyDataSet.framework/Headers/UIScrollView+EmptyDataSet.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/UIViewController+MaterialBottomSheet.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialBottomSheet.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialActionSheet.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKitUI.framework/Headers/AudioKitUI-Swift.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/Eureka/Eureka.framework/Headers/Eureka-Swift.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/SWXMLHash/SWXMLHash.framework/Headers/SWXMLHash-Swift.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/CryptoSwift/CryptoSwift.framework/Headers/CryptoSwift-Swift.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AudioKit-Swift.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/Macaw/Macaw.framework/Headers/Macaw-Swift.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/ImageRow/ImageRow.framework/Headers/ImageRow-Swift.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialFlexibleHeader+CanAlwaysExpandToMaximumHeight.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCFlexibleHeaderView+canAlwaysExpandToMaximumHeight.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialFeatureHighlight.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialIcons+ic_chevron_right.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AudioKit.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/TPCircularBuffer+Unit.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AudioEngineUnit.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKAudioUnit.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/BufferedAudioUnit.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKWaveTableAudioUnit.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKBankAudioUnit.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKOscillatorBankAudioUnit.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKFMOscillatorBankAudioUnit.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPWMOscillatorBankAudioUnit.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKMorphingOscillatorBankAudioUnit.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPhaseDistortionOscillatorBankAudioUnit.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKMandolinAudioUnit.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKBalancerAudioUnit.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKOfflineRenderAudioUnit.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKAmplitudeTrackerAudioUnit.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKFrequencyTrackerAudioUnit.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKDiskStreamerAudioUnit.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKTesterAudioUnit.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKRhinoGuitarProcessorAudioUnit.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKDynaRageCompressorAudioUnit.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKOperationGeneratorAudioUnit.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKOperationEffectAudioUnit.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKCallbackInstrumentAudioUnit.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTextInputControllerLegacyDefault.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBarExtendedAlignment.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBarAlignment.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCSnackbarAlignment.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCEdgeTreatment.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTriangleEdgeTreatment.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCCornerTreatment.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCRoundedCornerTreatment.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCCurvedCornerTreatment.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCCutCornerTreatment.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKitUI.framework/Headers/EZPlot.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKitUI.framework/Headers/EZAudioPlot.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialList.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/TPCircularBuffer+AudioBufferList.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCCollectionViewFlowLayout.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCChipCollectionViewFlowLayout.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTextInput.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZOutput.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTabBarIndicatorContext.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/dr_wav.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCThumbView.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCShapedView.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCSnackbarMessageView.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCRippleView.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCStatefulRippleView.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTextInputUnderlineView.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCHeaderStackView.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialHeaderStackView.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCInkView.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCChipView.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCBottomAppBarView.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCFlexibleHeaderView.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTextInputBorderView.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCAlertControllerView.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCProgressView.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialProgressView.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCFeatureHighlightView.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCIntrinsicHeightTextView.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCOverlayWindow.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialOverlayWindow.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialOverlay.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCTypography.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/UIFontDescriptor+MaterialTypography.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/UIFont+MaterialTypography.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialTypography.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialShapeLibrary.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MDCShapeCategory.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/UIFont+MaterialSimpleEquality.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MDFTextAccessibility/MDFTextAccessibility.framework/Headers/MDFTextAccessibility.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Headers/MaterialIcons+ic_more_horiz.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKitUI.framework/Modules/module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/Eureka/Eureka.framework/Modules/module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/SWXMLHash/SWXMLHash.framework/Modules/module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MaterialComponents/MaterialComponents.framework/Modules/module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/DZNEmptyDataSet/DZNEmptyDataSet.framework/Modules/module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/CryptoSwift/CryptoSwift.framework/Modules/module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Modules/module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/Macaw/Macaw.framework/Modules/module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/ImageRow/ImageRow.framework/Modules/module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/MDFTextAccessibility/MDFTextAccessibility.framework/Modules/module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKZitaReverbDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKFlatFrequencyResponseReverbDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKChowningReverbDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKCostelloReverbDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKCombFilterReverbDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKAmplitudeEnvelopeDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKWhiteNoiseDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPinkNoiseDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKBrownianNoiseDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKFluteDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPluckedStringDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKAutoWahDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKSynthDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKDCBlockDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKTanhDistortionDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKConvolutionDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKTremoloDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKRhodesPianoDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKDripDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKMetalBarDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKMoogLadderDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPhaseLockedVocoderDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKBitCrusherDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKShakerDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKSamplerDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPannerDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKAutoPannerDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKClipperDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPhaserDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPitchShifterDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKStereoFieldLimiterDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKRolandTB303FilterDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKModalResonanceFilterDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKToneFilterDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKBandPassButterworthFilterDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKHighPassButterworthFilterDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKLowPassButterworthFilterDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKBandRejectButterworthFilterDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKEqualizerFilterDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKHighShelfParametricEqualizerFilterDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKLowShelfParametricEqualizerFilterDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPeakingParametricEqualizerFilterDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKKorgLowPassFilterDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKThreePoleLowpassFilterDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKFormantFilterDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKResonantFilterDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKToneComplementFilterDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKBoosterDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKDynamicRangeCompressorDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKOscillatorDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKFMOscillatorDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPWMOscillatorDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKMorphingOscillatorDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPhaseDistortionOscillatorDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKStringResonatorDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKTubularBellsDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKVocalTractDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKClarinetDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKModulatedDelayDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKVariableDelayDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKStereoDelayDSP.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKDSPBase.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKSoundpipeDSPBase.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKParameterRampBase.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKCoreSynth.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/DSPKernel.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKDSPKernel.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKBankDSPKernel.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKRhinoGuitarProcessorDSPKernel.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKDynaRageCompressorDSPKernel.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKSoundpipeKernel.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKParameterRamp.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKExponentialParameterRamp.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKLinearParameterRamp.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKCoreSampler.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/ParameterRamper.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/BufferedAudioBus.hpp"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKModulatedDelay.hpp"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/LocalAuthentication.framework/Headers/LocalAuthentication.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/os.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Contacts.framework/Headers/Contacts.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AVKit.framework/Headers/AVKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "44b3d9a8ead5a157d0521bbbdc942053"

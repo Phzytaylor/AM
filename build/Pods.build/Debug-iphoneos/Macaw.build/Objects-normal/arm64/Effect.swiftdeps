@@ -1,0 +1,91 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Effect"
+provides-nominal:
+- "5Macaw6EffectC"
+provides-member:
+- ["5Macaw6EffectC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- !private "BlendEffect"
+- "Color"
+- "ColorMatrix"
+- !private "ColorMatrixEffect"
+- "Double"
+- "Effect"
+- !private "GaussianBlur"
+- !private "OffsetEffect"
+depends-member:
+- !private ["5Macaw11BlendEffectC", "init"]
+- !private ["5Macaw5ColorC", "black"]
+- !private ["5Macaw11ColorMatrixC", "init"]
+- !private ["5Macaw17ColorMatrixEffectC", "init"]
+- !private ["5Macaw6EffectC", "BlendEffect"]
+- ["5Macaw6EffectC", "Color"]
+- ["5Macaw6EffectC", "ColorMatrix"]
+- !private ["5Macaw6EffectC", "ColorMatrixEffect"]
+- ["5Macaw6EffectC", "Double"]
+- ["5Macaw6EffectC", "Effect"]
+- !private ["5Macaw6EffectC", "GaussianBlur"]
+- !private ["5Macaw6EffectC", "OffsetEffect"]
+- ["5Macaw6EffectC", "blend"]
+- ["5Macaw6EffectC", "blur"]
+- ["5Macaw6EffectC", "dropShadow"]
+- ["5Macaw6EffectC", "init"]
+- ["5Macaw6EffectC", "input"]
+- ["5Macaw6EffectC", "mapColor"]
+- ["5Macaw6EffectC", "offset"]
+- ["5Macaw6EffectC", "setColor"]
+- !private ["SQ", "black"]
+- !private ["5Macaw4FillC", "black"]
+- !private ["5Macaw17FillInterpolationP", "black"]
+- !private ["5Macaw12GaussianBlurC", "init"]
+- !private ["5Macaw12InterpolableP", "black"]
+- !private ["5Macaw12OffsetEffectC", "init"]
+- !private ["5Macaw12OffsetEffectC", "setColor"]
+depends-nominal:
+- !private "5Macaw11BlendEffectC"
+- !private "5Macaw5ColorC"
+- !private "5Macaw11ColorMatrixC"
+- !private "5Macaw17ColorMatrixEffectC"
+- "5Macaw6EffectC"
+- !private "SQ"
+- !private "5Macaw4FillC"
+- !private "5Macaw17FillInterpolationP"
+- !private "5Macaw12GaussianBlurC"
+- !private "5Macaw12InterpolableP"
+- !private "5Macaw12OffsetEffectC"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/SWXMLHash/SWXMLHash.framework/Modules/SWXMLHash.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/SWXMLHash/SWXMLHash-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/Macaw/Macaw-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/SWXMLHash/SWXMLHash.framework/Headers/SWXMLHash-Swift.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphoneos/Macaw.build/unextended-module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphoneos/SWXMLHash.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "bfaee5d1204d2becab7d253691e93eab"

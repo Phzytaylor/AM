@@ -1,0 +1,11 @@
+framework module ImageRow {
+  umbrella header "ImageRow-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module ImageRow.Swift {
+    header "ImageRow-Swift.h"
+    requires objc
+}

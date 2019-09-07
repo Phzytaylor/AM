@@ -28,7 +28,7 @@ class DownLoadsTableViewController: UITableViewController, DZNEmptyDataSetDelega
     let memoHeaderView = GeneralHeaderView()
     
     func configureAppBar(){
-        self.addChildViewController(appBar.headerViewController)
+        self.addChild(appBar.headerViewController)
         appBar.navigationBar.backgroundColor = .clear
         appBar.navigationBar.title = nil
         
@@ -102,7 +102,7 @@ class DownLoadsTableViewController: UITableViewController, DZNEmptyDataSetDelega
             
            
             
-            var videoMemoInfo = videosToDownload[indexPath.row]
+            let videoMemoInfo = videosToDownload[indexPath.row]
             
             let lovedOne = videoMemoInfo.lovedOne
             let videoStorageURL = videoMemoInfo.videoStorageURL
@@ -112,20 +112,36 @@ class DownLoadsTableViewController: UITableViewController, DZNEmptyDataSetDelega
             let uuID = videoMemoInfo.uuID
             let videoOnDeviceURL = videoMemoInfo.videoOnDeviceURL
             let createdDate = videoMemoInfo.createdDate
+            let key = videoMemoInfo.key
+            let relation = videoMemoInfo.relation
             
             
+            guard let uuid = uuID else {
+                return
+            }
             
-            if !checkForEntry(memoType: "Videos", uuID: uuID){
+            guard let url = videoStorageURL else {
+                return
+            }
+            
+            guard let onDevice = videoOnDeviceURL else {return}
+            
+            guard let relDate = releaseDate else {return}
+            
+            guard let cretDate = createdDate else {return}
+            
+            
+            if !checkForEntry(memoType: "Videos", uuID: uuid){
                 // Create a reference to the file we want to download
                 
-                let storageRef = storage.reference(forURL: videoStorageURL)
+                let storageRef = storage.reference(forURL: url)
                 
                 // Local directory to be saved to
                 let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
                 
                 let documentsDirectory: URL = URL(fileURLWithPath: paths[0])
                 let dataPath =
-                    documentsDirectory.appendingPathComponent(videoOnDeviceURL)
+                    documentsDirectory.appendingPathComponent(onDevice)
                 
                 
                 // Start the download
@@ -159,20 +175,22 @@ class DownLoadsTableViewController: UITableViewController, DZNEmptyDataSetDelega
                     let video = Videos(context: managedContext)
                     
                     let dateFormatter = DateFormatter()
-                    dateFormatter.dateFormat = "EEEE, MM-dd-yyyy" //Your date format
-                    guard let date = dateFormatter.date(from: releaseDate) as? NSDate else {return}
+                    dateFormatter.dateFormat =  "M-d-yyyy" //Your date format
+                    guard let date = dateFormatter.date(from: relDate) as NSDate? else {return}
                     
-                    guard let createdDateString = dateFormatter.date(from: createdDate) as? NSDate else {return}
+                    guard let createdDateString = dateFormatter.date(from: cretDate) as NSDate? else {return}
+                    
+                    guard let relTime = releaseTime else {return}
                     
                     let timeFormatter = DateFormatter()
                     timeFormatter.dateFormat = "h:mm a"
-                    guard let time = timeFormatter.date(from: releaseTime) as? NSDate else {return}
+                    guard let time = timeFormatter.date(from: relTime) as NSDate? else {return}
                     
                     guard let savedImage = self.previewImageForLocalVideo(url: dataPath) else {
                         return
                     }
                     
-                    let savedImageData = UIImagePNGRepresentation(savedImage) as NSData?
+                    let savedImageData = savedImage.pngData() as NSData?
                     
                     
                     video.dateToBeReleased = date
@@ -182,9 +200,24 @@ class DownLoadsTableViewController: UITableViewController, DZNEmptyDataSetDelega
                     video.releaseTime = time
                     video.thumbNail = savedImageData
                     video.urlPath = videoOnDeviceURL
-                    video.videoTag = videoTag
+                    video.mileStone = videoTag
                     video.uuID = uuID
                     video.creationDate = createdDateString
+                    
+                    
+                    
+                    if relation == "undefined" {
+                        
+                        guard let userID = Auth.auth().currentUser?.uid else {return}
+                        guard let dataKey = key else {return}
+                        
+                        let relationRef = Database.database().reference(withPath: "videos").child(userID).child(dataKey)
+                        
+                        relationRef.updateChildValues(["relation":self.personPassed?.relation as Any])
+                        
+                        
+                    }
+                    
                     
                     if let videos = self.personPassed?.videos?.mutableCopy() as? NSMutableOrderedSet {
                         videos.add(video)
@@ -197,6 +230,7 @@ class DownLoadsTableViewController: UITableViewController, DZNEmptyDataSetDelega
                     do {
                         try managedContext.save()
                         print(" I saved")
+                        
                         
                         
                         //self.performSegue(withIdentifier: "unwindToMenu", sender: self)
@@ -220,7 +254,7 @@ class DownLoadsTableViewController: UITableViewController, DZNEmptyDataSetDelega
                 
                 // Errors only occur in the "Failure" case
                 downloadTask.observe(.failure) { snapshot in
-                    guard let errorCode = (snapshot.error as? NSError)?.code else {
+                    guard let errorCode = (snapshot.error as NSError?)?.code else {
                         return
                     }
                     guard let error = StorageErrorCode(rawValue: errorCode) else {
@@ -258,7 +292,7 @@ class DownLoadsTableViewController: UITableViewController, DZNEmptyDataSetDelega
             
            
         case "audio":
-            var voiceMemoInfo = voicesToDownload[indexPath.row]
+            let voiceMemoInfo = voicesToDownload[indexPath.row]
             
             let lovedOne = voiceMemoInfo.lovedOne
             let audioStorageURL = voiceMemoInfo.audioStorageURL
@@ -268,22 +302,28 @@ class DownLoadsTableViewController: UITableViewController, DZNEmptyDataSetDelega
             let uuID = voiceMemoInfo.uuID
             let audioOnDeviceURL = voiceMemoInfo.audioOnDeviceURL
             let createdDate = voiceMemoInfo.createdDate
+            let relation = voiceMemoInfo.relation
+            let key = voiceMemoInfo.key
             
-            if !checkForEntry(memoType: "VoiceMemos", uuID: uuID){
+            guard let uuid = uuID else {return}
+            
+            if !checkForEntry(memoType: "VoiceMemos", uuID: uuid){
                 
                 
                 
                 
                 // Create a reference to the file we want to download
-                
-                let storageRef = storage.reference(forURL: audioStorageURL)
+                guard let audioStor = audioStorageURL else {return}
+                let storageRef = storage.reference(forURL: audioStor)
                 
                 // Local directory to be saved to
                 let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
                 
                 let documentsDirectory: URL = URL(fileURLWithPath: paths[0])
+                
+                guard let audioOnDevURL = audioOnDeviceURL else {return}
                 let dataPath =
-                    documentsDirectory.appendingPathComponent(audioOnDeviceURL)
+                    documentsDirectory.appendingPathComponent(audioOnDevURL)
                 
                 
                 // Start the download
@@ -317,13 +357,19 @@ class DownLoadsTableViewController: UITableViewController, DZNEmptyDataSetDelega
                     
                     let dateFormatter = DateFormatter()
                     dateFormatter.dateFormat = "EEEE, MM-dd-yyyy" //Your date format
-                    guard let date = dateFormatter.date(from: releaseDate) as? NSDate else {return}
                     
-                    guard let createdDateString = dateFormatter.date(from: createdDate) as? NSDate else {return}
+                    guard let relDate = releaseDate else {return}
+                    guard let date = dateFormatter.date(from: relDate) as NSDate? else {return}
+                    
+                    guard let cretDate = createdDate else {return}
+                    guard let createdDateString = dateFormatter.date(from: cretDate) as NSDate? else {return}
                     
                     let timeFormatter = DateFormatter()
                     timeFormatter.dateFormat = "h:mm a"
-                    guard let time = timeFormatter.date(from: releaseTime) as? NSDate else {return}
+                    
+                    guard let relTime = releaseTime else {return}
+                    
+                    guard let time = timeFormatter.date(from: relTime) as NSDate? else {return}
                     
                     guard let savedImage = self.previewImageForLocalVideo(url: dataPath) else {
                         return
@@ -338,9 +384,23 @@ class DownLoadsTableViewController: UITableViewController, DZNEmptyDataSetDelega
                     audio.isWrittenMemo = false
                     audio.releaseTime = time
                     audio.urlPath = audioOnDeviceURL
-                    audio.audioTag = audioTag
+                    audio.mileStone = audioTag
                     audio.uuID = uuID
                     audio.creationDate = createdDateString
+                    
+                    
+                    if relation == "undefined" {
+                        
+                        guard let userID = Auth.auth().currentUser?.uid else {return}
+                        
+                        guard let theKey = key else {return}
+                        
+                        let relationRef = Database.database().reference(withPath: "audioMemos").child(userID).child(theKey)
+                        
+                        relationRef.updateChildValues(["relation":self.personPassed?.relation as Any])
+                        
+                        
+                    }
                     
                     if let audios = self.personPassed?.voice?.mutableCopy() as? NSMutableOrderedSet {
                         audios.add(audio)
@@ -377,7 +437,7 @@ class DownLoadsTableViewController: UITableViewController, DZNEmptyDataSetDelega
                 
                 // Errors only occur in the "Failure" case
                 downloadTask.observe(.failure) { snapshot in
-                    guard let errorCode = (snapshot.error as? NSError)?.code else {
+                    guard let errorCode = (snapshot.error as NSError?)?.code else {
                         return
                     }
                     guard let error = StorageErrorCode(rawValue: errorCode) else {
@@ -415,7 +475,7 @@ class DownLoadsTableViewController: UITableViewController, DZNEmptyDataSetDelega
             
         case "text":
             
-            var textMemoInfo = textMemosToDownload[indexPath.row]
+            let textMemoInfo = textMemosToDownload[indexPath.row]
             
             
             
@@ -426,19 +486,28 @@ class DownLoadsTableViewController: UITableViewController, DZNEmptyDataSetDelega
             let uuID = textMemoInfo.uuID
             let memoText = textMemoInfo.memoText
             let createdDate = textMemoInfo.createdDate
+            let relation = textMemoInfo.relation
+            let key = textMemoInfo.key
             
-            if !checkForEntry(memoType: "Written", uuID: uuID) {
+            guard let uuid = uuID else {return}
+            
+            if !checkForEntry(memoType: "Written", uuID: uuid) {
                 let text = Written(context: managedContext)
                 
                 let dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = "EEEE, MM-dd-yyyy" //Your date format
-                guard let date = dateFormatter.date(from: releaseDate) as? NSDate else {return}
+                dateFormatter.dateFormat = "M-d-yyyy" //Your date format
                 
-                guard let createdDateString = dateFormatter.date(from: createdDate) as? NSDate else {return}
+                guard let relDate = releaseDate else {return}
+                guard let date = dateFormatter.date(from: relDate) as NSDate? else {return}
+                
+                guard let cretDate = createdDate else {return}
+                guard let createdDateString = dateFormatter.date(from: cretDate) as NSDate? else {return}
                 
                 let timeFormatter = DateFormatter()
                 timeFormatter.dateFormat = "h:mm a"
-                guard let time = timeFormatter.date(from: releaseTime) as? NSDate else {return}
+                
+                guard let relTime = releaseTime else {return}
+                guard let time = timeFormatter.date(from: relTime) as NSDate? else {return}
                 
                 
                 
@@ -451,7 +520,7 @@ class DownLoadsTableViewController: UITableViewController, DZNEmptyDataSetDelega
                 text.isWrittenMemo = true
                 text.releaseTime = time
                 text.memoText = memoText
-                text.writtenTag = writtenTag
+                text.mileStone = writtenTag
                 text.uuID = uuID
                 text.creationDate = createdDateString
                 
@@ -461,6 +530,16 @@ class DownLoadsTableViewController: UITableViewController, DZNEmptyDataSetDelega
                 }
                 
                 
+                if relation == "undefined" {
+                    
+                    guard let userID = Auth.auth().currentUser?.uid else {return}
+                    guard let theKey = key else {return}
+                    let relationRef = Database.database().reference(withPath: "writtenMemos").child(userID).child(theKey)
+                    
+                    relationRef.updateChildValues(["relation":self.personPassed?.relation as Any])
+                    
+                    
+                }
                 
                 
                 do {
@@ -510,7 +589,7 @@ class DownLoadsTableViewController: UITableViewController, DZNEmptyDataSetDelega
         title = "Downloads"
         configureAppBar()
         appBar.navigationBar.tintColor = .white
-         self.appBar.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+         self.appBar.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
 //        self.addChildViewController(appBar.headerViewController)
 //        self.appBar.headerViewController.headerView.trackingScrollView = self.tableView
 //        appBar.addSubviewsToParent()
@@ -606,7 +685,7 @@ class DownLoadsTableViewController: UITableViewController, DZNEmptyDataSetDelega
     
     func title(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString? {
         let str = "You haven't uploaded any memos yet!"
-        let attrs = [NSAttributedStringKey.font: UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)]
+        let attrs = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: UIFont.TextStyle.headline)]
         return NSAttributedString(string: str, attributes: attrs)
     }
     
@@ -681,28 +760,28 @@ class DownLoadsTableViewController: UITableViewController, DZNEmptyDataSetDelega
         
         switch selectedMemoTypePassed {
         case "video":
-             var someText = videosToDownload[indexPath.row]
+            let someText = videosToDownload[indexPath.row]
             
-             var someTextTo = someText.videoOnDeviceURL
+            let someTextTo = someText.videoOnDeviceURL
              
-             cell.textLabel?.text = someTextTo
+             cell.fileNameLabel.text = someTextTo
              
              return cell
         case "audio":
-            var someText = voicesToDownload[indexPath.row]
+            let someText = voicesToDownload[indexPath.row]
             
-            var someTextTo = someText.audioStorageURL
+            let someTextTo = someText.audioStorageURL
             
-            cell.textLabel?.text = someTextTo
+            cell.fileNameLabel.text = someTextTo
             
             return cell
         case "text":
             
-            var someText = textMemosToDownload[indexPath.row]
+            let someText = textMemosToDownload[indexPath.row]
             
-            var someTextTo = someText.releaseDate
+            let someTextTo = someText.releaseDate
             
-            cell.textLabel?.text = someTextTo
+            cell.fileNameLabel.text = someTextTo
             
             return cell
         default:
@@ -784,7 +863,7 @@ extension DownLoadsTableViewController {
         let asset = AVAsset(url: url)
         let imageGenerator = AVAssetImageGenerator(asset: asset)
         imageGenerator.appliesPreferredTrackTransform = true
-        let tVal = NSValue(time: CMTimeMake(12, 1)) as! CMTime
+        let tVal = NSValue(time: CMTimeMake(value: 12, timescale: 1)) as! CMTime
         do {
             let imageRef = try imageGenerator.copyCGImage(at: tVal, actualTime: nil)
             return UIImage(cgImage: imageRef)

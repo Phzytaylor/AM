@@ -11,6 +11,7 @@ import UIKit
 class DownloadTableViewCell: UITableViewCell {
     @IBOutlet weak var progressView: CircularLoaderView!
     
+    @IBOutlet weak var fileNameLabel: UILabel!
     
     
     

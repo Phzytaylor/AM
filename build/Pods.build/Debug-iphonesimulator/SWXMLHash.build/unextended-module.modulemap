@@ -1,0 +1,10 @@
+framework module SWXMLHash {
+  umbrella header "SWXMLHash-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module SWXMLHash.__Swift {
+    exclude header "SWXMLHash-Swift.h"
+}

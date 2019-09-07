@@ -25,13 +25,19 @@ class MemoHeaderView: UIView {
         let imageView = UIImageView(image: #imageLiteral(resourceName: "Transparent BG"))
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
-        //imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.widthAnchor.constraint(equalToConstant: 50.0).isActive = true
-        imageView.heightAnchor.constraint(equalToConstant: 50.0).isActive = true
-        imageView.frame = CGRect(x: 155, y: 30, width: 70, height: 70)
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.widthAnchor.constraint(equalToConstant: 75.0).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: 75.0).isActive = true
+        
+//        imageView.frame = CGRect(x: 155, y: 30, width: 70, height: 70)
+        
+        
         //imageView.backgroundColor = .red
         return imageView
     }()
+    
+    var imageViewCenterCon: NSLayoutConstraint?
+    var imageViewYCon: NSLayoutConstraint?
     
     let secondImageView: UIImageView = {
         let imageView = UIImageView(image:#imageLiteral(resourceName: "iStock-174765643 (2)"))

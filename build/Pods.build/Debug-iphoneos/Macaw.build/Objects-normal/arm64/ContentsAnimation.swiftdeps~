@@ -1,0 +1,206 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ContentsAnimation"
+provides-nominal:
+- "5Macaw17ContentsAnimationC"
+provides-member:
+- ["5Macaw17ContentsAnimationC", ""]
+- ["5Macaw18AnimatableVariableC", ""]
+- ["5Macaw18AnimatableVariableC", "animation"]
+- ["5Macaw18AnimatableVariableC", "animation"]
+- ["5Macaw18AnimatableVariableC", "animation"]
+- ["5Macaw18AnimatableVariableC", "animate"]
+- ["5Macaw18AnimatableVariableC", "animate"]
+- ["5Macaw18AnimatableVariableC", "animate"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "-"
+- "AnimatableVariable"
+- "Animation"
+- "AnimationImpl"
+- "AssignmentPrecedence"
+- "Bool"
+- "CastingPrecedence"
+- "ContentsAnimation"
+- "ContentsInterpolation"
+- "Double"
+- "Group"
+- "Node"
+- "UInt"
+depends-member:
+- ["5Macaw18AnimatableVariableC", "Animation"]
+- !private ["5Macaw18AnimatableVariableC", "ContentsAnimation"]
+- ["5Macaw18AnimatableVariableC", "ContentsInterpolation"]
+- ["5Macaw18AnimatableVariableC", "Double"]
+- !private ["5Macaw18AnimatableVariableC", "Group"]
+- ["5Macaw18AnimatableVariableC", "Node"]
+- ["5Macaw18AnimatableVariableC", "animate"]
+- ["5Macaw18AnimatableVariableC", "animation"]
+- !private ["5Macaw18AnimatableVariableC", "node"]
+- ["5Macaw9AnimationC", "Animation"]
+- ["5Macaw9AnimationC", "Bool"]
+- !private ["5Macaw9AnimationC", "ContentsAnimation"]
+- ["5Macaw9AnimationC", "Double"]
+- ["5Macaw9AnimationC", "Group"]
+- ["5Macaw9AnimationC", "Node"]
+- ["5Macaw9AnimationC", "UInt"]
+- !private ["5Macaw9AnimationC", "completion"]
+- !private ["5Macaw9AnimationC", "duration"]
+- !private ["5Macaw9AnimationC", "logicalFps"]
+- !private ["5Macaw9AnimationC", "node"]
+- !private ["5Macaw9AnimationC", "play"]
+- !private ["5Macaw9AnimationC", "progress"]
+- ["5Macaw9AnimationC", "reverse"]
+- !private ["5Macaw9AnimationC", "timeFactory"]
+- !private ["5Macaw9AnimationC", "type"]
+- ["5Macaw13AnimationImplC", "Animation"]
+- ["5Macaw13AnimationImplC", "Bool"]
+- !private ["5Macaw13AnimationImplC", "ContentsAnimation"]
+- ["5Macaw13AnimationImplC", "Double"]
+- ["5Macaw13AnimationImplC", "Group"]
+- ["5Macaw13AnimationImplC", "Node"]
+- ["5Macaw13AnimationImplC", "UInt"]
+- ["5Macaw13AnimationImplC", ""]
+- !private ["5Macaw13AnimationImplC", "completion"]
+- !private ["5Macaw13AnimationImplC", "duration"]
+- ["5Macaw13AnimationImplC", "init"]
+- !private ["5Macaw13AnimationImplC", "logicalFps"]
+- !private ["5Macaw13AnimationImplC", "node"]
+- !private ["5Macaw13AnimationImplC", "play"]
+- !private ["5Macaw13AnimationImplC", "progress"]
+- ["5Macaw13AnimationImplC", "reverse"]
+- !private ["5Macaw13AnimationImplC", "timeFactory"]
+- !private ["5Macaw13AnimationImplC", "type"]
+- !private ["5Macaw13AnimationTypeO", "contents"]
+- ["Sa", "deinit"]
+- ["5Macaw14BasicAnimationC", "Animation"]
+- ["5Macaw14BasicAnimationC", "Bool"]
+- !private ["5Macaw14BasicAnimationC", "ContentsAnimation"]
+- ["5Macaw14BasicAnimationC", "Double"]
+- ["5Macaw14BasicAnimationC", "Group"]
+- ["5Macaw14BasicAnimationC", "Node"]
+- ["5Macaw14BasicAnimationC", "UInt"]
+- !private ["5Macaw14BasicAnimationC", "completion"]
+- !private ["5Macaw14BasicAnimationC", "duration"]
+- !private ["5Macaw14BasicAnimationC", "logicalFps"]
+- !private ["5Macaw14BasicAnimationC", "node"]
+- !private ["5Macaw14BasicAnimationC", "play"]
+- !private ["5Macaw14BasicAnimationC", "progress"]
+- ["5Macaw14BasicAnimationC", "reverse"]
+- !private ["5Macaw14BasicAnimationC", "timeFactory"]
+- !private ["5Macaw14BasicAnimationC", "type"]
+- !private ["s7CVarArgP", "contentsVar"]
+- ["5Macaw17ContentsAnimationC", "Animation"]
+- ["5Macaw17ContentsAnimationC", "Bool"]
+- !private ["5Macaw17ContentsAnimationC", "ContentsAnimation"]
+- ["5Macaw17ContentsAnimationC", "Double"]
+- ["5Macaw17ContentsAnimationC", "Group"]
+- ["5Macaw17ContentsAnimationC", "Node"]
+- ["5Macaw17ContentsAnimationC", "UInt"]
+- !private ["5Macaw17ContentsAnimationC", "completion"]
+- ["5Macaw17ContentsAnimationC", "deinit"]
+- !private ["5Macaw17ContentsAnimationC", "duration"]
+- ["5Macaw17ContentsAnimationC", "init"]
+- !private ["5Macaw17ContentsAnimationC", "logicalFps"]
+- !private ["5Macaw17ContentsAnimationC", "node"]
+- !private ["5Macaw17ContentsAnimationC", "play"]
+- !private ["5Macaw17ContentsAnimationC", "progress"]
+- ["5Macaw17ContentsAnimationC", "reverse"]
+- !private ["5Macaw17ContentsAnimationC", "timeFactory"]
+- !private ["5Macaw17ContentsAnimationC", "type"]
+- !private ["s28CustomDebugStringConvertibleP", "contentsVar"]
+- !private ["s23CustomStringConvertibleP", "contentsVar"]
+- !private ["5Macaw8DrawableC", "contentsVar"]
+- !private ["SQ", "ContentsAnimation"]
+- ["SQ", ""]
+- !private ["SQ", "completion"]
+- !private ["SQ", "contents"]
+- !private ["SQ", "contentsVar"]
+- !private ["SQ", "duration"]
+- !private ["SQ", "init"]
+- !private ["SQ", "logicalFps"]
+- !private ["SQ", "node"]
+- !private ["SQ", "play"]
+- !private ["SQ", "progress"]
+- !private ["SQ", "timeFactory"]
+- !private ["SQ", "type"]
+- !private ["5Macaw5GroupC", "contentsVar"]
+- !private ["SH", "ContentsAnimation"]
+- ["SH", ""]
+- !private ["SH", "completion"]
+- !private ["SH", "contents"]
+- !private ["SH", "contentsVar"]
+- !private ["SH", "duration"]
+- !private ["SH", "init"]
+- !private ["SH", "logicalFps"]
+- !private ["SH", "node"]
+- !private ["SH", "play"]
+- !private ["SH", "progress"]
+- !private ["SH", "timeFactory"]
+- !private ["SH", "type"]
+- !private ["So8NSObjectC", "contentsVar"]
+- !private ["So8NSObjectP", "contentsVar"]
+- !private ["5Macaw4NodeC", "contentsVar"]
+- ["5Macaw8VariableC", "Animation"]
+- !private ["5Macaw8VariableC", "ContentsAnimation"]
+- ["5Macaw8VariableC", "ContentsInterpolation"]
+- ["5Macaw8VariableC", "Double"]
+- !private ["5Macaw8VariableC", "Group"]
+- ["5Macaw8VariableC", "Node"]
+- ["5Macaw8VariableC", "animate"]
+- ["5Macaw8VariableC", "animation"]
+- !private ["5Macaw8VariableC", "node"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contentsVar"]
+depends-nominal:
+- "5Macaw18AnimatableVariableC"
+- "5Macaw9AnimationC"
+- "5Macaw13AnimationImplC"
+- !private "5Macaw13AnimationTypeO"
+- "Sa"
+- "5Macaw14BasicAnimationC"
+- !private "s7CVarArgP"
+- "5Macaw17ContentsAnimationC"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s23CustomStringConvertibleP"
+- !private "5Macaw8DrawableC"
+- "SQ"
+- !private "5Macaw5GroupC"
+- "SH"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "5Macaw4NodeC"
+- "5Macaw8VariableC"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/SWXMLHash/SWXMLHash.framework/Modules/SWXMLHash.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/SWXMLHash/SWXMLHash-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/Macaw/Macaw-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/SWXMLHash/SWXMLHash.framework/Headers/SWXMLHash-Swift.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphoneos/Macaw.build/unextended-module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphoneos/SWXMLHash.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "0e9bf700a6f0be98eb36980ba227c999"

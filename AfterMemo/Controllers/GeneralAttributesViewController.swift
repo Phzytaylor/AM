@@ -16,7 +16,7 @@ class GeneralAttributesViewController: FormViewController {
     let memoHeaderView = GeneralHeaderView()
     
     func configureAppBar(){
-        self.addChildViewController(appBar.headerViewController)
+        self.addChild(appBar.headerViewController)
         appBar.navigationBar.backgroundColor = .clear
         appBar.navigationBar.title = nil
         
@@ -46,7 +46,7 @@ class GeneralAttributesViewController: FormViewController {
                 configureAppBar()
         appBar.navigationBar.tintColor = .white
         title = "Attributes"
-         self.appBar.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+         self.appBar.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
 
 //        self.addChildViewController(appBar.headerViewController)
 //        self.appBar.headerViewController.headerView.trackingScrollView = self.tableView
@@ -54,25 +54,33 @@ class GeneralAttributesViewController: FormViewController {
 //
 //        MDCAppBarColorThemer.applySemanticColorScheme(ApplicationScheme.shared.colorScheme, to: self.appBar)
         
-        form +++ Section()
+       
+        
+        form +++ Section(footer: "This is only a preview")
             <<< TextRow(){ row in
-                row.title = "Tag"
+                row.title = "Mile Stone"
                 row.value = memoTag
+                row.baseCell.isUserInteractionEnabled = false
                 }
             
             <<< TextRow() { row in
                 row.title = "Date To Be Released"
                row.value = releaseDate
+                row.baseCell.isUserInteractionEnabled = false
                 }
             <<< TextRow() { row in
                 row.title = "Time To Be Released"
                 row.value = releaseTime
+                row.baseCell.isUserInteractionEnabled = false
+                
+               
         }
-            
-        
-
 
         // Do any additional setup after loading the view.
+    }
+    
+    func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
+        return false
     }
 
     override func didReceiveMemoryWarning() {

@@ -9,7 +9,14 @@
 import UIKit
 import MaterialComponents
 
+protocol SelectionDelegate: class {
+    func editLovedOnePressed(_ cell:SelectionCollectionViewCell)
+}
+
 class SelectionCollectionViewCell: MDCCardCollectionCell {
+   
+    weak var delegate: SelectionDelegate?
+    
     @IBOutlet weak var backingView: UIView!
     
     @IBOutlet weak var containerView: UIView!
@@ -25,7 +32,15 @@ class SelectionCollectionViewCell: MDCCardCollectionCell {
     @IBOutlet weak var videoCount: UILabel!
     @IBOutlet weak var audioCount: UILabel!
     @IBOutlet weak var textCount: UILabel!
+    @IBOutlet weak var relationLabel: UILabel!
     
+    @IBAction func editLovedOneAction(_ sender: UIButton) {
+        delegate?.editLovedOnePressed(self)
+        
+        
+        
+    }
+    @IBOutlet weak var editLovedOne: UIButton!
     let seperatorView: UIView = {
         let view = UIView()
         view.backgroundColor = .lightGray
@@ -64,8 +79,14 @@ class SelectionCollectionViewCell: MDCCardCollectionCell {
         videoMemoImage.clipsToBounds = true
         writtenMemoImage.clipsToBounds = true
         
+       
+        
         backingView.layer.cornerRadius = 10.0
         backingView.clipsToBounds = true
+        
+      
+        
+//        self.backgroundColor = .clear
         
 //        self.addSubview(seperatorView)
 //        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[v0]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0" : seperatorView]))

@@ -1,0 +1,421 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ScrollViewOverlayTranslationDriver"
+provides-nominal:
+- "16OverlayContainer010ScrollViewA17TranslationDriverC"
+provides-member:
+- ["16OverlayContainer010ScrollViewA17TranslationDriverC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "&&"
+- !private "*"
+- !private "+="
+- !private "-"
+- !private "<"
+- !private ">"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CGFloat"
+- "CGPoint"
+- "OverlayScrollViewDelegate"
+- "OverlayScrollViewDelegateProxy"
+- "OverlayTranslationController"
+- "OverlayTranslationDriver"
+- "ScrollViewOverlayTranslationDriver"
+- "UIScrollView"
+- "UnsafeMutablePointer"
+- !private "||"
+depends-member:
+- !private ["So15CALayerDelegateP", "contentInset"]
+- !private ["So15CALayerDelegateP", "contentOffset"]
+- !private ["So15CALayerDelegateP", "isContentOriginInBounds"]
+- !private ["So15CALayerDelegateP", "isTracking"]
+- !private ["So15CALayerDelegateP", "panGestureRecognizer"]
+- !private ["So15CALayerDelegateP", "scrollsUp"]
+- !private ["So7CGPointV", "y"]
+- ["So7CGPointV", "zero"]
+- !private ["s7CVarArgP", "cancelForwarding"]
+- !private ["s7CVarArgP", "contentInset"]
+- !private ["s7CVarArgP", "contentOffset"]
+- !private ["s7CVarArgP", "forward"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isContentOriginInBounds"]
+- !private ["s7CVarArgP", "isTracking"]
+- !private ["s7CVarArgP", "panGestureRecognizer"]
+- !private ["s7CVarArgP", "pointee"]
+- !private ["s7CVarArgP", "scrollsUp"]
+- !private ["s7CVarArgP", "setTranslation"]
+- !private ["s7CVarArgP", "translation"]
+- !private ["s7CVarArgP", "velocity"]
+- !private ["SL", "pointee"]
+- !private ["s28CustomDebugStringConvertibleP", "cancelForwarding"]
+- !private ["s28CustomDebugStringConvertibleP", "contentInset"]
+- !private ["s28CustomDebugStringConvertibleP", "contentOffset"]
+- !private ["s28CustomDebugStringConvertibleP", "forward"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isContentOriginInBounds"]
+- !private ["s28CustomDebugStringConvertibleP", "isTracking"]
+- !private ["s28CustomDebugStringConvertibleP", "panGestureRecognizer"]
+- !private ["s28CustomDebugStringConvertibleP", "pointee"]
+- !private ["s28CustomDebugStringConvertibleP", "scrollsUp"]
+- !private ["s28CustomDebugStringConvertibleP", "setTranslation"]
+- !private ["s28CustomDebugStringConvertibleP", "translation"]
+- !private ["s28CustomDebugStringConvertibleP", "velocity"]
+- !private ["s28CustomDebugStringConvertibleP", "y"]
+- ["s28CustomDebugStringConvertibleP", "zero"]
+- !private ["s17CustomReflectableP", "pointee"]
+- !private ["s17CustomReflectableP", "y"]
+- ["s17CustomReflectableP", "zero"]
+- !private ["s23CustomStringConvertibleP", "cancelForwarding"]
+- !private ["s23CustomStringConvertibleP", "contentInset"]
+- !private ["s23CustomStringConvertibleP", "contentOffset"]
+- !private ["s23CustomStringConvertibleP", "forward"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isContentOriginInBounds"]
+- !private ["s23CustomStringConvertibleP", "isTracking"]
+- !private ["s23CustomStringConvertibleP", "panGestureRecognizer"]
+- !private ["s23CustomStringConvertibleP", "scrollsUp"]
+- !private ["s23CustomStringConvertibleP", "setTranslation"]
+- !private ["s23CustomStringConvertibleP", "translation"]
+- !private ["s23CustomStringConvertibleP", "velocity"]
+- !private ["Se", "top"]
+- !private ["Se", "y"]
+- ["Se", "zero"]
+- !private ["SE", "top"]
+- !private ["SE", "y"]
+- ["SE", "zero"]
+- ["SQ", "bottom"]
+- !private ["SQ", "cancelForwarding"]
+- !private ["SQ", "contentInset"]
+- !private ["SQ", "contentOffset"]
+- !private ["SQ", "forward"]
+- ["SQ", "inFlight"]
+- ["SQ", "init"]
+- !private ["SQ", "isContentOriginInBounds"]
+- !private ["SQ", "isTracking"]
+- !private ["SQ", "panGestureRecognizer"]
+- !private ["SQ", "pointee"]
+- !private ["SQ", "scrollsUp"]
+- !private ["SQ", "setTranslation"]
+- ["SQ", "stationary"]
+- ["SQ", "top"]
+- !private ["SQ", "translation"]
+- !private ["SQ", "velocity"]
+- !private ["SQ", "y"]
+- ["SQ", "zero"]
+- ["SH", "bottom"]
+- !private ["SH", "cancelForwarding"]
+- !private ["SH", "contentInset"]
+- !private ["SH", "contentOffset"]
+- !private ["SH", "forward"]
+- ["SH", "inFlight"]
+- ["SH", "init"]
+- !private ["SH", "isContentOriginInBounds"]
+- !private ["SH", "isTracking"]
+- !private ["SH", "panGestureRecognizer"]
+- !private ["SH", "pointee"]
+- !private ["SH", "scrollsUp"]
+- !private ["SH", "setTranslation"]
+- ["SH", "stationary"]
+- ["SH", "top"]
+- !private ["SH", "translation"]
+- !private ["SH", "velocity"]
+- !private ["So8NSCodingP", "contentInset"]
+- !private ["So8NSCodingP", "contentOffset"]
+- !private ["So8NSCodingP", "isContentOriginInBounds"]
+- !private ["So8NSCodingP", "isTracking"]
+- !private ["So8NSCodingP", "panGestureRecognizer"]
+- !private ["So8NSCodingP", "scrollsUp"]
+- !private ["So8NSObjectC", "cancelForwarding"]
+- !private ["So8NSObjectC", "contentInset"]
+- !private ["So8NSObjectC", "contentOffset"]
+- !private ["So8NSObjectC", "forward"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isContentOriginInBounds"]
+- !private ["So8NSObjectC", "isTracking"]
+- !private ["So8NSObjectC", "panGestureRecognizer"]
+- !private ["So8NSObjectC", "scrollsUp"]
+- !private ["So8NSObjectC", "setTranslation"]
+- !private ["So8NSObjectC", "translation"]
+- !private ["So8NSObjectC", "velocity"]
+- !private ["So8NSObjectP", "cancelForwarding"]
+- !private ["So8NSObjectP", "contentInset"]
+- !private ["So8NSObjectP", "contentOffset"]
+- !private ["So8NSObjectP", "forward"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isContentOriginInBounds"]
+- !private ["So8NSObjectP", "isTracking"]
+- !private ["So8NSObjectP", "panGestureRecognizer"]
+- !private ["So8NSObjectP", "scrollsUp"]
+- !private ["So8NSObjectP", "setTranslation"]
+- !private ["So8NSObjectP", "translation"]
+- !private ["So8NSObjectP", "velocity"]
+- ["16OverlayContainer0A18ScrollViewDelegateP", "OverlayScrollViewDelegateProxy"]
+- ["16OverlayContainer0A18ScrollViewDelegateP", ""]
+- !private ["16OverlayContainer0A18ScrollViewDelegateP", "adjustedContentOffset"]
+- ["16OverlayContainer0A18ScrollViewDelegateP", "clean"]
+- !private ["16OverlayContainer0A18ScrollViewDelegateP", "lastContentOffsetWhileScrolling"]
+- ["16OverlayContainer0A18ScrollViewDelegateP", "overlayScrollView"]
+- ["16OverlayContainer0A18ScrollViewDelegateP", "overlayScrollViewDidScroll"]
+- !private ["16OverlayContainer0A18ScrollViewDelegateP", "overlayTranslation"]
+- !private ["16OverlayContainer0A18ScrollViewDelegateP", "scrollView"]
+- !private ["16OverlayContainer0A18ScrollViewDelegateP", "scrollViewDelegateProxy"]
+- !private ["16OverlayContainer0A18ScrollViewDelegateP", "scrollViewTranslation"]
+- !private ["16OverlayContainer0A18ScrollViewDelegateP", "shouldDragOverlay"]
+- !private ["16OverlayContainer0A18ScrollViewDelegateP", "translationController"]
+- !private ["16OverlayContainer0A23ScrollViewDelegateProxyC", "cancelForwarding"]
+- !private ["16OverlayContainer0A23ScrollViewDelegateProxyC", "forward"]
+- ["16OverlayContainer0A23ScrollViewDelegateProxyC", "init"]
+- !private ["16OverlayContainer0A21TranslationControllerP", "dragOverlay"]
+- !private ["16OverlayContainer0A21TranslationControllerP", "endOverlayTranslation"]
+- !private ["16OverlayContainer0A21TranslationControllerP", "overlayHasReachedANotch"]
+- !private ["16OverlayContainer0A21TranslationControllerP", "translationPosition"]
+- ["16OverlayContainer0A17TranslationDriverP", "OverlayScrollViewDelegateProxy"]
+- ["16OverlayContainer0A17TranslationDriverP", ""]
+- !private ["16OverlayContainer0A17TranslationDriverP", "adjustedContentOffset"]
+- ["16OverlayContainer0A17TranslationDriverP", "clean"]
+- !private ["16OverlayContainer0A17TranslationDriverP", "lastContentOffsetWhileScrolling"]
+- ["16OverlayContainer0A17TranslationDriverP", "overlayScrollView"]
+- ["16OverlayContainer0A17TranslationDriverP", "overlayScrollViewDidScroll"]
+- !private ["16OverlayContainer0A17TranslationDriverP", "overlayTranslation"]
+- !private ["16OverlayContainer0A17TranslationDriverP", "scrollView"]
+- !private ["16OverlayContainer0A17TranslationDriverP", "scrollViewDelegateProxy"]
+- !private ["16OverlayContainer0A17TranslationDriverP", "scrollViewTranslation"]
+- !private ["16OverlayContainer0A17TranslationDriverP", "shouldDragOverlay"]
+- !private ["16OverlayContainer0A17TranslationDriverP", "translationController"]
+- ["16OverlayContainer0A19TranslationPositionO", "bottom"]
+- ["16OverlayContainer0A19TranslationPositionO", "inFlight"]
+- ["16OverlayContainer0A19TranslationPositionO", "stationary"]
+- ["16OverlayContainer0A19TranslationPositionO", "top"]
+- ["16OverlayContainer010ScrollViewA17TranslationDriverC", "Bool"]
+- ["16OverlayContainer010ScrollViewA17TranslationDriverC", "CGFloat"]
+- ["16OverlayContainer010ScrollViewA17TranslationDriverC", "CGPoint"]
+- ["16OverlayContainer010ScrollViewA17TranslationDriverC", "OverlayScrollViewDelegateProxy"]
+- ["16OverlayContainer010ScrollViewA17TranslationDriverC", "OverlayTranslationController"]
+- ["16OverlayContainer010ScrollViewA17TranslationDriverC", "UIScrollView"]
+- ["16OverlayContainer010ScrollViewA17TranslationDriverC", "UnsafeMutablePointer"]
+- !private ["16OverlayContainer010ScrollViewA17TranslationDriverC", "adjustedContentOffset"]
+- ["16OverlayContainer010ScrollViewA17TranslationDriverC", "clean"]
+- ["16OverlayContainer010ScrollViewA17TranslationDriverC", "deinit"]
+- ["16OverlayContainer010ScrollViewA17TranslationDriverC", "init"]
+- !private ["16OverlayContainer010ScrollViewA17TranslationDriverC", "lastContentOffsetWhileScrolling"]
+- ["16OverlayContainer010ScrollViewA17TranslationDriverC", "overlayScrollView"]
+- ["16OverlayContainer010ScrollViewA17TranslationDriverC", "overlayScrollViewDidScroll"]
+- !private ["16OverlayContainer010ScrollViewA17TranslationDriverC", "overlayTranslation"]
+- ["16OverlayContainer010ScrollViewA17TranslationDriverC", "scrollView"]
+- !private ["16OverlayContainer010ScrollViewA17TranslationDriverC", "scrollViewDelegateProxy"]
+- !private ["16OverlayContainer010ScrollViewA17TranslationDriverC", "scrollViewTranslation"]
+- !private ["16OverlayContainer010ScrollViewA17TranslationDriverC", "shouldDragOverlay"]
+- ["16OverlayContainer010ScrollViewA17TranslationDriverC", "translationController"]
+- !private ["Sx", "pointee"]
+- !private ["So29UIAccessibilityIdentificationP", "contentInset"]
+- !private ["So29UIAccessibilityIdentificationP", "contentOffset"]
+- !private ["So29UIAccessibilityIdentificationP", "isContentOriginInBounds"]
+- !private ["So29UIAccessibilityIdentificationP", "isTracking"]
+- !private ["So29UIAccessibilityIdentificationP", "panGestureRecognizer"]
+- !private ["So29UIAccessibilityIdentificationP", "scrollsUp"]
+- !private ["So12UIAppearanceP", "contentInset"]
+- !private ["So12UIAppearanceP", "contentOffset"]
+- !private ["So12UIAppearanceP", "isContentOriginInBounds"]
+- !private ["So12UIAppearanceP", "isTracking"]
+- !private ["So12UIAppearanceP", "panGestureRecognizer"]
+- !private ["So12UIAppearanceP", "scrollsUp"]
+- !private ["So21UIAppearanceContainerP", "contentInset"]
+- !private ["So21UIAppearanceContainerP", "contentOffset"]
+- !private ["So21UIAppearanceContainerP", "isContentOriginInBounds"]
+- !private ["So21UIAppearanceContainerP", "isTracking"]
+- !private ["So21UIAppearanceContainerP", "panGestureRecognizer"]
+- !private ["So21UIAppearanceContainerP", "scrollsUp"]
+- !private ["So17UICoordinateSpaceP", "contentInset"]
+- !private ["So17UICoordinateSpaceP", "contentOffset"]
+- !private ["So17UICoordinateSpaceP", "isContentOriginInBounds"]
+- !private ["So17UICoordinateSpaceP", "isTracking"]
+- !private ["So17UICoordinateSpaceP", "panGestureRecognizer"]
+- !private ["So17UICoordinateSpaceP", "scrollsUp"]
+- !private ["So13UIDynamicItemP", "contentInset"]
+- !private ["So13UIDynamicItemP", "contentOffset"]
+- !private ["So13UIDynamicItemP", "isContentOriginInBounds"]
+- !private ["So13UIDynamicItemP", "isTracking"]
+- !private ["So13UIDynamicItemP", "panGestureRecognizer"]
+- !private ["So13UIDynamicItemP", "scrollsUp"]
+- !private ["So12UIEdgeInsetsV", "top"]
+- !private ["So18UIFocusEnvironmentP", "contentInset"]
+- !private ["So18UIFocusEnvironmentP", "contentOffset"]
+- !private ["So18UIFocusEnvironmentP", "isContentOriginInBounds"]
+- !private ["So18UIFocusEnvironmentP", "isTracking"]
+- !private ["So18UIFocusEnvironmentP", "panGestureRecognizer"]
+- !private ["So18UIFocusEnvironmentP", "scrollsUp"]
+- !private ["So11UIFocusItemP", "contentInset"]
+- !private ["So11UIFocusItemP", "contentOffset"]
+- !private ["So11UIFocusItemP", "isContentOriginInBounds"]
+- !private ["So11UIFocusItemP", "isTracking"]
+- !private ["So11UIFocusItemP", "panGestureRecognizer"]
+- !private ["So11UIFocusItemP", "scrollsUp"]
+- !private ["So20UIFocusItemContainerP", "contentInset"]
+- !private ["So20UIFocusItemContainerP", "contentOffset"]
+- !private ["So20UIFocusItemContainerP", "isContentOriginInBounds"]
+- !private ["So20UIFocusItemContainerP", "isTracking"]
+- !private ["So20UIFocusItemContainerP", "panGestureRecognizer"]
+- !private ["So20UIFocusItemContainerP", "scrollsUp"]
+- !private ["So30UIFocusItemScrollableContainerP", "contentInset"]
+- !private ["So30UIFocusItemScrollableContainerP", "contentOffset"]
+- !private ["So30UIFocusItemScrollableContainerP", "isContentOriginInBounds"]
+- !private ["So30UIFocusItemScrollableContainerP", "isTracking"]
+- !private ["So30UIFocusItemScrollableContainerP", "panGestureRecognizer"]
+- !private ["So30UIFocusItemScrollableContainerP", "scrollsUp"]
+- !private ["So19UIGestureRecognizerC", "setTranslation"]
+- !private ["So19UIGestureRecognizerC", "translation"]
+- !private ["So19UIGestureRecognizerC", "velocity"]
+- !private ["So22UIPanGestureRecognizerC", "setTranslation"]
+- !private ["So22UIPanGestureRecognizerC", "translation"]
+- !private ["So22UIPanGestureRecognizerC", "velocity"]
+- !private ["So30UIPasteConfigurationSupportingP", "contentInset"]
+- !private ["So30UIPasteConfigurationSupportingP", "contentOffset"]
+- !private ["So30UIPasteConfigurationSupportingP", "isContentOriginInBounds"]
+- !private ["So30UIPasteConfigurationSupportingP", "isTracking"]
+- !private ["So30UIPasteConfigurationSupportingP", "panGestureRecognizer"]
+- !private ["So30UIPasteConfigurationSupportingP", "scrollsUp"]
+- !private ["So11UIResponderC", "contentInset"]
+- !private ["So11UIResponderC", "contentOffset"]
+- !private ["So11UIResponderC", "isContentOriginInBounds"]
+- !private ["So11UIResponderC", "isTracking"]
+- !private ["So11UIResponderC", "panGestureRecognizer"]
+- !private ["So11UIResponderC", "scrollsUp"]
+- !private ["So30UIResponderStandardEditActionsP", "contentInset"]
+- !private ["So30UIResponderStandardEditActionsP", "contentOffset"]
+- !private ["So30UIResponderStandardEditActionsP", "isContentOriginInBounds"]
+- !private ["So30UIResponderStandardEditActionsP", "isTracking"]
+- !private ["So30UIResponderStandardEditActionsP", "panGestureRecognizer"]
+- !private ["So30UIResponderStandardEditActionsP", "scrollsUp"]
+- !private ["So12UIScrollViewC", "contentInset"]
+- !private ["So12UIScrollViewC", "contentOffset"]
+- !private ["So12UIScrollViewC", "isContentOriginInBounds"]
+- !private ["So12UIScrollViewC", "isTracking"]
+- !private ["So12UIScrollViewC", "panGestureRecognizer"]
+- !private ["So12UIScrollViewC", "scrollsUp"]
+- !private ["So20UIScrollViewDelegateP", "cancelForwarding"]
+- !private ["So20UIScrollViewDelegateP", "forward"]
+- ["So20UIScrollViewDelegateP", "init"]
+- !private ["So18UITraitEnvironmentP", "contentInset"]
+- !private ["So18UITraitEnvironmentP", "contentOffset"]
+- !private ["So18UITraitEnvironmentP", "isContentOriginInBounds"]
+- !private ["So18UITraitEnvironmentP", "isTracking"]
+- !private ["So18UITraitEnvironmentP", "panGestureRecognizer"]
+- !private ["So18UITraitEnvironmentP", "scrollsUp"]
+- !private ["So23UIUserActivityRestoringP", "contentInset"]
+- !private ["So23UIUserActivityRestoringP", "contentOffset"]
+- !private ["So23UIUserActivityRestoringP", "isContentOriginInBounds"]
+- !private ["So23UIUserActivityRestoringP", "isTracking"]
+- !private ["So23UIUserActivityRestoringP", "panGestureRecognizer"]
+- !private ["So23UIUserActivityRestoringP", "scrollsUp"]
+- !private ["So6UIViewC", "contentInset"]
+- !private ["So6UIViewC", "contentOffset"]
+- !private ["So6UIViewC", "isContentOriginInBounds"]
+- !private ["So6UIViewC", "isTracking"]
+- !private ["So6UIViewC", "panGestureRecognizer"]
+- !private ["So6UIViewC", "scrollsUp"]
+- !private ["Sp", "pointee"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "pointee"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "y"]
+- ["s30_CustomPlaygroundQuickLookableP", "zero"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cancelForwarding"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contentInset"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contentOffset"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "forward"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isContentOriginInBounds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isTracking"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "panGestureRecognizer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scrollsUp"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setTranslation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "translation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "velocity"]
+- !private ["s21_ObjectiveCBridgeableP", "top"]
+- !private ["s21_ObjectiveCBridgeableP", "y"]
+- ["s21_ObjectiveCBridgeableP", "zero"]
+- !private ["s8_PointerP", "pointee"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "contentInset"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "contentOffset"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "isContentOriginInBounds"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "isTracking"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "panGestureRecognizer"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "scrollsUp"]
+depends-nominal:
+- !private "So15CALayerDelegateP"
+- "So7CGPointV"
+- "s7CVarArgP"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- "SE"
+- "SQ"
+- "SH"
+- !private "So8NSCodingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- "16OverlayContainer0A18ScrollViewDelegateP"
+- "16OverlayContainer0A23ScrollViewDelegateProxyC"
+- !private "16OverlayContainer0A21TranslationControllerP"
+- "16OverlayContainer0A17TranslationDriverP"
+- "16OverlayContainer0A19TranslationPositionO"
+- "16OverlayContainer010ScrollViewA17TranslationDriverC"
+- !private "Sx"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So12UIEdgeInsetsV"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So30UIFocusItemScrollableContainerP"
+- !private "So19UIGestureRecognizerC"
+- !private "So22UIPanGestureRecognizerC"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So12UIScrollViewC"
+- "So20UIScrollViewDelegateP"
+- !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- !private "Sp"
+- "s30_CustomPlaygroundQuickLookableP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- !private "s8_PointerP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/OverlayContainer/OverlayContainer-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphoneos/OverlayContainer.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "d9fcb3fe79c9cbb7a71fa43808123a05"

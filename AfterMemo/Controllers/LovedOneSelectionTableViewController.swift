@@ -13,6 +13,8 @@ import AVFoundation
 import MobileCoreServices
 import DZNEmptyDataSet
 import MaterialComponents
+import FirebaseDatabase
+import FirebaseAuth
 
 class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataSetDelegate, DZNEmptyDataSetSource, NSFetchedResultsControllerDelegate {
     var mediaSelected = ""
@@ -24,9 +26,26 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
     var selectedMemoType = ""
     var newMemoDelegate: newMemoDelegate!
     let memoHeaderView = GeneralHeaderView()
+    var passedContext: NSManagedObjectContext?
+    var senderToBePassed: AnyObject?
+    
+    
+   
+    @IBAction func editLovedOneAction(_ sender: AnyObject) {
+        
+        guard let cell = sender.superview?.superview as? LovedOnesTableViewCell else {
+            return // or fatalError() or whatever
+        }
+        let indexPath = self.tableView.indexPath(for: cell)
+        
+        selectedCellBeforeAlert = indexPath?.row
+        
+        self.performSegue(withIdentifier: "editLovedOne", sender: self)
+       
+    }
     
     func configureAppBar(){
-        self.addChildViewController(appBar.headerViewController)
+        self.addChild(appBar.headerViewController)
         appBar.navigationBar.backgroundColor = .clear
         appBar.navigationBar.title = nil
         
@@ -52,7 +71,123 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
     }
     
     
-    
+    func deleteLovedOne(currentLovedOne: Recipient, indexPathRow: Int){
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        var movieArray: [String] = [String]()
+        var voiceArray: [String] = [String]()
+        var textArray: [String] = [String]()
+        var managedContext: NSManagedObjectContext!
+        
+        if let movies = currentLovedOne.videos?.array as? [Videos]{
+            
+            for video in movies {
+                guard let uuid = video.uuID else {
+                    continue
+                }
+                
+                movieArray.append(uuid)
+            }
+        }
+        
+        
+        if let voice = currentLovedOne.voice?.array as? [VoiceMemos]{
+            
+            for voices in voice {
+                guard let uuid = voices.uuID else {
+                    continue
+                }
+                
+                voiceArray.append(uuid)
+            }
+        }
+        
+        if let text = currentLovedOne.written?.array as? [Written]{
+            
+            for texts in text {
+                guard let uuid = texts.uuID else {
+                    continue
+                }
+                
+                textArray.append(uuid)
+            }
+        }
+
+        context.delete(currentLovedOne)
+        appDelegate.saveContext()
+        guard let userID = Auth.auth().currentUser?.uid else {
+            return
+        }
+        
+        for vidID in movieArray {
+            
+            let dataBasePath = Database.database().reference().child("videos").child(userID).queryOrdered(byChild: "uuID").queryEqual(toValue: vidID)
+            
+            dataBasePath.observeSingleEvent(of: .value) { (snapshot) in
+                
+                for child in snapshot.children {
+                    
+                    let snap = child as? DataSnapshot
+                    guard let key = snap?.key else {continue}
+                    //TODO: NEED TO MAKE THIS CHANGE TO ALL UPDATES ^^^^
+                    
+                    let editAtPath = Database.database().reference().child("videos").child(userID).child(key)
+                    
+                    editAtPath.removeValue()
+                   
+                }
+                
+                
+            }
+        }
+        
+        
+        for voiceID in voiceArray {
+            
+            let dataBasePath = Database.database().reference().child("audioMemos").child(userID).queryOrdered(byChild: "uuID").queryEqual(toValue: voiceID)
+            
+            dataBasePath.observeSingleEvent(of: .value) { (snapshot) in
+                
+                for child in snapshot.children {
+                    
+                    let snap = child as? DataSnapshot
+                    guard let key = snap?.key else {continue}
+                    //TODO: NEED TO MAKE THIS CHANGE TO ALL UPDATES ^^^^
+                    
+                    let editAtPath = Database.database().reference().child("audioMemos").child(userID).child(key)
+                    
+                    editAtPath.removeValue()
+                    
+                }
+                
+                
+            }
+        }
+        
+        
+        for textID in textArray {
+            
+            let dataBasePath = Database.database().reference().child("writtenMemos").child(userID).queryOrdered(byChild: "uuID").queryEqual(toValue: textID)
+            
+            dataBasePath.observeSingleEvent(of: .value) { (snapshot) in
+                
+                for child in snapshot.children {
+                    
+                    let snap = child as? DataSnapshot
+                    guard let key = snap?.key else {continue}
+                    //TODO: NEED TO MAKE THIS CHANGE TO ALL UPDATES ^^^^
+                    
+                    let editAtPath = Database.database().reference().child("writtenMemos").child(userID).child(key)
+                    
+                    editAtPath.removeValue()
+                    
+                }
+                
+                
+            }
+        }
+
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -93,7 +228,7 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
         self.tableView.emptyDataSetSource = self
         tableView.tableFooterView = UIView()
        configureAppBar()
-        self.appBar.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        self.appBar.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         self.appBar.navigationBar.tintColor = .white
 //        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         title = "Loved Ones"
@@ -105,7 +240,8 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
 //        MDCAppBarColorThemer.applySemanticColorScheme(ApplicationScheme.shared.colorScheme, to: self.appBar)
         
        
-        let rightButton = UIBarButtonItem(title: "Add Loved One", style: .plain, target: self, action: #selector(self.createNewLovedOne))
+        let rightButton = UIBarButtonItem(image: UIImage(imageLiteralResourceName: "baseline_add_white_24pt"), style: .plain, target: self, action: #selector(self.createNewLovedOne))
+        
         self.navigationItem.rightBarButtonItem = rightButton
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
@@ -129,15 +265,80 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
             
         }
     
+    func saveRelation(lovedOne: Recipient, media:String){
+        let addRelationAlert = UIAlertController(title: "No Relation Set", message: "You haven't set a relation for this person Yet", preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "Update Relation", style: .default) { (alertAction) in
+            let textField = addRelationAlert.textFields![0] as UITextField
+            
+            guard let relationText = textField.text else {
+                return
+            }
+            
+            if relationText.isEmpty {
+                
+                print("Can't save")
+                
+                let emptyAlert = UIAlertController(title: "Error", message: "You must enter a relation", preferredStyle: .alert)
+                
+                let emptyAlertAction = UIAlertAction(title: "Ok", style: .default, handler: { (alertAction) in
+                    
+                    self.present(addRelationAlert, animated: true, completion: nil)
+                    
+                })
+                
+                emptyAlert.addAction(emptyAlertAction)
+                
+                self.present(emptyAlert, animated: true, completion: nil)
+                
+            } else {
+                print("Time to save")
+                
+                lovedOne.relation = relationText
+                
+                do {
+                    try lovedOne.managedObjectContext?.save()
+                    
+                    switch media {
+                    case "audio":
+                         self.performSegue(withIdentifier: "newAudioMemo", sender: self)
+                    case "video":
+                        self.performSegue(withIdentifier: "videoAtributes", sender: self)
+                    case "written":
+                        self.performSegue(withIdentifier: "toWrittenMemo", sender: self)
+                    default:
+                        print("oops")
+                    }
+                    
+                } catch let error as NSError {
+                    print("Could not save. \(error), \(error.userInfo)")
+                }
+            }
+            
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        addRelationAlert.addTextField { (textField) in
+            textField.placeholder = "Enter your relation to \(lovedOne.name ?? "them")"
+        }
+        
+        addRelationAlert.addAction(action)
+        addRelationAlert.addAction(cancelAction)
+        
+        self.present(addRelationAlert, animated: true, completion: nil)
+        
+    }
+    
     func title(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString? {
         let str = "You haven't created any loved ones yet, but you can in just a few seconds!"
-        let attrs = [NSAttributedStringKey.font: UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)]
+        let attrs = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: UIFont.TextStyle.headline)]
         return NSAttributedString(string: str, attributes: attrs)
     }
     
     func description(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString? {
         let str = "Tap Below To Add A Loved One"
-        let attrs = [NSAttributedStringKey.font: UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)]
+        let attrs = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: UIFont.TextStyle.body)]
         return NSAttributedString(string: str, attributes: attrs)
     }
     
@@ -151,9 +352,9 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
     }
     
     
-    func buttonTitle(forEmptyDataSet scrollView: UIScrollView, for state: UIControlState) -> NSAttributedString? {
+    func buttonTitle(forEmptyDataSet scrollView: UIScrollView, for state: UIControl.State) -> NSAttributedString? {
         let str = "Tap Me To Create A Loved One"
-        let attrs = [NSAttributedStringKey.font: UIFont.preferredFont(forTextStyle: UIFontTextStyle.callout), NSAttributedStringKey.foregroundColor: UIColor.white]
+        let attrs = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: UIFont.TextStyle.callout), NSAttributedString.Key.foregroundColor: UIColor.white]
         
         return NSAttributedString(string: str, attributes: attrs)
     }
@@ -203,17 +404,49 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let lovedOne = fetchedRC.object(at: IndexPath(item: indexPath.row, section: 0))
+        
         if mediaSelected == "audio"{
              selectedCellBeforeAlert = indexPath.row
-            self.performSegue(withIdentifier: "newAudioMemo", sender: self)
+            
+            if lovedOne.relation == nil {
+                saveRelation(lovedOne: lovedOne, media: mediaSelected)
+                
+            } else {
+                self.performSegue(withIdentifier: "newAudioMemo", sender: self)
+            }
+            
+            
+            
+
+            
             
         } else if mediaSelected == "video" {
             selectedCellBeforeAlert = indexPath.row
-            VideoHelper.startMediaBrowser(delegate: self, sourceType: .camera)
+            //VideoHelper.startMediaBrowser(delegate: self, sourceType: .camera)
+            
+            if lovedOne.relation == nil {
+                saveRelation(lovedOne: lovedOne, media: mediaSelected)
+                
+            } else {
+            
+                self.performSegue(withIdentifier: "videoAtributes", sender: self)
+                
+            }
             
         } else if mediaSelected == "written" {
              selectedCellBeforeAlert = indexPath.row
-             self.performSegue(withIdentifier: "toWrittenMemo", sender: self)
+            
+            if lovedOne.relation == nil {
+            
+                saveRelation(lovedOne: lovedOne, media: mediaSelected)
+                
+            } else {
+            
+                self.performSegue(withIdentifier: "toWrittenMemo", sender: self)
+                
+            }
             
         } else if mediaSelected == "none" {
               selectedCellBeforeAlert = indexPath.row
@@ -257,17 +490,145 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
     }
     */
 
-    /*
+    
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+            let lovedOne = fetchedRC.object(at: IndexPath(row: indexPath.row, section: 0))
+           
+            deleteLovedOne(currentLovedOne: lovedOne, indexPathRow: indexPath.row)
+            tableView.reloadData()
+//            tableView.deleteRows(at: [indexPath], with: .fade)
+            
+        }
     }
-    */
+    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
+        
+        switch type {
+        case .insert:
+            print("I inserted")
+            
+            tableView.reloadSections([0], with: .fade)
+            break;
+        case .delete:
+            print("I deleted")
+            guard let numberOfPeople = tableView?.numberOfRows(inSection: 0) else{
+                return
+            }
+            
+            
+            tableView?.performBatchUpdates({
+                if numberOfPeople > 1 {
+                    for i in (0...numberOfPeople - 1).reversed() {
+                        
+                        tableView?.deleteRows(at: [IndexPath(item: i, section: 0)], with: .fade)
+                    }
+                    let count = fetchedRC.fetchedObjects?.count ?? 0
+                    
+                    for items in 0...count - 1 {
+                        
+                        tableView?.insertRows(at: [IndexPath(item: items, section: 0)], with: .fade)
+                    }
+                    
+                } else{
+                    
+                    tableView.reloadSections([0], with: .fade)
+                }
+                
+                
+                
+                
+                //                if let indexPath = indexPath {
+                //                    collectionView?.deleteItems(at: [IndexPath(item: indexPath.row, section: 2)])
+                //                }
+                //
+                //                if let newIndexPath = newIndexPath {
+                //                    collectionView?.insertItems(at: [IndexPath(item: newIndexPath.row, section: 2)])
+                //                }
+            }, completion: nil)
+            break;
+        case . update:
+            print("I updated")
+            
+            guard let numberOfPeople = tableView?.numberOfRows(inSection: 0) else{
+                return
+            }
+            
+            
+            tableView?.performBatchUpdates({
+                if numberOfPeople > 1 {
+                    for i in (0...numberOfPeople - 1).reversed() {
+                        
+                        tableView?.deleteRows(at: [IndexPath(item: i, section: 0)], with: .fade)
+                    }
+                    let count = fetchedRC.fetchedObjects?.count ?? 0
+                    
+                    for items in 0...count - 1 {
+                        
+                        tableView?.insertRows(at: [IndexPath(item: items, section: 0)], with: .fade)
+                    }
+                    
+                } else{
+                    
+                    tableView.reloadSections([0], with: .fade)
+                }
+                
+                
+                
+                
+                //                if let indexPath = indexPath {
+                //                    collectionView?.deleteItems(at: [IndexPath(item: indexPath.row, section: 2)])
+                //                }
+                //
+                //                if let newIndexPath = newIndexPath {
+                //                    collectionView?.insertItems(at: [IndexPath(item: newIndexPath.row, section: 2)])
+                //                }
+            }, completion: nil)
+            
+            
+            break;
+        case .move:
+            print("I moved")
+            guard let numberOfPeople = tableView?.numberOfRows(inSection: 0) else{
+                return
+            }
+            
+            tableView?.performBatchUpdates({
+                //                if let indexPath = indexPath {
+                //                    collectionView?.deleteItems(at: [IndexPath(item: indexPath.row, section: 2)])
+                //                }
+                //
+                //                if let newIndexPath = newIndexPath {
+                //                    collectionView?.insertItems(at: [IndexPath(item: newIndexPath.row, section: 2)])
+                if numberOfPeople > 1 {
+                    for i in (0...numberOfPeople - 1).reversed() {
+                        
+                        tableView?.deleteRows(at: [IndexPath(item: i, section: 0)], with: .fade)
+                    }
+                    let count = fetchedRC.fetchedObjects?.count ?? 0
+                    if count > 1 {
+                        for items in 0...count - 1 {
+                            
+                            tableView?.insertRows(at: [IndexPath(item: items, section: 0)], with: .fade)
+                        }
+                        
+                    }
+                    
+                }else  {
+                    
+                    tableView.reloadSections([0], with: .fade)
+                }
+                
+            }, completion: nil)
+            
+            break;
+        default:
+            print("I don't know")
+        }
+        
+        
+    }
 
     /*
     // Override to support rearranging the table view.
@@ -294,13 +655,28 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
 //        guard  let indexPath = self.tableView.indexPathForSelectedRow else {
 //            print("I am not working")
 //            return}
-        guard let person = selectedCellBeforeAlert else {return}
+        if segue.identifier == "createLovedOne" {
+            guard let destinationVC = segue.destination as? LovedOneCreationViewController else {
+                return
+            }
+            
+            destinationVC.passedSender = UIButton.self
+        }else {
+        guard let person = selectedCellBeforeAlert else {
+            print(" I AM THE BAD var")
+            return}
+        
+      
         
         if segue.identifier == "newAudioMemo" {
             
-            guard let desitnationVC = segue.destination as? RecordingViewController else {return}
+          //  guard let desitnationVC = segue.destination as? RecordingViewController else {return}
+            
+            guard let desitnationVC = segue.destination as? VoiceMemoAtrributeViewController else {return}
             
             desitnationVC.selectedPerson = fetchedRC.object(at: IndexPath(item: person, section: 0))
+            
+            desitnationVC.passedSender = sender
             
         } else if segue.identifier == "videoAtributes" {
             
@@ -312,20 +688,23 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
             
             desitnationVC.selectedPerson = fetchedRC.object(at: IndexPath(item: person, section: 0))
             print(fetchedRC.object(at: IndexPath(item: person, section: 0)))
+            desitnationVC.passedSender = sender
             
-            desitnationVC.passedVideo = videoToPass
+            //desitnationVC.passedVideo = videoToPass
             
-            print("THE PASSED \(videoToPass)")
+//            print("THE PASSED \(videoToPass)")
             
             
-        } else if segue.identifier == "toWrittenMemo"{
+        }  else if segue.identifier == "toWrittenMemo"{
             
             guard let desitnationVC = segue.destination as? WrittenMemoViewController else {return}
             
             desitnationVC.selectedPerson = fetchedRC.object(at: IndexPath(item: person, section: 0))
             
+            desitnationVC.passedSender = sender
+            
         } else if segue.identifier == "showMemos" {
-            guard let destinationVC = segue.destination as? MainCollectionViewController else {return}
+            guard let destinationVC = segue.destination as? MemoListViewController else {return}
             
             //print(personsArray[person] as? Recipient)
             
@@ -337,7 +716,17 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
             desitnationVC.personPassed = fetchedRC.object(at: IndexPath(item: person, section: 0))
             desitnationVC.selectedMemoTypePassed = selectedMemoType
         }
-        
+        else if segue.identifier == "editLovedOne" {
+            guard let destinationVC = segue.destination as? LovedOneCreationViewController else {
+                  return}
+            destinationVC.passedSender = sender
+            print(" I AM THE SENDER: \(sender)")
+            destinationVC.passedPerson = fetchedRC.object(at: IndexPath(item: person, section: 0))
+            
+
+            
+        }
+        }
     }
     
     
@@ -370,7 +759,7 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
         guard let savedImage = previewImageForLocalVideo(url: tempFilePath) else {
             return
         }
-        let savedImageData = UIImagePNGRepresentation(savedImage) as NSData?
+        let savedImageData = savedImage.pngData() as NSData?
         let uuid = UUID().uuidString
         
         video.thumbNail = savedImageData
@@ -440,7 +829,10 @@ class LovedOneSelectionTableViewController: UITableViewController, DZNEmptyDataS
 
 extension LovedOneSelectionTableViewController: UIImagePickerControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController,
-                               didFinishPickingMediaWithInfo info: [String : Any]) {
+                               didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+// Local variable inserted by Swift 4.2 migrator.
+let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
+
         dismiss(animated: true, completion: nil)
         
         let nameFileAlert = UIAlertController(title: "File Name", message: "Create a name for your video.", preferredStyle: .alert)
@@ -457,9 +849,9 @@ extension LovedOneSelectionTableViewController: UIImagePickerControllerDelegate 
             
             
             guard
-                let mediaType = info[UIImagePickerControllerMediaType] as? String,
+                let mediaType = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.mediaType)] as? String,
                 mediaType == (kUTTypeMovie as String),
-                let url = info[UIImagePickerControllerMediaURL] as? URL
+                let url = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.mediaURL)] as? URL
                 else {
                     return
             }
@@ -513,7 +905,7 @@ extension LovedOneSelectionTableViewController {
         let asset = AVAsset(url: url)
         let imageGenerator = AVAssetImageGenerator(asset: asset)
         imageGenerator.appliesPreferredTrackTransform = true
-        let tVal = NSValue(time: CMTimeMake(12, 1)) as! CMTime
+        let tVal = NSValue(time: CMTimeMake(value: 12, timescale: 1)) as! CMTime
         do {
             let imageRef = try imageGenerator.copyCGImage(at: tVal, actualTime: nil)
             return UIImage(cgImage: imageRef)
@@ -570,3 +962,13 @@ extension LovedOneSelectionTableViewController {
 
 
 
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromUIImagePickerControllerInfoKeyDictionary(_ input: [UIImagePickerController.InfoKey: Any]) -> [String: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map {key, value in (key.rawValue, value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromUIImagePickerControllerInfoKey(_ input: UIImagePickerController.InfoKey) -> String {
+	return input.rawValue
+}

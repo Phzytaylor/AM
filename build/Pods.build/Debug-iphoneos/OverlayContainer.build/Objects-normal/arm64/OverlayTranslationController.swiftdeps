@@ -1,0 +1,106 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "OverlayTranslationPosition"
+- "OverlayTranslationControllerDelegate"
+- "OverlayTranslationController"
+provides-nominal:
+- "16OverlayContainer0A19TranslationPositionO"
+- "16OverlayContainer0A29TranslationControllerDelegateP"
+- "16OverlayContainer0A21TranslationControllerP"
+provides-member:
+- ["16OverlayContainer0A19TranslationPositionO", ""]
+- ["16OverlayContainer0A29TranslationControllerDelegateP", ""]
+- ["16OverlayContainer0A21TranslationControllerP", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- "AnyObject"
+- "Bool"
+- "CGFloat"
+- "CGPoint"
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- "OverlayContainerTransitionCoordinator"
+- "OverlayTranslationController"
+- "OverlayTranslationControllerDelegate"
+- "OverlayTranslationPosition"
+- "UICoordinateSpace"
+- "Void"
+depends-member:
+- ["SQ", "=="]
+- ["SQ", ""]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SH", "=="]
+- ["SH", ""]
+- ["SH", "_rawHashValue"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- !private ["s6HasherV", "combine"]
+- ["16OverlayContainer0A21TranslationControllerP", "Bool"]
+- ["16OverlayContainer0A21TranslationControllerP", "CGFloat"]
+- ["16OverlayContainer0A21TranslationControllerP", "CGPoint"]
+- ["16OverlayContainer0A21TranslationControllerP", "Int"]
+- ["16OverlayContainer0A21TranslationControllerP", "OverlayTranslationPosition"]
+- ["16OverlayContainer0A21TranslationControllerP", "UICoordinateSpace"]
+- ["16OverlayContainer0A21TranslationControllerP", "Void"]
+- ["16OverlayContainer0A21TranslationControllerP", "dragOverlay"]
+- ["16OverlayContainer0A21TranslationControllerP", "endOverlayTranslation"]
+- ["16OverlayContainer0A21TranslationControllerP", "isDraggable"]
+- ["16OverlayContainer0A21TranslationControllerP", "moveOverlay"]
+- ["16OverlayContainer0A21TranslationControllerP", "overlayHasReachedANotch"]
+- ["16OverlayContainer0A21TranslationControllerP", "translationHeight"]
+- ["16OverlayContainer0A21TranslationControllerP", "translationPosition"]
+- ["16OverlayContainer0A29TranslationControllerDelegateP", "CGFloat"]
+- ["16OverlayContainer0A29TranslationControllerDelegateP", "Int"]
+- ["16OverlayContainer0A29TranslationControllerDelegateP", "OverlayContainerTransitionCoordinator"]
+- ["16OverlayContainer0A29TranslationControllerDelegateP", "OverlayTranslationController"]
+- ["16OverlayContainer0A29TranslationControllerDelegateP", "translationController"]
+- ["16OverlayContainer0A19TranslationPositionO", "=="]
+- ["16OverlayContainer0A19TranslationPositionO", "__derived_enum_equals"]
+- ["16OverlayContainer0A19TranslationPositionO", "_rawHashValue"]
+- ["16OverlayContainer0A19TranslationPositionO", "bottom"]
+- ["16OverlayContainer0A19TranslationPositionO", "deinit"]
+- ["16OverlayContainer0A19TranslationPositionO", "hash"]
+- ["16OverlayContainer0A19TranslationPositionO", "hashValue"]
+- ["16OverlayContainer0A19TranslationPositionO", "inFlight"]
+- ["16OverlayContainer0A19TranslationPositionO", "stationary"]
+- ["16OverlayContainer0A19TranslationPositionO", "top"]
+depends-nominal:
+- "SQ"
+- "SH"
+- !private "s6HasherV"
+- "16OverlayContainer0A21TranslationControllerP"
+- "16OverlayContainer0A29TranslationControllerDelegateP"
+- "16OverlayContainer0A19TranslationPositionO"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/OverlayContainer/OverlayContainer-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphoneos/OverlayContainer.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "71d3b32e1e611ebf8b8d981c008cc488"

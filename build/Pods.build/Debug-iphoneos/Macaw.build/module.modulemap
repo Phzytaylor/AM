@@ -1,0 +1,11 @@
+framework module Macaw {
+  umbrella header "Macaw-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module Macaw.Swift {
+    header "Macaw-Swift.h"
+    requires objc
+}

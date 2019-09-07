@@ -53,7 +53,7 @@ open class PasswordContainerView: UIView {
     open override var tintColor: UIColor! {
         didSet {
             guard !isVibrancyEffect else { return }
-            deleteButton.setTitleColor(tintColor, for: UIControlState())
+            deleteButton.setTitleColor(tintColor, for: UIControl.State())
             passwordDotView.strokeColor = tintColor
             touchAuthenticationButton.tintColor = tintColor
             passwordInputViews.forEach {
@@ -152,8 +152,8 @@ open class PasswordContainerView: UIView {
             }
         }
         
-        touchAuthenticationButton.setImage(image, for: UIControlState())
-        touchAuthenticationButton.tintColor = tintColor
+        touchAuthenticationButton.setImage(image, for: UIControl.State())
+        touchAuthenticationButton.tintColor = .white
     }
     
     //MARK: Input Wrong
@@ -229,7 +229,7 @@ private extension PasswordContainerView {
         
         if isVibrancyEffect {
             //delete button
-            titleColor = whiteColor
+            titleColor = .white
             //dot view
             strokeColor = whiteColor
             fillColor = whiteColor
@@ -241,7 +241,7 @@ private extension PasswordContainerView {
             highlightTextColor = whiteColor
         } else {
             //delete button
-            titleColor = tintColor
+            titleColor = .white
             //dot view
             strokeColor = tintColor
             fillColor = highlightedColor
@@ -253,10 +253,11 @@ private extension PasswordContainerView {
             highlightTextColor = highlightedColor
         }
         
-        deleteButton.setTitleColor(titleColor, for: .normal)
+        deleteButton.setTitleColor(.white, for: .normal)
         passwordDotView.strokeColor = strokeColor
         passwordDotView.fillColor = fillColor
-        touchAuthenticationButton.tintColor = strokeColor
+        touchAuthenticationButton.tintColor = .white
+        touchAuthenticationButton.setTitleColor(.white, for: .normal)
         passwordInputViews.forEach { passwordInputView in
             passwordInputView.circleBackgroundColor = circleBackgroundColor
             passwordInputView.borderColor = borderColor

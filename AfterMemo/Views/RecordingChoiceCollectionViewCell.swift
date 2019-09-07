@@ -33,10 +33,10 @@ class RecordingChoiceCollectionViewCell: UICollectionViewCell {
         super.layoutSubviews()
         
        // self.setCircularImageView()
-        self.choiceImage.contentMode = .scaleAspectFit
+        self.choiceImage.contentMode = .scaleAspectFill
         self.choiceImage.clipsToBounds = true
         self.choiceImage.layer.cornerRadius = 5.0
-        self.choiceImage.addBlackGradientLayer(frame: CGRect(x: 0, y: 0, width: 200, height: 140))
+//        self.choiceImage.addBlackGradientLayer(frame: CGRect(x: 0, y: 0, width: choiceImage.frame.width, height: 140))
     }
     
     

@@ -1,0 +1,977 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ShapeRenderer"
+provides-nominal:
+- "5Macaw13ShapeRendererC"
+provides-member:
+- ["5Macaw13ShapeRendererC", ""]
+- ["5Macaw6StrokeC", ""]
+- ["5Macaw4FillC", ""]
+- ["5Macaw5ColorC", ""]
+- ["5Macaw6StrokeC", "strokeUsingAlphaOnly"]
+- ["5Macaw6StrokeC", "strokeUsingGrayscaleNoAlpha"]
+- ["5Macaw4FillC", "fillUsingAlphaOnly"]
+- ["5Macaw4FillC", "fillUsingGrayscaleNoAlpha"]
+- ["5Macaw5ColorC", "colorUsingAlphaOnly"]
+- ["5Macaw5ColorC", "toGrayscaleNoAlpha"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "!="
+- !private "&&"
+- !private "*"
+- !private "+"
+- !private "/"
+- !private "=="
+- !private ">"
+- "AnimationCache"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- !private "BoundsUtils"
+- !private "CFArray"
+- !private "CGColor"
+- !private "CGColorSpaceCreateDeviceRGB"
+- "CGContext"
+- !private "CGFloat"
+- !private "CGGradient"
+- "CGPath"
+- "CGPathDrawingMode"
+- !private "CGPoint"
+- "CastingPrecedence"
+- "Color"
+- "ColoringMode"
+- "Double"
+- "Fill"
+- "FillRule"
+- !private "FloatLiteralType"
+- "Gradient"
+- !private "Int"
+- !private "IntegerLiteralType"
+- !private "LinearGradient"
+- "MacawView"
+- "Node"
+- "NodePath"
+- "NodeRenderer"
+- !private "Path"
+- "Pattern"
+- !private "RadialGradient"
+- !private "RenderUtils"
+- "Shape"
+- "ShapeRenderer"
+- !private "Stop"
+- !private "StringLiteralType"
+- "Stroke"
+- "TernaryPrecedence"
+- !private "min"
+- !private "print"
+- !private "||"
+depends-member:
+- !private ["s18AdditiveArithmeticP", "init"]
+- !private ["5Macaw17AnimationObserverP", "BoundsUtils"]
+- !private ["5Macaw17AnimationObserverP", "CGColorSpaceCreateDeviceRGB"]
+- !private ["5Macaw17AnimationObserverP", "CGFloat"]
+- !private ["5Macaw17AnimationObserverP", "CGGradient"]
+- !private ["5Macaw17AnimationObserverP", "CGPoint"]
+- !private ["5Macaw17AnimationObserverP", "FillRule"]
+- !private ["5Macaw17AnimationObserverP", "RenderUtils"]
+- ["5Macaw17AnimationObserverP", ""]
+- !private ["5Macaw17AnimationObserverP", "animationCache"]
+- !private ["5Macaw17AnimationObserverP", "colorStroke"]
+- !private ["5Macaw17AnimationObserverP", "dispose"]
+- !private ["5Macaw17AnimationObserverP", "doAddObservers"]
+- !private ["5Macaw17AnimationObserverP", "drawGradient"]
+- !private ["5Macaw17AnimationObserverP", "drawPath"]
+- !private ["5Macaw17AnimationObserverP", "drawPattern"]
+- !private ["5Macaw17AnimationObserverP", "drawWithStroke"]
+- !private ["5Macaw17AnimationObserverP", "gradientStroke"]
+- !private ["5Macaw17AnimationObserverP", "init"]
+- !private ["5Macaw17AnimationObserverP", "min"]
+- !private ["5Macaw17AnimationObserverP", "observe"]
+- !private ["5Macaw17AnimationObserverP", "print"]
+- !private ["5Macaw17AnimationObserverP", "renderToImage"]
+- !private ["5Macaw17AnimationObserverP", "replaceNode"]
+- !private ["5Macaw17AnimationObserverP", "setFill"]
+- !private ["5Macaw17AnimationObserverP", "shape"]
+- !private ["5Macaw17AnimationObserverP", "view"]
+- !private ["Sa", "append"]
+- !private ["Sa", "map"]
+- !private ["SK", "append"]
+- !private ["SK", "map"]
+- !private ["SB", "init"]
+- !private ["Sz", "init"]
+- !private ["5Macaw11BoundsUtilsC", "createNodeFromRespectiveCoords"]
+- !private ["5Macaw11BoundsUtilsC", "transformForLocusInRespectiveCoords"]
+- !private ["So12CGContextRefa", "addPath"]
+- !private ["So12CGContextRefa", "beginPath"]
+- !private ["So12CGContextRefa", "boundingBoxOfPath"]
+- !private ["So12CGContextRefa", "clip"]
+- !private ["So12CGContextRefa", "draw"]
+- !private ["So12CGContextRefa", "drawLinearGradient"]
+- !private ["So12CGContextRefa", "drawPath"]
+- !private ["So12CGContextRefa", "drawRadialGradient"]
+- !private ["So12CGContextRefa", "path"]
+- !private ["So12CGContextRefa", "pathContains"]
+- !private ["So12CGContextRefa", "replacePathWithStrokedPath"]
+- !private ["So12CGContextRefa", "restoreGState"]
+- !private ["So12CGContextRefa", "saveGState"]
+- !private ["So12CGContextRefa", "scaleBy"]
+- !private ["So12CGContextRefa", "setFillColor"]
+- !private ["So12CGContextRefa", "setStrokeColor"]
+- !private ["So12CGContextRefa", "strokePath"]
+- !private ["12CoreGraphics7CGFloatV", "init"]
+- !private ["So13CGGradientRefa", "init"]
+- !private ["So24CGGradientDrawingOptionsV", "drawsAfterEndLocation"]
+- !private ["So24CGGradientDrawingOptionsV", "drawsBeforeStartLocation"]
+- !private ["So17CGPathDrawingModeV", "eoFill"]
+- !private ["So17CGPathDrawingModeV", "eoFillStroke"]
+- !private ["So17CGPathDrawingModeV", "fill"]
+- !private ["So17CGPathDrawingModeV", "fillStroke"]
+- !private ["So17CGPathDrawingModeV", "stroke"]
+- !private ["So7CGPointV", "init"]
+- !private ["So7CGPointV", "x"]
+- !private ["So7CGPointV", "y"]
+- !private ["So6CGRectV", "height"]
+- !private ["So6CGRectV", "minX"]
+- !private ["So6CGRectV", "minY"]
+- !private ["So6CGRectV", "width"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "cgImage"]
+- !private ["s7CVarArgP", "fill"]
+- !private ["s7CVarArgP", "fillVar"]
+- !private ["s7CVarArgP", "form"]
+- !private ["s7CVarArgP", "formVar"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "map"]
+- !private ["s7CVarArgP", "stroke"]
+- !private ["s7CVarArgP", "strokeVar"]
+- !private ["Sl", "append"]
+- !private ["Sl", "map"]
+- ["5Macaw5ColorC", "Color"]
+- !private ["5Macaw5ColorC", "Double"]
+- !private ["5Macaw5ColorC", "Int"]
+- !private ["5Macaw5ColorC", "a"]
+- !private ["5Macaw5ColorC", "b"]
+- !private ["5Macaw5ColorC", "black"]
+- ["5Macaw5ColorC", "colorUsingAlphaOnly"]
+- !private ["5Macaw5ColorC", "g"]
+- !private ["5Macaw5ColorC", "r"]
+- !private ["5Macaw5ColorC", "rgb"]
+- !private ["5Macaw5ColorC", "toCG"]
+- ["5Macaw5ColorC", "toGrayscaleNoAlpha"]
+- !private ["5Macaw5ColorC", "with"]
+- ["5Macaw12ColoringModeO", "alphaOnly"]
+- ["5Macaw12ColoringModeO", "greyscale"]
+- ["5Macaw12ColoringModeO", "rgb"]
+- !private ["SL", "init"]
+- !private ["5Macaw21ContentsInterpolationP", "append"]
+- !private ["5Macaw21ContentsInterpolationP", "map"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "cgImage"]
+- !private ["s28CustomDebugStringConvertibleP", "fill"]
+- !private ["s28CustomDebugStringConvertibleP", "fillStroke"]
+- !private ["s28CustomDebugStringConvertibleP", "fillVar"]
+- !private ["s28CustomDebugStringConvertibleP", "form"]
+- !private ["s28CustomDebugStringConvertibleP", "formVar"]
+- !private ["s28CustomDebugStringConvertibleP", "height"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "minX"]
+- !private ["s28CustomDebugStringConvertibleP", "minY"]
+- !private ["s28CustomDebugStringConvertibleP", "none"]
+- !private ["s28CustomDebugStringConvertibleP", "stroke"]
+- !private ["s28CustomDebugStringConvertibleP", "strokeVar"]
+- !private ["s28CustomDebugStringConvertibleP", "width"]
+- !private ["s28CustomDebugStringConvertibleP", "x"]
+- !private ["s28CustomDebugStringConvertibleP", "y"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "fill"]
+- !private ["s17CustomReflectableP", "fillStroke"]
+- !private ["s17CustomReflectableP", "height"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "map"]
+- !private ["s17CustomReflectableP", "minX"]
+- !private ["s17CustomReflectableP", "minY"]
+- !private ["s17CustomReflectableP", "none"]
+- !private ["s17CustomReflectableP", "stroke"]
+- !private ["s17CustomReflectableP", "width"]
+- !private ["s17CustomReflectableP", "x"]
+- !private ["s17CustomReflectableP", "y"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "applying"]
+- !private ["s23CustomStringConvertibleP", "cgImage"]
+- !private ["s23CustomStringConvertibleP", "fill"]
+- !private ["s23CustomStringConvertibleP", "fillVar"]
+- !private ["s23CustomStringConvertibleP", "form"]
+- !private ["s23CustomStringConvertibleP", "formVar"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- !private ["s23CustomStringConvertibleP", "stroke"]
+- !private ["s23CustomStringConvertibleP", "strokeVar"]
+- !private ["s23CustomStringConvertibleP", "toCG"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "map"]
+- !private ["Se", "append"]
+- !private ["Se", "fill"]
+- !private ["Se", "fillStroke"]
+- !private ["Se", "height"]
+- !private ["Se", "init"]
+- !private ["Se", "map"]
+- !private ["Se", "minX"]
+- !private ["Se", "minY"]
+- !private ["Se", "none"]
+- !private ["Se", "stroke"]
+- !private ["Se", "width"]
+- !private ["Se", "x"]
+- !private ["Se", "y"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["Sd", "init"]
+- !private ["5Macaw19DoubleInterpolationP", "init"]
+- !private ["5Macaw8DrawableC", "fill"]
+- !private ["5Macaw8DrawableC", "fillVar"]
+- !private ["5Macaw8DrawableC", "form"]
+- !private ["5Macaw8DrawableC", "formVar"]
+- !private ["5Macaw8DrawableC", "stroke"]
+- !private ["5Macaw8DrawableC", "strokeVar"]
+- !private ["SE", "append"]
+- !private ["SE", "fill"]
+- !private ["SE", "fillStroke"]
+- !private ["SE", "height"]
+- !private ["SE", "init"]
+- !private ["SE", "map"]
+- !private ["SE", "minX"]
+- !private ["SE", "minY"]
+- !private ["SE", "none"]
+- !private ["SE", "stroke"]
+- !private ["SE", "width"]
+- !private ["SE", "x"]
+- !private ["SE", "y"]
+- !private ["SQ", "BoundsUtils"]
+- !private ["SQ", "CGColorSpaceCreateDeviceRGB"]
+- !private ["SQ", "CGFloat"]
+- !private ["SQ", "CGGradient"]
+- !private ["SQ", "CGPoint"]
+- !private ["SQ", "Color"]
+- !private ["SQ", "Double"]
+- !private ["SQ", "FillRule"]
+- !private ["SQ", "Int"]
+- !private ["SQ", "LinearGradient"]
+- !private ["SQ", "RadialGradient"]
+- !private ["SQ", "RenderUtils"]
+- !private ["SQ", "Stop"]
+- ["SQ", ""]
+- !private ["SQ", "a"]
+- !private ["SQ", "addPath"]
+- ["SQ", "alphaOnly"]
+- !private ["SQ", "animationCache"]
+- !private ["SQ", "append"]
+- !private ["SQ", "b"]
+- !private ["SQ", "beginPath"]
+- !private ["SQ", "black"]
+- !private ["SQ", "boundingBoxOfPath"]
+- !private ["SQ", "bounds"]
+- !private ["SQ", "cgImage"]
+- !private ["SQ", "clip"]
+- !private ["SQ", "color"]
+- !private ["SQ", "colorStroke"]
+- !private ["SQ", "colorUsingAlphaOnly"]
+- !private ["SQ", "content"]
+- !private ["SQ", "cx"]
+- !private ["SQ", "cy"]
+- !private ["SQ", "dispose"]
+- !private ["SQ", "doAddObservers"]
+- !private ["SQ", "draw"]
+- !private ["SQ", "drawGradient"]
+- !private ["SQ", "drawLinearGradient"]
+- !private ["SQ", "drawPath"]
+- !private ["SQ", "drawPattern"]
+- !private ["SQ", "drawRadialGradient"]
+- !private ["SQ", "drawWithStroke"]
+- !private ["SQ", "drawsAfterEndLocation"]
+- !private ["SQ", "drawsBeforeStartLocation"]
+- !private ["SQ", "eoFill"]
+- !private ["SQ", "eoFillStroke"]
+- !private ["SQ", "fill"]
+- !private ["SQ", "fillStroke"]
+- !private ["SQ", "fillUsingAlphaOnly"]
+- !private ["SQ", "fillUsingGrayscaleNoAlpha"]
+- !private ["SQ", "fillVar"]
+- !private ["SQ", "form"]
+- !private ["SQ", "formVar"]
+- !private ["SQ", "fx"]
+- !private ["SQ", "fy"]
+- !private ["SQ", "g"]
+- !private ["SQ", "gradientStroke"]
+- ["SQ", "greyscale"]
+- !private ["SQ", "height"]
+- !private ["SQ", "init"]
+- !private ["SQ", "map"]
+- !private ["SQ", "min"]
+- !private ["SQ", "minX"]
+- !private ["SQ", "minY"]
+- !private ["SQ", "none"]
+- !private ["SQ", "nonzero"]
+- !private ["SQ", "observe"]
+- !private ["SQ", "offset"]
+- !private ["SQ", "path"]
+- !private ["SQ", "pathContains"]
+- !private ["SQ", "print"]
+- !private ["SQ", "r"]
+- !private ["SQ", "renderToImage"]
+- !private ["SQ", "replaceNode"]
+- !private ["SQ", "replacePathWithStrokedPath"]
+- !private ["SQ", "restoreGState"]
+- ["SQ", "rgb"]
+- !private ["SQ", "saveGState"]
+- !private ["SQ", "scaleBy"]
+- !private ["SQ", "setFill"]
+- !private ["SQ", "setFillColor"]
+- !private ["SQ", "setStrokeColor"]
+- !private ["SQ", "shape"]
+- !private ["SQ", "stops"]
+- !private ["SQ", "stroke"]
+- !private ["SQ", "strokePath"]
+- !private ["SQ", "strokeVar"]
+- !private ["SQ", "toCG"]
+- !private ["SQ", "toGrayscaleNoAlpha"]
+- !private ["SQ", "userSpace"]
+- !private ["SQ", "view"]
+- !private ["SQ", "width"]
+- !private ["SQ", "with"]
+- !private ["SQ", "x"]
+- !private ["SQ", "x1"]
+- !private ["SQ", "x2"]
+- !private ["SQ", "y"]
+- !private ["SQ", "y1"]
+- !private ["SQ", "y2"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "drawsAfterEndLocation"]
+- !private ["s25ExpressibleByArrayLiteralP", "drawsBeforeStartLocation"]
+- !private ["s25ExpressibleByArrayLiteralP", "map"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "fill"]
+- !private ["s23ExpressibleByNilLiteralP", "fillStroke"]
+- !private ["s23ExpressibleByNilLiteralP", "none"]
+- !private ["s23ExpressibleByNilLiteralP", "stroke"]
+- ["5Macaw4FillC", "Color"]
+- !private ["5Macaw4FillC", "Double"]
+- ["5Macaw4FillC", "Fill"]
+- !private ["5Macaw4FillC", "Gradient"]
+- !private ["5Macaw4FillC", "Int"]
+- !private ["5Macaw4FillC", "LinearGradient"]
+- !private ["5Macaw4FillC", "RadialGradient"]
+- !private ["5Macaw4FillC", "Stop"]
+- !private ["5Macaw4FillC", "a"]
+- !private ["5Macaw4FillC", "b"]
+- !private ["5Macaw4FillC", "black"]
+- !private ["5Macaw4FillC", "bounds"]
+- ["5Macaw4FillC", "colorUsingAlphaOnly"]
+- !private ["5Macaw4FillC", "content"]
+- !private ["5Macaw4FillC", "cx"]
+- !private ["5Macaw4FillC", "cy"]
+- !private ["5Macaw4FillC", "deinit"]
+- ["5Macaw4FillC", "fillUsingAlphaOnly"]
+- ["5Macaw4FillC", "fillUsingGrayscaleNoAlpha"]
+- !private ["5Macaw4FillC", "fx"]
+- !private ["5Macaw4FillC", "fy"]
+- !private ["5Macaw4FillC", "g"]
+- !private ["5Macaw4FillC", "r"]
+- !private ["5Macaw4FillC", "rgb"]
+- !private ["5Macaw4FillC", "stops"]
+- !private ["5Macaw4FillC", "toCG"]
+- ["5Macaw4FillC", "toGrayscaleNoAlpha"]
+- !private ["5Macaw4FillC", "userSpace"]
+- !private ["5Macaw4FillC", "with"]
+- !private ["5Macaw4FillC", "x1"]
+- !private ["5Macaw4FillC", "x2"]
+- !private ["5Macaw4FillC", "y1"]
+- !private ["5Macaw4FillC", "y2"]
+- !private ["5Macaw17FillInterpolationP", "Color"]
+- !private ["5Macaw17FillInterpolationP", "Double"]
+- !private ["5Macaw17FillInterpolationP", "Int"]
+- !private ["5Macaw17FillInterpolationP", "LinearGradient"]
+- !private ["5Macaw17FillInterpolationP", "RadialGradient"]
+- !private ["5Macaw17FillInterpolationP", "Stop"]
+- !private ["5Macaw17FillInterpolationP", "a"]
+- !private ["5Macaw17FillInterpolationP", "b"]
+- !private ["5Macaw17FillInterpolationP", "black"]
+- !private ["5Macaw17FillInterpolationP", "bounds"]
+- !private ["5Macaw17FillInterpolationP", "colorUsingAlphaOnly"]
+- !private ["5Macaw17FillInterpolationP", "content"]
+- !private ["5Macaw17FillInterpolationP", "cx"]
+- !private ["5Macaw17FillInterpolationP", "cy"]
+- !private ["5Macaw17FillInterpolationP", "fillUsingAlphaOnly"]
+- !private ["5Macaw17FillInterpolationP", "fillUsingGrayscaleNoAlpha"]
+- !private ["5Macaw17FillInterpolationP", "fx"]
+- !private ["5Macaw17FillInterpolationP", "fy"]
+- !private ["5Macaw17FillInterpolationP", "g"]
+- !private ["5Macaw17FillInterpolationP", "init"]
+- !private ["5Macaw17FillInterpolationP", "r"]
+- !private ["5Macaw17FillInterpolationP", "rgb"]
+- !private ["5Macaw17FillInterpolationP", "stops"]
+- !private ["5Macaw17FillInterpolationP", "toCG"]
+- !private ["5Macaw17FillInterpolationP", "toGrayscaleNoAlpha"]
+- !private ["5Macaw17FillInterpolationP", "userSpace"]
+- !private ["5Macaw17FillInterpolationP", "with"]
+- !private ["5Macaw17FillInterpolationP", "x1"]
+- !private ["5Macaw17FillInterpolationP", "x2"]
+- !private ["5Macaw17FillInterpolationP", "y1"]
+- !private ["5Macaw17FillInterpolationP", "y2"]
+- !private ["5Macaw8FillRuleO", "deinit"]
+- !private ["5Macaw8FillRuleO", "nonzero"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["SF", "init"]
+- !private ["5Macaw8GradientC", "cx"]
+- !private ["5Macaw8GradientC", "cy"]
+- !private ["5Macaw8GradientC", "fx"]
+- !private ["5Macaw8GradientC", "fy"]
+- !private ["5Macaw8GradientC", "r"]
+- !private ["5Macaw8GradientC", "stops"]
+- !private ["5Macaw8GradientC", "userSpace"]
+- !private ["5Macaw8GradientC", "x1"]
+- !private ["5Macaw8GradientC", "x2"]
+- !private ["5Macaw8GradientC", "y1"]
+- !private ["5Macaw8GradientC", "y2"]
+- !private ["SH", "BoundsUtils"]
+- !private ["SH", "CGColorSpaceCreateDeviceRGB"]
+- !private ["SH", "CGFloat"]
+- !private ["SH", "CGGradient"]
+- !private ["SH", "CGPoint"]
+- !private ["SH", "FillRule"]
+- !private ["SH", "RenderUtils"]
+- ["SH", ""]
+- !private ["SH", "addPath"]
+- ["SH", "alphaOnly"]
+- !private ["SH", "animationCache"]
+- !private ["SH", "append"]
+- !private ["SH", "beginPath"]
+- !private ["SH", "boundingBoxOfPath"]
+- !private ["SH", "cgImage"]
+- !private ["SH", "clip"]
+- !private ["SH", "colorStroke"]
+- !private ["SH", "dispose"]
+- !private ["SH", "doAddObservers"]
+- !private ["SH", "draw"]
+- !private ["SH", "drawGradient"]
+- !private ["SH", "drawLinearGradient"]
+- !private ["SH", "drawPath"]
+- !private ["SH", "drawPattern"]
+- !private ["SH", "drawRadialGradient"]
+- !private ["SH", "drawWithStroke"]
+- !private ["SH", "eoFill"]
+- !private ["SH", "eoFillStroke"]
+- !private ["SH", "fill"]
+- !private ["SH", "fillStroke"]
+- !private ["SH", "fillVar"]
+- !private ["SH", "form"]
+- !private ["SH", "formVar"]
+- !private ["SH", "gradientStroke"]
+- ["SH", "greyscale"]
+- !private ["SH", "init"]
+- !private ["SH", "map"]
+- !private ["SH", "min"]
+- !private ["SH", "none"]
+- !private ["SH", "nonzero"]
+- !private ["SH", "observe"]
+- !private ["SH", "path"]
+- !private ["SH", "pathContains"]
+- !private ["SH", "print"]
+- !private ["SH", "renderToImage"]
+- !private ["SH", "replaceNode"]
+- !private ["SH", "replacePathWithStrokedPath"]
+- !private ["SH", "restoreGState"]
+- ["SH", "rgb"]
+- !private ["SH", "saveGState"]
+- !private ["SH", "scaleBy"]
+- !private ["SH", "setFill"]
+- !private ["SH", "setFillColor"]
+- !private ["SH", "setStrokeColor"]
+- !private ["SH", "shape"]
+- !private ["SH", "stroke"]
+- !private ["SH", "strokePath"]
+- !private ["SH", "strokeVar"]
+- !private ["SH", "view"]
+- !private ["Si", "init"]
+- !private ["5Macaw12InterpolableP", "Color"]
+- !private ["5Macaw12InterpolableP", "Double"]
+- !private ["5Macaw12InterpolableP", "Int"]
+- !private ["5Macaw12InterpolableP", "LinearGradient"]
+- !private ["5Macaw12InterpolableP", "RadialGradient"]
+- !private ["5Macaw12InterpolableP", "Stop"]
+- !private ["5Macaw12InterpolableP", "Stroke"]
+- !private ["5Macaw12InterpolableP", "a"]
+- !private ["5Macaw12InterpolableP", "append"]
+- !private ["5Macaw12InterpolableP", "applying"]
+- !private ["5Macaw12InterpolableP", "b"]
+- !private ["5Macaw12InterpolableP", "black"]
+- !private ["5Macaw12InterpolableP", "bounds"]
+- !private ["5Macaw12InterpolableP", "cap"]
+- !private ["5Macaw12InterpolableP", "colorUsingAlphaOnly"]
+- !private ["5Macaw12InterpolableP", "content"]
+- !private ["5Macaw12InterpolableP", "cx"]
+- !private ["5Macaw12InterpolableP", "cy"]
+- !private ["5Macaw12InterpolableP", "dashes"]
+- !private ["5Macaw12InterpolableP", "fill"]
+- !private ["5Macaw12InterpolableP", "fillRule"]
+- !private ["5Macaw12InterpolableP", "fillUsingAlphaOnly"]
+- !private ["5Macaw12InterpolableP", "fillUsingGrayscaleNoAlpha"]
+- !private ["5Macaw12InterpolableP", "fillVar"]
+- !private ["5Macaw12InterpolableP", "form"]
+- !private ["5Macaw12InterpolableP", "formVar"]
+- !private ["5Macaw12InterpolableP", "fx"]
+- !private ["5Macaw12InterpolableP", "fy"]
+- !private ["5Macaw12InterpolableP", "g"]
+- !private ["5Macaw12InterpolableP", "init"]
+- !private ["5Macaw12InterpolableP", "join"]
+- !private ["5Macaw12InterpolableP", "map"]
+- !private ["5Macaw12InterpolableP", "offset"]
+- !private ["5Macaw12InterpolableP", "r"]
+- !private ["5Macaw12InterpolableP", "rgb"]
+- !private ["5Macaw12InterpolableP", "stops"]
+- !private ["5Macaw12InterpolableP", "stroke"]
+- !private ["5Macaw12InterpolableP", "strokeUsingAlphaOnly"]
+- !private ["5Macaw12InterpolableP", "strokeUsingGrayscaleNoAlpha"]
+- !private ["5Macaw12InterpolableP", "strokeVar"]
+- !private ["5Macaw12InterpolableP", "toCG"]
+- !private ["5Macaw12InterpolableP", "toGrayscaleNoAlpha"]
+- !private ["5Macaw12InterpolableP", "userSpace"]
+- !private ["5Macaw12InterpolableP", "width"]
+- !private ["5Macaw12InterpolableP", "with"]
+- !private ["5Macaw12InterpolableP", "x1"]
+- !private ["5Macaw12InterpolableP", "x2"]
+- !private ["5Macaw12InterpolableP", "y1"]
+- !private ["5Macaw12InterpolableP", "y2"]
+- !private ["5Macaw14LinearGradientC", "init"]
+- !private ["5Macaw14LinearGradientC", "userSpace"]
+- !private ["5Macaw14LinearGradientC", "x1"]
+- !private ["5Macaw14LinearGradientC", "x2"]
+- !private ["5Macaw14LinearGradientC", "y1"]
+- !private ["5Macaw14LinearGradientC", "y2"]
+- !private ["5Macaw5LocusC", "applying"]
+- !private ["5Macaw5LocusC", "fillRule"]
+- !private ["5Macaw5LocusC", "toCG"]
+- !private ["5Macaw18LocusInterpolationP", "applying"]
+- !private ["5Macaw18LocusInterpolationP", "fillRule"]
+- !private ["5Macaw18LocusInterpolationP", "toCG"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "append"]
+- !private ["SM", "map"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "map"]
+- !private ["So8NSCodingP", "cgImage"]
+- !private ["So21NSItemProviderReadingP", "cgImage"]
+- !private ["So21NSItemProviderWritingP", "cgImage"]
+- !private ["So8NSObjectC", "cgImage"]
+- !private ["So8NSObjectC", "fill"]
+- !private ["So8NSObjectC", "fillVar"]
+- !private ["So8NSObjectC", "form"]
+- !private ["So8NSObjectC", "formVar"]
+- !private ["So8NSObjectC", "stroke"]
+- !private ["So8NSObjectC", "strokeVar"]
+- !private ["So8NSObjectP", "cgImage"]
+- !private ["So8NSObjectP", "fill"]
+- !private ["So8NSObjectP", "fillVar"]
+- !private ["So8NSObjectP", "form"]
+- !private ["So8NSObjectP", "formVar"]
+- !private ["So8NSObjectP", "stroke"]
+- !private ["So8NSObjectP", "strokeVar"]
+- !private ["So14NSSecureCodingP", "cgImage"]
+- !private ["5Macaw4NodeC", "fill"]
+- !private ["5Macaw4NodeC", "fillVar"]
+- !private ["5Macaw4NodeC", "form"]
+- !private ["5Macaw4NodeC", "formVar"]
+- !private ["5Macaw4NodeC", "stroke"]
+- !private ["5Macaw4NodeC", "strokeVar"]
+- !private ["5Macaw8NodePathC", "location"]
+- ["5Macaw12NodeRendererC", "AnimationCache"]
+- ["5Macaw12NodeRendererC", "Bool"]
+- !private ["5Macaw12NodeRendererC", "BoundsUtils"]
+- !private ["5Macaw12NodeRendererC", "CFArray"]
+- !private ["5Macaw12NodeRendererC", "CGColor"]
+- !private ["5Macaw12NodeRendererC", "CGColorSpaceCreateDeviceRGB"]
+- ["5Macaw12NodeRendererC", "CGContext"]
+- !private ["5Macaw12NodeRendererC", "CGFloat"]
+- !private ["5Macaw12NodeRendererC", "CGGradient"]
+- ["5Macaw12NodeRendererC", "CGPath"]
+- ["5Macaw12NodeRendererC", "CGPathDrawingMode"]
+- !private ["5Macaw12NodeRendererC", "CGPoint"]
+- !private ["5Macaw12NodeRendererC", "Color"]
+- ["5Macaw12NodeRendererC", "ColoringMode"]
+- ["5Macaw12NodeRendererC", "Double"]
+- ["5Macaw12NodeRendererC", "Fill"]
+- ["5Macaw12NodeRendererC", "FillRule"]
+- ["5Macaw12NodeRendererC", "Gradient"]
+- !private ["5Macaw12NodeRendererC", "LinearGradient"]
+- ["5Macaw12NodeRendererC", "MacawView"]
+- ["5Macaw12NodeRendererC", "Node"]
+- ["5Macaw12NodeRendererC", "NodePath"]
+- !private ["5Macaw12NodeRendererC", "Path"]
+- ["5Macaw12NodeRendererC", "Pattern"]
+- !private ["5Macaw12NodeRendererC", "RadialGradient"]
+- !private ["5Macaw12NodeRendererC", "RenderUtils"]
+- ["5Macaw12NodeRendererC", "Shape"]
+- ["5Macaw12NodeRendererC", "Stroke"]
+- ["5Macaw12NodeRendererC", ""]
+- !private ["5Macaw12NodeRendererC", "animationCache"]
+- ["5Macaw12NodeRendererC", "colorStroke"]
+- !private ["5Macaw12NodeRendererC", "dispose"]
+- ["5Macaw12NodeRendererC", "doAddObservers"]
+- ["5Macaw12NodeRendererC", "doFindNodeAt"]
+- ["5Macaw12NodeRendererC", "doRender"]
+- ["5Macaw12NodeRendererC", "drawGradient"]
+- ["5Macaw12NodeRendererC", "drawPath"]
+- ["5Macaw12NodeRendererC", "drawPattern"]
+- ["5Macaw12NodeRendererC", "drawWithStroke"]
+- ["5Macaw12NodeRendererC", "gradientStroke"]
+- ["5Macaw12NodeRendererC", "init"]
+- !private ["5Macaw12NodeRendererC", "min"]
+- ["5Macaw12NodeRendererC", "node"]
+- !private ["5Macaw12NodeRendererC", "observe"]
+- !private ["5Macaw12NodeRendererC", "print"]
+- !private ["5Macaw12NodeRendererC", "renderToImage"]
+- ["5Macaw12NodeRendererC", "replaceNode"]
+- ["5Macaw12NodeRendererC", "setFill"]
+- ["5Macaw12NodeRendererC", "shape"]
+- !private ["5Macaw12NodeRendererC", "view"]
+- !private ["Sj", "init"]
+- !private ["s9OptionSetP", "drawsAfterEndLocation"]
+- !private ["s9OptionSetP", "drawsBeforeStartLocation"]
+- !private ["Sq", "fill"]
+- !private ["Sq", "fillStroke"]
+- !private ["Sq", "none"]
+- !private ["Sq", "stroke"]
+- !private ["5Macaw4PathC", "fillRule"]
+- !private ["5Macaw7PatternC", "bounds"]
+- !private ["5Macaw7PatternC", "content"]
+- !private ["5Macaw7PatternC", "userSpace"]
+- !private ["5Macaw14RadialGradientC", "cx"]
+- !private ["5Macaw14RadialGradientC", "cy"]
+- !private ["5Macaw14RadialGradientC", "fx"]
+- !private ["5Macaw14RadialGradientC", "fy"]
+- !private ["5Macaw14RadialGradientC", "init"]
+- !private ["5Macaw14RadialGradientC", "r"]
+- !private ["5Macaw14RadialGradientC", "userSpace"]
+- !private ["Sk", "append"]
+- !private ["Sk", "map"]
+- !private ["Sm", "append"]
+- !private ["Sm", "map"]
+- !private ["SY", "drawsAfterEndLocation"]
+- !private ["SY", "drawsBeforeStartLocation"]
+- !private ["SY", "eoFill"]
+- !private ["SY", "eoFillStroke"]
+- !private ["SY", "fill"]
+- !private ["SY", "fillStroke"]
+- !private ["SY", "stroke"]
+- !private ["5Macaw4RectC", "applying"]
+- !private ["5Macaw4RectC", "toCG"]
+- !private ["5Macaw11RenderUtilsC", "applyOpacity"]
+- !private ["5Macaw11RenderUtilsC", "createNodeRenderer"]
+- !private ["5Macaw11RenderUtilsC", "setGeometry"]
+- !private ["5Macaw11RenderUtilsC", "setStrokeAttributes"]
+- !private ["s10SIMDScalarP", "init"]
+- !private ["ST", "append"]
+- !private ["ST", "map"]
+- !private ["s10SetAlgebraP", "drawsAfterEndLocation"]
+- !private ["s10SetAlgebraP", "drawsBeforeStartLocation"]
+- !private ["5Macaw5ShapeC", "fill"]
+- !private ["5Macaw5ShapeC", "fillVar"]
+- !private ["5Macaw5ShapeC", "form"]
+- !private ["5Macaw5ShapeC", "formVar"]
+- !private ["5Macaw5ShapeC", "stroke"]
+- !private ["5Macaw5ShapeC", "strokeVar"]
+- !private ["5Macaw18ShapeInterpolationP", "fill"]
+- !private ["5Macaw18ShapeInterpolationP", "fillVar"]
+- !private ["5Macaw18ShapeInterpolationP", "form"]
+- !private ["5Macaw18ShapeInterpolationP", "formVar"]
+- !private ["5Macaw18ShapeInterpolationP", "stroke"]
+- !private ["5Macaw18ShapeInterpolationP", "strokeVar"]
+- ["5Macaw13ShapeRendererC", "AnimationCache"]
+- ["5Macaw13ShapeRendererC", "Bool"]
+- !private ["5Macaw13ShapeRendererC", "BoundsUtils"]
+- !private ["5Macaw13ShapeRendererC", "CFArray"]
+- !private ["5Macaw13ShapeRendererC", "CGColor"]
+- !private ["5Macaw13ShapeRendererC", "CGColorSpaceCreateDeviceRGB"]
+- ["5Macaw13ShapeRendererC", "CGContext"]
+- !private ["5Macaw13ShapeRendererC", "CGFloat"]
+- !private ["5Macaw13ShapeRendererC", "CGGradient"]
+- ["5Macaw13ShapeRendererC", "CGPath"]
+- ["5Macaw13ShapeRendererC", "CGPathDrawingMode"]
+- !private ["5Macaw13ShapeRendererC", "CGPoint"]
+- !private ["5Macaw13ShapeRendererC", "Color"]
+- ["5Macaw13ShapeRendererC", "ColoringMode"]
+- ["5Macaw13ShapeRendererC", "Double"]
+- ["5Macaw13ShapeRendererC", "Fill"]
+- ["5Macaw13ShapeRendererC", "FillRule"]
+- ["5Macaw13ShapeRendererC", "Gradient"]
+- !private ["5Macaw13ShapeRendererC", "LinearGradient"]
+- ["5Macaw13ShapeRendererC", "MacawView"]
+- ["5Macaw13ShapeRendererC", "Node"]
+- ["5Macaw13ShapeRendererC", "NodePath"]
+- !private ["5Macaw13ShapeRendererC", "Path"]
+- ["5Macaw13ShapeRendererC", "Pattern"]
+- !private ["5Macaw13ShapeRendererC", "RadialGradient"]
+- !private ["5Macaw13ShapeRendererC", "RenderUtils"]
+- ["5Macaw13ShapeRendererC", "Shape"]
+- ["5Macaw13ShapeRendererC", "Stroke"]
+- !private ["5Macaw13ShapeRendererC", "animationCache"]
+- !private ["5Macaw13ShapeRendererC", "colorStroke"]
+- ["5Macaw13ShapeRendererC", "deinit"]
+- !private ["5Macaw13ShapeRendererC", "dispose"]
+- ["5Macaw13ShapeRendererC", "doAddObservers"]
+- ["5Macaw13ShapeRendererC", "doFindNodeAt"]
+- ["5Macaw13ShapeRendererC", "doRender"]
+- !private ["5Macaw13ShapeRendererC", "drawGradient"]
+- !private ["5Macaw13ShapeRendererC", "drawPath"]
+- !private ["5Macaw13ShapeRendererC", "drawPattern"]
+- !private ["5Macaw13ShapeRendererC", "drawWithStroke"]
+- !private ["5Macaw13ShapeRendererC", "gradientStroke"]
+- ["5Macaw13ShapeRendererC", "init"]
+- !private ["5Macaw13ShapeRendererC", "min"]
+- ["5Macaw13ShapeRendererC", "node"]
+- !private ["5Macaw13ShapeRendererC", "observe"]
+- !private ["5Macaw13ShapeRendererC", "print"]
+- ["5Macaw13ShapeRendererC", "replaceNode"]
+- !private ["5Macaw13ShapeRendererC", "setFill"]
+- ["5Macaw13ShapeRendererC", "shape"]
+- !private ["5Macaw13ShapeRendererC", "view"]
+- !private ["SZ", "init"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["5Macaw4StopC", "color"]
+- !private ["5Macaw4StopC", "init"]
+- !private ["5Macaw4StopC", "offset"]
+- !private ["Sx", "init"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- ["5Macaw6StrokeC", "Stroke"]
+- !private ["5Macaw6StrokeC", "cap"]
+- !private ["5Macaw6StrokeC", "dashes"]
+- !private ["5Macaw6StrokeC", "fill"]
+- !private ["5Macaw6StrokeC", "init"]
+- !private ["5Macaw6StrokeC", "join"]
+- !private ["5Macaw6StrokeC", "offset"]
+- ["5Macaw6StrokeC", "strokeUsingAlphaOnly"]
+- ["5Macaw6StrokeC", "strokeUsingGrayscaleNoAlpha"]
+- !private ["5Macaw6StrokeC", "width"]
+- !private ["5Macaw19StrokeInterpolationP", "Stroke"]
+- !private ["5Macaw19StrokeInterpolationP", "cap"]
+- !private ["5Macaw19StrokeInterpolationP", "dashes"]
+- !private ["5Macaw19StrokeInterpolationP", "fill"]
+- !private ["5Macaw19StrokeInterpolationP", "init"]
+- !private ["5Macaw19StrokeInterpolationP", "join"]
+- !private ["5Macaw19StrokeInterpolationP", "offset"]
+- !private ["5Macaw19StrokeInterpolationP", "strokeUsingAlphaOnly"]
+- !private ["5Macaw19StrokeInterpolationP", "strokeUsingGrayscaleNoAlpha"]
+- !private ["5Macaw19StrokeInterpolationP", "width"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "cgImage"]
+- !private ["So7UIImageC", "cgImage"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "cgImage"]
+- !private ["9SWXMLHash26XMLAttributeDeserializableP", "init"]
+- !private ["9SWXMLHash24XMLElementDeserializableP", "init"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "map"]
+- !private ["14CoreFoundation9_CFObjectP", "addPath"]
+- !private ["14CoreFoundation9_CFObjectP", "beginPath"]
+- !private ["14CoreFoundation9_CFObjectP", "boundingBoxOfPath"]
+- !private ["14CoreFoundation9_CFObjectP", "clip"]
+- !private ["14CoreFoundation9_CFObjectP", "draw"]
+- !private ["14CoreFoundation9_CFObjectP", "drawLinearGradient"]
+- !private ["14CoreFoundation9_CFObjectP", "drawPath"]
+- !private ["14CoreFoundation9_CFObjectP", "drawRadialGradient"]
+- !private ["14CoreFoundation9_CFObjectP", "init"]
+- !private ["14CoreFoundation9_CFObjectP", "path"]
+- !private ["14CoreFoundation9_CFObjectP", "pathContains"]
+- !private ["14CoreFoundation9_CFObjectP", "replacePathWithStrokedPath"]
+- !private ["14CoreFoundation9_CFObjectP", "restoreGState"]
+- !private ["14CoreFoundation9_CFObjectP", "saveGState"]
+- !private ["14CoreFoundation9_CFObjectP", "scaleBy"]
+- !private ["14CoreFoundation9_CFObjectP", "setFillColor"]
+- !private ["14CoreFoundation9_CFObjectP", "setStrokeColor"]
+- !private ["14CoreFoundation9_CFObjectP", "strokePath"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "height"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "minX"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "minY"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "width"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "x"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "y"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "map"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s26_ExpressibleByImageLiteralP", "cgImage"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "map"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cgImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fill"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fillVar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "form"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "formVar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "stroke"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "strokeVar"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "fill"]
+- !private ["s21_ObjectiveCBridgeableP", "fillStroke"]
+- !private ["s21_ObjectiveCBridgeableP", "height"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
+- !private ["s21_ObjectiveCBridgeableP", "minX"]
+- !private ["s21_ObjectiveCBridgeableP", "minY"]
+- !private ["s21_ObjectiveCBridgeableP", "none"]
+- !private ["s21_ObjectiveCBridgeableP", "stroke"]
+- !private ["s21_ObjectiveCBridgeableP", "width"]
+- !private ["s21_ObjectiveCBridgeableP", "x"]
+- !private ["s21_ObjectiveCBridgeableP", "y"]
+depends-nominal:
+- !private "s18AdditiveArithmeticP"
+- "5Macaw17AnimationObserverP"
+- !private "Sa"
+- !private "SK"
+- !private "SB"
+- !private "Sz"
+- !private "5Macaw11BoundsUtilsC"
+- !private "So12CGContextRefa"
+- !private "12CoreGraphics7CGFloatV"
+- !private "So13CGGradientRefa"
+- !private "So24CGGradientDrawingOptionsV"
+- !private "So17CGPathDrawingModeV"
+- !private "So7CGPointV"
+- !private "So6CGRectV"
+- !private "s7CVarArgP"
+- !private "Sl"
+- "5Macaw5ColorC"
+- "5Macaw12ColoringModeO"
+- !private "SL"
+- !private "5Macaw21ContentsInterpolationP"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "Sd"
+- !private "5Macaw19DoubleInterpolationP"
+- !private "5Macaw8DrawableC"
+- !private "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- "5Macaw4FillC"
+- !private "5Macaw17FillInterpolationP"
+- !private "5Macaw8FillRuleO"
+- !private "s17FixedWidthIntegerP"
+- !private "SF"
+- !private "5Macaw8GradientC"
+- "SH"
+- !private "Si"
+- !private "5Macaw12InterpolableP"
+- !private "5Macaw14LinearGradientC"
+- !private "5Macaw5LocusC"
+- !private "5Macaw18LocusInterpolationP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "So8NSCodingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "5Macaw4NodeC"
+- !private "5Macaw8NodePathC"
+- "5Macaw12NodeRendererC"
+- !private "Sj"
+- !private "s9OptionSetP"
+- !private "Sq"
+- !private "5Macaw4PathC"
+- !private "5Macaw7PatternC"
+- !private "5Macaw14RadialGradientC"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
+- !private "5Macaw4RectC"
+- !private "5Macaw11RenderUtilsC"
+- !private "s10SIMDScalarP"
+- !private "ST"
+- !private "s10SetAlgebraP"
+- !private "5Macaw5ShapeC"
+- !private "5Macaw18ShapeInterpolationP"
+- "5Macaw13ShapeRendererC"
+- !private "SZ"
+- !private "s13SignedNumericP"
+- !private "5Macaw4StopC"
+- !private "Sx"
+- !private "s27StringInterpolationProtocolP"
+- "5Macaw6StrokeC"
+- !private "5Macaw19StrokeInterpolationP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So7UIImageC"
+- !private "So39UIItemProviderPresentationSizeProvidingP"
+- !private "9SWXMLHash26XMLAttributeDeserializableP"
+- !private "9SWXMLHash24XMLElementDeserializableP"
+- !private "s14_ArrayProtocolP"
+- !private "14CoreFoundation9_CFObjectP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s26_ExpressibleByImageLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/SWXMLHash/SWXMLHash.framework/Modules/SWXMLHash.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/SWXMLHash/SWXMLHash-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/Macaw/Macaw-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/SWXMLHash/SWXMLHash.framework/Headers/SWXMLHash-Swift.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphoneos/Macaw.build/unextended-module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphoneos/SWXMLHash.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "1d7e2a852e19258c6eb936a6350a8a97"

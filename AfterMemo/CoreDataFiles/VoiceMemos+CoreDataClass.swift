@@ -1,8 +1,9 @@
 //
 //  VoiceMemos+CoreDataClass.swift
-//  
+//  AfterMemo
 //
-//  Created by Taylor Simpson on 6/15/18.
+//  Created by Taylor Simpson on 9/22/18.
+//  Copyright © 2018 Taylor Simpson. All rights reserved.
 //
 //
 

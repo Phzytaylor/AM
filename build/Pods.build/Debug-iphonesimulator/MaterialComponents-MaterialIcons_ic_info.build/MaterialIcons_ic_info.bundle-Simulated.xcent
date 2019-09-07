@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>application-identifier</key>
+	<string>TR2MLK3WQ4.org.cocoapods.MaterialIcons-ic-info</string>
+	<key>keychain-access-groups</key>
+	<array>
+		<string>TR2MLK3WQ4.org.cocoapods.MaterialIcons-ic-info</string>
+	</array>
+</dict>
+</plist>

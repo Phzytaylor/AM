@@ -11,13 +11,20 @@ import Eureka
 import Firebase
 import FirebaseAuth
 import FirebaseDatabase
+import CoreData
 
 class UserInfoViewController: FormViewController {
-
+    var firstName = ""
+    var lastName = ""
+    let gradient = GradientView()
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.backgroundColor = #colorLiteral(red: 0, green: 0.5898008943, blue: 1, alpha: 1)
+        
+        //tableView.backgroundColor = #colorLiteral(red: 0, green: 0.5898008943, blue: 1, alpha: 1)
+        tableView.backgroundView = gradient
+        gradient.firstColor = #colorLiteral(red: 0.04111137241, green: 0.394802928, blue: 0.5176765919, alpha: 1)
+        gradient.secondColor = .white
 
         form +++ Section("This info is for recovery and memo storage")
             
@@ -64,7 +71,7 @@ class UserInfoViewController: FormViewController {
                 
                 }
                 .cellSetup() {cell, row in
-                    cell.backgroundColor = UIColor(red: 0.102, green: 0.5569, blue: 0, alpha: 1.0)
+                    cell.backgroundColor = #colorLiteral(red: 0.04111137241, green: 0.394802928, blue: 0.5176765919, alpha: 1)
                     cell.tintColor = .white
                 }
                 .onCellSelection { [weak self] (cell, row) in
@@ -101,12 +108,12 @@ class UserInfoViewController: FormViewController {
                                 
                                 let userRef = Database.database().reference().child("users").child(userID)
                                 
-                                var dateFormat = DateFormatter()
+                                let dateFormat = DateFormatter()
                                 dateFormat.dateFormat = "MM-dd-yyyy"
-                                var dateString = dateFormat.string(from: birthDayRowValue)
+                                let dateString = dateFormat.string(from: birthDayRowValue)
                                 print("\(dateString)")
                                 
-                                userRef.updateChildValues(["email": emailRowValue, "phoneNumber": phoneRowValue, "birthday": dateString]  )
+                                userRef.updateChildValues(["email": emailRowValue, "phoneNumber": phoneRowValue, "birthday": dateString,"firstName": self?.firstName, "lastName": self?.lastName]  )
                                 
                                 UserDefaults.standard.set(true, forKey: "hasSetup")
                                 
@@ -139,11 +146,35 @@ class UserInfoViewController: FormViewController {
                         self?.present(uploadAlert, animated: true, completion: nil)
                     }
                     
+                    
+                    
+                    
                     // Do any additional setup after loading the view.
+        }
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{ return }
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Userinfo")
+      
+        request.returnsObjectsAsFaults = false
+        do {
+            let result = try managedContext.fetch(request)
+            
+            if let userNameInfo = result.first as? Userinfo {
+                firstName = userNameInfo.firstName ?? "none"
+                lastName = userNameInfo.lastName ?? "none"
+            }
+            
+        } catch {
+            
+            print("Failed")
         }
         // Do any additional setup after loading the view.
     }
 
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

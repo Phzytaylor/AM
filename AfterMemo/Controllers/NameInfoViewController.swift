@@ -26,13 +26,18 @@ class NameInfoViewController: UIViewController, UITextFieldDelegate {
         guard let nameText = firstNameTextField.text else {return}
         guard let lastText = lastNameTextField.text else {return}
         
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let controller = storyboard.instantiateViewController(withIdentifier: "pinScreen") as! ViewController
-//
-//        controller.firstName = nameText
-//        controller.lastName = lastText
-//
-        save(firstName: nameText, lastName: lastText)
+        if nameText.isEmpty || lastText.isEmpty {
+            let firstLastAlert = UIAlertController(title: "Empty Field", message: "Either the first or last name is missing.", preferredStyle: .alert)
+            firstLastAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            
+            self.present(firstLastAlert, animated: true, completion: nil)
+            
+        } else {
+           save(firstName: nameText, lastName: lastText)
+        }
+        
+
+        
         
       
     }

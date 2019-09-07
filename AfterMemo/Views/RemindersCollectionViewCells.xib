@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,30 +12,50 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="remind" id="gTV-IL-0wX" customClass="RemindersCollectionViewCell" customModule="AfterMemo" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="400" height="100"/>
+            <rect key="frame" x="0.0" y="0.0" width="355" height="150"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="400" height="100"/>
+                <rect key="frame" x="0.0" y="0.0" width="355" height="150"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Reminders Yet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3I-E6-daI">
-                        <rect key="frame" x="0.0" y="0.0" width="400" height="100"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a8n-2r-GXe">
+                        <rect key="frame" x="10" y="10" width="335" height="130"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe's birthday is soon. Record a memo for them" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3I-E6-daI">
+                                <rect key="frame" x="42.5" y="0.0" width="250" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="LdB-ud-vAv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="335" id="HNy-k1-jSH"/>
+                            <constraint firstItem="p3I-E6-daI" firstAttribute="centerY" secondItem="a8n-2r-GXe" secondAttribute="centerY" id="KZ5-Jn-cEK"/>
+                            <constraint firstAttribute="bottom" secondItem="p3I-E6-daI" secondAttribute="bottom" id="WcG-8L-WRI"/>
+                            <constraint firstItem="p3I-E6-daI" firstAttribute="top" secondItem="a8n-2r-GXe" secondAttribute="top" id="rj8-sJ-LwY"/>
+                            <constraint firstItem="p3I-E6-daI" firstAttribute="centerX" secondItem="a8n-2r-GXe" secondAttribute="centerX" id="rr0-22-VM1"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
             <constraints>
-                <constraint firstItem="p3I-E6-daI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6gt-1s-AuR"/>
-                <constraint firstAttribute="trailing" secondItem="p3I-E6-daI" secondAttribute="trailing" id="dPj-cq-vxX"/>
-                <constraint firstItem="p3I-E6-daI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ewt-PN-rWc"/>
-                <constraint firstAttribute="bottom" secondItem="p3I-E6-daI" secondAttribute="bottom" id="jhJ-kw-1zS"/>
+                <constraint firstItem="a8n-2r-GXe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="10z-NE-Zxy"/>
+                <constraint firstItem="a8n-2r-GXe" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="C7q-k1-ro5"/>
+                <constraint firstItem="a8n-2r-GXe" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="aFn-4A-J3k"/>
+                <constraint firstAttribute="bottom" secondItem="a8n-2r-GXe" secondAttribute="bottom" constant="10" id="tLC-Dq-I3Q"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="315" height="101"/>
-            <point key="canvasLocation" x="21.5" y="28.5"/>
+            <connections>
+                <outlet property="backingView" destination="a8n-2r-GXe" id="Djw-SK-1hD"/>
+                <outlet property="reminderLabel" destination="p3I-E6-daI" id="gaC-Sz-Bjd"/>
+            </connections>
+            <point key="canvasLocation" x="21.5" y="28"/>
         </collectionViewCell>
     </objects>
 </document>

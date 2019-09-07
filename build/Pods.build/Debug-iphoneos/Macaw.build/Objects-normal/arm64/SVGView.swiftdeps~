@@ -1,0 +1,413 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SVGView"
+provides-nominal:
+- "5Macaw7SVGViewC"
+provides-member:
+- ["5Macaw7SVGViewC", ""]
+provides-dynamic-lookup:
+- "fileName"
+depends-top-level:
+- !private "??"
+- "AssignmentPrecedence"
+- "CGRect"
+- !private "ContentLayout"
+- !private "Group"
+- "MacawView"
+- "NSCoder"
+- "Node"
+- !private "SVGParser"
+- "SVGView"
+- "String"
+depends-member:
+- !private ["So15CALayerDelegateP", "ContentLayout"]
+- !private ["So15CALayerDelegateP", "Group"]
+- !private ["So15CALayerDelegateP", "SVGParser"]
+- ["So15CALayerDelegateP", ""]
+- !private ["So15CALayerDelegateP", "contentLayout"]
+- !private ["So15CALayerDelegateP", "contentMode"]
+- !private ["So15CALayerDelegateP", "fileName"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "initializeView"]
+- !private ["So15CALayerDelegateP", "node"]
+- !private ["s7CVarArgP", "ContentLayout"]
+- !private ["s7CVarArgP", "Group"]
+- !private ["s7CVarArgP", "SVGParser"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "contentLayout"]
+- !private ["s7CVarArgP", "contentMode"]
+- !private ["s7CVarArgP", "fileName"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "initializeView"]
+- !private ["s7CVarArgP", "node"]
+- !private ["5Macaw13ContentLayoutC", "of"]
+- !private ["s28CustomDebugStringConvertibleP", "ContentLayout"]
+- !private ["s28CustomDebugStringConvertibleP", "Group"]
+- !private ["s28CustomDebugStringConvertibleP", "SVGParser"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "contentLayout"]
+- !private ["s28CustomDebugStringConvertibleP", "contentMode"]
+- !private ["s28CustomDebugStringConvertibleP", "fileName"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "initializeView"]
+- !private ["s28CustomDebugStringConvertibleP", "node"]
+- !private ["s23CustomStringConvertibleP", "ContentLayout"]
+- !private ["s23CustomStringConvertibleP", "Group"]
+- !private ["s23CustomStringConvertibleP", "SVGParser"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "contentLayout"]
+- !private ["s23CustomStringConvertibleP", "contentMode"]
+- !private ["s23CustomStringConvertibleP", "fileName"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "initializeView"]
+- !private ["s23CustomStringConvertibleP", "node"]
+- !private ["SQ", "ContentLayout"]
+- !private ["SQ", "Group"]
+- !private ["SQ", "SVGParser"]
+- ["SQ", ""]
+- !private ["SQ", "contentLayout"]
+- !private ["SQ", "contentMode"]
+- !private ["SQ", "fileName"]
+- !private ["SQ", "init"]
+- !private ["SQ", "initializeView"]
+- !private ["SQ", "node"]
+- !private ["5Macaw5GroupC", "init"]
+- !private ["SH", "ContentLayout"]
+- !private ["SH", "Group"]
+- !private ["SH", "SVGParser"]
+- ["SH", ""]
+- !private ["SH", "contentLayout"]
+- !private ["SH", "contentMode"]
+- !private ["SH", "fileName"]
+- !private ["SH", "init"]
+- !private ["SH", "initializeView"]
+- !private ["SH", "node"]
+- ["5Macaw5MViewC", "CGRect"]
+- !private ["5Macaw5MViewC", "ContentLayout"]
+- !private ["5Macaw5MViewC", "Group"]
+- ["5Macaw5MViewC", "NSCoder"]
+- ["5Macaw5MViewC", "Node"]
+- !private ["5Macaw5MViewC", "SVGParser"]
+- ["5Macaw5MViewC", "String"]
+- !private ["5Macaw5MViewC", "contentLayout"]
+- !private ["5Macaw5MViewC", "contentMode"]
+- ["5Macaw5MViewC", "fileName"]
+- ["5Macaw5MViewC", "init"]
+- ["5Macaw5MViewC", "initializeView"]
+- !private ["5Macaw5MViewC", "node"]
+- ["5Macaw0A4ViewC", "CGRect"]
+- !private ["5Macaw0A4ViewC", "ContentLayout"]
+- !private ["5Macaw0A4ViewC", "Group"]
+- ["5Macaw0A4ViewC", "NSCoder"]
+- ["5Macaw0A4ViewC", "Node"]
+- !private ["5Macaw0A4ViewC", "SVGParser"]
+- ["5Macaw0A4ViewC", "String"]
+- ["5Macaw0A4ViewC", ""]
+- !private ["5Macaw0A4ViewC", "contentLayout"]
+- !private ["5Macaw0A4ViewC", "contentMode"]
+- !private ["5Macaw0A4ViewC", "deinit"]
+- ["5Macaw0A4ViewC", "fileName"]
+- ["5Macaw0A4ViewC", "init"]
+- ["5Macaw0A4ViewC", "initializeView"]
+- !private ["5Macaw0A4ViewC", "node"]
+- !private ["So8NSCodingP", "ContentLayout"]
+- !private ["So8NSCodingP", "Group"]
+- !private ["So8NSCodingP", "SVGParser"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "contentLayout"]
+- !private ["So8NSCodingP", "contentMode"]
+- !private ["So8NSCodingP", "fileName"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "initializeView"]
+- !private ["So8NSCodingP", "node"]
+- ["So8NSObjectC", "CGRect"]
+- !private ["So8NSObjectC", "ContentLayout"]
+- !private ["So8NSObjectC", "Group"]
+- ["So8NSObjectC", "NSCoder"]
+- ["So8NSObjectC", "Node"]
+- !private ["So8NSObjectC", "SVGParser"]
+- ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "contentLayout"]
+- !private ["So8NSObjectC", "contentMode"]
+- ["So8NSObjectC", "fileName"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "initializeView"]
+- !private ["So8NSObjectC", "node"]
+- !private ["So8NSObjectP", "ContentLayout"]
+- !private ["So8NSObjectP", "Group"]
+- !private ["So8NSObjectP", "SVGParser"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "contentLayout"]
+- !private ["So8NSObjectP", "contentMode"]
+- !private ["So8NSObjectP", "fileName"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "initializeView"]
+- !private ["So8NSObjectP", "node"]
+- !private ["5Macaw9SVGParserC", "parse"]
+- ["5Macaw7SVGViewC", "CGRect"]
+- !private ["5Macaw7SVGViewC", "ContentLayout"]
+- !private ["5Macaw7SVGViewC", "Group"]
+- ["5Macaw7SVGViewC", "NSCoder"]
+- ["5Macaw7SVGViewC", "Node"]
+- !private ["5Macaw7SVGViewC", "SVGParser"]
+- ["5Macaw7SVGViewC", "String"]
+- !private ["5Macaw7SVGViewC", "contentLayout"]
+- !private ["5Macaw7SVGViewC", "contentMode"]
+- ["5Macaw7SVGViewC", "deinit"]
+- ["5Macaw7SVGViewC", "fileName"]
+- ["5Macaw7SVGViewC", "init"]
+- ["5Macaw7SVGViewC", "initializeView"]
+- !private ["5Macaw7SVGViewC", "node"]
+- !private ["5Macaw9TouchableP", "ContentLayout"]
+- !private ["5Macaw9TouchableP", "Group"]
+- !private ["5Macaw9TouchableP", "SVGParser"]
+- ["5Macaw9TouchableP", ""]
+- !private ["5Macaw9TouchableP", "contentLayout"]
+- !private ["5Macaw9TouchableP", "contentMode"]
+- !private ["5Macaw9TouchableP", "fileName"]
+- !private ["5Macaw9TouchableP", "init"]
+- !private ["5Macaw9TouchableP", "initializeView"]
+- !private ["5Macaw9TouchableP", "node"]
+- !private ["So29UIAccessibilityIdentificationP", "ContentLayout"]
+- !private ["So29UIAccessibilityIdentificationP", "Group"]
+- !private ["So29UIAccessibilityIdentificationP", "SVGParser"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So29UIAccessibilityIdentificationP", "contentLayout"]
+- !private ["So29UIAccessibilityIdentificationP", "contentMode"]
+- !private ["So29UIAccessibilityIdentificationP", "fileName"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "initializeView"]
+- !private ["So29UIAccessibilityIdentificationP", "node"]
+- !private ["So12UIAppearanceP", "ContentLayout"]
+- !private ["So12UIAppearanceP", "Group"]
+- !private ["So12UIAppearanceP", "SVGParser"]
+- ["So12UIAppearanceP", ""]
+- !private ["So12UIAppearanceP", "contentLayout"]
+- !private ["So12UIAppearanceP", "contentMode"]
+- !private ["So12UIAppearanceP", "fileName"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "initializeView"]
+- !private ["So12UIAppearanceP", "node"]
+- !private ["So21UIAppearanceContainerP", "ContentLayout"]
+- !private ["So21UIAppearanceContainerP", "Group"]
+- !private ["So21UIAppearanceContainerP", "SVGParser"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "contentLayout"]
+- !private ["So21UIAppearanceContainerP", "contentMode"]
+- !private ["So21UIAppearanceContainerP", "fileName"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "initializeView"]
+- !private ["So21UIAppearanceContainerP", "node"]
+- !private ["So17UICoordinateSpaceP", "ContentLayout"]
+- !private ["So17UICoordinateSpaceP", "Group"]
+- !private ["So17UICoordinateSpaceP", "SVGParser"]
+- ["So17UICoordinateSpaceP", ""]
+- !private ["So17UICoordinateSpaceP", "contentLayout"]
+- !private ["So17UICoordinateSpaceP", "contentMode"]
+- !private ["So17UICoordinateSpaceP", "fileName"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "initializeView"]
+- !private ["So17UICoordinateSpaceP", "node"]
+- !private ["So13UIDynamicItemP", "ContentLayout"]
+- !private ["So13UIDynamicItemP", "Group"]
+- !private ["So13UIDynamicItemP", "SVGParser"]
+- ["So13UIDynamicItemP", ""]
+- !private ["So13UIDynamicItemP", "contentLayout"]
+- !private ["So13UIDynamicItemP", "contentMode"]
+- !private ["So13UIDynamicItemP", "fileName"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "initializeView"]
+- !private ["So13UIDynamicItemP", "node"]
+- !private ["So18UIFocusEnvironmentP", "ContentLayout"]
+- !private ["So18UIFocusEnvironmentP", "Group"]
+- !private ["So18UIFocusEnvironmentP", "SVGParser"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "contentLayout"]
+- !private ["So18UIFocusEnvironmentP", "contentMode"]
+- !private ["So18UIFocusEnvironmentP", "fileName"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "initializeView"]
+- !private ["So18UIFocusEnvironmentP", "node"]
+- !private ["So11UIFocusItemP", "ContentLayout"]
+- !private ["So11UIFocusItemP", "Group"]
+- !private ["So11UIFocusItemP", "SVGParser"]
+- ["So11UIFocusItemP", ""]
+- !private ["So11UIFocusItemP", "contentLayout"]
+- !private ["So11UIFocusItemP", "contentMode"]
+- !private ["So11UIFocusItemP", "fileName"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "initializeView"]
+- !private ["So11UIFocusItemP", "node"]
+- !private ["So20UIFocusItemContainerP", "ContentLayout"]
+- !private ["So20UIFocusItemContainerP", "Group"]
+- !private ["So20UIFocusItemContainerP", "SVGParser"]
+- ["So20UIFocusItemContainerP", ""]
+- !private ["So20UIFocusItemContainerP", "contentLayout"]
+- !private ["So20UIFocusItemContainerP", "contentMode"]
+- !private ["So20UIFocusItemContainerP", "fileName"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "initializeView"]
+- !private ["So20UIFocusItemContainerP", "node"]
+- !private ["So27UIGestureRecognizerDelegateP", "ContentLayout"]
+- !private ["So27UIGestureRecognizerDelegateP", "Group"]
+- !private ["So27UIGestureRecognizerDelegateP", "SVGParser"]
+- ["So27UIGestureRecognizerDelegateP", ""]
+- !private ["So27UIGestureRecognizerDelegateP", "contentLayout"]
+- !private ["So27UIGestureRecognizerDelegateP", "contentMode"]
+- !private ["So27UIGestureRecognizerDelegateP", "fileName"]
+- !private ["So27UIGestureRecognizerDelegateP", "init"]
+- !private ["So27UIGestureRecognizerDelegateP", "initializeView"]
+- !private ["So27UIGestureRecognizerDelegateP", "node"]
+- !private ["So30UIPasteConfigurationSupportingP", "ContentLayout"]
+- !private ["So30UIPasteConfigurationSupportingP", "Group"]
+- !private ["So30UIPasteConfigurationSupportingP", "SVGParser"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "contentLayout"]
+- !private ["So30UIPasteConfigurationSupportingP", "contentMode"]
+- !private ["So30UIPasteConfigurationSupportingP", "fileName"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "initializeView"]
+- !private ["So30UIPasteConfigurationSupportingP", "node"]
+- ["So11UIResponderC", "CGRect"]
+- !private ["So11UIResponderC", "ContentLayout"]
+- !private ["So11UIResponderC", "Group"]
+- ["So11UIResponderC", "NSCoder"]
+- ["So11UIResponderC", "Node"]
+- !private ["So11UIResponderC", "SVGParser"]
+- ["So11UIResponderC", "String"]
+- !private ["So11UIResponderC", "contentLayout"]
+- !private ["So11UIResponderC", "contentMode"]
+- ["So11UIResponderC", "fileName"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "initializeView"]
+- !private ["So11UIResponderC", "node"]
+- !private ["So30UIResponderStandardEditActionsP", "ContentLayout"]
+- !private ["So30UIResponderStandardEditActionsP", "Group"]
+- !private ["So30UIResponderStandardEditActionsP", "SVGParser"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "contentLayout"]
+- !private ["So30UIResponderStandardEditActionsP", "contentMode"]
+- !private ["So30UIResponderStandardEditActionsP", "fileName"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "initializeView"]
+- !private ["So30UIResponderStandardEditActionsP", "node"]
+- !private ["So18UITraitEnvironmentP", "ContentLayout"]
+- !private ["So18UITraitEnvironmentP", "Group"]
+- !private ["So18UITraitEnvironmentP", "SVGParser"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "contentLayout"]
+- !private ["So18UITraitEnvironmentP", "contentMode"]
+- !private ["So18UITraitEnvironmentP", "fileName"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "initializeView"]
+- !private ["So18UITraitEnvironmentP", "node"]
+- !private ["So23UIUserActivityRestoringP", "ContentLayout"]
+- !private ["So23UIUserActivityRestoringP", "Group"]
+- !private ["So23UIUserActivityRestoringP", "SVGParser"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "contentLayout"]
+- !private ["So23UIUserActivityRestoringP", "contentMode"]
+- !private ["So23UIUserActivityRestoringP", "fileName"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "initializeView"]
+- !private ["So23UIUserActivityRestoringP", "node"]
+- ["So6UIViewC", "CGRect"]
+- !private ["So6UIViewC", "ContentLayout"]
+- !private ["So6UIViewC", "Group"]
+- ["So6UIViewC", "NSCoder"]
+- ["So6UIViewC", "Node"]
+- !private ["So6UIViewC", "SVGParser"]
+- ["So6UIViewC", "String"]
+- !private ["So6UIViewC", "contentLayout"]
+- !private ["So6UIViewC", "contentMode"]
+- ["So6UIViewC", "fileName"]
+- ["So6UIViewC", "init"]
+- ["So6UIViewC", "initializeView"]
+- !private ["So6UIViewC", "node"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ContentLayout"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Group"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SVGParser"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contentLayout"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contentMode"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fileName"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "initializeView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "node"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "ContentLayout"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "Group"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "SVGParser"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "contentLayout"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "contentMode"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "fileName"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "initializeView"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "node"]
+depends-nominal:
+- "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "5Macaw13ContentLayoutC"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "SQ"
+- !private "5Macaw5GroupC"
+- "SH"
+- "5Macaw5MViewC"
+- "5Macaw0A4ViewC"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "5Macaw9SVGParserC"
+- "5Macaw7SVGViewC"
+- "5Macaw9TouchableP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
+- "So27UIGestureRecognizerDelegateP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- "So6UIViewC"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s38__DefaultCustomPlaygroundQuickLookableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/SWXMLHash/SWXMLHash.framework/Modules/SWXMLHash.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/SWXMLHash/SWXMLHash-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/Macaw/Macaw-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/SWXMLHash/SWXMLHash.framework/Headers/SWXMLHash-Swift.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphoneos/Macaw.build/unextended-module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphoneos/SWXMLHash.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "056564714d246427fb87289dba2048a6"

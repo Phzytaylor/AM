@@ -1,0 +1,102 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "OverlayContainerContextTargetNotchPolicy"
+- "OverlayContainerContextTransitioning"
+- "OverlayTransitioningDelegate"
+- "OverlayTranslationTargetNotchPolicy"
+- "OverlayAnimatedTransitioning"
+provides-nominal:
+- "16OverlayContainer0aB24ContextTargetNotchPolicyP"
+- "16OverlayContainer0aB20ContextTransitioningP"
+- "16OverlayContainer0A21TransitioningDelegateP"
+- "16OverlayContainer0A28TranslationTargetNotchPolicyP"
+- "16OverlayContainer0A21AnimatedTransitioningP"
+provides-member:
+- ["16OverlayContainer0aB24ContextTargetNotchPolicyP", ""]
+- ["16OverlayContainer0aB20ContextTransitioningP", ""]
+- ["16OverlayContainer0A21TransitioningDelegateP", ""]
+- ["16OverlayContainer0A28TranslationTargetNotchPolicyP", ""]
+- ["16OverlayContainer0A21AnimatedTransitioningP", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AnyObject"
+- "CGFloat"
+- "CGPoint"
+- "Int"
+- "OverlayAnimatedTransitioning"
+- "OverlayContainerContextTargetNotchPolicy"
+- "OverlayContainerContextTransitioning"
+- "OverlayTransitioningDelegate"
+- "OverlayTranslationTargetNotchPolicy"
+- "Range"
+- "UIViewController"
+- "UIViewImplicitlyAnimating"
+depends-member:
+- ["16OverlayContainer0A21AnimatedTransitioningP", "OverlayContainerContextTransitioning"]
+- ["16OverlayContainer0A21AnimatedTransitioningP", "UIViewImplicitlyAnimating"]
+- ["16OverlayContainer0A21AnimatedTransitioningP", "interruptibleAnimator"]
+- ["16OverlayContainer0aB24ContextTargetNotchPolicyP", "CGFloat"]
+- ["16OverlayContainer0aB24ContextTargetNotchPolicyP", "CGPoint"]
+- ["16OverlayContainer0aB24ContextTargetNotchPolicyP", "Int"]
+- ["16OverlayContainer0aB24ContextTargetNotchPolicyP", "UIViewController"]
+- ["16OverlayContainer0aB24ContextTargetNotchPolicyP", "height"]
+- ["16OverlayContainer0aB24ContextTargetNotchPolicyP", "overlayTranslationHeight"]
+- ["16OverlayContainer0aB24ContextTargetNotchPolicyP", "overlayViewController"]
+- ["16OverlayContainer0aB24ContextTargetNotchPolicyP", "reachableIndexes"]
+- ["16OverlayContainer0aB24ContextTargetNotchPolicyP", "velocity"]
+- ["16OverlayContainer0aB20ContextTransitioningP", "CGFloat"]
+- ["16OverlayContainer0aB20ContextTransitioningP", "CGPoint"]
+- ["16OverlayContainer0aB20ContextTransitioningP", "Int"]
+- ["16OverlayContainer0aB20ContextTransitioningP", "Range"]
+- ["16OverlayContainer0aB20ContextTransitioningP", "UIViewController"]
+- ["16OverlayContainer0aB20ContextTransitioningP", "height"]
+- ["16OverlayContainer0aB20ContextTransitioningP", "notchIndexes"]
+- ["16OverlayContainer0aB20ContextTransitioningP", "overlayTranslationHeight"]
+- ["16OverlayContainer0aB20ContextTransitioningP", "overlayViewController"]
+- ["16OverlayContainer0aB20ContextTransitioningP", "reachableIndexes"]
+- ["16OverlayContainer0aB20ContextTransitioningP", "targetNotchHeight"]
+- ["16OverlayContainer0aB20ContextTransitioningP", "targetNotchIndex"]
+- ["16OverlayContainer0aB20ContextTransitioningP", "velocity"]
+- ["16OverlayContainer0A21TransitioningDelegateP", "OverlayAnimatedTransitioning"]
+- ["16OverlayContainer0A21TransitioningDelegateP", "OverlayTranslationTargetNotchPolicy"]
+- ["16OverlayContainer0A21TransitioningDelegateP", "UIViewController"]
+- ["16OverlayContainer0A21TransitioningDelegateP", "animationController"]
+- ["16OverlayContainer0A21TransitioningDelegateP", "overlayTargetNotchPolicy"]
+- ["16OverlayContainer0A28TranslationTargetNotchPolicyP", "Int"]
+- ["16OverlayContainer0A28TranslationTargetNotchPolicyP", "OverlayContainerContextTargetNotchPolicy"]
+- ["16OverlayContainer0A28TranslationTargetNotchPolicyP", "targetNotchIndex"]
+depends-nominal:
+- "16OverlayContainer0A21AnimatedTransitioningP"
+- "16OverlayContainer0aB24ContextTargetNotchPolicyP"
+- "16OverlayContainer0aB20ContextTransitioningP"
+- "16OverlayContainer0A21TransitioningDelegateP"
+- "16OverlayContainer0A28TranslationTargetNotchPolicyP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/OverlayContainer/OverlayContainer-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphoneos/OverlayContainer.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "37314389c30db4e146b2fa0dd8b2a8a1"

@@ -16,18 +16,21 @@ import FirebaseStorage
 struct VoicesFromDatabase {
     
     let ref: DatabaseReference?
-    let key: String
-    let lovedOne: String
-    let audioStorageURL: String
-    let audioTag: String
-    let releaseDate: String
-    let releaseTime: String
-    let uuID: String
-    let audioOnDeviceURL: String
-    let createdDate: String
-    let lovedOneEmail: String
+    let key: String?
+    let lovedOne: String?
+    let audioStorageURL: String?
+    let audioTag: String?
+    let releaseDate: String?
+    let releaseTime: String?
+    let uuID: String?
+    let audioOnDeviceURL: String?
+    let createdDate: String?
+    let lovedOneEmail: String?
+    let relation: String?
+    let adminName: String?
+    let adminEmail: String?
     
-    init(lovedOne: String, audioStorageURL: String, audioTag: String, releaseTime: String, releaseDate: String, uuID: String, key: String = "", audioOnDeviceURL: String, createdDate: String, lovedOneEmail: String) {
+    init(lovedOne: String?, audioStorageURL: String?, audioTag: String?, releaseTime: String?, releaseDate: String?, uuID: String?, key: String? = "", audioOnDeviceURL: String?, createdDate: String?, lovedOneEmail: String?, relation: String?, adminName: String?, adminEmail: String?) {
         self.ref = nil
         self.key = key
         self.lovedOne = lovedOne
@@ -39,22 +42,45 @@ struct VoicesFromDatabase {
         self.audioOnDeviceURL = audioOnDeviceURL
         self.createdDate = createdDate
         self.lovedOneEmail = lovedOneEmail
+        self.relation = relation
+        self.adminName = adminName
+        self.adminEmail = adminEmail
     }
     
     init?(snapshot: DataSnapshot) {
-        guard
-            let value = snapshot.value as? [String: AnyObject],
-            let lovedOne = value["lovedOne"] as? String,
-            let audioStorageURL = value["audioStorageURL"] as? String,
-            let audioTag = value["audioTag"] as? String,
-            let releaseDate = value["releaseDate"] as? String,
-            let releaseTime = value["releaseTime"] as? String,
-            let uuID = value["uuID"] as? String,
-            let audioOnDeviceURL = value["audioOnDeviceURL"] as? String,
-            let createdDate = value["createdDate"] as? String,
-            let lovedOneEmail = value["lovedOneEmail"] as? String else {
-                return nil
+        
+        guard let value = snapshot.value as? [String: AnyObject] else {
+            return nil
         }
+        
+                    let lovedOne = value["lovedOne"] as? String
+                    let audioStorageURL = value["audioStorageURL"] as? String
+                    let audioTag = value["audioTag"] as? String
+                    let releaseDate = value["releaseDate"] as? String
+                    let releaseTime = value["releaseTime"] as? String
+                    let uuID = value["uuID"] as? String
+                    let audioOnDeviceURL = value["audioOnDeviceURL"] as? String
+                    let createdDate = value["createdDate"] as? String
+                    let lovedOneEmail = value["lovedOneEmail"] as? String
+                    let relation = value["relation"] as? String
+                    let adminName = value["adminName"] as? String
+                    let adminEmail = value["adminEmail"] as? String
+        
+        
+//        guard
+//            let value = snapshot.value as? [String: AnyObject],
+//            let lovedOne = value["lovedOne"] as? String,
+//            let audioStorageURL = value["audioStorageURL"] as? String,
+//            let audioTag = value["audioTag"] as? String,
+//            let releaseDate = value["releaseDate"] as? String,
+//            let releaseTime = value["releaseTime"] as? String,
+//            let uuID = value["uuID"] as? String,
+//            let audioOnDeviceURL = value["audioOnDeviceURL"] as? String,
+//            let createdDate = value["createdDate"] as? String,
+//            let lovedOneEmail = value["lovedOneEmail"] as? String,
+//            let relation = value["relation"] as? String else {
+//                return nil
+//        }
         
         self.ref = snapshot.ref
         self.key = snapshot.key
@@ -67,6 +93,9 @@ struct VoicesFromDatabase {
         self.audioOnDeviceURL = audioOnDeviceURL
         self.createdDate = createdDate
         self.lovedOneEmail = lovedOneEmail
+        self.relation = relation
+        self.adminName = adminName
+        self.adminEmail = adminEmail
     }
     
     func toAnyObject() -> Any {
@@ -79,7 +108,10 @@ struct VoicesFromDatabase {
             "uuID": uuID,
             "audioOnDeviceURL": audioOnDeviceURL,
             "createdDate": createdDate,
-            "lovedOneEmail": lovedOneEmail
+            "lovedOneEmail": lovedOneEmail,
+            "relation": relation,
+            "adminName": adminName,
+            "adminEmail": adminEmail
         ]
     }
 }

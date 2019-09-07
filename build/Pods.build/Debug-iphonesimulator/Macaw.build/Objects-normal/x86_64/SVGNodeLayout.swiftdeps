@@ -1,0 +1,214 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SVGLength"
+- "SVGSize"
+- "NodeLayout"
+- "SVGNodeLayout"
+provides-nominal:
+- "5Macaw9SVGLengthO"
+- "5Macaw7SVGSizeC"
+- "5Macaw10NodeLayoutP"
+- "5Macaw13SVGNodeLayoutC"
+provides-member:
+- ["5Macaw9SVGLengthO", ""]
+- ["5Macaw7SVGSizeC", ""]
+- ["5Macaw10NodeLayoutP", ""]
+- ["5Macaw13SVGNodeLayoutC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "*"
+- !private "+"
+- !private "-"
+- !private "/"
+- !private "==="
+- !private "??"
+- "Align"
+- "AspectRatio"
+- "AssignmentPrecedence"
+- !private "ContentLayout"
+- "Double"
+- "Node"
+- "NodeLayout"
+- "Rect"
+- "SVGLength"
+- "SVGNodeLayout"
+- "SVGSize"
+- "Size"
+depends-member:
+- !private ["5Macaw5AlignC", "align"]
+- !private ["5Macaw5AlignC", "mid"]
+- !private ["5Macaw11AspectRatioC", "fit"]
+- !private ["5Macaw11AspectRatioC", "meet"]
+- !private ["5Macaw11AspectRatioC", "slice"]
+- !private ["s7CVarArgP", "clip"]
+- !private ["s7CVarArgP", "place"]
+- !private ["5Macaw13ContentLayoutC", "layout"]
+- !private ["5Macaw13ContentLayoutC", "of"]
+- !private ["s28CustomDebugStringConvertibleP", "clip"]
+- !private ["s28CustomDebugStringConvertibleP", "none"]
+- !private ["s28CustomDebugStringConvertibleP", "place"]
+- !private ["s17CustomReflectableP", "none"]
+- !private ["s23CustomStringConvertibleP", "clip"]
+- !private ["s23CustomStringConvertibleP", "h"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "place"]
+- !private ["s23CustomStringConvertibleP", "size"]
+- !private ["s23CustomStringConvertibleP", "w"]
+- !private ["s23CustomStringConvertibleP", "x"]
+- !private ["s23CustomStringConvertibleP", "y"]
+- !private ["Se", "none"]
+- !private ["5Macaw8DrawableC", "clip"]
+- !private ["5Macaw8DrawableC", "place"]
+- !private ["SE", "none"]
+- !private ["SQ", "clip"]
+- !private ["SQ", "move"]
+- !private ["SQ", "none"]
+- !private ["SQ", "place"]
+- !private ["s23ExpressibleByNilLiteralP", "none"]
+- !private ["SH", "clip"]
+- !private ["SH", "move"]
+- !private ["SH", "none"]
+- !private ["SH", "place"]
+- !private ["5Macaw12InterpolableP", "h"]
+- !private ["5Macaw12InterpolableP", "init"]
+- !private ["5Macaw12InterpolableP", "move"]
+- !private ["5Macaw12InterpolableP", "size"]
+- !private ["5Macaw12InterpolableP", "w"]
+- !private ["5Macaw12InterpolableP", "x"]
+- !private ["5Macaw12InterpolableP", "y"]
+- !private ["5Macaw5LocusC", "h"]
+- !private ["5Macaw5LocusC", "size"]
+- !private ["5Macaw5LocusC", "w"]
+- !private ["5Macaw5LocusC", "x"]
+- !private ["5Macaw5LocusC", "y"]
+- !private ["5Macaw18LocusInterpolationP", "h"]
+- !private ["5Macaw18LocusInterpolationP", "init"]
+- !private ["5Macaw18LocusInterpolationP", "size"]
+- !private ["5Macaw18LocusInterpolationP", "w"]
+- !private ["5Macaw18LocusInterpolationP", "x"]
+- !private ["5Macaw18LocusInterpolationP", "y"]
+- !private ["So8NSObjectC", "clip"]
+- !private ["So8NSObjectC", "place"]
+- !private ["So8NSObjectP", "clip"]
+- !private ["So8NSObjectP", "place"]
+- !private ["5Macaw4NodeC", "clip"]
+- !private ["5Macaw4NodeC", "place"]
+- !private ["5Macaw10NodeLayoutP", "AspectRatio"]
+- !private ["5Macaw10NodeLayoutP", "ContentLayout"]
+- ["5Macaw10NodeLayoutP", "Node"]
+- !private ["5Macaw10NodeLayoutP", "Rect"]
+- ["5Macaw10NodeLayoutP", "Size"]
+- ["5Macaw10NodeLayoutP", ""]
+- ["5Macaw10NodeLayoutP", "computeSize"]
+- ["5Macaw10NodeLayoutP", "layout"]
+- !private ["5Macaw10NodeLayoutP", "scaling"]
+- !private ["5Macaw10NodeLayoutP", "svgSize"]
+- !private ["5Macaw10NodeLayoutP", "viewBox"]
+- !private ["5Macaw10NodeLayoutP", "xAlign"]
+- !private ["5Macaw10NodeLayoutP", "yAlign"]
+- !private ["Sq", "none"]
+- !private ["5Macaw4RectC", "h"]
+- !private ["5Macaw4RectC", "init"]
+- !private ["5Macaw4RectC", "size"]
+- !private ["5Macaw4RectC", "w"]
+- !private ["5Macaw4RectC", "x"]
+- !private ["5Macaw4RectC", "y"]
+- ["5Macaw9SVGLengthO", "Double"]
+- ["5Macaw9SVGLengthO", "init"]
+- ["5Macaw9SVGLengthO", "percent"]
+- ["5Macaw9SVGLengthO", "pixels"]
+- ["5Macaw9SVGLengthO", "toPixels"]
+- ["5Macaw13SVGNodeLayoutC", "Align"]
+- ["5Macaw13SVGNodeLayoutC", "AspectRatio"]
+- !private ["5Macaw13SVGNodeLayoutC", "ContentLayout"]
+- ["5Macaw13SVGNodeLayoutC", "Node"]
+- ["5Macaw13SVGNodeLayoutC", "Rect"]
+- ["5Macaw13SVGNodeLayoutC", "SVGSize"]
+- ["5Macaw13SVGNodeLayoutC", "Size"]
+- ["5Macaw13SVGNodeLayoutC", "computeSize"]
+- ["5Macaw13SVGNodeLayoutC", "deinit"]
+- ["5Macaw13SVGNodeLayoutC", "init"]
+- ["5Macaw13SVGNodeLayoutC", "layout"]
+- ["5Macaw13SVGNodeLayoutC", "scaling"]
+- ["5Macaw13SVGNodeLayoutC", "svgSize"]
+- ["5Macaw13SVGNodeLayoutC", "viewBox"]
+- ["5Macaw13SVGNodeLayoutC", "xAlign"]
+- ["5Macaw13SVGNodeLayoutC", "yAlign"]
+- ["5Macaw7SVGSizeC", "SVGLength"]
+- ["5Macaw7SVGSizeC", "Size"]
+- ["5Macaw7SVGSizeC", "height"]
+- ["5Macaw7SVGSizeC", "init"]
+- ["5Macaw7SVGSizeC", "toPixels"]
+- ["5Macaw7SVGSizeC", "width"]
+- !private ["5Macaw4SizeC", "h"]
+- !private ["5Macaw4SizeC", "init"]
+- !private ["5Macaw4SizeC", "w"]
+- !private ["5Macaw9TransformC", "move"]
+- !private ["5Macaw22TransformInterpolationP", "move"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "clip"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "place"]
+- !private ["s21_ObjectiveCBridgeableP", "none"]
+depends-nominal:
+- !private "5Macaw5AlignC"
+- !private "5Macaw11AspectRatioC"
+- !private "s7CVarArgP"
+- !private "5Macaw13ContentLayoutC"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "5Macaw8DrawableC"
+- !private "SE"
+- !private "SQ"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "SH"
+- !private "5Macaw12InterpolableP"
+- !private "5Macaw5LocusC"
+- !private "5Macaw18LocusInterpolationP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "5Macaw4NodeC"
+- "5Macaw10NodeLayoutP"
+- !private "Sq"
+- !private "5Macaw4RectC"
+- "5Macaw9SVGLengthO"
+- "5Macaw13SVGNodeLayoutC"
+- "5Macaw7SVGSizeC"
+- !private "5Macaw4SizeC"
+- !private "5Macaw9TransformC"
+- !private "5Macaw22TransformInterpolationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphonesimulator/SWXMLHash/SWXMLHash.framework/Modules/SWXMLHash.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/SWXMLHash/SWXMLHash-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/Macaw/Macaw-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphonesimulator/SWXMLHash/SWXMLHash.framework/Headers/SWXMLHash-Swift.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/Macaw.build/unextended-module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/SWXMLHash.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "32e7d2a40a8acecf4f88c3d402d937f7"

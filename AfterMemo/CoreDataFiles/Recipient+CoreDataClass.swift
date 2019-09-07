@@ -2,8 +2,8 @@
 //  Recipient+CoreDataClass.swift
 //  AfterMemo
 //
-//  Created by Taylor Simpson on 6/22/18.
-//  Copyright © 2018 Taylor Simpson. All rights reserved.
+//  Created by Taylor Simpson on 2/4/19.
+//  Copyright © 2019 Taylor Simpson. All rights reserved.
 //
 //
 

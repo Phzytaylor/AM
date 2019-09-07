@@ -1,0 +1,185 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SpringOverlayTranslationAnimationController"
+provides-nominal:
+- "16OverlayContainer06SpringA30TranslationAnimationControllerC"
+provides-member:
+- ["16OverlayContainer06SpringA30TranslationAnimationControllerC", ""]
+- ["So24UISpringTimingParametersC", ""]
+- ["So24UISpringTimingParametersC", "init"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "*"
+- !private "+"
+- !private "-"
+- !private "/"
+- "CGFloat"
+- "Constant"
+- "OverlayAnimatedTransitioning"
+- "OverlayContainerContextTransitioning"
+- "SpringOverlayTranslationAnimationController"
+- "UISpringTimingParameters"
+- "UIViewImplicitlyAnimating"
+- !private "UIViewPropertyAnimator"
+- !private "abs"
+- !private "max"
+- !private "min"
+- !private "pow"
+depends-member:
+- !private ["s18AdditiveArithmeticP", "pi"]
+- !private ["SB", "pi"]
+- !private ["12CoreGraphics7CGFloatV", "pi"]
+- !private ["So7CGPointV", "y"]
+- !private ["So8CGVectorV", "zero"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "pi"]
+- !private ["s7CVarArgP", "pow"]
+- !private ["SL", "pi"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "pow"]
+- !private ["s28CustomDebugStringConvertibleP", "y"]
+- !private ["s28CustomDebugStringConvertibleP", "zero"]
+- !private ["s17CustomReflectableP", "pi"]
+- !private ["s17CustomReflectableP", "y"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "pi"]
+- !private ["s23CustomStringConvertibleP", "pow"]
+- !private ["Se", "pi"]
+- !private ["Se", "y"]
+- !private ["Se", "zero"]
+- !private ["SE", "pi"]
+- !private ["SE", "y"]
+- !private ["SE", "zero"]
+- !private ["SQ", "init"]
+- !private ["SQ", "pi"]
+- !private ["SQ", "pow"]
+- !private ["SQ", "y"]
+- !private ["SQ", "zero"]
+- !private ["s25ExpressibleByFloatLiteralP", "pi"]
+- !private ["s27ExpressibleByIntegerLiteralP", "pi"]
+- !private ["SF", "pi"]
+- !private ["SH", "init"]
+- !private ["SH", "pi"]
+- !private ["SH", "pow"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "pow"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "pow"]
+- ["So8NSObjectC", "CGFloat"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "pow"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "pow"]
+- !private ["Sj", "pi"]
+- ["16OverlayContainer0A21AnimatedTransitioningP", "Constant"]
+- !private ["16OverlayContainer0A21AnimatedTransitioningP", "UISpringTimingParameters"]
+- !private ["16OverlayContainer0A21AnimatedTransitioningP", "UIViewPropertyAnimator"]
+- ["16OverlayContainer0A21AnimatedTransitioningP", ""]
+- !private ["16OverlayContainer0A21AnimatedTransitioningP", "abs"]
+- !private ["16OverlayContainer0A21AnimatedTransitioningP", "damping"]
+- ["16OverlayContainer0A21AnimatedTransitioningP", "interruptibleAnimator"]
+- !private ["16OverlayContainer0A21AnimatedTransitioningP", "mass"]
+- !private ["16OverlayContainer0A21AnimatedTransitioningP", "max"]
+- !private ["16OverlayContainer0A21AnimatedTransitioningP", "min"]
+- !private ["16OverlayContainer0A21AnimatedTransitioningP", "response"]
+- !private ["16OverlayContainer0aB20ContextTransitioningP", "velocity"]
+- !private ["s13SignedNumericP", "pi"]
+- ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "CGFloat"]
+- ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "Constant"]
+- ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "OverlayContainerContextTransitioning"]
+- !private ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "UISpringTimingParameters"]
+- ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "UIViewImplicitlyAnimating"]
+- !private ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "UIViewPropertyAnimator"]
+- !private ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "abs"]
+- ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "damping"]
+- ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "deinit"]
+- ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "init"]
+- ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "interruptibleAnimator"]
+- ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "mass"]
+- !private ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "max"]
+- !private ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "min"]
+- ["16OverlayContainer06SpringA30TranslationAnimationControllerC", "response"]
+- !private ["Sx", "pi"]
+- ["So24UISpringTimingParametersC", "CGFloat"]
+- ["So24UISpringTimingParametersC", "init"]
+- !private ["So24UISpringTimingParametersC", "pow"]
+- !private ["So21UITimingCurveProviderP", "init"]
+- !private ["So21UITimingCurveProviderP", "pow"]
+- !private ["So15UIViewAnimatingP", "init"]
+- !private ["So25UIViewImplicitlyAnimatingP", "init"]
+- !private ["So22UIViewPropertyAnimatorC", "init"]
+- !private ["s15_CVarArgAlignedP", "pi"]
+- !private ["s22_CVarArgPassedAsDoubleP", "pi"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "y"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "pow"]
+- !private ["s21_ObjectiveCBridgeableP", "pi"]
+- !private ["s21_ObjectiveCBridgeableP", "y"]
+- !private ["s21_ObjectiveCBridgeableP", "zero"]
+depends-nominal:
+- !private "s18AdditiveArithmeticP"
+- !private "SB"
+- !private "12CoreGraphics7CGFloatV"
+- !private "So7CGPointV"
+- !private "So8CGVectorV"
+- !private "s7CVarArgP"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "SF"
+- !private "SH"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "Sj"
+- "16OverlayContainer0A21AnimatedTransitioningP"
+- !private "16OverlayContainer0aB20ContextTransitioningP"
+- !private "s13SignedNumericP"
+- "16OverlayContainer06SpringA30TranslationAnimationControllerC"
+- !private "Sx"
+- "So24UISpringTimingParametersC"
+- !private "So21UITimingCurveProviderP"
+- !private "So15UIViewAnimatingP"
+- !private "So25UIViewImplicitlyAnimatingP"
+- !private "So22UIViewPropertyAnimatorC"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/OverlayContainer/OverlayContainer-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphoneos/OverlayContainer.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "753a022d85fa18072c199552f959fbe2"

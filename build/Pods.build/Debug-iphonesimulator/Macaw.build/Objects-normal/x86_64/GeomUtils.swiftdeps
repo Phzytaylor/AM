@@ -1,0 +1,145 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "GeomUtils"
+provides-nominal:
+- "5Macaw9GeomUtilsC"
+provides-member:
+- ["5Macaw9GeomUtilsC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "*"
+- !private "+"
+- !private "-"
+- !private "/"
+- "Double"
+- "GeomUtils"
+- "Node"
+- "Point"
+- "Transform"
+- !private "cos"
+- !private "sin"
+depends-member:
+- !private ["s7CVarArgP", "bounds"]
+- !private ["s28CustomDebugStringConvertibleP", "bounds"]
+- !private ["s23CustomStringConvertibleP", "bounds"]
+- !private ["s23CustomStringConvertibleP", "h"]
+- !private ["s23CustomStringConvertibleP", "w"]
+- !private ["s23CustomStringConvertibleP", "x"]
+- !private ["s23CustomStringConvertibleP", "y"]
+- !private ["5Macaw8DrawableC", "bounds"]
+- !private ["SQ", "bounds"]
+- !private ["SQ", "concat"]
+- !private ["SQ", "init"]
+- !private ["SQ", "invert"]
+- !private ["SQ", "move"]
+- !private ["SQ", "scale"]
+- ["5Macaw9GeomUtilsC", "Double"]
+- !private ["5Macaw9GeomUtilsC", "GeomUtils"]
+- ["5Macaw9GeomUtilsC", "Node"]
+- ["5Macaw9GeomUtilsC", "Point"]
+- ["5Macaw9GeomUtilsC", "Transform"]
+- ["5Macaw9GeomUtilsC", "anchorRotation"]
+- ["5Macaw9GeomUtilsC", "center"]
+- ["5Macaw9GeomUtilsC", "centerRotation"]
+- ["5Macaw9GeomUtilsC", "centerScale"]
+- ["5Macaw9GeomUtilsC", "concat"]
+- !private ["5Macaw9GeomUtilsC", "cos"]
+- ["5Macaw9GeomUtilsC", "init"]
+- !private ["5Macaw9GeomUtilsC", "sin"]
+- !private ["SH", "bounds"]
+- !private ["SH", "concat"]
+- !private ["SH", "init"]
+- !private ["SH", "invert"]
+- !private ["SH", "move"]
+- !private ["SH", "scale"]
+- !private ["5Macaw12InterpolableP", "concat"]
+- !private ["5Macaw12InterpolableP", "h"]
+- !private ["5Macaw12InterpolableP", "init"]
+- !private ["5Macaw12InterpolableP", "invert"]
+- !private ["5Macaw12InterpolableP", "move"]
+- !private ["5Macaw12InterpolableP", "scale"]
+- !private ["5Macaw12InterpolableP", "w"]
+- !private ["5Macaw12InterpolableP", "x"]
+- !private ["5Macaw12InterpolableP", "y"]
+- !private ["5Macaw5LocusC", "h"]
+- !private ["5Macaw5LocusC", "w"]
+- !private ["5Macaw5LocusC", "x"]
+- !private ["5Macaw5LocusC", "y"]
+- !private ["5Macaw18LocusInterpolationP", "h"]
+- !private ["5Macaw18LocusInterpolationP", "init"]
+- !private ["5Macaw18LocusInterpolationP", "w"]
+- !private ["5Macaw18LocusInterpolationP", "x"]
+- !private ["5Macaw18LocusInterpolationP", "y"]
+- !private ["So8NSObjectC", "bounds"]
+- !private ["So8NSObjectP", "bounds"]
+- !private ["5Macaw4NodeC", "bounds"]
+- !private ["5Macaw5PointC", "init"]
+- !private ["5Macaw5PointC", "x"]
+- !private ["5Macaw5PointC", "y"]
+- !private ["5Macaw4RectC", "h"]
+- !private ["5Macaw4RectC", "w"]
+- !private ["5Macaw4RectC", "x"]
+- !private ["5Macaw4RectC", "y"]
+- !private ["5Macaw9TransformC", "concat"]
+- !private ["5Macaw9TransformC", "init"]
+- !private ["5Macaw9TransformC", "invert"]
+- !private ["5Macaw9TransformC", "move"]
+- !private ["5Macaw9TransformC", "scale"]
+- !private ["5Macaw22TransformInterpolationP", "concat"]
+- !private ["5Macaw22TransformInterpolationP", "init"]
+- !private ["5Macaw22TransformInterpolationP", "invert"]
+- !private ["5Macaw22TransformInterpolationP", "move"]
+- !private ["5Macaw22TransformInterpolationP", "scale"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
+depends-nominal:
+- !private "s7CVarArgP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s23CustomStringConvertibleP"
+- !private "5Macaw8DrawableC"
+- !private "SQ"
+- "5Macaw9GeomUtilsC"
+- !private "SH"
+- !private "5Macaw12InterpolableP"
+- !private "5Macaw5LocusC"
+- !private "5Macaw18LocusInterpolationP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "5Macaw4NodeC"
+- !private "5Macaw5PointC"
+- !private "5Macaw4RectC"
+- !private "5Macaw9TransformC"
+- !private "5Macaw22TransformInterpolationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphonesimulator/SWXMLHash/SWXMLHash.framework/Modules/SWXMLHash.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/SWXMLHash/SWXMLHash-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/Macaw/Macaw-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphonesimulator/SWXMLHash/SWXMLHash.framework/Headers/SWXMLHash-Swift.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/Macaw.build/unextended-module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/SWXMLHash.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "adb80d31e51745a1759a8f64022eae87"

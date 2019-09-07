@@ -11,6 +11,7 @@ import CoreData
 import AVFoundation
 import AVKit
 import MobileCoreServices
+import Macaw
 
 import MaterialComponents
 
@@ -18,7 +19,14 @@ private let reuseIdentifier = "memo"
 
 class MainCollectionViewController: UICollectionViewController {
     
+    public var screenWidth: CGFloat {
+        return UIScreen.main.bounds.width
+    }
     
+    // Screen height.
+    public var screenHeight: CGFloat {
+        return UIScreen.main.bounds.height
+    }
     
     var timer: Timer?
     
@@ -61,6 +69,18 @@ class MainCollectionViewController: UICollectionViewController {
         
     }
     
+    var actionButton = MDCButton()
+    var actionButtonBottomConstraint: NSLayoutConstraint?
+    var actionButtonCenterConstraint: NSLayoutConstraint?
+    
+    var filterButton = MDCButton()
+    var filterButtonBottomConstraint: NSLayoutConstraint?
+    var filterButtonCenterConstraint: NSLayoutConstraint?
+    let standardFilter = 0
+    let byCreationDateFilter = 1
+    let byReleaseDateFilter = 2
+    
+    
     @IBAction func AtrributesAction(_ sender: UIButton) {
         
         guard let cell = sender.superview?.superview as? UserCollectionViewCell else {return}
@@ -102,7 +122,22 @@ class MainCollectionViewController: UICollectionViewController {
             
            
         } else if section == 2 {
-            //nothing
+            //need to view the attributes of the textView!
+            
+            let selectionAlert = UIAlertController(title: "Select One", message: "Would you like to view the attributes or set them?", preferredStyle: .actionSheet)
+            selectionAlert.addAction(UIAlertAction(title: "View attributes", style: .default, handler: { (Action) in
+                self.performSegue(withIdentifier: "generalAttributes", sender: cell)
+            }))
+            
+            selectionAlert.addAction(UIAlertAction(title: "Set Attributes", style: .default, handler: { (Action) in
+                self.performSegue(withIdentifier: "editWritten", sender: cell)
+            }))
+            
+            selectionAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            
+            self.present(selectionAlert, animated: true, completion: nil)
+            
+            
         }
         
        
@@ -125,10 +160,15 @@ class MainCollectionViewController: UICollectionViewController {
     var managedContext: NSManagedObjectContext!
     
     var appBar = MDCAppBar()
+    var bottomBar = MDCBottomAppBarView()
     let memoHeaderView = GeneralHeaderView()
     
+    let collectionTag = 0
+
+    let tableTag = 1
+    
     func configureAppBar(){
-        self.addChildViewController(appBar.headerViewController)
+        self.addChild(appBar.headerViewController)
         appBar.navigationBar.backgroundColor = .clear
         appBar.navigationBar.title = nil
         
@@ -144,15 +184,120 @@ class MainCollectionViewController: UICollectionViewController {
         
         appBar.addSubviewsToParent()
         
+       
+        
         //appBar.headerViewController.layoutDelegate = self
         
         
     }
     
+    
+    
     let trashItem = UIBarButtonItem(image: #imageLiteral(resourceName: "outline_delete_white_18pt"),
                                     style: .plain,
                                     target: self,
                                     action: #selector(deleteSelected))
+    
+    let changeViewButton = UIBarButtonItem(title: "C", style: .plain, target: self, action:#selector(changeCollectionView) )
+    
+    @objc func changeCollectionView(){
+        self.collectionView?.collectionViewLayout.invalidateLayout()
+        // change layout soon
+        if changeViewButton.tag == collectionTag {
+            
+            let numberOfCellsPerRow: CGFloat = 1
+            if let flowLayout = collectionView?.collectionViewLayout as? UICollectionViewFlowLayout {
+                let horizontalSpacing = flowLayout.scrollDirection == .vertical ? flowLayout.minimumInteritemSpacing : flowLayout.minimumLineSpacing
+//                let cellWidth = (view.frame.width - 10.0*horizontalSpacing)/numberOfCellsPerRow
+                let cellWidth = 200.0
+                let cellHeight = 200.0
+                flowLayout.itemSize = CGSize(width: cellWidth, height: cellHeight)
+                
+                actionButtonCenterConstraint?.isActive = false
+                actionButtonCenterConstraint = self.actionButton.centerXAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 50)
+                actionButtonCenterConstraint?.isActive = true
+                
+                filterButtonCenterConstraint?.isActive = false
+                filterButtonCenterConstraint = self.filterButton.centerXAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -50)
+                filterButtonCenterConstraint?.isActive = true
+                
+                UIView.animate(withDuration: 2.0, delay: 0, options: UIView.AnimationOptions.curveEaseInOut, animations: {
+                    
+                    
+                    self.view.layoutIfNeeded()
+                }, completion: nil)
+                
+                
+                
+                
+               
+                
+                changeViewButton.tag = tableTag
+            }
+            
+        } else if changeViewButton.tag == tableTag {
+            if let flowLayout = collectionView?.collectionViewLayout as? UICollectionViewFlowLayout {
+                
+                flowLayout.minimumLineSpacing = 10
+                flowLayout.minimumInteritemSpacing = 5
+                flowLayout.sectionInset.top = 5
+                flowLayout.sectionInset.bottom = 0
+                flowLayout.sectionInset.left = 5
+                flowLayout.sectionInset.right = 5
+                let cellWidth = 180.0
+                let cellHeight = 170.0
+                flowLayout.itemSize = CGSize(width: cellWidth, height: cellHeight)
+            
+                actionButtonCenterConstraint?.isActive = false
+               actionButtonCenterConstraint = actionButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: -50)
+                actionButtonCenterConstraint?.isActive = true
+                
+                filterButtonCenterConstraint?.isActive = false
+              filterButtonCenterConstraint =
+                    filterButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 50)
+                filterButtonCenterConstraint?.isActive = true
+                
+                UIView.animate(withDuration: 2.0, delay: 0, options: UIView.AnimationOptions.curveEaseInOut, animations: {
+                    
+                    
+                    self.view.layoutIfNeeded()
+                }, completion: nil)
+                
+                
+                
+                changeViewButton.tag = collectionTag
+            }
+        }
+        
+       
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        if UIDevice.current.orientation.isLandscape {
+            print("Landscape")
+            
+            if changeViewButton.tag == tableTag {
+                actionButtonCenterConstraint?.isActive = false
+                actionButtonCenterConstraint =
+                self.actionButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: -50)
+                actionButtonCenterConstraint?.isActive = true
+                
+                filterButtonCenterConstraint?.isActive = false
+                
+                filterButtonCenterConstraint =
+                self.filterButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 50)
+                filterButtonCenterConstraint?.isActive = true
+            UIView.animate(withDuration: 2.0, delay: 0, options: UIView.AnimationOptions.curveEaseInOut, animations: {
+
+                self.view.layoutIfNeeded()
+                            }, completion: nil)
+                
+            }
+            
+        } else {
+            print("Portrait")
+        }
+    }
     
     
     
@@ -166,45 +311,123 @@ class MainCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
         let width = (view.frame.size.width - 20) / 2
         let layout = collectionView?.collectionViewLayout as! UICollectionViewFlowLayout
-        layout.itemSize = CGSize(width:width, height:width)
+        layout.itemSize = CGSize(width:width, height:180)
         
         configureAppBar()
-        self.appBar.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        self.appBar.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         self.appBar.navigationBar.tintColor = .white
         
-//        self.addChildViewController(appBar.headerViewController)
-//        self.appBar.headerViewController.headerView.trackingScrollView = self.collectionView
-//        appBar.addSubviewsToParent()
-//
-//        MDCAppBarColorThemer.applySemanticColorScheme(ApplicationScheme.shared.colorScheme, to: self.appBar)
+        self.changeViewButton.tag = collectionTag
+        
+
+        
+        
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         
         let managedContext = appDelegate.persistentContainer.viewContext
         
         
-        guard let videos = passedRecipient?.videos else {
-            print(" NOT WORKING")
-            return }
-        
-        print(videos.count)
+//        guard let videos = passedRecipient?.videos else {
+//            print(" NOT WORKING")
+//            return }
+//
+//        print("The old array is: \(videos)")
+//
+//        print(videos.count)
         self.editButtonItem.width = 100.0
         
+//        var newVideosArray = videos.sortedArray(using: [NSSortDescriptor(key: "creationDate", ascending: true)])
+//        print("the new array is: \(newVideosArray)")
+//
+        
+         self.appBar.navigationBar.rightBarButtonItems = [self.editButtonItem, self.changeViewButton]
+        
        
-        
-        
-         self.appBar.navigationBar.rightBarButtonItems = [self.editButtonItem]
         
 self.appBar.navigationBar.rightBarButtonItem?.title = "Remove"
         
        
+        addButton()
+        
         
         
         title = "Memos"
+        
+        
+
+    }
+    //MARK: - Set up Button
+    fileprivate func addButton(){
+        
+      
+
+        actionButton.translatesAutoresizingMaskIntoConstraints = false
+        filterButton.translatesAutoresizingMaskIntoConstraints = false
+
+       
+       
+
+//       actionButton.translatesAutoresizingMaskIntoConstraints = false
+//        actionButton.setTitle("+", for: UIControlState.normal)
+//        actionButton.setTitleColor(UIColor.white, for: UIControlState.normal)
+//        actionButton.setTitleFont(UIFont.systemFont(ofSize: 30.0), for: .normal)
+        actionButton.setImage(UIImage(imageLiteralResourceName: "baseline_add_white_24pt"), for: .normal)
+        
+        actionButton.imageView?.contentMode = .scaleAspectFill
+        actionButton.setImageTintColor(.white, for: .normal)
+        
+        filterButton.setTitle("Filter", for: UIControl.State.normal)
+        filterButton.setTitleColor(UIColor.white, for: UIControl.State.normal)
+        filterButton.titleLabel?.textAlignment = .center
+        
+//        actionButton.titleLabel?.font = UIFont.systemFont(ofSize: 12)
+        actionButton.backgroundColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
+        filterButton.backgroundColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+        
+        
+        self.view.addSubview(actionButton)
+//        self.view.addSubview(filterButton)
+        
+        actionButtonCenterConstraint = actionButton.centerXAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -50)
+        actionButtonCenterConstraint?.isActive = true
+        
+//        filterButtonCenterConstraint =
+//        filterButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 50)
+//        filterButtonCenterConstraint?.isActive = true
+        
+        actionButtonBottomConstraint =
+        actionButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -15.0)
+        actionButtonBottomConstraint?.isActive = true
+        
+//        filterButtonBottomConstraint =
+//        filterButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -15.0)
+//        filterButtonBottomConstraint?.isActive = true
+        
+       actionButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
+//        filterButton.widthAnchor.constraint(equalToConstant: 80).isActive = true
+        
+       actionButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+//        filterButton.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        
+        actionButton.layer.cornerRadius = 25
+        actionButton.clipsToBounds = true
+        
+//        filterButton.layer.cornerRadius = 40
+//        filterButton.clipsToBounds = true
+        
+        
+        actionButton.addTarget(self, action: #selector(showMenu), for: .touchUpInside)
 
     }
     
     
+    @objc func showMenu(){
+        
+        performSegue(withIdentifier: "toOptions", sender: self)
+    
+    }
+
     func getProgress() -> Float{
         var theCurrentTime = 0.0
         var theCurrentDuration = 0.0
@@ -225,7 +448,7 @@ self.appBar.navigationBar.rightBarButtonItem?.title = "Remove"
             self.editButtonItem.title = "Done"
         }else
         {
-            self.appBar.navigationBar.rightBarButtonItems = [self.editButtonItem]
+            self.appBar.navigationBar.rightBarButtonItems = [self.editButtonItem, self.changeViewButton]
             self.editButtonItem.title = "Remove"
         }
         collectionView?.allowsMultipleSelection = editing
@@ -236,12 +459,6 @@ self.appBar.navigationBar.rightBarButtonItem?.title = "Remove"
         }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -268,42 +485,57 @@ self.appBar.navigationBar.rightBarButtonItem?.title = "Remove"
             print(" This is a file Path: \(filePath)")
             
             let nextViewCon = segue.destination as! TestViewController
-            
-            
-            
+
             nextViewCon.passedURL = filePath
         } else if segue.identifier == "videoAtributes" {
             //
             
-            
-            guard let userCell: UserCollectionViewCell = sender as? UserCollectionViewCell else {
-                print("I failed")
-                return
-            }
-            
-            guard let indexPath: IndexPath = collectionView?.indexPath(for: userCell) else {
-                return
-            }
-            
-           let section = indexPath.section
-              
-            
-            if section == 0 {
-                guard let filePathItem = passedRecipient?.videos?[indexPath.row] as? Videos else{
+            if sender is UserCollectionViewCell {
+               print("The Sender was a cell")
+                guard let userCell: UserCollectionViewCell = sender as? UserCollectionViewCell else {
+                    print("I failed")
                     return
+                }
+                
+                guard let indexPath: IndexPath = collectionView?.indexPath(for: userCell) else {
+                    return
+                }
+                
+                let section = indexPath.section
+                
+                
+                if section == 0 {
+                    guard let filePathItem = passedRecipient?.videos?[indexPath.row] as? Videos else{
+                        return
+                    }
+                    
+                    let destinationVC = segue.destination as! VideoAtrributesViewController
+                    
+                    destinationVC.passedVideo = filePathItem
+                    destinationVC.selectedPerson = passedRecipient
+                    destinationVC.passedSender = sender
+                    
+                }
+                
+                
+            } else {
+                print("The Sender was a button not releated to the cell")
+                
+                guard let personBeingPassed = passedRecipient else {
+                    
+                    print("Could not set to a person")
+                    return
+                    
                 }
                 
                 let destinationVC = segue.destination as! VideoAtrributesViewController
                 
-                destinationVC.passedVideo = filePathItem
-                destinationVC.selectedPerson = passedRecipient
+                destinationVC.selectedPerson = personBeingPassed
+                
+                destinationVC.passedSender = sender
                 
             }
-            
-            
-            
-            
-            
+
         } else if segue.identifier == "textMemoPreview" {
             
             
@@ -327,31 +559,71 @@ self.appBar.navigationBar.rightBarButtonItem?.title = "Remove"
         } else if segue.identifier == "voiceMemoAtts" {
             
             
+            if sender is UserCollectionViewCell {guard let userCell: UserCollectionViewCell = sender as? UserCollectionViewCell else {
+                print("I failed")
+                return
+                }
+                
+                guard let indexPath: IndexPath = collectionView?.indexPath(for: userCell) else {
+                    return
+                }
+                
+                let section = indexPath.section
+                
+                
+                if section == 1 {
+                    guard let filePathItem = passedRecipient?.voice?[indexPath.row] as? VoiceMemos else{
+                        return
+                    }
+                    
+                    let destinationVC = segue.destination as! VoiceMemoAtrributeViewController
+                    
+                    destinationVC.sentVoiceMemo = filePathItem
+                    destinationVC.selectedPerson = passedRecipient
+                    
+                }
+            } else {
+                
+                guard let personBeingPassed = passedRecipient else {
+                    
+                    print("Could not set to a person")
+                    return
+                    
+                }
+                
+                let destinationVC = segue.destination as! VoiceMemoAtrributeViewController
+                
+                destinationVC.selectedPerson = personBeingPassed
+                
+            }
+            
+            
+        } else if segue.identifier == "editWritten" {
+            
             guard let userCell: UserCollectionViewCell = sender as? UserCollectionViewCell else {
                 print("I failed")
                 return
             }
-            
             guard let indexPath: IndexPath = collectionView?.indexPath(for: userCell) else {
                 return
             }
             
             let section = indexPath.section
             
-            
-            if section == 1 {
-                guard let filePathItem = passedRecipient?.voice?[indexPath.row] as? VoiceMemos else{
+            if section == 2 {
+                guard let filePathItem = passedRecipient?.written?[indexPath.row] as? Written else{
                     return
                 }
                 
-                let destinationVC = segue.destination as! VoiceMemoAtrributeViewController
+                let destinationVC = segue.destination as! WrittenMemoViewController
                 
-                destinationVC.sentVoiceMemo = filePathItem
+                destinationVC.passedMemo = filePathItem
                 destinationVC.selectedPerson = passedRecipient
+                destinationVC.passedSender = sender
                 
             }
-            
-        } else if segue.identifier == "generalAttributes" {
+
+        }else if segue.identifier == "generalAttributes" {
             guard let userCell: UserCollectionViewCell = sender as? UserCollectionViewCell else {
                 print("I failed")
                 return
@@ -371,7 +643,7 @@ self.appBar.navigationBar.rightBarButtonItem?.title = "Remove"
                 let destinationVC = segue.destination as! GeneralAttributesViewController
                 
                 
-                guard let memoTag = videoToPass.videoTag else{
+                guard let memoTag = videoToPass.mileStone else{
                     return
                 }
                 
@@ -403,7 +675,7 @@ self.appBar.navigationBar.rightBarButtonItem?.title = "Remove"
                 let destinationVC = segue.destination as! GeneralAttributesViewController
                 
                 
-                guard let memoTag = audioToPass.audioTag else{
+                guard let memoTag = audioToPass.mileStone else{
                     return
                 }
                 
@@ -436,7 +708,7 @@ self.appBar.navigationBar.rightBarButtonItem?.title = "Remove"
                 let destinationVC = segue.destination as! GeneralAttributesViewController
                 
                 
-                guard let memoTag = textToPass.writtenTag else{
+                guard let memoTag = textToPass.mileStone else{
                     return
                 }
                 
@@ -464,11 +736,13 @@ self.appBar.navigationBar.rightBarButtonItem?.title = "Remove"
             }
             
             
+        } else if segue.identifier == "toOptions" {
+            
+            let destination = segue.destination as! OptionsViewController
+            
+            destination.passedPerson = passedRecipient
         }
-        
-        
-        
-        
+   
     }
     
 
@@ -514,6 +788,7 @@ self.appBar.navigationBar.rightBarButtonItem?.title = "Remove"
       
         if indexPath.section == 0 {
         cell.progressBar.isHidden = true
+           
             guard let video = passedRecipient?.videos?[indexPath.row] as? Videos else {
                 
                 print("I am not working")
@@ -523,7 +798,7 @@ self.appBar.navigationBar.rightBarButtonItem?.title = "Remove"
         
         if video.value(forKey: "isVideo") as? Bool == true {
             
-            var textForCell = video.value(forKey: "videoTag") as? String
+            var textForCell = video.value(forKey: "mileStone") as? String
             
             if textForCell == nil {
                 
@@ -534,7 +809,7 @@ self.appBar.navigationBar.rightBarButtonItem?.title = "Remove"
                 
                 return cell
             } else {
-                 cell.cellTextLabel.text = video.value(forKey: "videoTag") as? String
+                 cell.cellTextLabel.text = video.value(forKey: "mileStone") as? String
                 if let picture = video.value(forKey: "thumbNail") as? Data {
                     cell.videoImage.image = UIImage(data: picture)
                     
@@ -543,27 +818,18 @@ self.appBar.navigationBar.rightBarButtonItem?.title = "Remove"
                 return cell
                 
             }
-
-   
-            
-            
-            
+  
         }
             
             
         } else if indexPath.section == 1 {
             guard let voices = passedRecipient?.voice?[indexPath.row] as? VoiceMemos else {return cell}
-            
-            
-            
+
             voiceMemosArray.append(voices)
             
             if voices.value(forKey: "isVoiceMemo") as? Bool == true {
-                var textForCell = voices.value(forKey: "audioTag") as? String
-                
-                
-                
-                
+                var textForCell = voices.value(forKey: "mileStone") as? String
+
                 if textForCell == nil {
                   
                     cell.videoImage.contentMode = .scaleAspectFit
@@ -571,7 +837,7 @@ self.appBar.navigationBar.rightBarButtonItem?.title = "Remove"
                     return cell
                     
                 } else {
-                    cell.cellTextLabel.text = voices.value(forKey: "audioTag") as? String
+                    cell.cellTextLabel.text = voices.value(forKey: "mileStone") as? String
                     cell.videoImage.contentMode = .scaleAspectFit
                     cell.videoImage.image = #imageLiteral(resourceName: "sharp_mic_none_white_48pt")
                     return cell
@@ -590,10 +856,10 @@ self.appBar.navigationBar.rightBarButtonItem?.title = "Remove"
             textMemoArray.append(writtens)
             if writtens.value(forKey: "isWrittenMemo") as? Bool == true {
             
-                cell.cellTextLabel.text = writtens.value(forKey: "writtenTag") as? String
+                cell.cellTextLabel.text = writtens.value(forKey: "mileStone") as? String
                 cell.videoImage.contentMode = .scaleAspectFit
                 cell.videoImage.image = #imageLiteral(resourceName: "outline_chat_white_48pt")
-                cell.propertiesButton.isHidden = true
+//                cell.propertiesButton.isHidden = true
                 
                 return cell
                 
@@ -646,18 +912,14 @@ self.appBar.navigationBar.rightBarButtonItem?.title = "Remove"
             
             do{
                 audioPlayer =  try AVAudioPlayer(contentsOf: audioFile)
-                try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+                try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category(rawValue: convertFromAVAudioSessionCategory(AVAudioSession.Category.playback)), mode: .default)
                 timer?.invalidate()
                 audioPlayer?.delegate = self
                 audioPlayer?.stop()
                 audioPlayer?.prepareToPlay()
                 audioPlayer?.play()
                 startTimer(sender: collectionView.cellForItem(at: indexPath))
-                
-                
-                
-               
-                
+
             } catch {
                 
                 print("Could not play.")
@@ -683,7 +945,7 @@ self.appBar.navigationBar.rightBarButtonItem?.title = "Remove"
         //1
         switch kind {
         //2
-        case UICollectionElementKindSectionHeader:
+        case UICollectionView.elementKindSectionHeader:
             //3
             let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
                                                                              withReuseIdentifier: "mediaHeader",
@@ -822,7 +1084,7 @@ extension MainCollectionViewController {
         let asset = AVAsset(url: url)
         let imageGenerator = AVAssetImageGenerator(asset: asset)
         imageGenerator.appliesPreferredTrackTransform = true
-        let tVal = NSValue(time: CMTimeMake(12, 1)) as! CMTime
+        let tVal = NSValue(time: CMTimeMake(value: 12, timescale: 1)) as! CMTime
         do {
             let imageRef = try imageGenerator.copyCGImage(at: tVal, actualTime: nil)
             return UIImage(cgImage: imageRef)
@@ -839,12 +1101,29 @@ extension MainCollectionViewController {
         if (scrollView == self.appBar.headerViewController.headerView.trackingScrollView) {
             self.appBar.headerViewController.headerView.trackingScrollDidScroll()
         }
+        
+        if scrollView.isTracking{
+       
+            
+            UIView.animate(withDuration: 1.0, delay: 0.0, options: UIView.AnimationOptions.curveEaseOut, animations: {
+                self.actionButton.alpha = 0.0
+                self.filterButton.alpha = 0.0
+            }, completion: nil)
+        }
+        
+        
+        
     }
     
     override func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         if (scrollView == self.appBar.headerViewController.headerView.trackingScrollView) {
             self.appBar.headerViewController.headerView.trackingScrollDidEndDecelerating()
         }
+        
+        
+        
+       
+
     }
     
     override func scrollViewDidEndDragging(_ scrollView: UIScrollView,
@@ -853,6 +1132,12 @@ extension MainCollectionViewController {
         if (scrollView == headerView.trackingScrollView) {
             headerView.trackingScrollDidEndDraggingWillDecelerate(decelerate)
         }
+        
+        UIView.animate(withDuration: 1.0, delay: 0.0, options: UIView.AnimationOptions.curveEaseIn, animations: {
+            self.actionButton.alpha = 1.0
+            self.filterButton.alpha = 1.0
+        }, completion: nil)
+        
     }
     
     override func scrollViewWillEndDragging(_ scrollView: UIScrollView,
@@ -868,3 +1153,10 @@ extension MainCollectionViewController {
 
 
 
+
+
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromAVAudioSessionCategory(_ input: AVAudioSession.Category) -> String {
+	return input.rawValue
+}

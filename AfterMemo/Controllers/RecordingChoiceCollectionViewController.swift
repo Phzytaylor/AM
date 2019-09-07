@@ -18,16 +18,101 @@ class RecordingChoiceCollectionViewController: UICollectionViewController {
      var fileName = ""
     var videoToPass: Videos?
     
+    var hasFired1 = false
+    var hasFired2 = false
+    
+    let defaults = UserDefaults.standard
+    
+    
+    func startTimer(startNewTimer: (Bool)->Void) {
+        
+        let timer =  Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.scrollAutomatically), userInfo: nil, repeats: false)
+        
+        startNewTimer(true)
+    }
+    
+    func startTimer2(){
+        let timer =  Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(self.scrollAuto2), userInfo: nil, repeats: false)
+    }
+    
+    
+    @objc func scrollAutomatically(_ timer1: Timer) {
+        
+        if let coll  = self.collectionView {
+            for cell in coll.visibleCells {
+                let indexPath: IndexPath? = coll.indexPath(for: cell)
+                if ((indexPath?.row)!  < 4){
+                    let indexPath1: IndexPath?
+                    indexPath1 = IndexPath.init(row: (indexPath?.row)! + 1, section: (indexPath?.section)!)
+                    
+                    coll.scrollToItem(at: indexPath1!, at: .right, animated: true)
+                    print("I went")
+                }
+                else{
+                    let indexPath1: IndexPath?
+                    indexPath1 = IndexPath.init(row: 0, section: (indexPath?.section)!)
+                    coll.scrollToItem(at: indexPath1!, at: .left, animated: true)
+                    print("did I go?")
+                }
+                
+            }
+ 
+        }
+        
+    }
+    
+    @objc func scrollAuto2(_ timer2: Timer) {
+        
+        if let coll  = self.collectionView {
+            for cell in coll.visibleCells.reversed() {
+                let indexPath: IndexPath? = coll.indexPath(for: cell)
+                if ((indexPath?.row)!  > 4){
+                    let indexPath1: IndexPath?
+                    indexPath1 = IndexPath.init(row: (indexPath?.row)! - 1, section: (indexPath?.section)!)
+                    
+                    coll.scrollToItem(at: indexPath1!, at: .left, animated: true)
+                    print("I went")
+                }
+                else{
+                    let indexPath1: IndexPath?
+                    indexPath1 = IndexPath.init(row: 0, section: (indexPath?.section)!)
+                    coll.scrollToItem(at: indexPath1!, at: .left, animated: true)
+                    print("did I go?")
+                }
+                
+            }
+            
+        }
+    
+    }
+    
+   
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
        
+     
+        
+        if defaults.bool(forKey: "didFire") == false && UIDevice.current.orientation.isPortrait {
+        
+        startTimer { (True) in
+            startTimer2()
+            print("I FIRED")
+            
+            defaults.set(true, forKey: "didFire")
+        }
+        
+            
+        }
         
        // collectionView?.backgroundColor = UIColor(red: 0.01, green: 0.66, blue: 0.96, alpha: 1.0)
         
         let myImageView: UIImageView = {
-            let imageView = UIImageView(image:#imageLiteral(resourceName: "iStock-174765643 (2)"))
-            imageView.clipsToBounds = true
+            let imageView = UIImageView(image:#imageLiteral(resourceName: "mainBackGround"))
+         
+           imageView.clipsToBounds = true
 //            imageView.frame = CGRect(x: 0, y: 200, width: UIApplication.shared.statusBarFrame.width, height: 100)
 //            imageView.contentMode = .center
             
@@ -35,20 +120,49 @@ class RecordingChoiceCollectionViewController: UICollectionViewController {
         }()
         
      collectionView?.backgroundView = myImageView
+        collectionView?.backgroundView?.contentMode = .scaleAspectFill
 //        collectionView?.backgroundColor = .clear
        
+        let orientation = UIApplication.shared.statusBarOrientation
+        
+        if orientation.isPortrait {
         
         let layout = self.collectionViewLayout as? UICollectionViewFlowLayout
         layout?.minimumLineSpacing = 8
+        } else if orientation.isLandscape{
+            let layout = self.collectionViewLayout as? UICollectionViewFlowLayout
+            
+            layout?.minimumLineSpacing = 10
+            layout?.minimumInteritemSpacing = 10
+            layout?.sectionInset.left = 10
+            layout?.sectionInset.right = 10
+            layout?.scrollDirection = .horizontal
+            
+        } else {
+            let layout = self.collectionViewLayout as? UICollectionViewFlowLayout
+            
+            layout?.minimumLineSpacing = 10
+            layout?.minimumInteritemSpacing = 10
+            layout?.sectionInset.left = 10
+            layout?.sectionInset.right = 10
+            layout?.scrollDirection = .horizontal
+        }
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+//        UIView.animate(withDuration: 1.0, delay: 0, animations: {
+//            self.collectionView?.scrollToItem(at: IndexPath(row: 2, section: 0), at: .right, animated: false)
+//        }) { (true) in
+//            print("I animated")
+//        }
+        
        
 
         // Do any additional setup after loading the view.
     }
-
+    
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -102,8 +216,8 @@ class RecordingChoiceCollectionViewController: UICollectionViewController {
         }
         
     }
+   
     
-
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -238,13 +352,35 @@ class RecordingChoiceCollectionViewController: UICollectionViewController {
 
 extension RecordingChoiceCollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 130,
-               height: 130)
-    }
-    
-    
+        
+//        let section = indexPath.section
+        
+        let orientation = UIApplication.shared.statusBarOrientation
+        
+        switch orientation {
+        case .portrait:
+            return CGSize(width: 130,
+                          height: 130)
+        case .portraitUpsideDown:
+            return CGSize(width: collectionView.frame.width/4,
+                          height: collectionView.frame.width/4)
+        case .landscapeLeft:
+            
+            
+            return CGSize(width: collectionView.frame.width/4, height: collectionView.frame.width/4)
+        case.landscapeRight:
+            
+            return CGSize(width: 180, height: 170)
+        default:
+            return CGSize(width: 0, height: 0)
+        }
+        
+      
+       
 }
+   
 
+ }
 
 extension RecordingChoiceCollectionViewController: UINavigationControllerDelegate{}
 

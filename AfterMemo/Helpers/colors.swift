@@ -19,12 +19,50 @@ class ApplicationScheme: NSObject {
     }
     
     override init() {
-        self.buttonScheme.colorScheme = self.colorScheme
+        self.buttonScheme.colorScheme = self.myButtoncolorScheme
         //self.buttonScheme.typographyScheme = self.typographyScheme
         super.init()
     }
     
     public let buttonScheme = MDCButtonScheme()
+    
+
+    public let myButtoncolorScheme: MDCColorScheming = {
+        let scheme = MDCSemanticColorScheme(defaults: .material201804)
+        scheme.primaryColor = UIColor(red: 0.01, green: 0.66, blue: 0.96, alpha: 1.0);
+        
+        
+        let primaryColor = UIColor(red: 0.00, green: 0.90, blue: 0.46, alpha: 1.0);
+        let primaryLightColor = UIColor(red: 0.40, green: 1.00, blue: 0.65, alpha: 1.0);
+        let primaryDarkColor = UIColor(red: 0.00, green: 0.70, blue: 0.28, alpha: 1.0);
+        let primaryTextColor = UIColor(red: 0.00, green: 0.00, blue: 0.00, alpha: 1.0);
+        
+        scheme.primaryColorVariant =
+           primaryColor
+        
+        scheme.onPrimaryColor = .white
+        //UIColor(red: 0.00, green: 0.00, blue: 0.00, alpha: 1.0);
+        
+        scheme.secondaryColor =
+            primaryDarkColor
+        
+        scheme.onSecondaryColor =
+            UIColor(red: 1.00, green: 1.00, blue: 1.00, alpha: 1.0);
+        scheme.surfaceColor =
+            UIColor(red: 0.46, green: 0.64, blue: 0.47, alpha: 1.0);
+        
+        scheme.onSurfaceColor =
+            UIColor(red: 68.0/255.0, green: 44.0/255.0, blue: 46.0/255.0, alpha: 1.0)
+        scheme.backgroundColor =
+            UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 1.0)
+        scheme.onBackgroundColor =
+            UIColor(red: 68.0/255.0, green: 44.0/255.0, blue: 46.0/255.0, alpha: 1.0)
+        scheme.errorColor =
+            UIColor(red: 197.0/255.0, green: 3.0/255.0, blue: 43.0/255.0, alpha: 1.0)
+        return scheme
+    }()
+    
+
     
     public let colorScheme: MDCColorScheming = {
         let scheme = MDCSemanticColorScheme(defaults: .material201804)

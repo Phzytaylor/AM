@@ -53,7 +53,10 @@ class VideoRecorderViewController: UIViewController {
 extension VideoRecorderViewController: UIImagePickerControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController,
-                               didFinishPickingMediaWithInfo info: [String : Any]) {
+                               didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+// Local variable inserted by Swift 4.2 migrator.
+let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
+
         dismiss(animated: true, completion: nil)
         
         let nameFileAlert = UIAlertController(title: "File Name", message: "Create a name for your video.", preferredStyle: .alert)
@@ -70,9 +73,9 @@ extension VideoRecorderViewController: UIImagePickerControllerDelegate {
             
             
             guard
-                let mediaType = info[UIImagePickerControllerMediaType] as? String,
+                let mediaType = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.mediaType)] as? String,
                 mediaType == (kUTTypeMovie as String),
-                let url = info[UIImagePickerControllerMediaURL] as? URL
+                let url = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.mediaURL)] as? URL
                 else {
                     return
             }
@@ -110,3 +113,13 @@ extension VideoRecorderViewController: UIImagePickerControllerDelegate {
 }
 
 extension VideoRecorderViewController: UINavigationControllerDelegate{}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromUIImagePickerControllerInfoKeyDictionary(_ input: [UIImagePickerController.InfoKey: Any]) -> [String: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map {key, value in (key.rawValue, value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromUIImagePickerControllerInfoKey(_ input: UIImagePickerController.InfoKey) -> String {
+	return input.rawValue
+}

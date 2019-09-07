@@ -2,8 +2,8 @@
 //  Recipient+CoreDataProperties.swift
 //  AfterMemo
 //
-//  Created by Taylor Simpson on 6/22/18.
-//  Copyright © 2018 Taylor Simpson. All rights reserved.
+//  Created by Taylor Simpson on 2/4/19.
+//  Copyright © 2019 Taylor Simpson. All rights reserved.
 //
 //
 
@@ -17,11 +17,17 @@ extension Recipient {
         return NSFetchRequest<Recipient>(entityName: "Recipient")
     }
 
+    @NSManaged public var adminEmail: String?
+    @NSManaged public var adminName: String?
     @NSManaged public var age: NSDate?
     @NSManaged public var avatar: NSData?
-    @NSManaged public var latestMemoDate: NSDate?
-    @NSManaged public var name: String?
     @NSManaged public var email: String?
+    @NSManaged public var latestMemoDate: NSDate?
+    @NSManaged public var mariageDate: NSDate?
+    @NSManaged public var married: Bool
+    @NSManaged public var name: String?
+    @NSManaged public var relation: String?
+    @NSManaged public var phoneNumber: String?
     @NSManaged public var videos: NSOrderedSet?
     @NSManaged public var voice: NSOrderedSet?
     @NSManaged public var written: NSOrderedSet?

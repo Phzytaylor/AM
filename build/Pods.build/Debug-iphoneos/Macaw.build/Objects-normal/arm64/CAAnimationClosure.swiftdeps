@@ -1,0 +1,412 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CAAnimationDelegateImpl"
+provides-nominal:
+- "5Macaw23CAAnimationDelegateImplC"
+provides-member:
+- ["5Macaw23CAAnimationDelegateImplC", ""]
+- ["So11CAAnimationC", ""]
+- ["So7CALayerC", ""]
+- ["So11CAAnimationC", "start"]
+- ["So11CAAnimationC", "completion"]
+- ["So11CAAnimationC", "animating"]
+- ["So11CAAnimationC", "progress"]
+- ["So7CALayerC", "addAnimation"]
+provides-dynamic-lookup:
+- "animationDidStart"
+- "animationDidStop"
+- "animationIsAnimating"
+depends-top-level:
+- !private "!="
+- !private "/"
+- !private "<="
+- !private "=="
+- "AssignmentPrecedence"
+- "Bool"
+- "CAAnimation"
+- "CAAnimationDelegate"
+- "CAAnimationDelegateImpl"
+- "CALayer"
+- "CGFloat"
+- "CastingPrecedence"
+- "Date"
+- !private "MDefaultRunLoopMode"
+- "NSObject"
+- !private "RunLoop"
+- "String"
+- "TimeInterval"
+- "Timer"
+- "Void"
+depends-member:
+- !private ["s18AdditiveArithmeticP", "init"]
+- !private ["SB", "init"]
+- !private ["So8CAActionP", "CAAnimationDelegateImpl"]
+- !private ["So8CAActionP", "animating"]
+- !private ["So8CAActionP", "completion"]
+- !private ["So8CAActionP", "delegate"]
+- !private ["So8CAActionP", "duration"]
+- ["So11CAAnimationC", "Bool"]
+- !private ["So11CAAnimationC", "CAAnimationDelegateImpl"]
+- ["So11CAAnimationC", "CGFloat"]
+- ["So11CAAnimationC", "Void"]
+- ["So11CAAnimationC", "animating"]
+- ["So11CAAnimationC", "completion"]
+- !private ["So11CAAnimationC", "delegate"]
+- !private ["So11CAAnimationC", "duration"]
+- ["So11CAAnimationC", "progress"]
+- ["So11CAAnimationC", "start"]
+- !private ["So19CAAnimationDelegateP", "CAAnimationDelegateImpl"]
+- !private ["So19CAAnimationDelegateP", "CGFloat"]
+- !private ["So19CAAnimationDelegateP", "Date"]
+- !private ["So19CAAnimationDelegateP", "MDefaultRunLoopMode"]
+- !private ["So19CAAnimationDelegateP", "RunLoop"]
+- !private ["So19CAAnimationDelegateP", "Timer"]
+- ["So19CAAnimationDelegateP", ""]
+- !private ["So19CAAnimationDelegateP", "animating"]
+- !private ["So19CAAnimationDelegateP", "animatingTimer"]
+- ["So19CAAnimationDelegateP", "animationDidStart"]
+- ["So19CAAnimationDelegateP", "animationDidStop"]
+- !private ["So19CAAnimationDelegateP", "animationDuration"]
+- !private ["So19CAAnimationDelegateP", "animationIsAnimating"]
+- !private ["So19CAAnimationDelegateP", "completion"]
+- !private ["So19CAAnimationDelegateP", "init"]
+- !private ["So19CAAnimationDelegateP", "start"]
+- !private ["So19CAAnimationDelegateP", "startTime"]
+- ["5Macaw23CAAnimationDelegateImplC", "Bool"]
+- ["5Macaw23CAAnimationDelegateImplC", "CAAnimation"]
+- !private ["5Macaw23CAAnimationDelegateImplC", "CAAnimationDelegateImpl"]
+- ["5Macaw23CAAnimationDelegateImplC", "CGFloat"]
+- ["5Macaw23CAAnimationDelegateImplC", "Date"]
+- !private ["5Macaw23CAAnimationDelegateImplC", "MDefaultRunLoopMode"]
+- !private ["5Macaw23CAAnimationDelegateImplC", "RunLoop"]
+- ["5Macaw23CAAnimationDelegateImplC", "TimeInterval"]
+- ["5Macaw23CAAnimationDelegateImplC", "Timer"]
+- ["5Macaw23CAAnimationDelegateImplC", "Void"]
+- ["5Macaw23CAAnimationDelegateImplC", "animating"]
+- !private ["5Macaw23CAAnimationDelegateImplC", "animatingTimer"]
+- ["5Macaw23CAAnimationDelegateImplC", "animationDidStart"]
+- ["5Macaw23CAAnimationDelegateImplC", "animationDidStop"]
+- !private ["5Macaw23CAAnimationDelegateImplC", "animationDuration"]
+- ["5Macaw23CAAnimationDelegateImplC", "animationIsAnimating"]
+- ["5Macaw23CAAnimationDelegateImplC", "completion"]
+- ["5Macaw23CAAnimationDelegateImplC", "deinit"]
+- ["5Macaw23CAAnimationDelegateImplC", "init"]
+- ["5Macaw23CAAnimationDelegateImplC", "start"]
+- !private ["5Macaw23CAAnimationDelegateImplC", "startTime"]
+- ["So7CALayerC", "Bool"]
+- ["So7CALayerC", "CAAnimation"]
+- ["So7CALayerC", "String"]
+- ["So7CALayerC", "Void"]
+- !private ["So7CALayerC", "add"]
+- ["So7CALayerC", "addAnimation"]
+- !private ["So13CAMediaTimingP", "CAAnimationDelegateImpl"]
+- !private ["So13CAMediaTimingP", "add"]
+- !private ["So13CAMediaTimingP", "animating"]
+- !private ["So13CAMediaTimingP", "completion"]
+- !private ["So13CAMediaTimingP", "delegate"]
+- !private ["So13CAMediaTimingP", "duration"]
+- !private ["12CoreGraphics7CGFloatV", "init"]
+- !private ["s7CVarArgP", "CAAnimationDelegateImpl"]
+- !private ["s7CVarArgP", "CGFloat"]
+- !private ["s7CVarArgP", "Date"]
+- !private ["s7CVarArgP", "MDefaultRunLoopMode"]
+- !private ["s7CVarArgP", "RunLoop"]
+- !private ["s7CVarArgP", "Timer"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "add"]
+- !private ["s7CVarArgP", "animating"]
+- !private ["s7CVarArgP", "animatingTimer"]
+- ["s7CVarArgP", "animationDidStart"]
+- ["s7CVarArgP", "animationDidStop"]
+- !private ["s7CVarArgP", "animationDuration"]
+- !private ["s7CVarArgP", "animationIsAnimating"]
+- !private ["s7CVarArgP", "completion"]
+- !private ["s7CVarArgP", "current"]
+- !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "duration"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "invalidate"]
+- !private ["s7CVarArgP", "start"]
+- !private ["s7CVarArgP", "startTime"]
+- !private ["SL", "init"]
+- !private ["SL", "timeIntervalSince"]
+- !private ["s28CustomDebugStringConvertibleP", "CAAnimationDelegateImpl"]
+- !private ["s28CustomDebugStringConvertibleP", "CGFloat"]
+- !private ["s28CustomDebugStringConvertibleP", "Date"]
+- !private ["s28CustomDebugStringConvertibleP", "MDefaultRunLoopMode"]
+- !private ["s28CustomDebugStringConvertibleP", "RunLoop"]
+- !private ["s28CustomDebugStringConvertibleP", "Timer"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "add"]
+- !private ["s28CustomDebugStringConvertibleP", "animating"]
+- !private ["s28CustomDebugStringConvertibleP", "animatingTimer"]
+- ["s28CustomDebugStringConvertibleP", "animationDidStart"]
+- ["s28CustomDebugStringConvertibleP", "animationDidStop"]
+- !private ["s28CustomDebugStringConvertibleP", "animationDuration"]
+- !private ["s28CustomDebugStringConvertibleP", "animationIsAnimating"]
+- !private ["s28CustomDebugStringConvertibleP", "completion"]
+- !private ["s28CustomDebugStringConvertibleP", "current"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "duration"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "invalidate"]
+- !private ["s28CustomDebugStringConvertibleP", "start"]
+- !private ["s28CustomDebugStringConvertibleP", "startTime"]
+- !private ["s28CustomDebugStringConvertibleP", "timeIntervalSince"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "timeIntervalSince"]
+- !private ["s23CustomStringConvertibleP", "CAAnimationDelegateImpl"]
+- !private ["s23CustomStringConvertibleP", "CGFloat"]
+- !private ["s23CustomStringConvertibleP", "Date"]
+- !private ["s23CustomStringConvertibleP", "MDefaultRunLoopMode"]
+- !private ["s23CustomStringConvertibleP", "RunLoop"]
+- !private ["s23CustomStringConvertibleP", "Timer"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "add"]
+- !private ["s23CustomStringConvertibleP", "animating"]
+- !private ["s23CustomStringConvertibleP", "animatingTimer"]
+- ["s23CustomStringConvertibleP", "animationDidStart"]
+- ["s23CustomStringConvertibleP", "animationDidStop"]
+- !private ["s23CustomStringConvertibleP", "animationDuration"]
+- !private ["s23CustomStringConvertibleP", "animationIsAnimating"]
+- !private ["s23CustomStringConvertibleP", "completion"]
+- !private ["s23CustomStringConvertibleP", "current"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "duration"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "invalidate"]
+- !private ["s23CustomStringConvertibleP", "start"]
+- !private ["s23CustomStringConvertibleP", "startTime"]
+- !private ["s23CustomStringConvertibleP", "timeIntervalSince"]
+- !private ["10Foundation4DateV", "init"]
+- !private ["10Foundation4DateV", "timeIntervalSince"]
+- !private ["Se", "init"]
+- !private ["Se", "timeIntervalSince"]
+- !private ["SE", "init"]
+- !private ["SE", "timeIntervalSince"]
+- !private ["SQ", "CAAnimationDelegateImpl"]
+- !private ["SQ", "CGFloat"]
+- !private ["SQ", "Date"]
+- !private ["SQ", "MDefaultRunLoopMode"]
+- !private ["SQ", "RunLoop"]
+- !private ["SQ", "Timer"]
+- ["SQ", ""]
+- !private ["SQ", "add"]
+- !private ["SQ", "animating"]
+- !private ["SQ", "animatingTimer"]
+- ["SQ", "animationDidStart"]
+- ["SQ", "animationDidStop"]
+- !private ["SQ", "animationDuration"]
+- !private ["SQ", "animationIsAnimating"]
+- !private ["SQ", "completion"]
+- !private ["SQ", "current"]
+- !private ["SQ", "delegate"]
+- !private ["SQ", "duration"]
+- !private ["SQ", "init"]
+- !private ["SQ", "invalidate"]
+- !private ["SQ", "start"]
+- !private ["SQ", "startTime"]
+- !private ["SQ", "timeIntervalSince"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["SF", "init"]
+- !private ["SH", "CAAnimationDelegateImpl"]
+- !private ["SH", "CGFloat"]
+- !private ["SH", "Date"]
+- !private ["SH", "MDefaultRunLoopMode"]
+- !private ["SH", "RunLoop"]
+- !private ["SH", "Timer"]
+- ["SH", ""]
+- !private ["SH", "add"]
+- !private ["SH", "animating"]
+- !private ["SH", "animatingTimer"]
+- ["SH", "animationDidStart"]
+- ["SH", "animationDidStop"]
+- !private ["SH", "animationDuration"]
+- !private ["SH", "animationIsAnimating"]
+- !private ["SH", "completion"]
+- !private ["SH", "current"]
+- !private ["SH", "delegate"]
+- !private ["SH", "duration"]
+- !private ["SH", "init"]
+- !private ["SH", "invalidate"]
+- !private ["SH", "start"]
+- !private ["SH", "startTime"]
+- !private ["SH", "timeIntervalSince"]
+- !private ["So8NSCodingP", "CAAnimationDelegateImpl"]
+- !private ["So8NSCodingP", "add"]
+- !private ["So8NSCodingP", "animating"]
+- !private ["So8NSCodingP", "completion"]
+- !private ["So8NSCodingP", "delegate"]
+- !private ["So8NSCodingP", "duration"]
+- !private ["So9NSCopyingP", "CAAnimationDelegateImpl"]
+- !private ["So9NSCopyingP", "animating"]
+- !private ["So9NSCopyingP", "completion"]
+- !private ["So9NSCopyingP", "delegate"]
+- !private ["So9NSCopyingP", "duration"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "CAAnimation"]
+- !private ["So8NSObjectC", "CAAnimationDelegateImpl"]
+- ["So8NSObjectC", "CGFloat"]
+- ["So8NSObjectC", "Date"]
+- !private ["So8NSObjectC", "MDefaultRunLoopMode"]
+- !private ["So8NSObjectC", "RunLoop"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "TimeInterval"]
+- ["So8NSObjectC", "Timer"]
+- ["So8NSObjectC", "Void"]
+- ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "add"]
+- ["So8NSObjectC", "addAnimation"]
+- ["So8NSObjectC", "animating"]
+- ["So8NSObjectC", "animatingTimer"]
+- ["So8NSObjectC", "animationDidStart"]
+- ["So8NSObjectC", "animationDidStop"]
+- ["So8NSObjectC", "animationDuration"]
+- ["So8NSObjectC", "animationIsAnimating"]
+- ["So8NSObjectC", "completion"]
+- !private ["So8NSObjectC", "current"]
+- !private ["So8NSObjectC", "delegate"]
+- !private ["So8NSObjectC", "duration"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "invalidate"]
+- ["So8NSObjectC", "progress"]
+- ["So8NSObjectC", "start"]
+- ["So8NSObjectC", "startTime"]
+- !private ["So8NSObjectP", "CAAnimationDelegateImpl"]
+- !private ["So8NSObjectP", "CGFloat"]
+- !private ["So8NSObjectP", "Date"]
+- !private ["So8NSObjectP", "MDefaultRunLoopMode"]
+- !private ["So8NSObjectP", "RunLoop"]
+- !private ["So8NSObjectP", "Timer"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "add"]
+- !private ["So8NSObjectP", "animating"]
+- !private ["So8NSObjectP", "animatingTimer"]
+- ["So8NSObjectP", "animationDidStart"]
+- ["So8NSObjectP", "animationDidStop"]
+- !private ["So8NSObjectP", "animationDuration"]
+- !private ["So8NSObjectP", "animationIsAnimating"]
+- !private ["So8NSObjectP", "completion"]
+- !private ["So8NSObjectP", "current"]
+- !private ["So8NSObjectP", "delegate"]
+- !private ["So8NSObjectP", "duration"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "invalidate"]
+- !private ["So8NSObjectP", "start"]
+- !private ["So8NSObjectP", "startTime"]
+- !private ["So14NSSecureCodingP", "CAAnimationDelegateImpl"]
+- !private ["So14NSSecureCodingP", "add"]
+- !private ["So14NSSecureCodingP", "animating"]
+- !private ["So14NSSecureCodingP", "completion"]
+- !private ["So14NSSecureCodingP", "delegate"]
+- !private ["So14NSSecureCodingP", "duration"]
+- !private ["Sj", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "timeIntervalSince"]
+- !private ["So9NSRunLoopC", "add"]
+- !private ["So9NSRunLoopC", "current"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["Sx", "init"]
+- !private ["So7NSTimerC", "init"]
+- !private ["So7NSTimerC", "invalidate"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "timeIntervalSince"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CAAnimationDelegateImpl"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGFloat"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Date"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MDefaultRunLoopMode"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "RunLoop"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Timer"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "add"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "animating"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "animatingTimer"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "animationDidStart"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "animationDidStop"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "animationDuration"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "animationIsAnimating"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "completion"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "current"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "duration"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "invalidate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "start"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "startTime"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "timeIntervalSince"]
+depends-nominal:
+- !private "s18AdditiveArithmeticP"
+- !private "SB"
+- !private "So8CAActionP"
+- "So11CAAnimationC"
+- "So19CAAnimationDelegateP"
+- "5Macaw23CAAnimationDelegateImplC"
+- "So7CALayerC"
+- !private "So13CAMediaTimingP"
+- !private "12CoreGraphics7CGFloatV"
+- "s7CVarArgP"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation4DateV"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "SF"
+- "SH"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "Sj"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "So9NSRunLoopC"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "So7NSTimerC"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/SWXMLHash/SWXMLHash.framework/Modules/SWXMLHash.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/SWXMLHash/SWXMLHash-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/Macaw/Macaw-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/SWXMLHash/SWXMLHash.framework/Headers/SWXMLHash-Swift.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphoneos/Macaw.build/unextended-module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphoneos/SWXMLHash.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "c5875566bf3e44126ec752c1ada78510"

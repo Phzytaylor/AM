@@ -1,8 +1,9 @@
 //
 //  Userinfo+CoreDataProperties.swift
-//  
+//  AfterMemo
 //
-//  Created by Taylor Simpson on 6/15/18.
+//  Created by Taylor Simpson on 2/23/19.
+//  Copyright © 2019 Taylor Simpson. All rights reserved.
 //
 //
 
@@ -18,5 +19,7 @@ extension Userinfo {
 
     @NSManaged public var firstName: String?
     @NSManaged public var lastName: String?
+    @NSManaged public var mileStoneProgress: Double
+    @NSManaged public var email: String?
 
 }

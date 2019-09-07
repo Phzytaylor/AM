@@ -1,0 +1,111 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Point"
+provides-nominal:
+- "5Macaw5PointC"
+provides-member:
+- ["5Macaw5PointC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "+"
+- "AssignmentPrecedence"
+- "Double"
+- "Locus"
+- !private "MoveTo"
+- "Path"
+- "Point"
+- "Rect"
+- "Size"
+depends-member:
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["5Macaw12InterpolableP", "MoveTo"]
+- ["5Macaw12InterpolableP", "Point"]
+- !private ["5Macaw12InterpolableP", "Rect"]
+- ["5Macaw12InterpolableP", ""]
+- ["5Macaw12InterpolableP", "init"]
+- !private ["5Macaw12InterpolableP", "x"]
+- !private ["5Macaw12InterpolableP", "y"]
+- ["5Macaw5LocusC", "Double"]
+- !private ["5Macaw5LocusC", "MoveTo"]
+- ["5Macaw5LocusC", "Path"]
+- ["5Macaw5LocusC", "Point"]
+- ["5Macaw5LocusC", "Rect"]
+- ["5Macaw5LocusC", "Size"]
+- ["5Macaw5LocusC", ""]
+- ["5Macaw5LocusC", "add"]
+- ["5Macaw5LocusC", "bounds"]
+- ["5Macaw5LocusC", "init"]
+- ["5Macaw5LocusC", "origin"]
+- ["5Macaw5LocusC", "rect"]
+- ["5Macaw5LocusC", "toPath"]
+- ["5Macaw5LocusC", "x"]
+- ["5Macaw5LocusC", "y"]
+- !private ["5Macaw18LocusInterpolationP", "MoveTo"]
+- ["5Macaw18LocusInterpolationP", "Point"]
+- !private ["5Macaw18LocusInterpolationP", "Rect"]
+- ["5Macaw18LocusInterpolationP", ""]
+- ["5Macaw18LocusInterpolationP", "init"]
+- !private ["5Macaw18LocusInterpolationP", "x"]
+- !private ["5Macaw18LocusInterpolationP", "y"]
+- !private ["5Macaw6MoveToC", "init"]
+- !private ["5Macaw6MoveToC", "lineTo"]
+- !private ["5Macaw11PathBuilderC", "build"]
+- !private ["5Macaw11PathBuilderC", "lineTo"]
+- ["5Macaw5PointC", "Double"]
+- !private ["5Macaw5PointC", "MoveTo"]
+- ["5Macaw5PointC", "Path"]
+- ["5Macaw5PointC", "Point"]
+- ["5Macaw5PointC", "Rect"]
+- ["5Macaw5PointC", "Size"]
+- ["5Macaw5PointC", "add"]
+- ["5Macaw5PointC", "bounds"]
+- ["5Macaw5PointC", "deinit"]
+- ["5Macaw5PointC", "init"]
+- ["5Macaw5PointC", "origin"]
+- ["5Macaw5PointC", "rect"]
+- ["5Macaw5PointC", "toPath"]
+- ["5Macaw5PointC", "x"]
+- ["5Macaw5PointC", "y"]
+- !private ["5Macaw4RectC", "init"]
+depends-nominal:
+- !private "s23CustomStringConvertibleP"
+- "5Macaw12InterpolableP"
+- "5Macaw5LocusC"
+- "5Macaw18LocusInterpolationP"
+- !private "5Macaw6MoveToC"
+- !private "5Macaw11PathBuilderC"
+- "5Macaw5PointC"
+- !private "5Macaw4RectC"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/SWXMLHash/SWXMLHash.framework/Modules/SWXMLHash.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/SWXMLHash/SWXMLHash-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/Macaw/Macaw-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/SWXMLHash/SWXMLHash.framework/Headers/SWXMLHash-Swift.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphoneos/Macaw.build/unextended-module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphoneos/SWXMLHash.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "775aa25ff3a000da19b2f77bfb441a95"

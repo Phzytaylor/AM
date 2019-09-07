@@ -1,0 +1,10 @@
+framework module Macaw {
+  umbrella header "Macaw-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module Macaw.__Swift {
+    exclude header "Macaw-Swift.h"
+}

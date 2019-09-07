@@ -75,6 +75,12 @@ class IntroPageViewController: UIPageViewController, UIPageViewControllerDelegat
             self.setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
         }
         // Do any additional setup after loading the view.
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        self.navigationController?.toolbar.barTintColor = #colorLiteral(red: 0.04111137241, green: 0.394802928, blue: 0.5176765919, alpha: 1)
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -19,6 +19,8 @@ final class AuthController {
         
         do {
             let password = try KeychainPasswordItem(service: serviceName, account: currentUser.name).readPassword()
+            
+            
             return password.count > 0
         } catch {
             return false
@@ -30,10 +32,12 @@ final class AuthController {
         let salt = "x4vV8bGgqqmQwgCoyXFQj+(o.nUNQhVP7ND"
         return "\(password).\(name).\(salt)".sha256()
     }
-    class func signIn(_ user: String, password: String) throws {
-        let finalHash = passwordHash(from: user, password: password)
-        try KeychainPasswordItem(service: serviceName, account: user).savePassword(finalHash)
+    class func signIn(_ user: User, password: String) throws {
+        let finalHash = passwordHash(from: user.name, password: password)
+        try KeychainPasswordItem(service: serviceName, account: user.name).savePassword(finalHash)
         print(finalHash)
+        
+        print("this is the user password: \(finalHash)")
         
        // Settings.currentUser = user
         
@@ -45,14 +49,28 @@ final class AuthController {
     class func signOut() throws {
         
         guard let currentUser = Settings.currentUser else {
+            
+            print("THERE IS NO USER")
             return
         }
         
         //TODO: Determain what will be done. If info is deleted from Keychain or just change login status.
         
+        try KeychainPasswordItem(service: serviceName, account: currentUser.name).deleteItem()
+       
+        
         Settings.currentUser = nil
         
         NotificationCenter.default.post(name: .loginStatusChanged, object: nil)
+    }
+    
+    class func deletePW(_ user: String) throws{
+        
+        
+        
+       try KeychainPasswordItem(service: serviceName, account: user).deleteItem()
+        
+        
     }
 }
 

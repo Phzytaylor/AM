@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import Firebase
+import FirebaseAuth
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let hasFinishedSetup = UserDefaults.standard.bool(forKey: "hasSetup")
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         
@@ -30,6 +31,28 @@ let storyboard = UIStoryboard(name: "Main", bundle: nil)
             self.window?.rootViewController = initialViewController
             self.window?.makeKeyAndVisible()
         }
+        
+        // TODO: I need to implement a system to keep track of how many milestoes the user has stored. I can use user defaults for this since I don't want to store an array in core data. I will also make a child node for all users to store the information just incase they delete the app. Then both their progress and the milestones they have completed can be retrieved.
+        if let userID = Auth.auth().currentUser?.uid {
+            let mileStoneRef = Database.database().reference().child("users").child(userID)
+            mileStoneRef.observeSingleEvent(of: .value) { (snapshot) in
+                if snapshot.hasChild("mileStones"){
+                    print("I AM TRUE") }
+                else {
+                    print(" I AM FALSE")
+                    
+                    let mileStones = Triggers()
+                    let mileStonesToUpload = mileStones.triggerArray
+                    
+                    for events in mileStonesToUpload{
+                        mileStoneRef.child("mileStones").updateChildValues([events : false])
+                    }
+                }
+            }
+            
+            
+        }
+        
         
         return true
     }
@@ -105,7 +128,11 @@ let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        
+        
     }
+    
+    
     
     // MARK: - Core Data Stack
     

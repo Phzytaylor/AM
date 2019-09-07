@@ -1,0 +1,98 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "InterruptibleAnimatorOverlayContainerTransitionCoordinator"
+provides-nominal:
+- "16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC"
+provides-member:
+- ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- "CGFloat"
+- "Int"
+- "InterruptibleAnimatorOverlayContainerTransitionCoordinator"
+- "OverlayContainerTransitionCoordinator"
+- "OverlayContainerTransitionCoordinatorContext"
+- "Range"
+- "UIViewImplicitlyAnimating"
+- "Void"
+depends-member:
+- ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "CGFloat"]
+- ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "Int"]
+- ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "OverlayContainerTransitionCoordinatorContext"]
+- ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "Range"]
+- ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "UIViewImplicitlyAnimating"]
+- ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "Void"]
+- ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "animate"]
+- !private ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "animator"]
+- !private ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "context"]
+- ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "deinit"]
+- ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "height"]
+- ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "init"]
+- ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "notchIndexes"]
+- ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "overlayTranslationHeight"]
+- ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "reachableIndexes"]
+- ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "targetNotchHeight"]
+- ["16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC", "targetNotchIndex"]
+- !private ["So8NSObjectP", "addAnimations"]
+- !private ["So8NSObjectP", "addCompletion"]
+- ["16OverlayContainer0aB21TransitionCoordinatorP", ""]
+- ["16OverlayContainer0aB21TransitionCoordinatorP", "animate"]
+- !private ["16OverlayContainer0aB21TransitionCoordinatorP", "animator"]
+- !private ["16OverlayContainer0aB21TransitionCoordinatorP", "context"]
+- ["16OverlayContainer0aB21TransitionCoordinatorP", "height"]
+- ["16OverlayContainer0aB21TransitionCoordinatorP", "notchIndexes"]
+- ["16OverlayContainer0aB21TransitionCoordinatorP", "overlayTranslationHeight"]
+- ["16OverlayContainer0aB21TransitionCoordinatorP", "reachableIndexes"]
+- ["16OverlayContainer0aB21TransitionCoordinatorP", "targetNotchHeight"]
+- ["16OverlayContainer0aB21TransitionCoordinatorP", "targetNotchIndex"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", ""]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "animate"]
+- !private ["16OverlayContainer0aB28TransitionCoordinatorContextP", "animator"]
+- !private ["16OverlayContainer0aB28TransitionCoordinatorContextP", "context"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "height"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "notchIndexes"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "overlayTranslationHeight"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "reachableIndexes"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "targetNotchHeight"]
+- ["16OverlayContainer0aB28TransitionCoordinatorContextP", "targetNotchIndex"]
+- !private ["So15UIViewAnimatingP", "addAnimations"]
+- !private ["So15UIViewAnimatingP", "addCompletion"]
+- !private ["So25UIViewImplicitlyAnimatingP", "addAnimations"]
+- !private ["So25UIViewImplicitlyAnimatingP", "addCompletion"]
+depends-nominal:
+- "16OverlayContainer021InterruptibleAnimatoraB21TransitionCoordinatorC"
+- !private "So8NSObjectP"
+- "16OverlayContainer0aB21TransitionCoordinatorP"
+- "16OverlayContainer0aB28TransitionCoordinatorContextP"
+- !private "So15UIViewAnimatingP"
+- !private "So25UIViewImplicitlyAnimatingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/OverlayContainer/OverlayContainer-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphonesimulator/OverlayContainer.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "1285165171704fd2a257ef950666939c"

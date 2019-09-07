@@ -1,0 +1,96 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MCAMediaTimingFunctionName"
+provides-nominal:
+- "5Macaw26MCAMediaTimingFunctionNameV"
+provides-member:
+- ["5Macaw26MCAMediaTimingFunctionNameV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "CAMediaTimingFunctionName"
+- "MCAMediaTimingFunctionName"
+depends-member:
+- ["So25CAMediaTimingFunctionNamea", "default"]
+- ["So25CAMediaTimingFunctionNamea", "easeIn"]
+- ["So25CAMediaTimingFunctionNamea", "easeInEaseOut"]
+- ["So25CAMediaTimingFunctionNamea", "easeOut"]
+- ["So25CAMediaTimingFunctionNamea", "linear"]
+- ["SQ", "default"]
+- ["SQ", "easeIn"]
+- ["SQ", "easeInEaseOut"]
+- ["SQ", "easeOut"]
+- ["SQ", "linear"]
+- ["SH", "default"]
+- ["SH", "easeIn"]
+- ["SH", "easeInEaseOut"]
+- ["SH", "easeOut"]
+- ["SH", "linear"]
+- ["5Macaw26MCAMediaTimingFunctionNameV", "CAMediaTimingFunctionName"]
+- ["5Macaw26MCAMediaTimingFunctionNameV", "default"]
+- ["5Macaw26MCAMediaTimingFunctionNameV", "easeIn"]
+- ["5Macaw26MCAMediaTimingFunctionNameV", "easeInEaseOut"]
+- ["5Macaw26MCAMediaTimingFunctionNameV", "easeOut"]
+- ["5Macaw26MCAMediaTimingFunctionNameV", "init"]
+- ["5Macaw26MCAMediaTimingFunctionNameV", "linear"]
+- ["SY", "default"]
+- ["SY", "easeIn"]
+- ["SY", "easeInEaseOut"]
+- ["SY", "easeOut"]
+- ["SY", "linear"]
+- ["s35_HasCustomAnyHashableRepresentationP", "default"]
+- ["s35_HasCustomAnyHashableRepresentationP", "easeIn"]
+- ["s35_HasCustomAnyHashableRepresentationP", "easeInEaseOut"]
+- ["s35_HasCustomAnyHashableRepresentationP", "easeOut"]
+- ["s35_HasCustomAnyHashableRepresentationP", "linear"]
+- ["s21_ObjectiveCBridgeableP", "default"]
+- ["s21_ObjectiveCBridgeableP", "easeIn"]
+- ["s21_ObjectiveCBridgeableP", "easeInEaseOut"]
+- ["s21_ObjectiveCBridgeableP", "easeOut"]
+- ["s21_ObjectiveCBridgeableP", "linear"]
+- ["s20_SwiftNewtypeWrapperP", "default"]
+- ["s20_SwiftNewtypeWrapperP", "easeIn"]
+- ["s20_SwiftNewtypeWrapperP", "easeInEaseOut"]
+- ["s20_SwiftNewtypeWrapperP", "easeOut"]
+- ["s20_SwiftNewtypeWrapperP", "linear"]
+depends-nominal:
+- "So25CAMediaTimingFunctionNamea"
+- "SQ"
+- "SH"
+- "5Macaw26MCAMediaTimingFunctionNameV"
+- "SY"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "s21_ObjectiveCBridgeableP"
+- "s20_SwiftNewtypeWrapperP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/SWXMLHash/SWXMLHash.framework/Modules/SWXMLHash.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/SWXMLHash/SWXMLHash-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/Pods/Target Support Files/Macaw/Macaw-umbrella.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Debug-iphoneos/SWXMLHash/SWXMLHash.framework/Headers/SWXMLHash-Swift.h"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphoneos/Macaw.build/unextended-module.modulemap"
+- "/Users/taylorsimpson/Desktop/Operation Fix/AfterMemo/build/Pods.build/Debug-iphoneos/SWXMLHash.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "197cf8478b23e94ea9b278ba59fe6114"

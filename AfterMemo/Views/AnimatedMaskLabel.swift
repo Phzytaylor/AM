@@ -54,14 +54,14 @@ class AnimatedMaskLabel: UIView {
         }
     }
     
-    let textAttributes: [NSAttributedStringKey: Any] = {
+    let textAttributes: [NSAttributedString.Key: Any] = {
         let style = NSMutableParagraphStyle()
         style.alignment = .center
         return [
-            NSAttributedStringKey.font: UIFont(
+            NSAttributedString.Key.font: UIFont(
                 name: "HelveticaNeue-Thin",
                 size: 28.0)!,
-            NSAttributedStringKey.paragraphStyle: style
+            NSAttributedString.Key.paragraphStyle: style
         ]
     }()
     

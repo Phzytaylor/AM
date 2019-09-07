@@ -16,7 +16,7 @@ class TextMemoPreviewViewController: UIViewController {
     let memoHeaderView = GeneralHeaderView()
     
     func configureAppBar(){
-        self.addChildViewController(appBar.headerViewController)
+        self.addChild(appBar.headerViewController)
         appBar.navigationBar.backgroundColor = .clear
         appBar.navigationBar.title = nil
         
@@ -51,13 +51,15 @@ class TextMemoPreviewViewController: UIViewController {
         
         let avatarImage = UIImage(data: lovedOneAvatar)
         textMemoPreviewView.avatarImage.translatesAutoresizingMaskIntoConstraints = false
-        textMemoPreviewView.avatarImage.contentMode = .scaleToFill
+        textMemoPreviewView.avatarImage.clipsToBounds = true
+        textMemoPreviewView.avatarImage.contentMode = .scaleAspectFill
         
         textMemoPreviewView.avatarImage.image = avatarImage
         
        // self.title = "AfterMemo"
         configureAppBar()
         appBar.navigationBar.tintColor = .white
+        appBar.navigationBar.titleTextColor = .white
         
 //        self.addChildViewController(appBar.headerViewController)
 //
